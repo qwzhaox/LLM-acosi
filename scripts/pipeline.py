@@ -31,8 +31,8 @@ def run_pipeline(args, prompt):
     model_pipe = pipeline(
         args.task,
         model=args.model_name,
-        device_map="auto",
         tokenizer=args.tokenizer,
+        device_map="auto",
         trust_remote_code=args.remote,
     )
 
@@ -46,5 +46,4 @@ def run_pipeline(args, prompt):
     for data in tqdm(dataset, desc="Processing", unit="item"):
         pass
 
-    with open(args.output_file, "w") as f:
-        pass
+    return output
