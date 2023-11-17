@@ -1,9 +1,13 @@
 import json
+from acosi_extract_prompt import get_file_path
 
-with open("data/acos/laptop-acos-cate-list.json", "r") as f:
+laptop_category_file_path = get_file_path("laptop-acosi-cate-list.json")
+restaurant_category_file_path = get_file_path("restaurant-acosi-cate-list.json")
+
+with open(laptop_category_file_path, "r") as f:
     laptop_cate_list = json.load(f)
 
-with open("data/acos/restaurant-acos-cate-list.json", "r") as f:
+with open(restaurant_category_file_path, "r") as f:
     restaurant_cate_list = json.load(f)
 
 
