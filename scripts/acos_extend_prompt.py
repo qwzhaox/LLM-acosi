@@ -2,7 +2,7 @@ def get_ACOS_extend_prompt():
     prompt = """
     Given an online customer review and its corresponding ACOS quadruples, 
     convert the ACOS (Aspect-Category-Opinion-Sentiment) quadruples to ACOSI (Aspect-Category-Opinion-Sentiment-Implicit/Explicit) quintuples by\n
-    1) identifying and labeling the corresponding opinion span for implicit opinions (labeled null in ACOS).\n
+    1) identifying and labeling the corresponding opinion span for implicit opinions (labeled NULL in ACOS).\n
     2) adding an the implicit indicator term to each quadruple (making it a quintuple) that indicates whether the opinion is implicit or explicit.\n\n
     """
 
