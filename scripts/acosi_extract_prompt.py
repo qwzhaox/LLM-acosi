@@ -1,43 +1,38 @@
+import json
+
+with open("data/acosi/shoes-acosi-cate-list.json", "r") as f:
+    shoes_cate_list = json.load(f)
+
+
 def get_ACOSI_extract_prompt():
     prompt = """
-    Given a product review, extract ACOSI (Aspect-Category-Opinion-Sentiment-Implicit/Explicit) quintuples by identifying and labeling the aspect, category, sentiment, opinion, and whether the opinion is implicit or explicit (indirect or direct).
-    You will be working with reviews of shoes, so the category for an extracted quintuple can only fall into one of the following:
-    
-    {
-        "appearance color",
-        "appearance form",
-        "appearance general",
-        "appearance material",
-        "appearance misc",
-        "appearance shoe component",
-        "contextofuse place",
-        "contextofuse purchase_context",
-        "contextofuse review_temporality",
-        "contextofuse usage frequency",
-        "contextofuse use case",
-        "cost_value",
-        "general",
-        "misc",
-        "performance comfort",
-        "performance durability",
-        "performance general",
-        "performance misc",
-        "performance sizing_fit",
-        "performance support_stability",
-        "performance use case applicability",
-        "versatility"
-    }
+    Given a product review, 
+    extract the corresponding ACOSI (Aspect-Category-Opinion-Sentiment-Implicit/Explicit) quintuples.\n
+
+    Each quintuple is comprised of 5 components:\n
+    - Aspect: The span of text in the review that indicates the particular aspect that the customer is referring to. 
+              Aspects are not always explicitly stated; if this is the case, use a IMPLICIT label for the aspect.\n
+    - Category: The category of the aspect, selected from the following list: {category_list}\n
+    - Sentiment: The polarity of the sentiment: Positive, Negative, or Neutral.\n
+    - Opinion: The span of text in the review that indicates the opinion that expresses the sentiment.
+               Opinions are not always explicitly stated; if this is the case, please try to identify the span of text that best expresses the sentiment implicitly.\n
+    - Implicit Indicator: Indicates whether the opinion is implicit or explicit (indirect or direct).
+    \n\n
     """
+
+    category_list = "[" + ",".join(shoes_cate_list) + "]"
+
+    prompt = prompt.format(category_list=category_list)
 
     example1 = """
     Example 1:\n\n
 
     Review: the design is great poor color choices too bland . color choices from previous shoes was much better . \n
 
-    ACOSI quintuples: [(Aspect: 'null', Category: 'appearance form', Sentiment: 'positive', Opinion: 'design is great', Implicit/Explicit: 'direct'), 
-                        (Aspect: 'null', Category: 'appearance color', Sentiment: 'negative', Opinion: 'poor color choices', Implicit/Explicit: 'direct'), 
-                        (Aspect: 'shoes', Category: 'appearance color', Sentiment: 'negative', Opinion: 'color choices from previous shoes was much better', Implicit/Explicit: 'indirect')]
-                        \n
+    ACOSI quintuples: [(Aspect: IMPLICIT, Category: appearance#form, Sentiment: Positive, Opinion: "design is great", Implicit/Explicit: direct), 
+                       (Aspect: IMPLICIT, Category: appearance#color, Sentiment: Negative, Opinion: "poor color choices", Implicit/Explicit: direct), 
+                       (Aspect: "shoes", Category: appearance#color, Sentiment: Negative, Opinion: "color choices from previous shoes was much better", Implicit/Explicit: indirect)]
+                       \n
 
     """
 
@@ -46,13 +41,13 @@ def get_ACOSI_extract_prompt():
 
     Review: had to order a larger size than what i normally wear . shoe would be better if offered as an adjustable shoe . shoe is overpriced for quality . i bought cheaper slides in the past that were more comfortable . \n
 
-    ACOSI quintuples: [('Aspect: null', Category: 'performance sizing_fit', Sentiment: 'neutral', Opinion: 'had to order a larger size than what i normally wear', Implicit/Explicit: 'direct'), 
-                        ('Aspect: null', Category: 'contextofuse purchase_context', Sentiment: 'negative', Opinion: 'had to order a larger size than what i normally wear', Implicit/Explicit: 'direct'), 
-                        ('Aspect: shoe', Category: 'appearance form', Sentiment: 'neutral', Opinion: 'would be better if offered as an adjustable shoe', Implicit/Explicit: 'direct'), 
-                        ('Aspect: shoe', Category: 'cost_value', Sentiment: 'negative', Opinion: 'overpriced for quality', Implicit/Explicit: 'direct'), 
-                        ('Aspect: slides', Category: 'cost_value', Sentiment: 'negative', Opinion: 'i bought cheaper slides in the past that were more comfortable', Implicit/Explicit: 'direct'), 
-                        ('Aspect: slides', Category: 'performance comfort', Sentiment: 'negative', Opinion: 'i bought cheaper slides in the past that were more comfortable', Implicit/Explicit: 'direct')]
-                        \n
+    ACOSI quintuples: [(Aspect: IMPLICIT, Category: performance#sizing_fit, Sentiment: Neutral, Opinion: "had to order a larger size than what i normally wear", Implicit/Explicit: direct), 
+                       (Aspect: IMPLICIT, Category: contextofuse#purchase\\\\_context, Sentiment: Negative, Opinion: "had to order a larger size than what i normally wear", Implicit/Explicit: direct), 
+                       (Aspect: "shoe", Category: appearance#form, Sentiment: Neutral, Opinion: "would be better if offered as an adjustable shoe", Implicit/Explicit: direct), 
+                       (Aspect: "shoe", Category: cost/value, Sentiment: Negative, Opinion: "overpriced for quality", Implicit/Explicit: direct), 
+                       (Aspect: "slides", Category: cost/value, Sentiment: Negative, Opinion: "i bought cheaper slides in the past that were more comfortable", Implicit/Explicit: direct), 
+                       (Aspect: "slides", Category: performance#comfort, Sentiment: Negative, Opinion: "i bought cheaper slides in the past that were more comfortable", Implicit/Explicit: direct)]
+                       \n
     """
 
     examples = [example1, example2]

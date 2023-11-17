@@ -1,171 +1,58 @@
-def get_ACOS_extend_prompt():
+import json
+
+with open("data/acos/laptop-acos-cate-list.json", "r") as f:
+    laptop_cate_list = json.load(f)
+
+with open("data/acos/restaurant-acos-cate-list.json", "r") as f:
+    restaurant_cate_list = json.load(f)
+
+
+def get_ACOS_extend_prompt(dataset_domain):
     prompt = """
-    Given a product review, 
-    extract the ACOS (Aspect-Category-Opinion-Sentiment) quadruples by
-    1) identifying and labeling the corresponding aspect, category, opinion, and sentiment spans.
-    2) give the opinion annotaion a value of "NULL" if no explicit opinion span can be found.
-    Note that, we will give you product reviews of either restaurants or laptops, so in your response, the category can and can only fall into one of the followings:
-    1) for restaurants
-    [
-    "location#general",
-    "food#prices",
-    "food#quality",
-    "food#general",
-    "ambience#general",
-    "service#general",
-    "restaurant#prices",
-    "drinks#prices",
-    "restaurant#miscellaneous",
-    "drinks#quality",
-    "drinks#style_options",
-    "restaurant#general",
-    "food#style_options"
-    ]
-    2) for laptops:
-    [
-    "keyboard#operation_performance",
-    "os#operation_performance",
-    "out_of_scope#operation_performance",
-    "ports#general",
-    "optical_drives#general",
-    "laptop#operation_performance",
-    "optical_drives#operation_performance",
-    "optical_drives#usability",
-    "multimedia_devices#general",
-    "keyboard#general",
-    "os#miscellaneous",
-    "software#operation_performance",
-    "display#operation_performance",
-    "shipping#quality",
-    "hard_disc#quality",
-    "motherboard#general",
-    "graphics#general",
-    "multimedia_devices#connectivity",
-    "display#general",
-    "memory#operation_performance",
-    "os#design_features",
-    "out_of_scope#usability",
-    "software#design_features",
-    "graphics#design_features",
-    "ports#connectivity",
-    "support#design_features",
-    "display#quality",
-    "software#price",
-    "shipping#general",
-    "graphics#operation_performance",
-    "hard_disc#miscellaneous",
-    "display#design_features",
-    "cpu#operation_performance",
-    "mouse#general",
-    "keyboard#portability",
-    "hardware#price",
-    "support#quality",
-    "hardware#quality",
-    "motherboard#operation_performance",
-    "multimedia_devices#quality",
-    "battery#design_features",
-    "mouse#usability",
-    "os#price",
-    "shipping#operation_performance",
-    "laptop#quality",
-    "laptop#portability",
-    "fans&cooling#general",
-    "battery#general",
-    "os#usability",
-    "hardware#usability",
-    "optical_drives#design_features",
-    "fans&cooling#operation_performance",
-    "memory#general",
-    "company#general",
-    "power_supply#general",
-    "hardware#general",
-    "mouse#design_features",
-    "software#general",
-    "keyboard#quality",
-    "power_supply#quality",
-    "software#quality",
-    "multimedia_devices#usability",
-    "power_supply#connectivity",
-    "multimedia_devices#price",
-    "multimedia_devices#operation_performance",
-    "ports#design_features",
-    "hardware#operation_performance",
-    "shipping#price",
-    "hardware#design_features",
-    "memory#usability",
-    "cpu#quality",
-    "ports#quality",
-    "ports#portability",
-    "motherboard#quality",
-    "display#price",
-    "os#quality",
-    "graphics#usability",
-    "cpu#design_features",
-    "hard_disc#general",
-    "hard_disc#operation_performance",
-    "battery#quality",
-    "laptop#usability",
-    "company#design_features",
-    "company#operation_performance",
-    "support#general",
-    "fans&cooling#quality",
-    "memory#design_features",
-    "ports#usability",
-    "hard_disc#design_features",
-    "power_supply#design_features",
-    "keyboard#miscellaneous",
-    "laptop#miscellaneous",
-    "keyboard#usability",
-    "cpu#price",
-    "laptop#design_features",
-    "keyboard#price",
-    "warranty#quality",
-    "display#usability",
-    "support#price",
-    "cpu#general",
-    "out_of_scope#design_features",
-    "out_of_scope#general",
-    "software#usability",
-    "laptop#general",
-    "warranty#general",
-    "company#price",
-    "ports#operation_performance",
-    "power_supply#operation_performance",
-    "keyboard#design_features",
-    "support#operation_performance",
-    "hard_disc#usability",
-    "os#general",
-    "company#quality",
-    "memory#quality",
-    "software#portability",
-    "fans&cooling#design_features",
-    "multimedia_devices#design_features",
-    "laptop#connectivity",
-    "battery#operation_performance",
-    "hard_disc#price",
-    "laptop#price"
-    ]
+    Given a online customer review, 
+    extract the corresponding ACOS (Aspect-Category-Opinion-Sentiment) quadruples. \n
+    
+    Each quadruple is comprised of 4 components:\n
+    - Aspect: The span of text in the review that indicates the particular aspect that the customer is referring to. 
+              Aspects are not always explicitly stated; if this is the case, use a NULL label for the aspect.\n
+    - Category: The category of the aspect, selected from the following list: {category_list}\n
+    - Sentiment: The polarity of the sentiment: Positive, Negative, or Neutral.\n
+    - Opinion: The span of text in the review that indicates the opinion that expresses the sentiment.
+               Opinions are not always explicitly stated; if this is the case, use a NULL lable for the opinion.\n\n
     """
+
+    if dataset_domain == "laptop":
+        category_list = "[" + ",".join(laptop_cate_list) + "]"
+    elif dataset_domain == "restaurant":
+        category_list = "[" + ",".join(restaurant_cate_list) + "]"
+    else:
+        raise ValueError("Invalid dataset domain.")
+
+    prompt = prompt.format(category_list=category_list)
 
     example1 = """
     Example 1:\n\n
 
     Review: the food was lousy - too sweet or too salty and the portions tiny .\n
+
+    Your Response.\n
     ACOS quadruples: [(Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "lousy"),
                       (Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "too sweet")
                       (Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "too salty"),
                       (Aspect: "portions", Category: food#style_options, Sentiment: Negative, Opinion: "tiny")]
-                      \n
+                      \n\n
     """
 
     example2 = """
-    Example 1:\n\n
+    Example 2:\n\n
 
     Review: first one that they shipped was obviously defective , super slow and speakers were garbled .\n
+
+    Your Response.\n
     ACOS quadruples: [(Aspect: NULL, Category: shipping#general, Sentiment: Negative, Opinion: "defective"), 
                       (Aspect: NULL, Category: shipping#general, Sentiment: Negative, Opinion: "slow"), 
                       (Aspect: "speakers", Category: multimedia_devices#general, Sentiment: Negative, Opinion: "garbled")]
-                      \n
+                      \n\n
     """
 
     examples = [example1, example2]
