@@ -3,8 +3,15 @@ import json
 import torch
 from transformers import pipeline, AutoTokenizer
 from tqdm import tqdm
+from ast import eval
 
 device = 0 if torch.cuda.is_available() else -1
+
+ASPECT_IDX = 0
+CATEGORY_IDX = 1
+SENTIMENT_IDX = 2
+OPINION_IDX = 3
+IMPLICIT_INDICATOR_IDX = 4
 
 
 def dolly_15k_format_prompt():
@@ -25,8 +32,31 @@ def dolly_15k_format_prompt():
 
 
 def get_formatted_annotations(annotations):
+    annots = []
     for annotation in annotations:
-        pass
+        if len(annotation) == 4:
+            new_annot_str = (
+                "(Aspect: {}, Category: {}, Sentiment: {}, Opinion: {})".format(
+                    annotation[ASPECT_IDX],
+                    annotation[CATEGORY_IDX],
+                    annotation[SENTIMENT_IDX],
+                    annotation[OPINION_IDX],
+                )
+            )
+        elif len(annotation) == 5:
+            new_annot_str = "(Aspect: {}, Category: {}, Sentiment: {}, Opinion: {}, Implicit/Explicit: {})".format(
+                annotation[ASPECT_IDX],
+                annotation[CATEGORY_IDX],
+                annotation[SENTIMENT_IDX],
+                annotation[OPINION_IDX],
+                annotation[IMPLICIT_INDICATOR_IDX],
+            )
+
+        annots.append(new_annot_str)
+
+    annots_str = "[" + ", ".join(annots) + "]"
+
+    return annots_str
 
 
 def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
@@ -50,7 +80,7 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
 
     for i, data in enumerate(tqdm(dataset, desc="Processing", unit="item")):
         review = data.split("####")[0]
-        annotations = data.split("####")[1]
+        annotations = eval(data.split("####")[1])
 
         review_str = f"Review: {review.strip()}\n"
         annotations_str = ""
