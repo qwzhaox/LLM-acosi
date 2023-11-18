@@ -1,7 +1,6 @@
 import torch
 from transformers import pipeline, AutoTokenizer
 from tqdm import tqdm
-from ast import eval
 from nltk import word_tokenize
 
 device = 0 if torch.cuda.is_available() else -1

@@ -63,9 +63,9 @@ jq -c '.[]' "$JSON_FILE" | while read -r line; do
 
     # Set the remote flag for the Python script
     if [ "$remote" = "true" ]; then
-        python3 "$TASK_SCRIPT" -m "$model" -t "$tokenizer" -b "$base" -bt "$base_tokenizer" -a "$task" -d "$DATASET_FILE" -o "$OUTPUT_FILE" -tok "$max_new_tokens" -r
+        python3 "$TASK_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --remote
     else
-        python3 "$TASK_SCRIPT" -m "$model" -t "$tokenizer" -b "$base" -bt "$base_tokenizer" -a "$task" -d "$DATASET_FILE" -o "$OUTPUT_FILE" -tok "$max_new_tokens"
+        python3 "$TASK_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens"
     fi
     
 done
