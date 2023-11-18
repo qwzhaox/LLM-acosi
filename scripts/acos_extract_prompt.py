@@ -39,7 +39,7 @@ def get_ACOS_extend_prompt(dataset_domain):
 
     Review: the food was lousy - too sweet or too salty and the portions tiny .\n
 
-    Your Response.\n
+    Response:\n
     ACOS quadruples: [(Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "lousy"),
                       (Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "too sweet")
                       (Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "too salty"),
@@ -52,7 +52,7 @@ def get_ACOS_extend_prompt(dataset_domain):
 
     Review: first one that they shipped was obviously defective , super slow and speakers were garbled .\n
 
-    Your Response.\n
+    Response:\n
     ACOS quadruples: [(Aspect: NULL, Category: shipping#general, Sentiment: Negative, Opinion: "defective"), 
                       (Aspect: NULL, Category: shipping#general, Sentiment: Negative, Opinion: "slow"), 
                       (Aspect: "speakers", Category: multimedia_devices#general, Sentiment: Negative, Opinion: "garbled")]

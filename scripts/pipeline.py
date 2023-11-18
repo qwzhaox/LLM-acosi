@@ -76,7 +76,7 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
 
     formatted_prompt, response_key = dolly_15k_format_prompt()
 
-    output = []
+    prompts = []
 
     for i, data in enumerate(tqdm(dataset, desc="Processing", unit="item")):
         review = data.split("####")[0]
@@ -91,10 +91,11 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
 
         examples_str = "".join(examples)
         bare_prompt = (
-            prompt + examples_str + f"TASK {i}:\n" + review_str + annotations_str
+            prompt + examples_str + f"Your Task {i}:\n" + review_str + annotations_str
         )
         final_prompt = formatted_prompt.format(bare_prompt)
+        prompts.append(final_prompt)
 
-        output.append(model_pipe(final_prompt, max_new_tokens=args.max_new_tokens))
+    output = model_pipe(prompts, max_new_tokens=args.max_new_tokens)
 
     return output, response_key

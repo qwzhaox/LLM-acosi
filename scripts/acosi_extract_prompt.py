@@ -42,7 +42,7 @@ def get_ACOSI_extract_prompt():
 
     Review: the design is great poor color choices too bland . color choices from previous shoes was much better . \n
 
-    Your Response: \n
+    Response: \n
     ACOSI quintuples: [(Aspect: IMPLICIT, Category: appearance#form, Sentiment: Positive, Opinion: "design is great", Implicit/Explicit: direct), 
                        (Aspect: IMPLICIT, Category: appearance#color, Sentiment: Negative, Opinion: "poor color choices", Implicit/Explicit: direct), 
                        (Aspect: "shoes", Category: appearance#color, Sentiment: Negative, Opinion: "color choices from previous shoes was much better", Implicit/Explicit: indirect)]
@@ -55,7 +55,7 @@ def get_ACOSI_extract_prompt():
 
     Review: had to order a larger size than what i normally wear . shoe would be better if offered as an adjustable shoe . shoe is overpriced for quality . i bought cheaper slides in the past that were more comfortable . \n
 
-    Your Response: \n
+    Response: \n
     ACOSI quintuples: [(Aspect: IMPLICIT, Category: performance#sizing_fit, Sentiment: Neutral, Opinion: "had to order a larger size than what i normally wear", Implicit/Explicit: direct), 
                        (Aspect: IMPLICIT, Category: contextofuse#purchase\\\\_context, Sentiment: Negative, Opinion: "had to order a larger size than what i normally wear", Implicit/Explicit: direct), 
                        (Aspect: "shoe", Category: appearance#form, Sentiment: Neutral, Opinion: "would be better if offered as an adjustable shoe", Implicit/Explicit: direct), 
