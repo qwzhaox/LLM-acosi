@@ -1,5 +1,7 @@
 import json
-from utils import get_file_path
+from pickle import dump
+from pipeline import run_pipeline
+from utils import get_file_path, format_output, get_args
 
 laptop_category_file_path = get_file_path("laptop-acosi-cate-list.json")
 restaurant_category_file_path = get_file_path("restaurant-acosi-cate-list.json")
@@ -11,7 +13,7 @@ with open(restaurant_category_file_path, "r") as f:
     restaurant_cate_list = json.load(f)
 
 
-def get_ACOS_extend_prompt(dataset_domain):
+def get_ACOS_extract_prompt(dataset_domain):
     prompt = """
     Given a online customer review, 
     extract the corresponding ACOS (Aspect-Category-Opinion-Sentiment) quadruples. \n
@@ -47,7 +49,20 @@ def get_ACOS_extend_prompt(dataset_domain):
                       \n\n
     """
 
-    example2 = """
+    example2= """
+    Example 2:\n\n
+
+    Review: the decor is night tho . . . but they really need to clean that vent in the ceiling . . . its quite un - appetizing , and kills your effort to make this place look sleek and modern .\n
+    
+    Response:\n
+    ACOS quadruples: [(Aspect: "place", Category: ambience#general, Sentiment: Negative, Opinion: "sleek"),
+                      (Aspect: "place", Category: ambience#general, Sentiment: Negative, Opinion: "modern"),
+                      (Aspect: "decor", Category: ambience#general, Sentiment: Positive, Opinion: "night"),
+                      (Aspect: "vent", Category: ambience#general, Sentiment: Negative, Opinion: "un - appetizing")]
+                      \n\n
+    """
+
+    example3 = """
     Example 2:\n\n
 
     Review: first one that they shipped was obviously defective , super slow and speakers were garbled .\n
@@ -59,6 +74,41 @@ def get_ACOS_extend_prompt(dataset_domain):
                       \n\n
     """
 
-    examples = [example1, example2]
+    example4 = """
+    Example 4:\n\n
 
-    return prompt, examples
+    Review: powers up immediately , great battery life , great keyboard , amazing features .\n
+
+    Response:\n
+    ACOS quadruples: [(Aspect: "powers up", Category: laptop#operation_performance, Sentiment: Positive, Opinion: NULL), 
+                      (Aspect: "battery life", Category: battery#general, Sentiment: Positive, Opinion: "great"), 
+                      (Aspect: "keyboard", Category: keyboard#general, Sentiment: Positive, Opinion: NULL),
+                      (Aspect: NULL, Category: laptop#design_features, Sentiment: Positive, Opinion: "amazing")]
+                      \n\n
+    """
+
+    if dataset_domain == "laptop":
+        return prompt, [example1, example2]
+    elif dataset_domain == "restaurant":
+        return prompt, [example3, example4]
+    else:
+        return -1
+
+def main(args):
+    prompt, examples_laptop = get_ACOS_extract_prompt("laptop")
+    prompt, examples_restaurant = get_ACOS_extract_prompt("restaurant")
+
+    output_laptop, response_key_laptop = run_pipeline(args, prompt, examples_laptop, absa_task="acos_extract")
+    output_restaurant, response_key_restaurant = run_pipeline(args, prompt, examples_restaurant, absa_task="acos_extract")
+    
+    output = output_laptop + output_restaurant
+    response_key = response_key_laptop + response_key_restaurant
+    
+    formatted_output = format_output(output, response_key)
+    with open(args.output_file, "w") as f:
+        dump(formatted_output, f)
+
+
+if __name__ == "__main__":
+    args = get_args()
+    main(args)

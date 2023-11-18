@@ -87,8 +87,8 @@ def naive_train_T5(args):
                     preds = model.generate(input_ids = inp_ids,
                     attention_mask = attention_mask,
                     max_length = 64,
-                    num_beams = 3,
-                    no_repeat_ngram_size=5,
+                    num_beams = 1,
+                    no_repeat_ngram_size=3,
                     early_stopping = True
                     )
                     for pred in preds:
@@ -98,7 +98,7 @@ def naive_train_T5(args):
                 c_rouge = np.mean(rouge_scorer)
                 print('The first label is %s' % str(oup))
                 print('the first pred is %s' % str(pred_sums))
-                print('C_rouge', c_rouge)
+                """
                 if c_rouge > rouge_iter:
                     os.makedirs(
                     args.model_path + '/' + str(args.epochs), exist_ok=True
@@ -113,9 +113,10 @@ def naive_train_T5(args):
                     },
                     args.model_path + '/' + str(args.epochs) + '/' + 'Best_step%dRouge%.3f'%(checker, c_rouge)
                     )
+                """
             if checker == args.epochs:
                 break
-    # add code for model testing here
+
 
 
 def predict_rest(model_path, args):
@@ -170,7 +171,7 @@ if __name__ == '__main__':
 
 
     args = parser.parse_args()
-    naive_train_T5(args)
+    naive_train_T5(args) 
     
     """
     if args.mode == 'train':

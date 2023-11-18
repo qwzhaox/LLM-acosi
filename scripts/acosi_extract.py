@@ -64,7 +64,7 @@ def get_ACOSI_extract_prompt():
 
 def main(args):
     prompt, examples = get_ACOSI_extract_prompt()
-    output, response_key = run_pipeline(args, prompt, examples, absa_task="extend")
+    output, response_key = run_pipeline(args, prompt, examples, absa_task="acosi-extract")
     formatted_output = format_output(output, response_key)
     with open(args.output_file, "w") as f:
         dump(formatted_output, f)
