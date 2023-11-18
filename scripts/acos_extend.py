@@ -1,7 +1,6 @@
-from argparse import ArgumentParser
-from pipeline import run_pipeline
 from pickle import dump
-from utils import format_output
+from pipeline import run_pipeline
+from utils import get_args, format_output
 
 
 def get_ACOS_extend_prompt():
@@ -58,15 +57,5 @@ def main(args):
 
 
 if __name__ == "__main__":
-    parser = ArgumentParser()
-    parser.add_argument("--model_name", type=str, required=True, help="LLM model name")
-    parser.add_argument("--tokenizer_name", type=str, required=True, help="Tokenizer name")
-    parser.add_argument("--task", type=str, required=True, help="Task name")
-    parser.add_argument("--remote", action="store_true", help="Whether to trust remote code")
-    parser.add_argument("--max_new_tokens", type=int, default=100, help="Max new tokens")
-    parser.add_argument("--dataset_file", type=str, required=True, help="Dataset file")
-    parser.add_argument("--output_file", type=str, required=True, help="Output file")
-    args = parser.parse_args()
-
+    args = get_args()
     main(args)
-        

@@ -1,5 +1,6 @@
 from pathlib import Path
 from ast import eval
+from argparse import ArgumentParser
 
 
 def get_file_path(file_name):
@@ -11,12 +12,44 @@ def get_file_path(file_name):
     return None
 
 
+def get_args():
+    parser = ArgumentParser()
+    parser.add_argument("--model_name", type=str, required=True, help="LLM model name")
+    parser.add_argument(
+        "--tokenizer_name", type=str, required=True, help="Tokenizer name"
+    )
+    parser.add_argument("--task", type=str, required=True, help="Task name")
+    parser.add_argument(
+        "--remote", action="store_true", help="Whether to trust remote code"
+    )
+    parser.add_argument(
+        "--max_new_tokens", type=int, default=100, help="Max new tokens"
+    )
+    parser.add_argument("--dataset_file", type=str, required=True, help="Dataset file")
+    parser.add_argument("--output_file", type=str, required=True, help="Output file")
+    args = parser.parse_args()
+    return args
+
+
 def remove_tags(text):
-    return text.replace("Aspect: ", "").replace("Categroy: ", "").replace("Sentiment: ", "").replace("Opinion: ", "").replace("Implicit/Explicit: ", "")
+    return (
+        text.replace("Aspect: ", "")
+        .replace("Categroy: ", "")
+        .replace("Sentiment: ", "")
+        .replace("Opinion: ", "")
+        .replace("Implicit/Explicit: ", "")
+    )
 
 
 def add_quotations(text):
-    return text.replace("\"", "").replace("\'", "").replace("(", "(\'").replace(")", "\')").replace(", ", ",").replace(",", "\',\'")
+    return (
+        text.replace('"', "")
+        .replace("'", "")
+        .replace("(", "('")
+        .replace(")", "')")
+        .replace(", ", ",")
+        .replace(",", "','")
+    )
 
 
 def format_output(output, response_key):
@@ -32,5 +65,5 @@ def format_output(output, response_key):
 
         formatted_tuple = eval(prediction)
         formatted_output.append(formatted_tuple)
-    
+
     return formatted_output
