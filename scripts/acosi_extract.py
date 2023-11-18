@@ -1,5 +1,9 @@
 import json
+from pipeline import run_pipeline
+from pickle import dump
 from utils import get_file_path
+from utils import format_output
+from utils import get_args
 
 category_file_path = get_file_path("shoes-acosi-cate-list.json")
 
@@ -58,3 +62,18 @@ def get_ACOSI_extract_prompt():
     examples = [example1, example2]
 
     return prompt, examples
+
+
+def main(args):
+    prompt, examples = get_ACOSI_extract_prompt()
+    output, response_key = run_pipeline(args, prompt, examples, absa_task="extend")
+    formatted_output = format_output(output, response_key)
+    with open(args.output_file, "w") as f:
+        dump(formatted_output, f)
+
+
+if __name__ == "__main__":
+    args = get_args()
+    main(args)
+        
+
