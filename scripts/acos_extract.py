@@ -1,5 +1,5 @@
 import json
-from acosi_extract_prompt import get_file_path
+from utils import get_file_path
 
 laptop_category_file_path = get_file_path("laptop-acosi-cate-list.json")
 restaurant_category_file_path = get_file_path("restaurant-acosi-cate-list.json")

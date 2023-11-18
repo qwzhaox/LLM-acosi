@@ -1,9 +1,8 @@
-import argparse
-import json
 import torch
 from transformers import pipeline, AutoTokenizer
 from tqdm import tqdm
 from ast import eval
+from nltk import word_tokenize
 
 device = 0 if torch.cuda.is_available() else -1
 
@@ -77,6 +76,7 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
     formatted_prompt, response_key = dolly_15k_format_prompt()
 
     prompts = []
+    total_tokens = 0
 
     for i, data in enumerate(tqdm(dataset, desc="Processing", unit="item")):
         review = data.split("####")[0]
@@ -95,7 +95,9 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
         )
         final_prompt = formatted_prompt.format(bare_prompt)
         prompts.append(final_prompt)
+        total_tokens += len(word_tokenize(final_prompt))
 
     output = model_pipe(prompts, max_new_tokens=args.max_new_tokens)
+    print(f"Total tokens: {total_tokens}")
 
     return output, response_key

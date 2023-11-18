@@ -1,15 +1,5 @@
 import json
-from pathlib import Path
-
-
-def get_file_path(file_name):
-    # Search in the current directory and all subdirectories
-    for path in Path(".").rglob(file_name):
-        # Return the first match
-        return path
-    # Return None if no match is found
-    return None
-
+from utils import get_file_path
 
 category_file_path = get_file_path("shoes-acosi-cate-list.json")
 

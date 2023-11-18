@@ -1,7 +1,8 @@
 from argparse import ArgumentParser
 from pipeline import run_pipeline
 from pickle import dump
-from ast import eval
+from utils import format_output
+
 
 def get_ACOS_extend_prompt():
     prompt = """
@@ -46,31 +47,6 @@ def get_ACOS_extend_prompt():
     examples = [example1, example2]
 
     return prompt, examples
-    
-
-def remove_tags(text):
-    return text.replace("Aspect: ", "").replace("Categroy: ", "").replace("Sentiment: ", "").replace("Opinion: ", "").replace("Implicit/Explicit: ", "")
-
-
-def add_quotations(text):
-    return text.replace("\"", "").replace("\'", "").replace("(", "(\'").replace(")", "\')").replace(", ", ",").replace(",", "\',\'")
-
-
-def format_output(output, response_key):
-    formatted_output = []
-    for out in output:
-        prediction = out["generated_text"].strip()
-        if response_key in prediction:
-            prediction = prediction.split(response_key)[1].strip()
-
-        prediction = remove_tags(prediction)
-        prediction = add_quotations(prediction)
-        prediction = prediction.lower()
-
-        formatted_tuple = eval(prediction)
-        formatted_output.append(formatted_tuple)
-    
-    return formatted_output
 
 
 def main(args):
