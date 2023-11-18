@@ -1,15 +1,32 @@
 #!/bin/bash
 
-# Check if the correct number of arguments is provided
-if [ "$#" -ne 3 ]; then
-    echo "Usage: $0 <data_path> <models_file> <dataset_file>"
+if [ "$#" -ne 4 ]; then
+    echo "Usage: $0 <task> <data_path> <models_file> <dataset_file>"
     exit 1
 fi
 
-# Assign arguments to variables
-DATA_PATH="$1"
-JSON_FILE="$DATA_PATH/$2"
-DATASET_FILE="$DATA_PATH/$3"
+
+TASK="$1"
+DATA_PATH="$2"
+JSON_FILE="$DATA_PATH/$3"
+DATASET_FILE="$DATA_PATH/$4"
+
+TASK_SCRIPT=""
+
+if [ "$TASK" = "acosi-extract" ]; then
+    echo "Running ACOS extract task"
+    TASK_SCRIPT="scripts/acos_extract.py"
+elif [ "$TASK" = "acos-extract" ]; then
+    echo "Running ACOS extract task"
+    TASK_SCRIPT="scripts/acos_extract.py"
+elif [ "$TASK" = "acos-extend" ]; then
+    echo "Running ACOS extend task"
+    TASK_SCRIPT="scripts/acos_extend.py"
+else
+    echo "Error: Invalid task - $TASK"
+    exit 1
+fi
+
 
 # Check if the data path exists
 if [ ! -d "$DATA_PATH" ]; then
@@ -29,6 +46,7 @@ if [ ! -f "$DATASET_FILE" ]; then
     exit 1
 fi
 
+
 # Loop through the JSON array
 jq -c '.[]' "$JSON_FILE" | while read -r line; do
     # Extract fields from JSON
@@ -45,9 +63,9 @@ jq -c '.[]' "$JSON_FILE" | while read -r line; do
 
     # Set the remote flag for the Python script
     if [ "$remote" = "true" ]; then
-        python3 src/llm/pipeline.py -m "$model" -t "$tokenizer" -b "$base" -bt "$base_tokenizer" -a "$task" -d "$DATASET_FILE" -o "$OUTPUT_FILE" -tok "$max_new_tokens" -r
+        python3 "$TASK_SCRIPT" -m "$model" -t "$tokenizer" -b "$base" -bt "$base_tokenizer" -a "$task" -d "$DATASET_FILE" -o "$OUTPUT_FILE" -tok "$max_new_tokens" -r
     else
-        python3 src/llm/pipeline.py -m "$model" -t "$tokenizer" -b "$base" -bt "$base_tokenizer" -a "$task" -d "$DATASET_FILE" -o "$OUTPUT_FILE" -tok "$max_new_tokens"
+        python3 "$TASK_SCRIPT" -m "$model" -t "$tokenizer" -b "$base" -bt "$base_tokenizer" -a "$task" -d "$DATASET_FILE" -o "$OUTPUT_FILE" -tok "$max_new_tokens"
     fi
     
 done

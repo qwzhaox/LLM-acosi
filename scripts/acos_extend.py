@@ -50,7 +50,7 @@ def get_ACOS_extend_prompt():
 
 def main(args):
     prompt, examples = get_ACOS_extend_prompt()
-    output, response_key = run_pipeline(args, prompt, examples, absa_task="extend")
+    output, response_key = run_pipeline(args, prompt, examples, absa_task="acos-extend")
     formatted_output = format_output(output, response_key)
     with open(args.output_file, "w") as f:
         dump(formatted_output, f)
