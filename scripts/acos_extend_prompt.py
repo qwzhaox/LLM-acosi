@@ -81,7 +81,7 @@ def main(args):
         dump(formatted_output, f)
 
 
-if "__name__" == "__main__":
+if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("--model_name", type=str, required=True, help="LLM model name")
     parser.add_argument("--tokenizer_name", type=str, required=True, help="Tokenizer name")
