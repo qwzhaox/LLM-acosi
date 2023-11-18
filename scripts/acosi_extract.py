@@ -1,9 +1,7 @@
 import json
 from pipeline import run_pipeline
 from pickle import dump
-from utils import get_file_path
-from utils import format_output
-from utils import get_args
+from utils import get_file_path, format_output, get_args
 
 category_file_path = get_file_path("shoes-acosi-cate-list.json")
 
