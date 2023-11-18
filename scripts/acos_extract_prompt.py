@@ -41,7 +41,7 @@ def get_ACOS_extend_prompt(dataset_domain):
 
     Response:\n
     ACOS quadruples: [(Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "lousy"),
-                      (Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "too sweet")
+                      (Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "too sweet"),
                       (Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "too salty"),
                       (Aspect: "portions", Category: food#style_options, Sentiment: Negative, Opinion: "tiny")]
                       \n\n
