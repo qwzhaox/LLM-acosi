@@ -84,9 +84,13 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
 
         review_str = f"Review: {review.strip()}\n"
         annotations_str = ""
-        if absa_task == "extend":
+        if absa_task == "extend" or absa_task == "acos_extract":
             annotations_str = (
                 f"ACOS quadruples: {get_formatted_annotations(annotations)}\n"
+            )
+        elif absa_task == "acosi_extract":
+            annotations_str = (
+                f"ACOSI quintuples: {get_formatted_annotations(annotations)}\n"
             )
 
         examples_str = "".join(examples)
