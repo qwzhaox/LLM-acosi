@@ -22,7 +22,7 @@ def get_ACOS_extract_prompt(dataset_domain):
     - Aspect: The span of text in the review that indicates the particular aspect that the customer is referring to. 
               Aspects are not always explicitly stated; if this is the case, use a NULL label for the aspect.\n
     - Category: The category of the aspect, selected from the following list: {category_list}\n
-    - Sentiment: The polarity of the sentiment: Positive, Negative, or Neutral.\n
+    - Sentiment: The polarity of the sentiment: positive, negative, or neutral.\n
     - Opinion: The span of text in the review that indicates the opinion that expresses the sentiment.
                Opinions are not always explicitly stated; if this is the case, use a NULL lable for the opinion.\n\n
     """
@@ -44,10 +44,10 @@ def get_ACOS_extract_prompt(dataset_domain):
     Review: the food was lousy - too sweet or too salty and the portions tiny .\n
 
     Response:\n
-    {response_head} [(Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "lousy"),
-                      (Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "too sweet"),
-                      (Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "too salty"),
-                      (Aspect: "portions", Category: food#style_options, Sentiment: Negative, Opinion: "tiny")]
+    {response_head} [(Aspect: "food", Category: food#quality, Sentiment: negative, Opinion: "lousy"),
+                      (Aspect: "food", Category: food#quality, Sentiment: negative, Opinion: "too sweet"),
+                      (Aspect: "food", Category: food#quality, Sentiment: negative, Opinion: "too salty"),
+                      (Aspect: "portions", Category: food#style_options, Sentiment: negative, Opinion: "tiny")]
                       \n\n
     """
 
@@ -57,10 +57,10 @@ def get_ACOS_extract_prompt(dataset_domain):
     Review: the decor is night tho . . . but they really need to clean that vent in the ceiling . . . its quite un - appetizing , and kills your effort to make this place look sleek and modern .\n
     
     Response:\n
-    ACOS quadruples: [(Aspect: "place", Category: ambience#general, Sentiment: Negative, Opinion: "sleek"),
-                      (Aspect: "place", Category: ambience#general, Sentiment: Negative, Opinion: "modern"),
-                      (Aspect: "decor", Category: ambience#general, Sentiment: Positive, Opinion: "night"),
-                      (Aspect: "vent", Category: ambience#general, Sentiment: Negative, Opinion: "un - appetizing")]
+    ACOS quadruples: [(Aspect: "place", Category: ambience#general, Sentiment: negative, Opinion: "sleek"),
+                      (Aspect: "place", Category: ambience#general, Sentiment: negative, Opinion: "modern"),
+                      (Aspect: "decor", Category: ambience#general, Sentiment: positive, Opinion: "night"),
+                      (Aspect: "vent", Category: ambience#general, Sentiment: negative, Opinion: "un - appetizing")]
                       \n\n
     """
 
@@ -70,9 +70,9 @@ def get_ACOS_extract_prompt(dataset_domain):
     Review: first one that they shipped was obviously defective , super slow and speakers were garbled .\n
 
     Response:\n
-    {response_head} [(Aspect: NULL, Category: shipping#general, Sentiment: Negative, Opinion: "defective"), 
-                      (Aspect: NULL, Category: shipping#general, Sentiment: Negative, Opinion: "slow"), 
-                      (Aspect: "speakers", Category: multimedia_devices#general, Sentiment: Negative, Opinion: "garbled")]
+    {response_head} [(Aspect: NULL, Category: shipping#general, Sentiment: negative, Opinion: "defective"), 
+                      (Aspect: NULL, Category: shipping#general, Sentiment: negative, Opinion: "slow"), 
+                      (Aspect: "speakers", Category: multimedia_devices#general, Sentiment: negative, Opinion: "garbled")]
                       \n\n
     """
 
@@ -82,10 +82,10 @@ def get_ACOS_extract_prompt(dataset_domain):
     Review: powers up immediately , great battery life , great keyboard , amazing features .\n
 
     Response:\n
-    {response_head} [(Aspect: "powers up", Category: laptop#operation_performance, Sentiment: Positive, Opinion: NULL), 
-                      (Aspect: "battery life", Category: battery#general, Sentiment: Positive, Opinion: "great"), 
-                      (Aspect: "keyboard", Category: keyboard#general, Sentiment: Positive, Opinion: NULL),
-                      (Aspect: NULL, Category: laptop#design_features, Sentiment: Positive, Opinion: "amazing")]
+    {response_head} [(Aspect: "powers up", Category: laptop#operation_performance, Sentiment: positive, Opinion: NULL), 
+                      (Aspect: "battery life", Category: battery#general, Sentiment: positive, Opinion: "great"), 
+                      (Aspect: "keyboard", Category: keyboard#general, Sentiment: positive, Opinion: NULL),
+                      (Aspect: NULL, Category: laptop#design_features, Sentiment: positive, Opinion: "amazing")]
                       \n\n
     """
 

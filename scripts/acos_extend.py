@@ -18,15 +18,15 @@ def get_ACOS_extend_prompt():
     Example 1:\n\n
 
     Review: looks nice , and the surface is smooth , but certain apps take seconds to respond .\n
-    ACOS quadruples: [(Aspect: "surface", Category: design, Sentiment: Positive, Opinion: "smooth"), 
-                      (Aspect: NULL, Category: design, Sentiment: Positive, Opinion: "nice"), 
-                      (Aspect: "apps", Category: software, Sentiment: Negative, Opinion: NULL)]
+    ACOS quadruples: [(Aspect: "surface", Category: design, Sentiment: positive, Opinion: "smooth"), 
+                      (Aspect: NULL, Category: design, Sentiment: positive, Opinion: "nice"), 
+                      (Aspect: "apps", Category: software, Sentiment: negative, Opinion: NULL)]
                       \n
 
     Response:\n
-    {response_head} [(Aspect: "surface", Category: design, Sentiment: Positive, Opinion: "smooth", Implicit/Explicit: direct),
-                       (Aspect: NULL, Category: design, Sentiment: Positive, Opinion: "nice", Implicit/Explicit: direct),
-                       (Aspect: "apps", Category: software, Sentiment: Negative, Opinion: "apps take seconds to respond", Implicit/Explicit: indirect)]
+    {response_head} [(Aspect: "surface", Category: design, Sentiment: positive, Opinion: "smooth", Implicit/Explicit: direct),
+                       (Aspect: NULL, Category: design, Sentiment: positive, Opinion: "nice", Implicit/Explicit: direct),
+                       (Aspect: "apps", Category: software, Sentiment: negative, Opinion: "apps take seconds to respond", Implicit/Explicit: indirect)]
                        \n\n
     """
 
@@ -34,15 +34,15 @@ def get_ACOS_extend_prompt():
     Example 2:\n\n
 
     Review: with the theater 2 blocks away we had a delicious meal in a beautiful room .\n
-    ACOS quadruples: [(Aspect: "meal", Category: food#quality, Sentiment: Positive, Opinion: "delicious"), 
-                      (Aspect: "room", Category: ambience#general, Sentiment: Positive, Opinion: "beautiful"), 
-                      (Aspect: NULL, Category: location#general, Sentiment: Positive, Opinion: NULL)]
+    ACOS quadruples: [(Aspect: "meal", Category: food#quality, Sentiment: positive, Opinion: "delicious"), 
+                      (Aspect: "room", Category: ambience#general, Sentiment: positive, Opinion: "beautiful"), 
+                      (Aspect: NULL, Category: location#general, Sentiment: positive, Opinion: NULL)]
                       \n
     
     Response:\n
-    {response_head} [(Aspect: "meal", Category: food#quality, Sentiment: Positive, Opinion: "delicious", Implicit/Explicit: direct),
-                       (Aspect: "room", Category: ambience#general, Sentiment: Positive, Opinion: "beautiful", Implicit/Explicit: direct),
-                       (Aspect: NULL, Category: location#general, Sentiment: Positive, Opinion: "theater 2 blocks away", Implicit/Explicit: indirect)]
+    {response_head} [(Aspect: "meal", Category: food#quality, Sentiment: positive, Opinion: "delicious", Implicit/Explicit: direct),
+                       (Aspect: "room", Category: ambience#general, Sentiment: positive, Opinion: "beautiful", Implicit/Explicit: direct),
+                       (Aspect: NULL, Category: location#general, Sentiment: positive, Opinion: "theater 2 blocks away", Implicit/Explicit: indirect)]
                        \n\n
     """
 
