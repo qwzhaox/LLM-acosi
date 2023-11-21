@@ -29,26 +29,28 @@ def get_ACOSI_extract_prompt():
 
     prompt = prompt.format(category_list=category_list)
 
-    example1 = """
+    response_head = "ACOSI quintuples:"
+
+    example1 = f"""
     Example 1:\n\n
 
     Review: the design is great poor color choices too bland . color choices from previous shoes was much better . \n
 
     Response: \n
-    ACOSI quintuples: [(Aspect: IMPLICIT, Category: appearance#form, Sentiment: Positive, Opinion: "design is great", Implicit/Explicit: direct), 
+    {response_head} [(Aspect: IMPLICIT, Category: appearance#form, Sentiment: Positive, Opinion: "design is great", Implicit/Explicit: direct), 
                        (Aspect: IMPLICIT, Category: appearance#color, Sentiment: Negative, Opinion: "poor color choices", Implicit/Explicit: direct), 
                        (Aspect: "shoes", Category: appearance#color, Sentiment: Negative, Opinion: "color choices from previous shoes was much better", Implicit/Explicit: indirect)]
                        \n\n
 
     """
 
-    example2 = """
+    example2 = f"""
     Example 2: \n\n
 
     Review: had to order a larger size than what i normally wear . shoe would be better if offered as an adjustable shoe . shoe is overpriced for quality . i bought cheaper slides in the past that were more comfortable . \n
 
     Response: \n
-    ACOSI quintuples: [(Aspect: IMPLICIT, Category: performance#sizing_fit, Sentiment: Neutral, Opinion: "had to order a larger size than what i normally wear", Implicit/Explicit: direct), 
+    {response_head} [(Aspect: IMPLICIT, Category: performance#sizing_fit, Sentiment: Neutral, Opinion: "had to order a larger size than what i normally wear", Implicit/Explicit: direct), 
                        (Aspect: IMPLICIT, Category: contextofuse#purchase\\\\_context, Sentiment: Negative, Opinion: "had to order a larger size than what i normally wear", Implicit/Explicit: direct), 
                        (Aspect: "shoe", Category: appearance#form, Sentiment: Neutral, Opinion: "would be better if offered as an adjustable shoe", Implicit/Explicit: direct), 
                        (Aspect: "shoe", Category: cost/value, Sentiment: Negative, Opinion: "overpriced for quality", Implicit/Explicit: direct), 
@@ -59,13 +61,15 @@ def get_ACOSI_extract_prompt():
 
     examples = [example1, example2]
 
-    return prompt, examples
+    return prompt, examples, response_head
 
 
 def main(args):
-    prompt, examples = get_ACOSI_extract_prompt()
-    output, response_key = run_pipeline(args, prompt, examples, absa_task="acosi-extract")
-    formatted_output = format_output(output, response_key)
+    prompt, examples, response_head = get_ACOSI_extract_prompt()
+    output, response_key = run_pipeline(
+        args, prompt, examples, absa_task="acosi-extract"
+    )
+    formatted_output = format_output(output, response_key, response_head)
     with open(args.output_file, "w") as f:
         dump(formatted_output, f)
 
@@ -73,5 +77,3 @@ def main(args):
 if __name__ == "__main__":
     args = get_args()
     main(args)
-        
-

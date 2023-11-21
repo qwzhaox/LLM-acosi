@@ -51,12 +51,21 @@ def add_quotations(text):
     )
 
 
-def format_output(output, response_key):
+def format_output(output, response_key, response_head):
     formatted_output = []
     for out in output:
         prediction = out["generated_text"].strip()
+
         if response_key in prediction:
             prediction = prediction.split(response_key)[1].strip()
+        if response_head in prediction:
+            prediction = prediction.split(response_head)[1].strip()
+
+        if "[" in prediction and "]" in prediction:
+            prediction = "[" + prediction.split("[")[1].split("]")[0].strip() + "]"
+        else:
+            formatted_output.append([])
+            continue
 
         prediction = remove_tags(prediction)
         prediction = add_quotations(prediction)

@@ -9,15 +9,6 @@
         "remote": false
     },
     {
-        "model": "meta-llama/Llama-2-70b-chat-hf",
-        "tokenizer": "meta-llama/Llama-2-70b-chat-hf",
-        "base": "meta-llama/Llama-2-70b",
-        "base_tokenizer": "meta-llama/Llama-2-70b",
-        "task": "text-generation",
-        "max_new_tokens": 30,
-        "remote": true
-    },
-    {
         "model": "MBZUAI/LaMini-Flan-T5-783M",
         "tokenizer": "MBZUAI/LaMini-Flan-T5-783M",
         "base": "t5-small",

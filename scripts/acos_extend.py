@@ -1,4 +1,5 @@
-from pickle import dump
+from pickle import dump, load
+from pprint import pprint
 from pipeline import run_pipeline
 from utils import get_args, format_output
 
@@ -11,7 +12,9 @@ def get_ACOS_extend_prompt():
     2) adding an the implicit indicator term to each quadruple (making it a quintuple) that indicates whether the opinion is implicit or explicit (indirect/direct).\n\n
     """
 
-    example1 = """
+    response_head = "ACOSI quintuples:"
+
+    example1 = f"""
     Example 1:\n\n
 
     Review: looks nice , and the surface is smooth , but certain apps take seconds to respond .\n
@@ -21,13 +24,13 @@ def get_ACOS_extend_prompt():
                       \n
 
     Response:\n
-    ACOSI quintuples: [(Aspect: "surface", Category: design, Sentiment: Positive, Opinion: "smooth", Implicit/Explicit: direct),
+    {response_head} [(Aspect: "surface", Category: design, Sentiment: Positive, Opinion: "smooth", Implicit/Explicit: direct),
                        (Aspect: NULL, Category: design, Sentiment: Positive, Opinion: "nice", Implicit/Explicit: direct),
                        (Aspect: "apps", Category: software, Sentiment: Negative, Opinion: "apps take seconds to respond", Implicit/Explicit: indirect)]
                        \n\n
     """
 
-    example2 = """
+    example2 = f"""
     Example 2:\n\n
 
     Review: with the theater 2 blocks away we had a delicious meal in a beautiful room .\n
@@ -37,7 +40,7 @@ def get_ACOS_extend_prompt():
                       \n
     
     Response:\n
-    ACOSI quintuples: [(Aspect: "meal", Category: food#quality, Sentiment: Positive, Opinion: "delicious", Implicit/Explicit: direct),
+    {response_head} [(Aspect: "meal", Category: food#quality, Sentiment: Positive, Opinion: "delicious", Implicit/Explicit: direct),
                        (Aspect: "room", Category: ambience#general, Sentiment: Positive, Opinion: "beautiful", Implicit/Explicit: direct),
                        (Aspect: NULL, Category: location#general, Sentiment: Positive, Opinion: "theater 2 blocks away", Implicit/Explicit: indirect)]
                        \n\n
@@ -45,15 +48,22 @@ def get_ACOS_extend_prompt():
 
     examples = [example1, example2]
 
-    return prompt, examples
+    return prompt, examples, response_head
 
 
 def main(args):
-    prompt, examples = get_ACOS_extend_prompt()
+    prompt, examples, response_head = get_ACOS_extend_prompt()
     output, response_key = run_pipeline(args, prompt, examples, absa_task="acos-extend")
-    formatted_output = format_output(output, response_key)
-    with open(args.output_file, "w") as f:
-        dump(formatted_output, f)
+    # with open(args.output_file, "r") as f:
+    #     output = load(f)
+    # response_key = "#### Response:"
+    pprint(output)
+    try:
+        formatted_output = format_output(output, response_key, response_head)
+        dump(formatted_output, args.output_file)
+    except Exception as e:
+        dump(output, args.output_file)
+        print(e)
 
 
 if __name__ == "__main__":

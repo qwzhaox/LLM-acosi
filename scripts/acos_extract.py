@@ -36,20 +36,22 @@ def get_ACOS_extract_prompt(dataset_domain):
 
     prompt = prompt.format(category_list=category_list)
 
-    example1 = """
+    response_head = "ACOS quadruples:"
+
+    example1 = f"""
     Example 1:\n\n
 
     Review: the food was lousy - too sweet or too salty and the portions tiny .\n
 
     Response:\n
-    ACOS quadruples: [(Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "lousy"),
+    {response_head} [(Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "lousy"),
                       (Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "too sweet"),
                       (Aspect: "food", Category: food#quality, Sentiment: Negative, Opinion: "too salty"),
                       (Aspect: "portions", Category: food#style_options, Sentiment: Negative, Opinion: "tiny")]
                       \n\n
     """
 
-    example2= """
+    example2 = f"""
     Example 2:\n\n
 
     Review: the decor is night tho . . . but they really need to clean that vent in the ceiling . . . its quite un - appetizing , and kills your effort to make this place look sleek and modern .\n
@@ -62,25 +64,25 @@ def get_ACOS_extract_prompt(dataset_domain):
                       \n\n
     """
 
-    example3 = """
+    example3 = f"""
     Example 2:\n\n
 
     Review: first one that they shipped was obviously defective , super slow and speakers were garbled .\n
 
     Response:\n
-    ACOS quadruples: [(Aspect: NULL, Category: shipping#general, Sentiment: Negative, Opinion: "defective"), 
+    {response_head} [(Aspect: NULL, Category: shipping#general, Sentiment: Negative, Opinion: "defective"), 
                       (Aspect: NULL, Category: shipping#general, Sentiment: Negative, Opinion: "slow"), 
                       (Aspect: "speakers", Category: multimedia_devices#general, Sentiment: Negative, Opinion: "garbled")]
                       \n\n
     """
 
-    example4 = """
+    example4 = f"""
     Example 4:\n\n
 
     Review: powers up immediately , great battery life , great keyboard , amazing features .\n
 
     Response:\n
-    ACOS quadruples: [(Aspect: "powers up", Category: laptop#operation_performance, Sentiment: Positive, Opinion: NULL), 
+    {response_head} [(Aspect: "powers up", Category: laptop#operation_performance, Sentiment: Positive, Opinion: NULL), 
                       (Aspect: "battery life", Category: battery#general, Sentiment: Positive, Opinion: "great"), 
                       (Aspect: "keyboard", Category: keyboard#general, Sentiment: Positive, Opinion: NULL),
                       (Aspect: NULL, Category: laptop#design_features, Sentiment: Positive, Opinion: "amazing")]
@@ -88,23 +90,28 @@ def get_ACOS_extract_prompt(dataset_domain):
     """
 
     if dataset_domain == "laptop":
-        return prompt, [example1, example2]
+        return prompt, [example1, example2], response_head
     elif dataset_domain == "restaurant":
-        return prompt, [example3, example4]
+        return prompt, [example3, example4], response_head
     else:
-        return -1
+        raise ValueError("Invalid dataset domain.")
+
 
 def main(args):
-    prompt, examples_laptop = get_ACOS_extract_prompt("laptop")
-    prompt, examples_restaurant = get_ACOS_extract_prompt("restaurant")
+    prompt, examples_laptop, response_head = get_ACOS_extract_prompt("laptop")
+    _, examples_restaurant, _ = get_ACOS_extract_prompt("restaurant")
 
-    output_laptop, response_key_laptop = run_pipeline(args, prompt, examples_laptop, absa_task="acos_extract")
-    output_restaurant, response_key_restaurant = run_pipeline(args, prompt, examples_restaurant, absa_task="acos_extract")
-    
+    output_laptop, response_key_laptop = run_pipeline(
+        args, prompt, examples_laptop, absa_task="acos_extract"
+    )
+    output_restaurant, response_key_restaurant = run_pipeline(
+        args, prompt, examples_restaurant, absa_task="acos_extract"
+    )
+
     output = output_laptop + output_restaurant
     response_key = response_key_laptop + response_key_restaurant
-    
-    formatted_output = format_output(output, response_key)
+
+    formatted_output = format_output(output, response_key, response_head)
     with open(args.output_file, "w") as f:
         dump(formatted_output, f)
 
