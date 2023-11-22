@@ -57,13 +57,10 @@ def main(args):
     # with open(args.output_file, "r") as f:
     #     output = load(f)
     # response_key = "#### Response:"
-    pprint(output)
-    try:
-        formatted_output = format_output(output, response_key, response_head)
-        dump(formatted_output, args.output_file)
-    except Exception as e:
-        dump(output, args.output_file)
-        print(e)
+    formatted_output = format_output(output, response_key, response_head)
+    pprint(formatted_output)
+    with open(args.output_file, "wb") as f:
+        dump(formatted_output, f)
 
 
 if __name__ == "__main__":

@@ -52,7 +52,7 @@ jq -c '.[]' "$LLM_FILE" | while read -r line; do
     remote=$(echo "$line" | jq -r '.remote')
 
     # Set the output file name
-    OUTPUT_FILE="data/${model}_${ABSA_TASK}_output.pkl"
+    OUTPUT_FILE="data/model_output/${model}_${ABSA_TASK}_output.pkl"
 
     # Set the remote flag for the Python script
     if [ "$remote" = "true" ]; then

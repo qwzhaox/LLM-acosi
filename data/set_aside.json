@@ -1,0 +1,20 @@
+[
+    {
+        "model": "MBZUAI/LaMini-Flan-T5-783M",
+        "tokenizer": "MBZUAI/LaMini-Flan-T5-783M",
+        "base": "t5-small",
+        "base_tokenizer": "t5-small",
+        "task": "text2text-generation",
+        "max_new_tokens": 100,
+        "remote": false
+    },
+    {
+        "model": "bigscience/T0_3B",
+        "tokenizer": "bigscience/T0_3B",
+        "base": "t5-small",
+        "base_tokenizer": "t5-small",
+        "task": "text2text-generation",
+        "max_new_tokens": 100,
+        "remote": false
+    }
+]

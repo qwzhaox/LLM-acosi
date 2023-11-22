@@ -62,17 +62,16 @@ def get_formatted_annotations(annotations):
 def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
     # Initialize the pipeline with the specified model, and set the device
     tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name)
-    model = AutoModelForCausalLM.from_pretrained(args.model_name)
-
-    model.config.max_length = 1024
-    gen_config = GenerationConfig.from_model_config(model.config)
+    # model = AutoModelForCausalLM.from_pretrained(args.model_name)
+    gen_config = GenerationConfig.from_pretrained(args.model_name)
+    gen_config.max_new_tokens = args.max_new_tokens
     # pre_config = PretrainedConfig.from_pretrained(args.model_name)
 
     print("Initializing pipeline...")
 
     model_pipe = pipeline(
         args.task,
-        model=model,
+        model=args.model_name,
         tokenizer=tokenizer,
         device_map="auto",
         trust_remote_code=args.remote,
@@ -114,5 +113,6 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
 
     output = model_pipe(prompts, generation_config=gen_config)
     print(f"Total tokens: {total_tokens}")
+    print(f"Avg tokens per prompt: {total_tokens/len(prompts)}")
 
     return output, response_key
