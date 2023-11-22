@@ -1,5 +1,6 @@
 from pathlib import Path
 from argparse import ArgumentParser
+from itertools import chain
 
 
 def get_file_path(file_name):
@@ -33,7 +34,7 @@ def get_args():
 def remove_tags(text):
     return (
         text.replace("Aspect: ", "")
-        .replace("Categroy: ", "")
+        .replace("Category: ", "")
         .replace("Sentiment: ", "")
         .replace("Opinion: ", "")
         .replace("Implicit/Explicit: ", "")
@@ -52,13 +53,10 @@ def add_quotations(text):
 
 
 def format_output(output, response_key, response_head):
+    output = list(chain(*output))
     formatted_output = []
     for out in output:
-        try:
-            prediction = out["generated_text"].strip()
-        except TypeError as e:
-            print(e)
-            print(out)
+        prediction = out["generated_text"].strip()
 
         if response_key in prediction:
             prediction = prediction.split(response_key)[1].strip()

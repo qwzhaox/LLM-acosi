@@ -1,0 +1,55 @@
+Running ACOS extend ABSA_TASK
+Initializing pipeline...
+Loading dataset...
+Processing dataset...
+Running pipeline...
+Total tokens: 2070
+Avg tokens per prompt: 517.5
+invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+SKIPPING ANNOTATION
+invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+SKIPPING ANNOTATION
+[[('null',
+   'category: restaurant#general',
+   'positive',
+   'cant wait wait for my next visit',
+   'indirect')],
+ [],
+ [],
+ [('pink pony', 'category: restaurant#general', 'positive', 'love', 'direct')]]
+Initializing pipeline...
+Initializing pipeline...
+Loading dataset...
+Processing dataset...
+Running pipeline...
+Total tokens: 2070
+Avg tokens per prompt: 517.5
+invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+SKIPPING ANNOTATION
+invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+SKIPPING ANNOTATION
+invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+SKIPPING ANNOTATION
+[[],
+ [],
+ [],
+ [('pink pony',
+   'category: restaurant#general',
+   'positive',
+   'we love the pink pony',
+   'direct')]]
+Initializing pipeline...
+Loading dataset...
+Processing dataset...
+Running pipeline...
+Total tokens: 2070
+Avg tokens per prompt: 517.5
+string indices must be integers
+generated_text
+string indices must be integers
+generated_text
+string indices must be integers
+generated_text
+string indices must be integers
+generated_text
+[]

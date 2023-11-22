@@ -14,7 +14,7 @@ OPINION_IDX = 3
 IMPLICIT_INDICATOR_IDX = 4
 
 
-def dolly_15k_format_prompt():
+def alpaca_format_prompt():
     instruction_key = "### Instruction:"
     response_key = "### Response:"
     intro_blurb = "Below is an instruction that describes a task. Write a response that appropriately completes the request."
@@ -83,7 +83,7 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
     with open(args.dataset_file, "r") as f:
         dataset = f.readlines()
 
-    formatted_prompt, response_key = dolly_15k_format_prompt()
+    formatted_prompt, response_key = alpaca_format_prompt()
 
     print("Processing dataset...")
 
