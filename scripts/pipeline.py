@@ -82,6 +82,8 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
         # config=pre_config,
     )
 
+    exit(0)
+
     print("Loading dataset...")
 
     with open(args.dataset_file, "r") as f:
