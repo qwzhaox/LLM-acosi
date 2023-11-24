@@ -3,8 +3,8 @@ from pickle import dump
 from pipeline import run_pipeline
 from utils import get_file_path, format_output, get_args
 
-laptop_category_file_path = get_file_path("laptop-acosi-cate-list.json")
-restaurant_category_file_path = get_file_path("restaurant-acosi-cate-list.json")
+laptop_category_file_path = get_file_path("laptop-acos-cate-list.json")
+restaurant_category_file_path = get_file_path("restaurant-acos-cate-list.json")
 
 with open(laptop_category_file_path, "r") as f:
     laptop_cate_list = json.load(f)

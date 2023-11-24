@@ -7,8 +7,10 @@ from acos_extract import get_ACOS_extract_prompt
 from acosi_extract import get_ACOSI_extract_prompt
 
 parser = ArgumentParser()
-parser.add_argument("--dataset_file", type=str, required=True, help="Dataset file")
-parser.add_argument("--absa_task", type=str, required=True, help="Task to run")
+parser.add_argument(
+    "-d", "--dataset_file", type=str, required=True, help="Dataset file"
+)
+parser.add_argument("-a", "--absa_task", type=str, required=True, help="Task to run")
 
 args = parser.parse_args()
 
@@ -51,7 +53,7 @@ for i, data in enumerate(tqdm(dataset, desc="Processing", unit="item")):
         output_str = f"ACOS quadruples: {get_formatted_annotations(annotations)}\n"
         total_out_tokens += len(word_tokenize(output_str))
     elif args.absa_task == "acosi-extract":
-        output_str = f"ACOSI quintuple: {get_formatted_annotations(annotations)}\n"
+        output_str = f"ACOSI quintuples: {get_formatted_annotations(annotations)}\n"
         total_out_tokens += len(word_tokenize(output_str))
 
     examples_str = "".join(examples)
