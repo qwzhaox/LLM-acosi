@@ -33,19 +33,5 @@
         "task": "text2text-generation",
         "max_new_tokens": 512,
         "remote": false
-    },
-    {
-        "model": "MBZUAI/LaMini-Flan-T5-783M",
-        "tokenizer": "MBZUAI/LaMini-Flan-T5-783M",
-        "task": "text2text-generation",
-        "max_new_tokens": 100,
-        "remote": false
-    },
-    {
-        "model": "bigscience/T0_3B",
-        "tokenizer": "bigscience/T0_3B",
-        "task": "text2text-generation",
-        "max_new_tokens": 100,
-        "remote": false
     }
 ]
