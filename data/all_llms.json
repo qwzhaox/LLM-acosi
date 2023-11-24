@@ -1,5 +1,12 @@
 [
     {
+        "model": "01-ai/Yi-34B",
+        "tokenizer": "01-ai/Yi-34B",
+        "task": "text-generation",
+        "max_new_tokens": 512,
+        "remote": false
+    },
+    {
         "model": "HuggingFaceH4/zephyr-7b-beta",
         "tokenizer": "HuggingFaceH4/zephyr-7b-beta",
         "task": "text-generation",
