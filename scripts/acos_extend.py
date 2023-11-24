@@ -56,7 +56,6 @@ def main(args):
     #     output = load(f)
     # response_key = "#### Response:"
     formatted_output = format_output(opinion_spans, response_key, response_head)
-    pprint(formatted_output)
 
     with open(args.dataset_file, "r") as f:
         dataset = f.readlines()
@@ -70,19 +69,18 @@ def main(args):
         cur_acosi_annotation = []
         if len(quadruples) == len(opinion_spans):
             for quad, opinion_span in zip(quadruples, opinion_spans):
-                if quad[OPINION_IDX] == "NULL":
+                if quad[OPINION_IDX].lower() == "null":
                     quad[OPINION_IDX] = opinion_span
-                    quint = tuple(quad.append("indirect"))
+                    quad.append("indirect")
                 else:
-                    quint = tuple(quad.append("direct"))
+                    quad.append("direct")
+                quint = tuple(quad)
                 cur_acosi_annotation.append(quint)
 
         acosi_annotations.append(cur_acosi_annotation)
 
-    pprint(acosi_annotations)
-
     with open(args.output_file, "wb") as f:
-        dump(formatted_output, f)
+        dump(acosi_annotations, f)
 
 
 if __name__ == "__main__":

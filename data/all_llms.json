@@ -2,8 +2,6 @@
     {
         "model": "HuggingFaceH4/zephyr-7b-beta",
         "tokenizer": "HuggingFaceH4/zephyr-7b-beta",
-        "base": "mistralai/Mistral-7B-v0.1",
-        "base_tokenizer": "mistralai/Mistral-7B-v0.1",
         "task": "text-generation",
         "max_new_tokens": 512,
         "remote": false
@@ -11,8 +9,6 @@
     {
         "model": "mosaicml/mpt-7b-instruct",
         "tokenizer": "EleutherAI/gpt-neox-20b",
-        "base": "mosaicml/mpt-7b",
-        "base_tokenizer": "EleutherAI/gpt-neox-20b",
         "task": "text-generation",
         "max_new_tokens": 512,
         "remote": true
@@ -20,8 +16,6 @@
     {
         "model": "tiiuae/falcon-7b-instruct",
         "tokenizer": "tiiuae/falcon-7b-instruct",
-        "base": "tiiuae/falcon-7b",
-        "base_tokenizer": "tiiuae/falcon-7b",
         "task": "text-generation",
         "max_new_tokens": 512,
         "remote": false
@@ -29,8 +23,6 @@
     {
         "model": "allenai/tk-instruct-11b-def",
         "tokenizer": "allenai/tk-instruct-11b-def",
-        "base": "allenai/tk-instruct-base-def-pos",
-        "base_tokenizer": "allenai/tk-instruct-base-def-pos",
         "task": "text2text-generation",
         "max_new_tokens": 512,
         "remote": false
@@ -38,8 +30,6 @@
     {
         "model": "MBZUAI/LaMini-Flan-T5-783M",
         "tokenizer": "MBZUAI/LaMini-Flan-T5-783M",
-        "base": "t5-small",
-        "base_tokenizer": "t5-small",
         "task": "text2text-generation",
         "max_new_tokens": 100,
         "remote": false
@@ -47,8 +37,6 @@
     {
         "model": "bigscience/T0_3B",
         "tokenizer": "bigscience/T0_3B",
-        "base": "t5-small",
-        "base_tokenizer": "t5-small",
         "task": "text2text-generation",
         "max_new_tokens": 100,
         "remote": false

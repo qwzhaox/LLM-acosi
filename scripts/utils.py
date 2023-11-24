@@ -32,7 +32,9 @@ def get_args():
 
 
 def flatten_output(output):
-    return list(chain(*output))
+    if type(output[0]) is list:
+        return list(chain(*output))
+    return output
 
 
 def remove_tags(text):
@@ -46,8 +48,8 @@ def remove_tags(text):
     )
 
 
-def add_quotations(text):
-    return (
+def add_quotations(text, response_head):
+    text = (
         text.replace('"', "")
         .replace("'", "")
         .replace("(", "('")
@@ -55,6 +57,9 @@ def add_quotations(text):
         .replace(", ", ",")
         .replace(",", "','")
     )
+    if response_head == "Opinion spans:":
+        text = text.replace("[", "['").replace("]", "']")
+    return text
 
 
 def clean_output(out, response_key, response_head):
@@ -78,9 +83,9 @@ def extract_list_str(prediction):
     return prediction, True
 
 
-def format_list_str(prediction):
+def format_list_str(prediction, response_head):
     prediction = remove_tags(prediction)
-    prediction = add_quotations(prediction)
+    prediction = add_quotations(prediction, response_head)
     prediction = prediction.lower()
     return prediction
 
@@ -105,7 +110,7 @@ def format_output(output, response_key, response_head):
             formatted_output.append([])
             continue
 
-        prediction = format_list_str(prediction)
+        prediction = format_list_str(prediction, response_head)
         formatted_tuples = eval_list_str(prediction)
         formatted_output.append(formatted_tuples)
 

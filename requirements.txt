@@ -1,8 +1,8 @@
 wheel
-transformers==4.35.2
-nltk==3.8.1
-sentencepiece==0.1.99
-protobuf==4.25.1
+transformers
+nltk
+sentencepiece
+protobuf
 
 -i https://download.pytorch.org/whl/cu118
 torch

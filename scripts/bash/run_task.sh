@@ -45,8 +45,6 @@ jq -c '.[]' "$LLM_FILE" | while read -r line; do
     # Extract fields from JSON
     model=$(echo "$line" | jq -r '.model')
     tokenizer=$(echo "$line" | jq -r '.tokenizer')
-    base=$(echo "$line" | jq -r '.base')
-    base_tokenizer=$(echo "$line" | jq -r '.base_tokenizer')
     task=$(echo "$line" | jq -r '.task')
     max_new_tokens=$(echo "$line" | jq -r '.max_new_tokens')
     remote=$(echo "$line" | jq -r '.remote')

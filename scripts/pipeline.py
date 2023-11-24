@@ -2,6 +2,7 @@ import torch
 from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
 from tqdm import tqdm
 from nltk import word_tokenize
+from utils import flatten_output
 
 from transformers.generation import GenerationConfig
 
@@ -61,10 +62,13 @@ def get_formatted_annotations(annotations):
 
 def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
     # Initialize the pipeline with the specified model, and set the device
-    tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name)
+    tokenizer = AutoTokenizer.from_pretrained(
+        args.tokenizer_name, model_max_length=1024
+    )
     # model = AutoModelForCausalLM.from_pretrained(args.model_name)
     gen_config = GenerationConfig.from_pretrained(args.model_name)
     gen_config.max_new_tokens = args.max_new_tokens
+    gen_config.max_length = 1024
     # pre_config = PretrainedConfig.from_pretrained(args.model_name)
 
     print("Initializing pipeline...")
@@ -112,7 +116,14 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
     print("Running pipeline...")
 
     output = model_pipe(prompts, generation_config=gen_config)
-    print(f"Total tokens: {total_tokens}")
+
+    flat_output = flatten_output(output)
+    total_out_tokens = 0
+    for out in flat_output:
+        total_out_tokens += len(word_tokenize(out["generated_text"].strip()))
+    print(f"Total input tokens: {total_tokens}")
+    print(f"Total output tokens: {total_out_tokens}")
     print(f"Avg tokens per prompt: {total_tokens/len(prompts)}")
+    print(f"Avg out tokens per prompt: {total_out_tokens/len(prompts)}")
 
     return output, response_key
