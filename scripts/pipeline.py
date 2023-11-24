@@ -92,7 +92,6 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
     print("Processing dataset...")
 
     prompts = []
-    total_tokens = 0
 
     for i, data in enumerate(tqdm(dataset, desc="Processing", unit="item")):
         review = data.split("####")[0]
@@ -111,7 +110,6 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
         )
         final_prompt = formatted_prompt.format(instruction=bare_prompt)
         prompts.append(final_prompt)
-        total_tokens += len(word_tokenize(final_prompt))
 
     print("Running pipeline...")
 
@@ -121,9 +119,7 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
     total_out_tokens = 0
     for out in flat_output:
         total_out_tokens += len(word_tokenize(out["generated_text"].strip()))
-    print(f"Total input tokens: {total_tokens}")
     print(f"Total output tokens: {total_out_tokens}")
-    print(f"Avg tokens per prompt: {total_tokens/len(prompts)}")
     print(f"Avg out tokens per prompt: {total_out_tokens/len(prompts)}")
 
     return output, response_key
