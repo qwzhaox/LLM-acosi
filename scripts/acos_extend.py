@@ -1,7 +1,7 @@
 from pickle import dump, load
 from pprint import pprint
 from pipeline import run_pipeline
-from utils import get_args, format_output
+from utils import get_args, format_output, dump_output
 
 OPINION_IDX = 3
 
@@ -47,24 +47,19 @@ def get_ACOS_extend_prompt():
     return prompt, examples, response_head
 
 
-def main(args):
-    prompt, examples, response_head = get_ACOS_extend_prompt()
-    opinion_spans, response_key = run_pipeline(
-        args, prompt, examples, absa_task="acos-extend"
-    )
-    # with open(args.output_file, "r") as f:
-    #     output = load(f)
-    # response_key = "#### Response:"
-    formatted_output = format_output(opinion_spans, response_key, response_head)
-
+def get_ACOS_annotations(len_formatted_output):
     with open(args.dataset_file, "r") as f:
         dataset = f.readlines()
 
-    assert len(dataset) == len(formatted_output)
+    assert len(dataset) == len_formatted_output
 
     acos_annotations = [eval(x.split("####")[1]) for x in dataset]
-    acosi_annotations = []
 
+    return acos_annotations
+
+
+def get_ACOSI_annotations(acos_annotations, formatted_output):
+    acosi_annotations = []
     for quadruples, opinion_spans in zip(acos_annotations, formatted_output):
         cur_acosi_annotation = []
         if len(quadruples) == len(opinion_spans):
@@ -78,9 +73,19 @@ def main(args):
                 cur_acosi_annotation.append(quint)
 
         acosi_annotations.append(cur_acosi_annotation)
+    return acosi_annotations
 
-    with open(args.output_file, "wb") as f:
-        dump(acosi_annotations, f)
+
+def main(args):
+    prompt, examples, response_head = get_ACOS_extend_prompt()
+    opinion_spans, response_key = run_pipeline(
+        args, prompt, examples, absa_task="acos-extend"
+    )
+    formatted_output = format_output(opinion_spans, response_key, response_head)
+    acos_annotations = get_ACOS_annotations(len(formatted_output))
+    acosi_annotations = get_ACOSI_annotations(acos_annotations, formatted_output)
+
+    dump_output(args.output_file, acosi_annotations)
 
 
 if __name__ == "__main__":

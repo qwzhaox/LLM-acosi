@@ -1,6 +1,7 @@
 from pathlib import Path
 from argparse import ArgumentParser
 from itertools import chain
+from pickle import dump
 
 
 def get_file_path(file_name):
@@ -115,3 +116,10 @@ def format_output(output, response_key, response_head):
         formatted_output.append(formatted_tuples)
 
     return formatted_output
+
+
+def dump_output(output_file, formatted_output):
+    if "/" in output_file:
+        Path(output_file[: output_file.rfind("/")]).mkdir(parents=True, exist_ok=True)
+    with open(output_file, "wb") as f:
+        dump(formatted_output, f)

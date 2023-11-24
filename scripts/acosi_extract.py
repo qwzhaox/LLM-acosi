@@ -1,7 +1,7 @@
 import json
 from pipeline import run_pipeline
 from pickle import dump
-from utils import get_file_path, format_output, get_args
+from utils import get_file_path, format_output, get_args, dump_output
 
 category_file_path = get_file_path("shoes-acosi-cate-list.json")
 
@@ -70,8 +70,7 @@ def main(args):
         args, prompt, examples, absa_task="acosi-extract"
     )
     formatted_output = format_output(output, response_key, response_head)
-    with open(args.output_file, "w") as f:
-        dump(formatted_output, f)
+    dump_output(args.output_file, formatted_output)
 
 
 if __name__ == "__main__":

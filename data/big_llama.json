@@ -1,0 +1,16 @@
+[
+    {
+        "model": "meta-llama/Llama-2-70b-hf",
+        "tokenizer": "meta-llama/Llama-2-70b-hf",
+        "task": "text-generation",
+        "max_new_tokens": 512,
+        "remote": false
+    },
+    {
+        "model": "meta-llama/Llama-2-70b-chat-hf",
+        "tokenizer": "meta-llama/Llama-2-70b-chat-hf",
+        "task": "text-generation",
+        "max_new_tokens": 512,
+        "remote": false
+    }
+]
