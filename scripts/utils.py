@@ -1,7 +1,10 @@
+import re
+import numpy as np
 from pathlib import Path
 from argparse import ArgumentParser
 from itertools import chain
 from pickle import dump
+from string import punctuation
 
 
 def get_file_path(file_name):
@@ -38,31 +41,6 @@ def flatten_output(output):
     return output
 
 
-def remove_tags(text):
-    return (
-        text.replace("Aspect: ", "")
-        .replace("Category: ", "")
-        .replace("Sentiment: ", "")
-        .replace("Implicit Opinion: ", "")
-        .replace("Opinion: ", "")
-        .replace("Implicit/Explicit: ", "")
-    )
-
-
-def add_quotations(text, response_head):
-    text = (
-        text.replace('"', "")
-        .replace("'", "")
-        .replace("(", "('")
-        .replace(")", "')")
-        .replace(", ", ",")
-        .replace(",", "','")
-    )
-    if response_head == "Opinion spans:":
-        text = text.replace("[", "['").replace("]", "']")
-    return text
-
-
 def clean_output(out, response_key, response_head):
     prediction = out["generated_text"].strip()
 
@@ -74,31 +52,95 @@ def clean_output(out, response_key, response_head):
     return prediction
 
 
-def extract_list_str(prediction):
-    if "[" in prediction and "]" in prediction:
-        prediction = prediction[prediction.find("[") : prediction.find("]") + 1]
-    elif "[" in prediction:
-        prediction = prediction[prediction.find("[") : prediction.rfind(")") + 1] + "]"
-    else:
-        return "", False
-    return prediction, True
+# def extract_list_str(prediction):
+#     if "[" in prediction and "]" in prediction:
+#         prediction = prediction[prediction.find("[") : prediction.find("]") + 1]
+#     elif "[" in prediction:
+#         prediction = prediction[prediction.find("[") : prediction.rfind(")") + 1] + "]"
+#     else:
+#         return "", False
+#     return prediction, True
 
 
-def format_list_str(prediction, response_head):
-    prediction = remove_tags(prediction)
-    prediction = add_quotations(prediction, response_head)
-    prediction = prediction.lower()
-    return prediction
+# def format_list_str(prediction, response_head):
+#     if "span" in response_head.lower():
+#         for i, char in prediction:
+
+#     else:
+
+#     prediction = prediction.lower()
+#     return prediction
 
 
-def eval_list_str(prediction):
-    try:
-        formatted_tuples = eval(prediction)
-    except Exception as e:
-        print(e)
-        print("Invalid output: ", prediction, "\n")
-        return []
-    return formatted_tuples
+# def eval_list_str(prediction):
+#     try:
+#         formatted_tuples = literal_eval(prediction)
+#     except Exception as e:
+#         print("ERROR MESSAGE:", e)
+#         print("INVALID OUTPUT: ", prediction, "\n")
+#         return []
+#     return formatted_tuples
+
+
+def clean_punctuation(words):
+    punc = re.compile(f"[{re.escape(punctuation)}]")
+    words = punc.sub(" \\g<0> ", words)
+
+    # remove extra spaces
+    words = words.strip()
+    words = " ".join(words.split())
+    return words
+
+
+def extract_spans(seq):
+    quints = []
+    sents = [s.strip() for s in seq.split("[SSEP]")]
+    for s in sents:
+        try:
+            tok_list = ["[C]", "[S]", "[A]", "[O]", "[I]"]
+
+            for tok in tok_list:
+                if tok not in s:
+                    s += " {} null".format(tok)
+            index_ac = s.index("[C]")
+            index_sp = s.index("[S]")
+            index_at = s.index("[A]")
+            index_ot = s.index("[O]")
+            index_ie = s.index("[I]")
+
+            combined_list = [index_ac, index_sp, index_at, index_ot, index_ie]
+            arg_index_list = list(np.argsort(combined_list))
+
+            result = []
+            for i, term_index in enumerate(combined_list):
+                start = term_index + 4
+                sort_index = arg_index_list.index(i)
+                if sort_index < 4:
+                    next_ = arg_index_list[sort_index + 1]
+                    re = s[start : combined_list[next_]]
+                else:
+                    re = s[start:]
+                result.append(re.strip())
+
+            ac, sp, at, ot, ie = result
+
+            at = clean_punctuation(at)
+            ot = clean_punctuation(ot)
+
+            quints.append((at, ac, sp, ot, ie))
+
+        except KeyError:
+            ac, at, sp, ot, ie = "", "", "", "", ""
+        except ValueError:
+            try:
+                print(f"Cannot decode: {s}")
+                pass
+            except UnicodeEncodeError:
+                print(f"A string cannot be decoded")
+                pass
+            ac, at, sp, ot, ie = "", "", "", "", ""
+
+    return quints
 
 
 def format_output(output, response_key, response_head):
@@ -106,14 +148,21 @@ def format_output(output, response_key, response_head):
     formatted_output = []
     for out in output:
         prediction = clean_output(out, response_key, response_head)
-        prediction, valid = extract_list_str(prediction)
-        if not valid:
-            formatted_output.append([])
-            continue
+        if "[END]" in prediction:
+            prediction = prediction[: prediction.find("[END]")]
+        prediction = prediction.strip()
 
-        prediction = format_list_str(prediction, response_head)
-        formatted_tuples = eval_list_str(prediction)
-        formatted_output.append(formatted_tuples)
+        quints = extract_spans(prediction)
+        formatted_output.append(quints)
+
+        # prediction, valid = extract_list_str(prediction)
+        # if not valid:
+        #     formatted_output.append([])
+        #     continue
+
+        # prediction = format_list_str(prediction, response_head)
+        # formatted_tuples = eval_list_str(prediction)
+        # formatted_output.append(formatted_tuples)
 
     return formatted_output
 

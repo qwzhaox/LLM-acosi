@@ -5,6 +5,7 @@ from nltk import word_tokenize
 from utils import flatten_output
 
 from transformers.generation import GenerationConfig
+from datasets import Dataset
 
 device = 0 if torch.cuda.is_available() else -1
 
@@ -20,10 +21,10 @@ def alpaca_format_prompt():
     response_key = "### Response:"
     intro_blurb = "Below is an instruction that describes a task. Write a response that appropriately completes the request."
     prompt_for_generation_format = """{intro}
-                                      {instruction_key}
-                                      {instruction}
-                                      {response_key}
-                                    """.format(
+{instruction_key}
+{instruction}
+{response_key}
+""".format(
         intro=intro_blurb,
         instruction_key=instruction_key,
         instruction="{instruction}",
@@ -36,26 +37,14 @@ def get_formatted_annotations(annotations):
     annots = []
     for annotation in annotations:
         if len(annotation) == 4:
-            new_annot_str = (
-                "(Aspect: {}, Category: {}, Sentiment: {}, Opinion: {})".format(
-                    annotation[ASPECT_IDX],
-                    annotation[CATEGORY_IDX],
-                    annotation[SENTIMENT_IDX],
-                    annotation[OPINION_IDX],
-                )
-            )
+            # new_annot_str = f"(Aspect: {annotation[ASPECT_IDX]}, Category: {annotation[CATEGORY_IDX]}, Sentiment: {annotation[SENTIMENT_IDX]}, Opinion: {annotation[OPINION_IDX]})"
+            new_annot_str = f"[A] {annotation[ASPECT_IDX]} [C] {annotation[CATEGORY_IDX]} [S] {annotation[SENTIMENT_IDX]} [O] {annotation[OPINION_IDX]}"
         elif len(annotation) == 5:
-            new_annot_str = "(Aspect: {}, Category: {}, Sentiment: {}, Opinion: {}, Implicit/Explicit: {})".format(
-                annotation[ASPECT_IDX],
-                annotation[CATEGORY_IDX],
-                annotation[SENTIMENT_IDX],
-                annotation[OPINION_IDX],
-                annotation[IMPLICIT_INDICATOR_IDX],
-            )
+            new_annot_str = f"[A] {annotation[ASPECT_IDX]} [C] {annotation[CATEGORY_IDX]} [S] {annotation[SENTIMENT_IDX]} [O] {annotation[OPINION_IDX]} [I] {annotation[IMPLICIT_INDICATOR_IDX]}"
 
         annots.append(new_annot_str)
 
-    annots_str = "[" + ", ".join(annots) + "]"
+    annots_str = " [SSEP] ".join(annots) + " [END]"
 
     return annots_str
 
@@ -93,7 +82,7 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
 
     prompts = []
 
-    for i, data in enumerate(tqdm(dataset, desc="Processing", unit="item")):
+    for data in tqdm(dataset, desc="Processing", unit="item"):
         review = data.split("####")[0]
         annotations = eval(data.split("####")[1])
 
@@ -106,7 +95,7 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
 
         examples_str = "".join(examples)
         bare_prompt = (
-            prompt + examples_str + f"Your Task {i}:\n" + review_str + annotations_str
+            prompt + examples_str + f"Your Task:\n" + review_str + annotations_str
         )
         final_prompt = formatted_prompt.format(instruction=bare_prompt)
         prompts.append(final_prompt)

@@ -39,7 +39,7 @@ prompts = []
 total_tokens = 0
 total_out_tokens = 0
 
-for i, data in enumerate(tqdm(dataset, desc="Processing", unit="item")):
+for data in tqdm(dataset, desc="Processing", unit="item"):
     review = data.split("####")[0]
     annotations = eval(data.split("####")[1])
 
@@ -57,10 +57,9 @@ for i, data in enumerate(tqdm(dataset, desc="Processing", unit="item")):
         total_out_tokens += len(word_tokenize(output_str))
 
     examples_str = "".join(examples)
-    bare_prompt = (
-        prompt + examples_str + f"Your Task {i}:\n" + review_str + annotations_str
-    )
+    bare_prompt = prompt + examples_str + f"Your Task:\n" + review_str + annotations_str
     final_prompt = formatted_prompt.format(instruction=bare_prompt)
+    print(final_prompt)
     prompts.append(final_prompt)
     total_tokens += len(word_tokenize(final_prompt))
 
