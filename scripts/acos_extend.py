@@ -37,7 +37,7 @@ Review: with the theater 2 blocks away we had a delicious meal in a beautiful ro
 ACOS quadruples: [A] meal [C] food#quality [S] positive [O] delicious [SSEP] [A] NULL [C] location#general [S] positive [O] NULL [SSEP] [A] room [C] ambience#general [S] positive [O] beautiful [END]
 
 Response:
-{response_head} [O] delicious [SSEP] [IO] theater 2 blocks away [SSEP] [O] beautiful [END]
+{response_head} [O] delicious [SSEP] [O] theater 2 blocks away [SSEP] [O] beautiful [END]
 
 In this example, the opinion span for the first quadruple is "delicious", the implicit opinion span for the second quadruple (originally labeled NULL) is "theater 2 blocks away", and the opinion span for the third quadruple is "beautiful".\n\n
 """
