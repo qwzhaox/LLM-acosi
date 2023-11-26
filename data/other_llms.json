@@ -3,35 +3,30 @@
         "model": "01-ai/Yi-34B",
         "tokenizer": "01-ai/Yi-34B",
         "task": "text-generation",
-        "max_new_tokens": 512,
         "remote": false
     },
     {
         "model": "HuggingFaceH4/zephyr-7b-beta",
         "tokenizer": "HuggingFaceH4/zephyr-7b-beta",
         "task": "text-generation",
-        "max_new_tokens": 512,
         "remote": false
     },
     {
         "model": "mosaicml/mpt-7b-instruct",
         "tokenizer": "EleutherAI/gpt-neox-20b",
         "task": "text-generation",
-        "max_new_tokens": 512,
         "remote": true
     },
     {
         "model": "tiiuae/falcon-7b-instruct",
         "tokenizer": "tiiuae/falcon-7b-instruct",
         "task": "text-generation",
-        "max_new_tokens": 512,
         "remote": false
     },
     {
         "model": "allenai/tk-instruct-11b-def",
         "tokenizer": "allenai/tk-instruct-11b-def",
         "task": "text2text-generation",
-        "max_new_tokens": 512,
         "remote": false
     }
 ]

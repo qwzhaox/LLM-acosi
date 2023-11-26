@@ -11,16 +11,24 @@ LLM_FILE="$2"
 DATASET_FILE="$3"
 
 ABSA_TASK_SCRIPT=""
+max_new_tokens=512
+max_length=1024
 
 if [ "$ABSA_TASK" = "acosi-extract" ]; then
     echo "Running ACOS extract ABSA_TASK"
     ABSA_TASK_SCRIPT="scripts/acos_extract.py"
+    max_length=2048
+    max_new_tokens=1024
 elif [ "$ABSA_TASK" = "acos-extract" ]; then
     echo "Running ACOS extract ABSA_TASK"
     ABSA_TASK_SCRIPT="scripts/acos_extract.py"
+    max_length=2048
+    max_new_tokens=1024
 elif [ "$ABSA_TASK" = "acos-extend" ]; then
     echo "Running ACOS extend ABSA_TASK"
     ABSA_TASK_SCRIPT="scripts/acos_extend.py"
+    max_length=1024
+    max_new_tokens=512
 else
     echo "Error: Invalid ABSA_TASK - $ABSA_TASK"
     exit 1
@@ -46,7 +54,6 @@ jq -c '.[]' "$LLM_FILE" | while read -r line; do
     model=$(echo "$line" | jq -r '.model')
     tokenizer=$(echo "$line" | jq -r '.tokenizer')
     task=$(echo "$line" | jq -r '.task')
-    max_new_tokens=$(echo "$line" | jq -r '.max_new_tokens')
     remote=$(echo "$line" | jq -r '.remote')
 
     # Set the output file name
@@ -54,9 +61,9 @@ jq -c '.[]' "$LLM_FILE" | while read -r line; do
 
     # Set the remote flag for the Python script
     if [ "$remote" = "true" ]; then
-        python3 "$ABSA_TASK_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --remote
+        python3 "$ABSA_TASK_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" --remote
     else
-        python3 "$ABSA_TASK_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens"
+        python3 "$ABSA_TASK_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" 
     fi
     
 done

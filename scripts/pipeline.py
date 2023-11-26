@@ -52,12 +52,12 @@ def get_formatted_annotations(annotations):
 def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
     # Initialize the pipeline with the specified model, and set the device
     tokenizer = AutoTokenizer.from_pretrained(
-        args.tokenizer_name, model_max_length=1024
+        args.tokenizer_name, model_max_length=args.max_length
     )
     # model = AutoModelForCausalLM.from_pretrained(args.model_name)
     gen_config = GenerationConfig.from_pretrained(args.model_name)
     gen_config.max_new_tokens = args.max_new_tokens
-    gen_config.max_length = 1024
+    gen_config.max_length = args.max_length
     # pre_config = PretrainedConfig.from_pretrained(args.model_name)
 
     print("Initializing pipeline...")

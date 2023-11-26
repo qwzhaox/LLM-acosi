@@ -26,8 +26,9 @@ def get_args():
     parser.add_argument(
         "--remote", action="store_true", help="Whether to trust remote code"
     )
+    parser.add_argument("--max_length", type=int, default=1024, help="Max length")
     parser.add_argument(
-        "--max_new_tokens", type=int, default=100, help="Max new tokens"
+        "--max_new_tokens", type=int, default=512, help="Max new tokens"
     )
     parser.add_argument("--dataset_file", type=str, required=True, help="Dataset file")
     parser.add_argument("--output_file", type=str, required=True, help="Output file")

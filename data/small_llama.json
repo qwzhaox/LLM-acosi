@@ -1,0 +1,14 @@
+[
+    {
+        "model": "meta-llama/Llama-2-7b-hf",
+        "tokenizer": "meta-llama/Llama-2-7b-hf",
+        "task": "text-generation",
+        "remote": false
+    },
+    {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "tokenizer": "meta-llama/Llama-2-7b-chat-hf",
+        "task": "text-generation",
+        "remote": false
+    }
+]
