@@ -152,8 +152,12 @@ def format_output(output, response_key, response_head):
             prediction = prediction[: prediction.find("[END]")]
         prediction = prediction.strip()
 
+        print("Prediction: ", prediction)
+
         quints = extract_spans(prediction)
         formatted_output.append(quints)
+
+        print("Quints: ", quints)
 
         # prediction, valid = extract_list_str(prediction)
         # if not valid:
