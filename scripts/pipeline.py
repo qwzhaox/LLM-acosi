@@ -1,11 +1,10 @@
 import torch
-from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
+from transformers import pipeline, AutoTokenizer
 from tqdm import tqdm
 from nltk import word_tokenize
 from utils import flatten_output
 
 from transformers.generation import GenerationConfig
-from datasets import Dataset
 
 device = 0 if torch.cuda.is_available() else -1
 
