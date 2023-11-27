@@ -14,6 +14,7 @@ client = OpenAI()
 def main(args):
     dataset_file = args.dataset_file
     absa_task = args.absa_task
+    output_file = "data/model_output/gpt4/" + absa_task + "/" + dataset_file + "/output.pkl"
 
     if absa_task == "acos-extract":
         if "rest" in dataset_file:
@@ -73,14 +74,13 @@ def main(args):
     elif absa_task == "acos-extend":
         acos_annotations = get_ACOS_annotations(len(formatted_output))
         formatted_output = get_ACOSI_annotations(acos_annotations, formatted_output)
-    dump_output(args.output_file, formatted_output)
 
-    formatted_output = format_output(output, response_key, response_head)
+    dump_output(output_file, formatted_output)
     
 
 if __name__ == "__main__":
     args = get_args()
-    #absa_task, dataset_file, output_file
+    #absa_task, dataset_file
     main(args)
 
 

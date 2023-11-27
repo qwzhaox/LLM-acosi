@@ -1,14 +1,13 @@
 #!/bin/bash
 
 if [ "$#" -ne 3 ]; then
-    echo "Usage: $0 <ABSA_TASK> <dataset_file> <output_file>"
+    echo "Usage: $0 <ABSA_TASK> <dataset_file>"
     exit 1
 fi
 
 
 ABSA_TASK="$1"
 DATASET_FILE="$2"
-OUTPUT_FILE="$3"
 
 max_new_tokens=512
 max_length=1024
@@ -51,4 +50,4 @@ else
 fi
 
 # Run script
-python3 "scripts/gpt4.py" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE"
+python3 "scripts/gpt4.py" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE"
