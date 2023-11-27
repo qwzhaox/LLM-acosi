@@ -11,7 +11,7 @@ def get_ACOS_extend_prompt():
     
 Each quadruple is comprised of 4 components:
 - Aspect [A]: The span of text in the review that indicates the particular aspect that the customer is referring to. Aspects are not always explicitly stated; if this is the case, the aspect is labeled NULL.
-- Category [C]: The category of the aspect, selected from predetermined list.
+- Category [C]: The category of the aspect, selected from a predetermined list.
 - Sentiment [S]: The polarity of the sentiment: positive, negative, or neutral.
 - Opinion [O]: The span of text in the review that indicates the opinion that expresses the sentiment. Opinions are not always explicitly stated; if this is the case, the opinion is labeled NULL.
 
