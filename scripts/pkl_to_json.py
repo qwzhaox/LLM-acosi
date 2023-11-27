@@ -11,4 +11,4 @@ with open(args.pkl_file, "rb") as f:
     data = load(f)
 
 with open(args.json_file, "w") as f:
-    dump(data, f)
+    dump(data, f, indent=4)
