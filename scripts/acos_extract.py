@@ -75,18 +75,16 @@ Response:
 
 
 def main(args):
-    prompt, examples_laptop, response_head = get_ACOS_extract_prompt("laptop")
-    _, examples_restaurant, _ = get_ACOS_extract_prompt("restaurant")
+    if "rest" in args.dataset_file:
+        prompt, examples, response_head = get_ACOS_extract_prompt("restaurant")
+    elif "laptop" in args.dataset_file:
+        prompt, examples, response_head = get_ACOS_extract_prompt("laptop")
+    else:
+        raise ValueError("Invalid dataset domain.")
 
-    output_laptop, response_key_laptop = run_pipeline(
-        args, prompt, examples_laptop, absa_task="acos_extract"
+    output, response_key = run_pipeline(
+        args, prompt, examples, absa_task="acos_extract"
     )
-    output_restaurant, response_key_restaurant = run_pipeline(
-        args, prompt, examples_restaurant, absa_task="acos_extract"
-    )
-
-    output = output_laptop + output_restaurant
-    response_key = response_key_laptop + response_key_restaurant
 
     formatted_output = format_output(output, response_key, response_head)
     formatted_output = [[quint[:-1] for quint in quints] for quints in formatted_output]
