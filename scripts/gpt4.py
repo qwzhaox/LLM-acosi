@@ -16,6 +16,7 @@ def main(args):
     absa_task = args.absa_task
     output_file = "data/model_output/gpt4/" + absa_task + "/" + dataset_file + "/output.pkl"
 
+    # get prompts for different tasks
     if absa_task == "acos-extract":
         if "rest" in dataset_file:
             prompt, examples, response_head = get_ACOS_extract_prompt("restaurant")
@@ -30,11 +31,13 @@ def main(args):
     else:
         raise ValueError("invalid absa task name.")
 
+    # get lines in dataset file
     lines = []
     with open(dataset_file, 'r') as f:
         for line in f:
             lines.append(line.strip())
     
+    # get prompts in each line
     prompts = []
     for line in lines:
         review = line.split("####")[0]
@@ -56,6 +59,7 @@ def main(args):
         prompts.append(final_prompt)
 
 
+    # run gpt4 for each prompt (can do batches if exceed max rate)
     output = ""
     for prompt in prompts:
         completion = client.chat.completions.create(
@@ -67,8 +71,10 @@ def main(args):
         output += completion['choices'][0]['message']['content']
 
 
+    # output result
     response_key = "### Response:"
     formatted_output = format_output(output, response_key, response_head)
+    # format for different tasks
     if absa_task == "acos-extract":
         formatted_output = [[quint[:-1] for quint in quints] for quints in formatted_output]
     elif absa_task == "acos-extend":
