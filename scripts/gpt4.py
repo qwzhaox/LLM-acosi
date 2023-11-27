@@ -1,5 +1,7 @@
 import json
 import os
+import openai
+from argparse import ArgumentParser
 from pickle import dump
 from pipeline import run_pipeline, get_formatted_annotations, alpaca_format_prompt
 from utils import get_file_path, format_output, get_args, dump_output
@@ -12,10 +14,12 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI()
 
 def main(args):
+    print("running gpt4.py")
     dataset_file = args.dataset_file
     absa_task = args.absa_task
     output_file = "data/model_output/gpt4/" + absa_task + "/" + dataset_file + "/output.pkl"
 
+    print("getting prompts for " + absa_task)
     # get prompts for different tasks
     if absa_task == "acos-extract":
         if "rest" in dataset_file:
@@ -58,7 +62,6 @@ def main(args):
         final_prompt = formatted_prompt.format(instruction=bare_prompt)
         prompts.append(final_prompt)
 
-
     # run gpt4 for each prompt (can do batches if exceed max rate)
     output = ""
     for prompt in prompts:
@@ -85,8 +88,12 @@ def main(args):
     
 
 if __name__ == "__main__":
-    args = get_args()
     #absa_task, dataset_file
+    parser = ArgumentParser()
+    parser.add_argument("--absa_task", type=str, required=True, help="Task name")
+    parser.add_argument("--dataset_file", type=str, required=True, help="Dataset file")
+    args = parser.parse_args()
+
     main(args)
 
 
