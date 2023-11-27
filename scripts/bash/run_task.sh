@@ -47,6 +47,18 @@ if [ ! -f "$DATASET_FILE" ]; then
     exit 1
 fi
 
+DATASET=""
+
+if [[ "$DATASET_FILE" == *"rest"* ]]; then
+    DATASET="rest"
+elif [[ "$DATASET_FILE" == *"laptop"* ]]; then
+    DATASET="laptop"
+elif [[ "$DATASET_FILE" == *"shoes"* ]]; then
+    DATASET="shoes"
+else
+    echo "Error: Invalid dataset file - $DATASET_FILE"
+    exit 1
+fi
 
 # Loop through the JSON array
 jq -c '.[]' "$LLM_FILE" | while read -r line; do
@@ -57,7 +69,7 @@ jq -c '.[]' "$LLM_FILE" | while read -r line; do
     remote=$(echo "$line" | jq -r '.remote')
 
     # Set the output file name
-    OUTPUT_FILE="data/model_output/${model}_${ABSA_TASK}_output.pkl"
+    OUTPUT_FILE="data/model_output/${model}/${ABSA_TASK}/${DATASET}/output.pkl"
 
     # Set the remote flag for the Python script
     if [ "$remote" = "true" ]; then
