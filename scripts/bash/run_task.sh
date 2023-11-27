@@ -16,7 +16,7 @@ max_length=1024
 
 if [ "$ABSA_TASK" = "acosi-extract" ]; then
     echo "Running ACOSI extract"
-    ABSA_TASK_SCRIPT="scripts/acos_extract.py"
+    ABSA_TASK_SCRIPT="scripts/acosi_extract.py"
     max_length=2048
     max_new_tokens=1024
 elif [ "$ABSA_TASK" = "acos-extract" ]; then

@@ -1,0 +1,1270 @@
+[
+    [
+        [
+            "yum",
+            "food#quality",
+            "positive",
+            "NULL Please note that the response should be in the format specified in the instruction ."
+        ]
+    ],
+    [
+        [
+            "serves",
+            "food#quality",
+            "positive",
+            "really good"
+        ]
+    ],
+    [
+        [
+            "not the biggest",
+            "food#portions",
+            "neutral",
+            "adequate"
+        ]
+    ],
+    [
+        [
+            "green tea creme brulee",
+            "food#quality",
+            "positive",
+            "NULL [ A ] NULL [ C ] ambience # general [ S ] positive [ O ] must Explanation : In this review , the customer expresses a positive sentiment towards the \" green tea creme brulee \" aspect , so the ACOS quadruple for this aspect is [ A ] green tea creme brulee [ C ] food # quality [ S ] positive [ O ] NULL . The next aspect is \" ambience \" , which is a general category , so the ACOS quadruple for this aspect is [ A ] NULL [ C ] ambience # general [ S ] positive [ O ] must . Please note that the response should be in the format of the example provided , with the correct categories and sentiment labels ."
+        ]
+    ],
+    [
+        [
+            "great sushi",
+            "food#quality",
+            "positive",
+            "NULL [ A ] even better service [ C ] service # general [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "entire staff",
+            "service#general",
+            "positive",
+            "extremely accommodating"
+        ],
+        [
+            "tended to my every need",
+            "service#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "owner",
+            "restaurant#service",
+            "negative",
+            "belligerent"
+        ],
+        [
+            "NULL",
+            "restaurant#service",
+            "negative",
+            "belligerent"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "good",
+            "food#quality",
+            "positive",
+            "NULL [ A ] food [ C ] food # general [ S ] positive [ O ] NULL [ A ] NULL [ C ] restaurant # miscellaneous [ S ] positive [ O ] good"
+        ]
+    ],
+    [
+        [
+            "this",
+            "location#general",
+            "positive",
+            "great"
+        ],
+        [
+            "delicious",
+            "food#quality",
+            "positive",
+            "NULL"
+        ],
+        [
+            "meal",
+            "food#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "staff",
+            "service#general",
+            "positive",
+            "friendly"
+        ]
+    ],
+    [
+        [
+            "onion rings",
+            "food#quality",
+            "positive",
+            "NULL Is this correct ?"
+        ]
+    ],
+    [
+        [
+            "lemon chicken",
+            "food#quality",
+            "negative",
+            "sticky sweet donuts"
+        ],
+        [
+            "honey walnut prawns",
+            "food#quality",
+            "negative",
+            "not good"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "nice ambience",
+            "ambience#general",
+            "positive",
+            "NULL [ A ] highly overrated [ C ] restaurant # prices [ S ] negative [ O ] place Explanation : The first ACOS quadruple corresponds to the aspect \" nice ambience \" , which is a positive sentiment . The second ACOS quadruple corresponds to the aspect \" highly overrated \" , which is a negative sentiment ."
+        ]
+    ],
+    [
+        [
+            "worst service",
+            "service#general",
+            "negative",
+            "NULL Explanation : In this review , the customer is expressing a negative sentiment towards the service they received . The aspect \" worst service \" is the primary focus of the review , and there is no specific opinion or feature mentioned . Therefore , the ACOS quadruple consists of [ A ] worst service [ C ] service # general [ S ] negative [ O ] NULL ."
+        ]
+    ],
+    [
+        [
+            "everyone",
+            "service#general",
+            "negative",
+            "worst"
+        ],
+        [
+            "sat",
+            "seating#outdoor",
+            "negative",
+            "worst"
+        ],
+        [
+            "back",
+            "location#general",
+            "negative",
+            "worst"
+        ],
+        [
+            "outside",
+            "location#general",
+            "negative",
+            "worst"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "waiter",
+            "service#general",
+            "negative",
+            "non - existent [ A ] food [ C ] food # quality [ S ] negative [ O ] over an hour [ A ] water [ C ] drinks # prices [ S ] negative [ O ] not given [ A ] utensils [ C ] restaurant # miscellaneous [ S ] negative [ O ] not provided"
+        ]
+    ],
+    [
+        [
+            "complained",
+            "service#general",
+            "negative",
+            "NULL [ A ] to the manager [ C ] service # general [ S ] negative [ O ] NULL [ A ] but he was not even apologetic [ C ] service # general [ S ] negative [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "fabulous",
+            "food#quality",
+            "positive",
+            "NULL [ A ] italian [ C ] food # style _ options [ S ] positive [ O ] NULL [ A ] food [ C ] food # general [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "highly recommend"
+        ]
+    ],
+    [
+        [
+            "wonderful",
+            "restaurant#general",
+            "positive",
+            "NULL [ A ] italian [ C ] cuisine # general [ S ] positive [ O ] NULL [ A ] neighborhood [ C ] location # general [ S ] positive [ O ] NULL [ A ] happy [ C ] sentiment # general [ S ] positive [ O ] so"
+        ]
+    ],
+    [
+        [
+            "wine list",
+            "drinks#wine_list",
+            "positive",
+            "wonderful"
+        ],
+        [
+            "food",
+            "food#general",
+            "positive",
+            "reminds"
+        ],
+        [
+            "trip to italy",
+            "ambience#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "i",
+            "ambience#general",
+            "positive",
+            "love [ A ] this [ C ] restaurant # general [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "amazing meal",
+            "food#quality",
+            "positive",
+            "NULL"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "ambiance",
+            "ambience#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "wine list",
+            "food#general",
+            "positive",
+            "incredible"
+        ],
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "incredible"
+        ],
+        [
+            "staff",
+            "service#general",
+            "positive",
+            "nice"
+        ],
+        [
+            "good at their jobs",
+            "service#skills",
+            "positive",
+            "cultured"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "location#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "location#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "reasonably priced",
+            "food#prices",
+            "positive",
+            "NULL [ A ] quality of the food [ C ] food # quality [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "kafta plate",
+            "food#quality",
+            "positive",
+            "perfect"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "restaurant#prices",
+            "positive",
+            "NULL [ A ] bucks [ C ] restaurant # prices [ S ] positive [ O ] trend [ A ] high quality [ C ] food # quality [ S ] positive [ O ] NULL [ A ] good [ C ] service # general [ S ] positive [ O ] period"
+        ]
+    ],
+    [
+        [
+            "this is the place",
+            "ambience#general",
+            "positive",
+            "NULL [ A ] relax [ C ] ambience # general [ S ] positive [ O ] NULL [ A ] enjoy [ C ] food # quality [ S ] positive [ O ] NULL [ A ] finest quality [ C ] food # quality [ S ] positive [ O ] NULL [ A ] food [ C ] food # general [ S ] positive [ O ] NULL Note that there may be multiple ACOS quadruples for a given review , depending on how the aspects , categories , and opinions are structured ."
+        ]
+    ],
+    [
+        [
+            "caution",
+            "food#quality",
+            "positive",
+            "real food [ A ] its [ C ] food # style _ options [ S ] positive [ O ] best"
+        ]
+    ],
+    [
+        [
+            "atmosphere",
+            "ambience#general",
+            "positive",
+            "liked"
+        ],
+        [
+            "food",
+            "food#prices",
+            "negative",
+            "not worth the price"
+        ]
+    ],
+    [
+        [
+            "i may not be a sushi guru",
+            "food#general",
+            "negative",
+            "NULL [ A ] the food here [ C ] food # quality [ S ] negative [ O ] just okay [ A ] there is not much else to it [ C ] food # general [ S ] negative [ O ] NULL Please note that the response should be in the format specified in the instruction ."
+        ]
+    ],
+    [
+        [
+            "rice",
+            "food#quality",
+            "negative",
+            "too dry"
+        ],
+        [
+            "tuna",
+            "food#quality",
+            "negative",
+            "' t so fresh"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "i have eaten",
+            "restaurant#miscellaneous",
+            "positive",
+            "NULL"
+        ],
+        [
+            "here three times",
+            "restaurant#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "quality and variety",
+            "food#quality",
+            "positive",
+            "excellent"
+        ]
+    ],
+    [
+        [
+            "however",
+            "restaurant#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "value",
+            "restaurant#prices",
+            "negative",
+            "severely lacking"
+        ],
+        [
+            "service",
+            "restaurant#service",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "furthermore",
+            "food#quality",
+            "negative",
+            "inexplicably bland"
+        ],
+        [
+            "fish",
+            "food#quality",
+            "positive",
+            "unquestionably fresh"
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "negative",
+            "mediocre to offensive"
+        ]
+    ],
+    [
+        [
+            "waiter",
+            "service#general",
+            "negative",
+            "extremely dismissive"
+        ],
+        [
+            "staff members",
+            "service#general",
+            "positive",
+            "waited hand - and - foot"
+        ],
+        [
+            "NULL",
+            "location#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "freshest sushi",
+            "food#quality",
+            "positive",
+            "i love this restaurant"
+        ]
+    ],
+    [
+        [
+            "they",
+            "restaurant#service",
+            "positive",
+            "detail [ A ] miso soup [ C ] food # quality [ S ] positive [ O ] NULL [ A ] complex rolls [ C ] food # quality [ S ] positive [ O ] NULL"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "sashimi",
+            "food#quality",
+            "positive",
+            "freshest"
+        ],
+        [
+            "tender",
+            "food#quality",
+            "positive",
+            "most tender"
+        ]
+    ],
+    [
+        [
+            "their apps",
+            "food#quality",
+            "positive",
+            "delicious"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "restaurant#prices",
+            "negative",
+            "expensive"
+        ],
+        [
+            "portions",
+            "food#portions",
+            "negative",
+            "small"
+        ]
+    ],
+    [
+        [
+            "small",
+            "ambience#general",
+            "positive",
+            "lovely [ A ] service [ C ] service # general [ S ] positive [ O ] helpful"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "negative",
+            "not great [ A ] waiters [ C ] service # general [ S ] negative [ O ] rude Explanation : * The first ACOS quadruple is [ A ] food [ C ] food # quality [ S ] negative [ O ] not great , where \" food \" is the aspect , \" food # quality \" is the category , \" negative \" is the sentiment , and \" not great \" is the opinion . * The second ACOS quadruple is [ A ] waiters [ C ] service # general [ S ] negative [ O ] rude , where \" waiters \" is the aspect , \" service # general \" is the category , \" negative \" is the sentiment , and \" rude \" is the opinion . Note : Please note that the above examples and the instruction are just for illustration purpose and not the actual task . The task is to extract the ACOS quadruples from the given review ."
+        ]
+    ],
+    [
+        [
+            "great",
+            "service#general",
+            "positive",
+            "NULL Expected output :"
+        ]
+    ],
+    [
+        [
+            "my service",
+            "service#general",
+            "positive",
+            "stellar"
+        ]
+    ],
+    [
+        [
+            "table",
+            "ambience#general",
+            "positive",
+            "NULL [ A ] shaking [ C ] ambience # general [ S ] positive [ O ] stabilized [ A ] bus boy [ C ] service # general [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "neutral",
+            "fine"
+        ],
+        [
+            "salsa",
+            "food#style_options",
+            "positive",
+            "tastier"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "great"
+        ],
+        [
+            "margaritas",
+            "drinks#quality",
+            "positive",
+            "too"
+        ],
+        [
+            "waitress",
+            "service#general",
+            "negative",
+            "too busy"
+        ],
+        [
+            "friend",
+            "restaurant#miscellaneous",
+            "negative",
+            "than to take better care"
+        ]
+    ],
+    [
+        [
+            "mama mia",
+            "food#quality",
+            "positive",
+            "NULL [ A ] live in the neighborhood [ C ] location # general [ S ] positive [ O ] lucky [ A ] great pizza place [ C ] restaurant # general [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "pizza",
+            "food#quality",
+            "negative",
+            "edible"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#delivery",
+            "negative",
+            "order ahead"
+        ]
+    ],
+    [
+        [
+            "not too much dough",
+            "pizza#toppings",
+            "positive",
+            "NULL [ A ] not too much cheese [ C ] pizza # toppings [ S ] positive [ O ] NULL [ A ] not too much sauce [ C ] pizza # toppings [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "best",
+            "food#quality",
+            "positive",
+            "NULL [ A ] sushi [ C ] food # style _ options [ S ] positive [ O ] NULL [ A ] in [ C ] location # general [ S ] positive [ O ] NULL [ A ] town [ C ] location # general [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "best",
+            "food#quality",
+            "positive",
+            "NULL [ A ] calamari [ C ] food # general [ S ] positive [ O ] NULL [ A ] Seattle [ C ] location # general [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "ambience#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "blanket",
+            "ambience#general",
+            "positive",
+            "they will even bring you"
+        ]
+    ],
+    [
+        [
+            "a perfect place",
+            "location#general",
+            "positive",
+            "NULL [ A ] take out of town guests [ C ] location # general [ S ] positive [ O ] NULL [ A ] any time of the year [ C ] location # general [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "endless fun",
+            "ambience#general",
+            "positive",
+            "NULL [ A ] awesome music [ C ] entertainment # music [ S ] positive [ O ] NULL [ A ] great staff [ C ] service # general [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "bar#location",
+            "positive",
+            "best"
+        ],
+        [
+            "NULL",
+            "bar#atmosphere",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "bar#prices",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "draft",
+            "drinks#selection",
+            "positive",
+            "NULL [ A ] bottle selection [ C ] drinks # selection [ S ] positive [ O ] NULL [ A ] pizza [ C ] food # quality [ S ] positive [ O ] rocks"
+        ]
+    ],
+    [
+        [
+            "definitely",
+            "ambience#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "jukebox",
+            "entertainment#music",
+            "positive",
+            "best"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "great"
+        ],
+        [
+            "bartenders",
+            "service#general",
+            "positive",
+            "go that extra mile"
+        ]
+    ],
+    [
+        [
+            "owners",
+            "restaurant#service",
+            "positive",
+            "great fun"
+        ],
+        [
+            "beer selection",
+            "restaurant#food",
+            "positive",
+            "worth staying for"
+        ]
+    ],
+    [
+        [
+            "upstairs",
+            "ambience#general",
+            "positive",
+            "great"
+        ],
+        [
+            "upstairs",
+            "ambience#general",
+            "positive",
+            "great Note : Please make sure to follow the format of the example responses ."
+        ]
+    ],
+    [
+        [
+            "not alot of smoking places",
+            "smoking#location",
+            "negative",
+            "NULL [ A ] my favorite smoking balconey [ C ] smoking # location [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "sushi",
+            "food#quality",
+            "positive",
+            "delicious Please note that the above examples are just illustrations , and the actual ACOS quadruples may vary depending on the specific review and the context in which the words are used ."
+        ]
+    ],
+    [
+        [
+            "they",
+            "restaurant#menu",
+            "positive",
+            "NULL [ A ] have [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] a [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] wide [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] variety [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] of [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] fish [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] they [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] even [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] list [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] which [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] oceans [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] atlantic [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] or [ C ] restaurant # menu [ S ] positive [ O ] NULL [ A ] pacific [ C ] restaurant # menu [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "jellyfish",
+            "food#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "horse mackerel",
+            "food#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "blue fin tuna",
+            "food#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "sake ikura roll",
+            "food#style_options",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "pieces",
+            "food#portion_size",
+            "negative",
+            "wish the pieces were a little bigger"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "decor",
+            "ambience#general",
+            "positive",
+            "rustic"
+        ],
+        [
+            "traditional",
+            "ambience#style_options",
+            "positive",
+            "Japanese"
+        ]
+    ],
+    [
+        [
+            "crowd",
+            "ambience#general",
+            "neutral",
+            "mixed"
+        ],
+        [
+            "yuppies",
+            "ambience#demographics",
+            "positive",
+            "NULL"
+        ],
+        [
+            "young",
+            "ambience#age_groups",
+            "positive",
+            "NULL"
+        ],
+        [
+            "old",
+            "ambience#age_groups",
+            "positive",
+            "NULL"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "positive",
+            "courteous"
+        ],
+        [
+            "attentive",
+            "service#general",
+            "positive",
+            "attentive"
+        ]
+    ],
+    [
+        [
+            "mediocre",
+            "food#quality",
+            "negative",
+            "NULL Explanation : * Aspect : \" mediocre \" * Category : \" food # quality \" * Sentiment : \" negative \" * Opinion : NULL ( no explicit opinion stated )"
+        ]
+    ],
+    [
+        [
+            "outside patio",
+            "ambience#general",
+            "negative",
+            "abbreviated"
+        ],
+        [
+            "menu",
+            "food#prices",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "negative",
+            "mediocre [ A ] price [ C ] restaurant # prices [ S ] negative [ O ] expensive"
+        ],
+        [
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "we are locals",
+            "ambience#general",
+            "negative",
+            "NULL [ A ] get the feeling [ C ] ambience # general [ S ] negative [ O ] NULL [ A ] only way [ C ] restaurant # prices [ S ] negative [ O ] average [ A ] this place [ C ] restaurant # general [ S ] negative [ O ] survives [ A ] most customers [ C ] restaurant # general [ S ] negative [ O ] one - time [ A ] customer tourists [ C ] restaurant # general [ S ] negative [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "neutral",
+            "decent"
+        ]
+    ],
+    [
+        [
+            "drinks",
+            "drinks#quality",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "excellent",
+            "food#quality",
+            "positive",
+            "NULL [ A ] nice [ C ] ambience # general [ S ] positive [ O ] NULL [ A ] fairly [ C ] restaurant # prices [ S ] negative [ O ] expensive Please note that the response should be in the format of a list of ACOS quadruples , with each quadruple separated by a newline character ."
+        ]
+    ],
+    [
+        [
+            "pumpkin ravioli",
+            "food#quality",
+            "positive",
+            "NULL [ A ] goat cheese gnocchi [ C ] food # quality [ S ] positive [ O ] NULL [ A ] filet mignon [ C ] food # quality [ S ] positive [ O ] NULL [ A ] spinach [ C ] food # quality [ S ] positive [ O ] NULL [ A ] mashed potatoes [ C ] food # quality [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "ambiance",
+            "ambience#general",
+            "positive",
+            "peaceful"
+        ],
+        [
+            "relaxing",
+            "ambience#general",
+            "positive",
+            "break"
+        ]
+    ],
+    [
+        [
+            "best",
+            "food#quality",
+            "positive",
+            "NULL [ A ] indian [ C ] food # style _ options [ S ] positive [ O ] NULL [ A ] food [ C ] restaurant # general [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "chicken curry",
+            "food#quality",
+            "positive",
+            "my favorite [ A ] chicken tikka masala [ C ] food # quality [ S ] positive [ O ] my favorite"
+        ]
+    ],
+    [
+        [
+            "chana masala",
+            "food#quality",
+            "positive",
+            "excellent"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "located",
+            "location#general",
+            "neutral",
+            "NULL [ A ] not the greatest location [ C ] location # general [ S ] negative [ O ] NULL [ A ] food [ C ] food # quality [ S ] positive [ O ] NULL [ A ] keeps me coming back for more [ C ] food # general [ S ] positive [ O ] NULL Please note that the above response is just an example , and the actual response may vary based on the specific review and the context of the task ."
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "ambience#general",
+            "positive",
+            "never too crowded"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "always great"
+        ]
+    ],
+    [
+        [
+            "i think i have probably tried",
+            "food#quality",
+            "positive",
+            "NULL [ A ] each item [ C ] food # general [ S ] positive [ O ] NULL [ A ] on their menu [ C ] restaurant # menu _ options [ S ] positive [ O ] NULL [ A ] at least once [ C ] food # frequency [ S ] positive [ O ] NULL [ A ] it is all excellent [ C ] food # quality [ S ] positive [ O ] NULL Please note that in the given review , there are multiple aspects and opinions , but they are all positive . Therefore , the ACOS quadruples are all positive as well ."
+        ]
+    ],
+    [
+        [
+            "i can highly recommend",
+            "food#quality",
+            "positive",
+            "NULL"
+        ],
+        [
+            "various saag",
+            "food#style_options",
+            "positive",
+            "NULL"
+        ],
+        [
+            "paneer",
+            "food#style_options",
+            "positive",
+            "NULL"
+        ],
+        [
+            "korma",
+            "food#style_options",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "appreciate",
+            "delivery#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "delivery#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "nice food",
+            "food#quality",
+            "positive",
+            "NULL [ A ] no spice [ C ] food # style _ options [ S ] negative [ O ] NULL Explanation : * The first ACOS quadruple represents the aspect \" nice food \" with category \" food # quality \" and sentiment \" positive \" . * The second ACOS quadruple represents the aspect \" no spice \" with category \" food # style _ options \" and sentiment \" negative \" . Please note that the sentiment of the review is mixed , as the customer expresses a positive opinion about the food quality but a negative opinion about the lack of spice ."
+        ]
+    ],
+    [
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "i had",
+            "food#quality",
+            "positive",
+            "yummy"
+        ],
+        [
+            "lamb korma",
+            "food#style_options",
+            "positive",
+            "NULL"
+        ],
+        [
+            "saag paneer",
+            "food#quality",
+            "positive",
+            "NULL"
+        ],
+        [
+            "samosas",
+            "food#style_options",
+            "positive",
+            "NULL"
+        ],
+        [
+            "naan",
+            "food#quality",
+            "positive",
+            "NULL"
+        ],
+        [
+            "etc",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "mild",
+            "food#style_options",
+            "negative",
+            "way too mild"
+        ]
+    ],
+    [
+        [
+            "naan",
+            "food#quality",
+            "positive",
+            "NULL"
+        ],
+        [
+            "bhartha",
+            "food#style_options",
+            "positive",
+            "enjoyed"
+        ],
+        [
+            "NULL",
+            "restaurant#miscellaneous",
+            "positive",
+            "not too tomatoey"
+        ]
+    ],
+    [
+        [
+            "even the chickpeas",
+            "food#quality",
+            "positive",
+            "NULL [ A ] dry [ C ] food # quality [ S ] negative [ O ] NULL [ A ] were good [ C ] food # quality [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "i don ' t understand",
+            "ambience#general",
+            "positive",
+            "NULL [ A ] how i was a stranger [ C ] ambience # general [ S ] positive [ O ] NULL [ A ] to this place [ C ] ambience # general [ S ] positive [ O ] NULL [ A ] for so long [ C ] ambience # general [ S ] positive [ O ] NULL [ A ] the fajita salad [ C ] food # style _ options [ S ] positive [ O ] delicious [ A ] the colorado [ C ] food # style _ options [ S ] positive [ O ] delicious [ A ] the fajitas [ C ] food # style _ options [ S ] positive [ O ] delicious Please note that the sentiment of the review is positive , but the aspect \" i don ' t understand \" is not explicitly stated in the review , so it is marked as NULL . Also , please note that the opinions expressed in the review are delicious , but they are not explicitly stated , so they are marked as NULL ."
+        ]
+    ],
+    [
+        [
+            "warm",
+            "ambience#general",
+            "positive",
+            "love [ A ] cosy [ C ] ambience # general [ S ] positive [ O ] NULL"
+        ]
+    ],
+    [
+        [
+            "just found out",
+            "restaurant#miscellaneous",
+            "positive",
+            "NULL"
+        ],
+        [
+            "place to yourself",
+            "restaurant#private_parties",
+            "positive",
+            "NULL"
+        ],
+        [
+            "can ' t wait",
+            "restaurant#general",
+            "positive",
+            "celebrate"
+        ],
+        [
+            "my next birthday",
+            "restaurant#general",
+            "positive",
+            "NULL"
+        ]
+    ]
+]
