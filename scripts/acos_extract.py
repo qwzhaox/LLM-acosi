@@ -20,7 +20,9 @@ Each quadruple is comprised of 4 components:
 - Aspect [A]: The span of text in the review that indicates the particular aspect that the customer is referring to. Aspects are not always explicitly stated; if this is the case, use a NULL label for the aspect.
 - Category [C]: The category of the aspect, selected from the following list: {category_list}
 - Sentiment [S]: The polarity of the sentiment: positive, negative, or neutral.
-- Opinion [O]: The span of text in the review that indicates the opinion that expresses the sentiment. Opinions are not always explicitly stated; if this is the case, use a NULL label for the opinion.\n\n
+- Opinion [O]: The span of text in the review that indicates the opinion that expresses the sentiment. Opinions are not always explicitly stated; if this is the case, use a NULL label for the opinion.
+
+[END] is used to mark the end of the set of quadruples associated with a review and [SSEP] is used to separate individual quadruples in the set.[END] is used to mark the end of the set of quadruples associated with a review and [SSEP] is used to separate individual quadruples in the set.\n
 """
 
     if dataset_domain == "laptop":
@@ -34,37 +36,25 @@ Each quadruple is comprised of 4 components:
 
     response_head = "ACOS quadruples:"
 
-    example1 = f"""Example 1:
+    example1 = [
+        "Review: the food was lousy - too sweet or too salty and the portions tiny .\n",
+        f"{response_head} [A] food [C] food#quality [S] negative [O] lousy [SSEP] [A] food [C] food#quality [S] negative [O] too sweet [SSEP] [A] food [C] food#quality [S] negative [O] too salty [SSEP] [A] portions [C] food#style_options [S] negative [O] tiny [END]\n\n",
+    ]
 
-Review: the food was lousy - too sweet or too salty and the portions tiny .
+    example2 = [
+        "Review: the decor is night tho . . . but they really need to clean that vent in the ceiling . . . its quite un - appetizing , and kills your effort to make this place look sleek and modern .\n",
+        f"{response_head} [A] place [C] ambience#general [S] negative [O] sleek [SSEP] [A] place [C] ambience#general [S] negative [O] modern [SSEP] [A] decor [C] ambience#general [S] positive [O] night [SSEP] [A] vent [C] ambience#general [S] negative [O] un - appetizing [END]\n\n",
+    ]
 
-Response:
-{response_head} [A] food [C] food#quality [S] negative [O] lousy [SSEP] [A] food [C] food#quality [S] negative [O] too sweet [SSEP] [A] food [C] food#quality [S] negative [O] too salty [SSEP] [A] portions [C] food#style_options [S] negative [O] tiny [END]\n\n
-"""
+    example3 = [
+        "Review: first one that they shipped was obviously defective , super slow and speakers were garbled .\n",
+        f"{response_head} [A] NULL [C] shipping#general [S] negative [O] defective [SSEP] [A] NULL [C] shipping#general [S] negative [O] slow [SSEP] [A] speakers [C] multimedia_devices#general [S] negative [O] garbled [END]\n\n",
+    ]
 
-    example2 = f"""Example 2:
-
-Review: the decor is night tho . . . but they really need to clean that vent in the ceiling . . . its quite un - appetizing , and kills your effort to make this place look sleek and modern .
-
-Response:
-{response_head} [A] place [C] ambience#general [S] negative [O] sleek [SSEP] [A] place [C] ambience#general [S] negative [O] modern [SSEP] [A] decor [C] ambience#general [S] positive [O] night [SSEP] [A] vent [C] ambience#general [S] negative [O] un - appetizing [END]\n\n
-"""
-
-    example3 = f"""Example 1:
-
-Review: first one that they shipped was obviously defective , super slow and speakers were garbled .
-
-Response:
-{response_head} [A] NULL [C] shipping#general [S] negative [O] defective [SSEP] [A] NULL [C] shipping#general [S] negative [O] slow [SSEP] [A] speakers [C] multimedia_devices#general [S] negative [O] garbled [END]\n\n
-"""
-
-    example4 = f"""Example 2:
-
-Review: powers up immediately , great battery life , great keyboard , amazing features .
-
-Response:
-{response_head} [A] powers up [C] laptop#operation_performance [S] positive [O] NULL [SSEP] [A] battery life [C] battery#general [S] positive [O] great [SSEP] [A] keyboard [C] keyboard#general [S] positive [O] NULL [SSEP] [A] NULL [C] laptop#design_features [S] positive [O] amazing [END]\n\n
-"""
+    example4 = [
+        "Review: powers up immediately , great battery life , great keyboard , amazing features .\n",
+        f"{response_head} [A] powers up [C] laptop#operation_performance [S] positive [O] NULL [SSEP] [A] battery life [C] battery#general [S] positive [O] great [SSEP] [A] keyboard [C] keyboard#general [S] positive [O] NULL [SSEP] [A] NULL [C] laptop#design_features [S] positive [O] amazing [END]\n\n",
+    ]
 
     if dataset_domain == "laptop":
         return prompt, [example1, example2], response_head

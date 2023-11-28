@@ -2,7 +2,7 @@ import torch
 from transformers import pipeline, AutoTokenizer
 from tqdm import tqdm
 from nltk import word_tokenize
-from utils import flatten_output
+from utils import flatten_output, EXAMPLE_REVIEW, EXAMPLE_RESPONSE
 
 from transformers.generation import GenerationConfig
 
@@ -20,6 +20,7 @@ def alpaca_format_prompt():
     response_key = "### Response:"
     intro_blurb = "Below is an instruction that describes a task. Write a response that appropriately completes the request."
     prompt_for_generation_format = """{intro}
+    
 {instruction_key}
 {instruction}
 {response_key}
@@ -92,11 +93,16 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
                 f"ACOS quadruples: {get_formatted_annotations(annotations)}\n"
             )
 
-        examples_str = "".join(examples)
-        bare_prompt = (
-            prompt + examples_str + f"Your Task:\n" + review_str + annotations_str
-        )
-        final_prompt = formatted_prompt.format(instruction=bare_prompt)
+        example_prompts = []
+        for example in examples:
+            bare_example_prompt = prompt + example[EXAMPLE_REVIEW]
+            example_prompt = formatted_prompt.format(instruction=bare_example_prompt)
+            complete_example = example_prompt + example[EXAMPLE_RESPONSE]
+            example_prompts.append(complete_example)
+
+        example_str = "\n".join(example_prompts) + "\n"
+        bare_prompt = prompt + review_str + annotations_str
+        final_prompt = example_str + formatted_prompt.format(instruction=bare_prompt)
         prompts.append(final_prompt)
 
     print("Running pipeline...")

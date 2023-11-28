@@ -5,6 +5,7 @@ from pipeline import alpaca_format_prompt, get_formatted_annotations
 from acos_extend import get_ACOS_extend_prompt
 from acos_extract import get_ACOS_extract_prompt
 from acosi_extract import get_ACOSI_extract_prompt
+from utils import EXAMPLE_REVIEW, EXAMPLE_RESPONSE
 
 parser = ArgumentParser()
 parser.add_argument(
@@ -56,9 +57,17 @@ for data in tqdm(dataset, desc="Processing", unit="item"):
         output_str = f"ACOSI quintuples: {get_formatted_annotations(annotations)}\n"
         total_out_tokens += len(word_tokenize(output_str))
 
-    examples_str = "".join(examples)
-    bare_prompt = prompt + examples_str + f"Your Task:\n" + review_str + annotations_str
-    final_prompt = formatted_prompt.format(instruction=bare_prompt)
+    example_prompts = []
+    for example in examples:
+        print(example)
+        bare_example_prompt = prompt + example[EXAMPLE_REVIEW]
+        example_prompt = formatted_prompt.format(instruction=bare_example_prompt)
+        complete_example = example_prompt + example[EXAMPLE_RESPONSE]
+        example_prompts.append(complete_example)
+
+    example_str = "\n".join(example_prompts) + "\n"
+    bare_prompt = prompt + review_str + annotations_str
+    final_prompt = example_str + formatted_prompt.format(instruction=bare_prompt)
     print(final_prompt)
     prompts.append(final_prompt)
     total_tokens += len(word_tokenize(final_prompt))

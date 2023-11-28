@@ -7,6 +7,11 @@ from pickle import dump
 from string import punctuation
 
 
+EXAMPLE_REVIEW = 0
+EXAMPLE_RESPONSE = 1
+MODEL_RESPONSE = 2
+
+
 def get_file_path(file_name):
     # Search in the current directory and all subdirectories
     for path in Path(".").rglob(file_name):
@@ -46,9 +51,9 @@ def clean_output(out, response_key, response_head):
     prediction = out["generated_text"].strip()
 
     if response_key in prediction:
-        prediction = prediction.split(response_key)[1].strip()
+        prediction = prediction.split(response_key)[MODEL_RESPONSE].strip()
     if response_head in prediction:
-        prediction = prediction.split(response_head)[1].strip()
+        prediction = prediction.split(response_head)[MODEL_RESPONSE].strip()
 
     return prediction
 

@@ -17,7 +17,9 @@ Each quintuple is comprised of 5 components:
 - Category [C]: The category of the aspect, selected from the following list: {category_list}
 - Sentiment [S]: The polarity of the sentiment: positive, negative, or neutral.
 - Opinion [O]: The span of text in the review that indicates the opinion that expresses the sentiment. Opinions are not always explicitly stated; if this is the case, please try to identify the span of text that best expresses the sentiment implicitly.
-- Implicit Indicator [I]: Indicates whether the opinion is implicit or explicit (indirect or direct).\n\n
+- Implicit Indicator [I]: Indicates whether the opinion is implicit or explicit (indirect or direct).
+
+[END] is used to mark the end of the set of quintuples associated with a review and [SSEP] is used to separate individual quintuples in the set.\n
 """
 
     category_list = "[" + ",".join(shoes_cate_list) + "]"
@@ -26,21 +28,15 @@ Each quintuple is comprised of 5 components:
 
     response_head = "ACOSI quintuples:"
 
-    example1 = f"""Example 1:
+    example1 = [
+        "Review: the design is great poor color choices too bland . color choices from previous shoes was much better .\n",
+        f"{response_head} [A] NULL [C] appearance#form [S] positive [O] design is great [I] direct [SSEP] [A] NULL [C] appearance#color [S] negative [O] poor color choices [I] direct [SSEP] [A] shoes [C] appearance#color [S] negative [O] color choices from previous shoes was much better [I] indirect [END]\n\n",
+    ]
 
-Review: the design is great poor color choices too bland . color choices from previous shoes was much better .
-
-Response:
-{response_head} [A] NULL [C] appearance#form [S] positive [O] design is great [I] direct [SSEP] [A] NULL [C] appearance#color [S] negative [O] poor color choices [I] direct [SSEP] [A] shoes [C] appearance#color [S] negative [O] color choices from previous shoes was much better [I] indirect [END]\n\n
-"""
-
-    example2 = f"""Example 2:
-
-Review: had to order a larger size than what i normally wear . shoe would be better if offered as an adjustable shoe . shoe is overpriced for quality . i bought cheaper slides in the past that were more comfortable .
-
-Response:
-{response_head} [A] NULL [C] performance#sizing_fit [S] neutral [O] had to order a larger size than what i normally wear [I] direct [SSEP] [A] NULL [C] contextofuse#purchase\\\\_context [S] negative [O] had to order a larger size than what i normally wear [I] direct [SSEP] [A] shoe [C] appearance#form [S] neutral [O] would be better if offered as an adjustable shoe [I] direct [SSEP] [A] shoe [C] cost/value [S] negative [O] overpriced for quality [I] direct [SSEP] [A] slides [C] cost/value [S] negative [O] i bought cheaper slides in the past that were more comfortable [I] direct [SSEP] [A] slides [C] performance#comfort [S] negative [O] i bought cheaper slides in the past that were more comfortable [I] direct [END]\n\n
-"""
+    example2 = [
+        "Review: had to order a larger size than what i normally wear . shoe would be better if offered as an adjustable shoe . shoe is overpriced for quality . i bought cheaper slides in the past that were more comfortable .",
+        f"{response_head} [A] NULL [C] performance#sizing_fit [S] neutral [O] had to order a larger size than what i normally wear [I] direct [SSEP] [A] NULL [C] contextofuse#purchase\\\\_context [S] negative [O] had to order a larger size than what i normally wear [I] direct [SSEP] [A] shoe [C] appearance#form [S] neutral [O] would be better if offered as an adjustable shoe [I] direct [SSEP] [A] shoe [C] cost/value [S] negative [O] overpriced for quality [I] direct [SSEP] [A] slides [C] cost/value [S] negative [O] i bought cheaper slides in the past that were more comfortable [I] direct [SSEP] [A] slides [C] performance#comfort [S] negative [O] i bought cheaper slides in the past that were more comfortable [I] direct [END]\n\n",
+    ]
 
     examples = [example1, example2]
 
