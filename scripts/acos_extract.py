@@ -22,7 +22,7 @@ Each quadruple is comprised of 4 components:
 - Sentiment [S]: The polarity of the sentiment: positive, negative, or neutral.
 - Opinion [O]: The span of text in the review that indicates the opinion that expresses the sentiment. Opinions are not always explicitly stated; if this is the case, use a NULL label for the opinion.
 
-[END] is used to mark the end of the set of quadruples associated with a review and [SSEP] is used to separate individual quadruples in the set.[END] is used to mark the end of the set of quadruples associated with a review and [SSEP] is used to separate individual quadruples in the set.\n
+[END] is used to mark the end of the set of quadruples associated with a review and [SSEP] is used to separate individual quadruples in the set.\n
 """
 
     if dataset_domain == "laptop":
