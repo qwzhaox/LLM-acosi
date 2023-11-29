@@ -27,7 +27,7 @@ elif [ "$ABSA_TASK" = "acos-extract" ]; then
 elif [ "$ABSA_TASK" = "acos-extend" ]; then
     echo "Running ACOS extend"
     ABSA_TASK_SCRIPT="scripts/acos_extend.py"
-    max_length=1024
+    max_length=2048
     max_new_tokens=512
 else
     echo "Error: Invalid ABSA_TASK - $ABSA_TASK"
