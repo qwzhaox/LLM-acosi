@@ -9,7 +9,11 @@ from string import punctuation
 
 EXAMPLE_REVIEW = 0
 EXAMPLE_RESPONSE = 1
-MODEL_RESPONSE = 2
+
+
+SSEP = "SSEP"
+END = "END"
+ACOSI = "ACOSI"
 
 
 def get_file_path(file_name):
@@ -47,13 +51,64 @@ def flatten_output(output):
     return output
 
 
+def needs_closing_bracket(idx, prediction):
+    return idx == len(prediction) or idx < len(prediction) and prediction[idx] != "]"
+
+
+def is_special_token(start_idx, end_idx, prediction, special_tokens):
+    return (
+        end_idx <= len(prediction) and prediction[start_idx:end_idx] in special_tokens
+    )
+
+
+def fix_brackets(prediction):
+    insert_loc = []
+    delete_loc = len(prediction)
+
+    for i, char in enumerate(prediction):
+        if char == "[":
+            start = i + 1
+            ssep_end = start + len(SSEP)
+            end_end = start + len(END)
+            acosi_end = start + 1
+            if is_special_token(start, ssep_end, prediction, SSEP):
+                if needs_closing_bracket(ssep_end, prediction):
+                    insert_loc.append(ssep_end)
+            elif is_special_token(start, end_end, prediction, END):
+                if needs_closing_bracket(end_end, prediction):
+                    insert_loc.append(end_end)
+            elif is_special_token(start, acosi_end, prediction, ACOSI):
+                if needs_closing_bracket(acosi_end, prediction):
+                    insert_loc.append(acosi_end)
+            elif i + 1 == len(prediction):
+                delete_loc = i
+
+    prediction = prediction[:delete_loc]
+    for i in reversed(insert_loc):
+        prediction = prediction[:i] + "]" + prediction[i:]
+
+    return prediction
+
+
 def clean_output(out, response_key, response_head):
     prediction = out["generated_text"].strip()
 
     if response_key in prediction:
-        prediction = prediction.split(response_key)[MODEL_RESPONSE].strip()
+        prediction = prediction[prediction.rfind(response_key) :].strip()
+        prediction = prediction[len(response_key) :].strip()
     if response_head in prediction:
-        prediction = prediction.split(response_head)[MODEL_RESPONSE].strip()
+        prediction = prediction[prediction.rfind(response_head) :].strip()
+        prediction = prediction[len(response_head) :].strip()
+    if "\n" in prediction:
+        prediction = prediction[: prediction.find("\n")]
+
+    print("Raw Prediction: ", prediction)
+
+    prediction = fix_brackets(prediction)
+
+    if "[END]" in prediction:
+        prediction = prediction[: prediction.find("[END]")]
+    prediction = prediction.strip()
 
     return prediction
 
@@ -133,7 +188,14 @@ def extract_spans(seq):
             at = clean_punctuation(at)
             ot = clean_punctuation(ot)
 
-            quints.append((at, ac, sp, ot, ie))
+            is_all_null = True
+
+            for term in [ac, sp, at, ot, ie]:
+                if term.lower() != "null" and term != "":
+                    is_all_null = False
+                    break
+            if not is_all_null:
+                quints.append((at, ac, sp, ot, ie))
 
         except KeyError:
             ac, at, sp, ot, ie = "", "", "", "", ""
@@ -154,9 +216,6 @@ def format_output(output, response_key, response_head):
     formatted_output = []
     for out in output:
         prediction = clean_output(out, response_key, response_head)
-        if "[END]" in prediction:
-            prediction = prediction[: prediction.find("[END]")]
-        prediction = prediction.strip()
 
         print("Prediction: ", prediction)
 

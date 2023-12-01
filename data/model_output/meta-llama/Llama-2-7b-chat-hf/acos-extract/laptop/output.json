@@ -2,93 +2,309 @@
     [
         [
             "unit",
-            "hardware#price",
+            "cost#general",
             "negative",
-            "not worth repairing"
+            "worth"
         ],
         [
             "unit",
-            "hardware#price",
+            "cost#general",
             "negative",
-            "expensive"
+            "repairing"
         ],
         [
-            "repairing",
-            "hardware#operation_performance",
+            "start",
+            "cost#general",
             "positive",
-            "costly"
-        ],
-        [
-            "cost",
-            "hardware#price",
-            "positive",
-            "reasonable"
-        ],
-        [
-            "worth",
-            "general",
-            "positive",
-            "valuable"
-        ],
-        [
-            "null",
-            "null",
-            "null",
-            "null"
+            "$ 275"
         ]
     ],
     [
         [
             "laptop",
-            "laptop#size",
-            "negative",
-            "difficult"
-        ],
-        [
-            "laptop",
-            "laptop#size",
+            "size#general",
             "negative",
             "too small"
         ],
         [
-            "size",
-            "laptop#general",
-            "positive",
-            "11 inches"
+            "laptop",
+            "size#general",
+            "negative",
+            "difficult"
         ],
         [
             "acer",
-            "company#general",
+            "brand#general",
             "positive",
             "acer"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "drive",
+            "storage#quality",
+            "negative",
+            "emmc"
+        ],
+        [
+            "drive",
+            "storage#quality",
+            "negative",
+            "ssd"
+        ],
+        [
+            "there",
+            "review",
+            "positive",
+            "not"
         ]
     ],
     [
         [
             "computer",
-            "operation_performance#tablet",
+            "hardware#operation_performance",
             "negative",
             "switching"
         ],
         [
             "computer",
-            "operation_performance#tablet",
+            "hardware#operation_performance",
             "negative",
             "difficulty"
         ],
         [
             "tablet",
-            "operation_performance#tablet",
-            "positive",
+            "hardware#operation_performance",
+            "negative",
             "switching"
+        ],
+        [
+            "computer",
+            "hardware#operation_performance",
+            "positive",
+            "usability"
+        ]
+    ],
+    [
+        [
+            "update",
+            "operation_performance#general",
+            "positive",
+            "couple"
+        ],
+        [
+            "chrome",
+            "software#operation_performance",
+            "positive",
+            "days"
+        ],
+        [
+            "os",
+            "operation_performance#general",
+            "positive",
+            "couple"
+        ]
+    ],
+    [
+        [
+            "chrome",
+            "software#operation_performance",
+            "negative",
+            "same"
+        ],
+        [
+            "chrome",
+            "software#operation_performance",
+            "negative",
+            "work"
+        ],
+        [
+            "windows",
+            "software#operation_performance",
+            "positive",
+            "same"
+        ]
+    ],
+    [
+        [
+            "thing",
+            "quality#general",
+            "negative",
+            "suck"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "negative",
+            "figure"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "10"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "hope"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "figured"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "won"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "out"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "figured"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "hope"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "won"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "out"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "suck"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "10"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "figured"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "hope"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "won"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "out"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "suck"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "10"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "figured"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "hope"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "won"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "out"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "suck"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "10"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "figured"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "hope"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "won"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "out"
+        ],
+        [
+            "thing",
+            "quality#general",
+            "positive",
+            "10"
         ],
         [
             "null",
@@ -99,29 +315,191 @@
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
+            "review",
+            "time#general",
+            "positive",
+            "last year"
+        ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
+            "review",
+            "time#general",
+            "positive",
+            "july"
+        ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
+            "year",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "bought",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "this",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "last",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "year",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "bought",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "review",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "time",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "year",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "last",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "year",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "bought",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "review",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "time",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "year",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "last",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "year",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "bought",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "review",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "time",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "year",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "last",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "year",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "bought",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "review",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "time",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "year",
+            "time#general",
+            "positive",
+            "last"
+        ],
+        [
+            "last",
+            "time#general",
+            "positive",
+            "year"
+        ],
+        [
+            "year",
+            "time#general",
+            "positive",
+            "last"
+        ],
         [
             "null",
             "null",
@@ -132,157 +510,225 @@
     [
         [
             "keyboard",
-            "keyboard#operation_performance",
-            "positive",
+            "usage#general",
+            "neutral",
             "rarely"
         ],
         [
             "keyboard",
-            "keyboard#operation_performance",
-            "positive",
+            "usage#general",
+            "neutral",
             "use"
         ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "review",
+            "general#quality",
+            "positive",
+            "good"
         ]
     ],
     [
         [
-            "chromebook",
-            "laptop#general",
+            "price",
+            "price#quality",
             "positive",
-            "great price"
+            "great"
         ],
         [
             "chromebook",
-            "laptop#general",
+            "laptop#operation_performance",
             "positive",
             "touchscreen"
         ],
         [
-            "price",
-            "laptop#price",
+            "display",
+            "display#quality",
             "positive",
             "great"
         ]
     ],
     [
         [
-            "it",
-            "operation_performance#general",
-            "negative",
-            "glitchy"
-        ],
-        [
-            "it",
-            "operation_performance#general",
+            "glitchy",
+            "performance#quality",
             "negative",
             "barely usable"
         ],
         [
-            "usable",
-            "operation_performance#general",
-            "positive",
+            "glitchy",
+            "performance#quality",
+            "negative",
             "usable"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "touch _ pad",
+            "input_devices#operation_performance",
+            "negative",
+            "failed consistently"
+        ],
+        [
+            "laptop",
+            "laptops#operation_performance",
+            "negative",
+            "quality"
+        ],
+        [
+            "order",
+            "purchasing#operation_performance",
+            "positive",
+            "consistently"
         ]
     ],
     [
         [
-            "keys",
-            "typing#operation_performance",
-            "negative",
-            "wrong"
-        ],
-        [
-            "keys",
-            "typing#operation_performance",
+            "typing",
+            "keyboard#operation_performance",
             "negative",
             "unproductive"
         ],
         [
+            "typing",
+            "keyboard#operation_performance",
+            "negative",
+            "frustrating"
+        ],
+        [
+            "keys",
+            "keyboard#operation_performance",
+            "positive",
+            "correct"
+        ],
+        [
             "meeting",
-            "meeting#operation_performance",
+            "ambience#general",
             "positive",
             "real - time"
         ],
         [
             "notes",
-            "meeting#operation_performance",
+            "keyboard#operation_performance",
             "positive",
-            "taking"
+            "productive"
+        ]
+    ],
+    [
+        [
+            "device",
+            "quality#general",
+            "negative",
+            "worse"
         ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "device",
+            "quality#general",
+            "negative",
+            "question"
+        ],
+        [
+            "few",
+            "time#general",
+            "positive",
+            "seconds"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "trackpad",
+            "input_devices#general",
+            "negative",
+            "hard"
+        ],
+        [
+            "trackpad",
+            "input_devices#general",
+            "negative",
+            "lost"
+        ],
+        [
+            "voyage",
+            "experience#general",
+            "positive",
+            "two"
+        ],
+        [
+            "days",
+            "time#general",
+            "positive",
+            "days"
+        ],
+        [
+            "functionality",
+            "operation_performance#general",
+            "positive",
+            "functionality"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
+            "os",
+            "operation_performance#general",
+            "negative",
+            "9 %"
+        ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "os",
+            "operation_performance#general",
+            "negative",
+            "8 hours"
+        ],
+        [
+            "factory _ resetting",
+            "operation_performance#general",
+            "neutral",
+            "NULL"
         ]
     ],
     [
         [
             "hdmi",
-            "connectivity#general",
+            "ports#operation_performance",
             "negative",
             "doesn ' t work right"
         ],
         [
             "hdmi",
-            "connectivity#general",
+            "ports#operation_performance",
             "negative",
-            "properly"
-        ],
-        [
-            "out",
-            "connectivity#operation_performance",
-            "negative",
-            "doesn ' t work"
-        ],
-        [
-            "doesn ' t",
-            "operation_performance#general",
-            "negative",
-            "properly"
+            "right"
         ],
         [
             "work",
             "operation_performance#general",
+            "positive",
+            "doesn ' t work"
+        ]
+    ],
+    [
+        [
+            "shipping",
+            "shipping#quality",
             "negative",
-            "correctly"
+            "over"
+        ],
+        [
+            "review",
+            "review#quality",
+            "negative",
+            "week"
+        ],
+        [
+            "it",
+            "it#quality",
+            "negative",
+            "shipped"
+        ],
+        [
+            "back",
+            "back#quality",
+            "negative",
+            "shipped"
         ],
         [
             "null",
@@ -293,46 +739,236 @@
     ],
     [
         [
-            "shipment",
-            "shipping#operation_performance",
+            "chromebook",
+            "laptop#operation_performance",
             "negative",
-            "over a week"
+            "tablet"
         ],
         [
-            "shipment",
-            "shipping#operation_performance",
+            "touchscreen",
+            "laptop#operation_performance",
             "negative",
-            "shipped back"
+            "work"
         ],
         [
-            "time",
-            "shipping#operation_performance",
+            "mode",
+            "laptop#operation_performance",
+            "neutral",
+            "tablet"
+        ],
+        [
+            "work",
+            "laptop#operation_performance",
+            "positive",
+            "excitement"
+        ],
+        [
+            "review",
+            "laptop#operation_performance",
+            "neutral",
+            "excitement"
+        ],
+        [
+            "noticed",
+            "laptop#operation_performance",
             "negative",
-            "too long"
+            "dissipate"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "defect",
+            "quality#general",
+            "negative",
+            "resolved"
+        ],
+        [
+            "review",
+            "quality#general",
+            "negative",
+            "major"
+        ],
+        [
+            "acer",
+            "quality#general",
+            "negative",
+            "resolved"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
+            "laptop",
+            "portability",
+            "positive",
+            "overseas"
+        ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "laptop",
+            "portability",
+            "positive",
+            "classes"
+        ],
+        [
+            "daughter",
+            "user#operation_performance",
+            "positive",
+            "europe"
+        ],
+        [
+            "online",
+            "operation_performance#quality",
+            "positive",
+            "classes"
+        ],
+        [
+            "quality",
+            "quality#usability",
+            "positive",
+            "classes"
+        ],
+        [
+            "usability",
+            "quality#usability",
+            "positive",
+            "classes"
+        ],
+        [
+            "classes",
+            "quality#operation_performance",
+            "positive",
+            "europe"
+        ],
+        [
+            "europe",
+            "quality#operation_performance",
+            "positive",
+            "classes"
+        ],
+        [
+            "quality",
+            "quality#design_features",
+            "positive",
+            "classes"
+        ],
+        [
+            "design _ features",
+            "quality#design_features",
+            "positive",
+            "classes"
+        ],
+        [
+            "classes",
+            "quality#price",
+            "positive",
+            "classes"
+        ],
+        [
+            "price",
+            "quality#price",
+            "positive",
+            "classes"
+        ],
+        [
+            "classes",
+            "quality#usability",
+            "positive",
+            "classes"
+        ],
+        [
+            "usability",
+            "quality#usability",
+            "positive",
+            "classes"
+        ],
+        [
+            "classes",
+            "quality#portability",
+            "positive",
+            "classes"
+        ],
+        [
+            "portability",
+            "quality#portability",
+            "positive",
+            "classes"
+        ],
+        [
+            "classes",
+            "quality#design_features",
+            "positive",
+            "classes"
+        ],
+        [
+            "design _ features",
+            "quality#design_features",
+            "positive",
+            "classes"
+        ],
+        [
+            "classes",
+            "quality#price",
+            "positive",
+            "classes"
+        ],
+        [
+            "price",
+            "quality#price",
+            "positive",
+            "classes"
+        ],
+        [
+            "classes",
+            "quality#usability",
+            "positive",
+            "classes"
+        ],
+        [
+            "usability",
+            "quality#usability",
+            "positive",
+            "classes"
+        ],
+        [
+            "classes",
+            "quality#portability",
+            "positive",
+            "classes"
+        ],
+        [
+            "portability",
+            "quality#portability",
+            "positive",
+            "classes"
+        ],
+        [
+            "classes",
+            "quality#design_features",
+            "positive",
+            "classes"
+        ],
+        [
+            "design _ features",
+            "quality#design_features",
+            "positive",
+            "classes"
+        ],
+        [
+            "classes",
+            "quality#price",
+            "positive",
+            "classes"
+        ],
+        [
+            "price",
+            "quality#price",
+            "positive",
+            "classes"
+        ],
+        [
+            "classes",
+            "quality#operation_performance",
+            "positive",
+            "europe"
         ]
     ],
     [
@@ -346,103 +982,213 @@
             "sound",
             "audio_quality#general",
             "positive",
-            "good"
-        ],
-        [
-            "decent",
-            "audio_quality#operation_performance",
-            "positive",
             "quality"
         ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "review",
+            "audio_quality#general",
+            "positive",
+            "decent"
         ]
     ],
     [
         [
-            "adapter",
-            "power_supply#quality",
+            "power _ adapter",
+            "hardware#quality",
             "negative",
             "flimsy"
         ],
         [
-            "adapter",
-            "power_supply#quality",
+            "power _ adapter",
+            "hardware#quality",
             "negative",
-            "weak"
+            "poorly made"
         ],
         [
-            "power",
-            "power_supply#operation_performance",
-            "negative",
-            "unreliable"
+            "quality",
+            "quality#usability",
+            "positive",
+            "good"
         ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "thing",
-            "operation_performance#general",
-            "negative",
-            "regret"
+            "price",
+            "price#quality",
+            "positive",
+            "affordable"
         ],
         [
-            "thing",
-            "operation_performance#general",
-            "negative",
-            "times"
+            "warranty",
+            "warranty#quality",
+            "positive",
+            "good"
         ],
         [
-            "performance",
-            "operation_performance#quality",
-            "negative",
-            "slow"
+            "company",
+            "company#quality",
+            "positive",
+            "reliable"
         ],
         [
-            "speed",
-            "operation_performance#general",
-            "negative",
-            "slow"
+            "display",
+            "display#quality",
+            "positive",
+            "good"
         ],
         [
-            "efficiency",
-            "operation_performance#general",
-            "negative",
-            "poor"
+            "graphics",
+            "graphics#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "keyboard",
+            "keyboard#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "mouse",
+            "mouse#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "ports",
+            "ports#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "shipping",
+            "shipping#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "software",
+            "software#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "battery",
+            "battery#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "laptop",
+            "laptop#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "design",
+            "design#quality",
+            "positive",
+            "good"
         ],
         [
             "usability",
-            "operation_performance#general",
-            "negative",
-            "frustrating"
+            "usability#quality",
+            "positive",
+            "good"
         ],
         [
-            "functionality",
-            "operation_performance#general",
-            "negative",
-            "limited"
+            "connectivity",
+            "connectivity#quality",
+            "positive",
+            "good"
         ],
         [
-            "value",
-            "operation_performance#general",
-            "negative",
-            "not worth"
+            "price",
+            "price#quality",
+            "positive",
+            "affordable"
+        ],
+        [
+            "quality",
+            "quality#usability",
+            "positive",
+            "good"
+        ],
+        [
+            "company",
+            "company#quality",
+            "positive",
+            "reliable"
+        ],
+        [
+            "display",
+            "display#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "graphics",
+            "graphics#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "keyboard",
+            "keyboard#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "mouse",
+            "mouse#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "ports",
+            "ports#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "shipping",
+            "shipping#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "software",
+            "software#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "battery",
+            "battery#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "laptop",
+            "laptop#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "warranty",
+            "warranty#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "warranty",
+            "quality#usability",
+            "positive",
+            "good"
+        ],
+        [
+            "company",
+            "company#quality",
+            "positive",
+            "good"
         ],
         [
             "null",
@@ -453,108 +1199,280 @@
     ],
     [
         [
-            "device",
+            "wi - fi",
+            "connectivity#general",
+            "negative",
+            "slows down"
+        ],
+        [
+            "wi - fi",
+            "connectivity#general",
+            "positive",
+            "speeds up"
+        ],
+        [
+            "slows down",
+            "connectivity#general",
+            "negative",
+            "intermittently"
+        ]
+    ],
+    [
+        [
+            "times",
+            "regret#general",
+            "negative",
+            "buying"
+        ],
+        [
+            "review",
+            "sentiment#general",
+            "positive",
+            "regret"
+        ]
+    ],
+    [
+        [
+            "laptop",
             "hardware#operation_performance",
             "negative",
             "will not turn back on"
         ],
         [
-            "device",
+            "laptop",
             "hardware#operation_performance",
             "negative",
             "turned off"
         ],
         [
-            "operation",
+            "off",
             "hardware#operation_performance",
             "negative",
-            "failed"
-        ],
-        [
-            "device",
-            "hardware#operation_performance",
-            "negative",
-            "not working"
-        ],
-        [
-            "null",
-            "null",
-            "null",
-            "null"
+            "will not turn back on"
         ]
     ],
     [
         [
             "product",
-            "product#quality",
+            "quality#general",
             "positive",
-            "great"
-        ],
-        [
-            "customer _ support",
-            "customer_support#quality",
-            "negative",
             "horrible"
         ],
         [
+            "customer",
+            "service#general",
+            "negative",
+            "horrible"
+        ]
+    ],
+    [
+        [
             "support",
-            "customer_support#quality",
+            "customer_service#general",
+            "negative",
+            "help"
+        ],
+        [
+            "called",
+            "customer_service#general",
+            "positive",
+            "verifying"
+        ],
+        [
+            "type",
+            "general#quality",
+            "neutral",
+            "info"
+        ]
+    ],
+    [
+        [
+            "photography",
+            "functionality#general",
+            "negative",
+            "loading"
+        ],
+        [
+            "photography",
+            "functionality#general",
+            "negative",
+            "storing"
+        ],
+        [
+            "pictures",
+            "photography#general",
+            "positive",
+            "editing"
+        ],
+        [
+            "terrible",
+            "quality#general",
             "negative",
             "terrible"
-        ],
-        [
-            "service",
-            "customer_support#operation_performance",
-            "negative",
-            "slow"
-        ],
-        [
-            "response",
-            "customer_support#operation_performance",
-            "negative",
-            "unhelpful"
-        ],
-        [
-            "issue",
-            "customer_support#operation_performance",
-            "negative",
-            "unresolved"
-        ],
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "support",
-            "support#operation_performance",
-            "negative",
-            "called Note : In your response , please provide each quadruple in the format specified in the instruction , with the appropriate label for each component ( e . g . [ A ] for the aspect , [ C ] for the category , [ S ] for the sentiment , and [ O ] for the opinion ) ."
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
         ]
     ],
     [
         [
             "it",
-            "operation_performance",
+            "service#operation_performance",
             "negative",
             "waiting"
         ],
         [
             "it",
-            "operation_performance",
+            "service#operation_performance",
             "negative",
-            "came back"
+            "come back"
+        ],
+        [
+            "review",
+            "service#operation_performance",
+            "positive",
+            "twice"
+        ],
+        [
+            "waiting",
+            "service#operation_performance",
+            "negative",
+            "come back"
+        ],
+        [
+            "review",
+            "service#operation_performance",
+            "positive",
+            "twice"
+        ],
+        [
+            "negative",
+            "service#operation_performance",
+            "negative",
+            "waiting"
+        ],
+        [
+            "positive",
+            "service#operation_performance",
+            "positive",
+            "twice"
+        ],
+        [
+            "review",
+            "service#operation_performance",
+            "negative",
+            "come back"
+        ],
+        [
+            "waiting",
+            "service#operation_performance",
+            "negative",
+            "come back"
+        ],
+        [
+            "review",
+            "service#operation_performance",
+            "positive",
+            "twice"
+        ],
+        [
+            "negative",
+            "service#operation_performance",
+            "negative",
+            "waiting"
+        ],
+        [
+            "positive",
+            "service#operation_performance",
+            "positive",
+            "twice"
+        ],
+        [
+            "review",
+            "service#operation_performance",
+            "negative",
+            "come back"
+        ],
+        [
+            "waiting",
+            "service#operation_performance",
+            "negative",
+            "come back"
+        ],
+        [
+            "review",
+            "service#operation_performance",
+            "positive",
+            "twice"
+        ],
+        [
+            "negative",
+            "service#operation_performance",
+            "negative",
+            "waiting"
+        ],
+        [
+            "positive",
+            "service#operation_performance",
+            "positive",
+            "twice"
+        ],
+        [
+            "review",
+            "service#operation_performance",
+            "negative",
+            "come back"
+        ],
+        [
+            "waiting",
+            "service#operation_performance",
+            "negative",
+            "come back"
+        ],
+        [
+            "review",
+            "service#operation_performance",
+            "positive",
+            "twice"
+        ],
+        [
+            "negative",
+            "service#operation_performance",
+            "negative",
+            "waiting"
+        ],
+        [
+            "positive",
+            "service#operation_performance",
+            "positive",
+            "twice"
+        ],
+        [
+            "review",
+            "service#operation_performance",
+            "negative",
+            "come back"
+        ],
+        [
+            "waiting",
+            "service#operation_performance",
+            "negative",
+            "come back"
+        ],
+        [
+            "review",
+            "service#operation_performance",
+            "positive",
+            "twice"
+        ],
+        [
+            "negative",
+            "service#operation_performance",
+            "negative",
+            "waiting"
+        ],
+        [
+            "positive",
+            "service#operation_performance",
+            "positive",
+            "twice"
         ],
         [
             "null",
@@ -571,13 +1489,37 @@
             "great"
         ],
         [
-            "screen : Aspect of the review that refers to the screen . *",
-            "display: Category of the aspect, which is \"quality\".\n*",
-            "sentiment: Polarity of the sentiment, which is \"positive\".\n*",
-            "opinion : Span of text in the review that expresses the sentiment , which is \" great \" . Please provide the review text and I will generate the ACOS quadruples for you ."
+            "screen",
+            "display#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "looked",
+            "ambience#general",
+            "positive",
+            "great"
         ]
     ],
     [
+        [
+            "charging _ adapter",
+            "hardware#operation_performance",
+            "negative",
+            "message"
+        ],
+        [
+            "charging _ adapter",
+            "hardware#operation_performance",
+            "negative",
+            "reinserted"
+        ],
+        [
+            "review",
+            "feedback#operation_performance",
+            "positive",
+            "many"
+        ],
         [
             "null",
             "null",
@@ -587,42 +1529,102 @@
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "computer",
+            "hardware#operation_performance",
+            "negative",
+            "shutdown"
+        ],
+        [
+            "computer",
+            "hardware#operation_performance",
+            "negative",
+            "reboot"
+        ],
+        [
+            "option",
+            "general",
+            "positive",
+            "none"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "it",
+            "operation_performance#general",
+            "positive",
+            "hiccup"
+        ],
+        [
+            "it",
+            "operation_performance#general",
+            "positive",
+            "worked"
+        ],
+        [
+            "except",
+            "operation_performance#general",
+            "negative",
+            "initial"
+        ],
+        [
+            "hiccup",
+            "operation_performance#general",
+            "positive",
+            "worked"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "screen",
+            "display#operation_performance",
+            "positive",
+            "flashes"
+        ],
+        [
+            "screen",
+            "display#operation_performance",
+            "positive",
+            "for a second"
+        ],
+        [
+            "every",
+            "time",
+            "frequency",
+            "30 seconds"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "battery",
+            "hardware#operation_performance",
+            "negative",
+            "went down"
+        ],
+        [
+            "review",
+            "quality#general",
+            "neutral",
+            "no reason"
+        ],
+        [
+            "reason",
+            "quality#general",
+            "positive",
+            "no reason"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "laptop",
+            "operation_performance#quality",
+            "neutral",
+            "annoying"
+        ],
+        [
+            "fan",
+            "ambience#general",
+            "negative",
+            "sound"
         ]
     ],
     [
@@ -640,20 +1642,206 @@
         ],
         [
             "edge",
-            "display#general",
+            "display#quality",
             "positive",
             "nice"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "everything",
+            "time#general",
+            "positive",
+            "hour"
+        ],
+        [
+            "everything",
+            "time#general",
+            "positive",
+            "hour"
         ]
     ],
     [
+        [
+            "audio",
+            "operation_performance#general",
+            "negative",
+            "impossible"
+        ],
+        [
+            "audio",
+            "operation_performance#general",
+            "negative",
+            "difficult"
+        ],
+        [
+            "quality",
+            "design_features#general",
+            "positive",
+            "good"
+        ],
+        [
+            "price",
+            "price#general",
+            "neutral",
+            "fair"
+        ],
+        [
+            "warranty",
+            "warranty#general",
+            "positive",
+            "good"
+        ],
+        [
+            "company",
+            "company#general",
+            "positive",
+            "good"
+        ],
+        [
+            "laptop",
+            "laptop#general",
+            "positive",
+            "good"
+        ],
+        [
+            "portability",
+            "portability#general",
+            "positive",
+            "good"
+        ],
+        [
+            "design",
+            "design#general",
+            "positive",
+            "good"
+        ],
+        [
+            "usability",
+            "usability#general",
+            "positive",
+            "good"
+        ],
+        [
+            "performance",
+            "performance#general",
+            "positive",
+            "good"
+        ],
+        [
+            "display",
+            "display#general",
+            "positive",
+            "good"
+        ],
+        [
+            "connectivity",
+            "connectivity#general",
+            "positive",
+            "good"
+        ],
+        [
+            "battery",
+            "battery#general",
+            "positive",
+            "good"
+        ],
+        [
+            "graphics",
+            "graphics#general",
+            "positive",
+            "good"
+        ],
+        [
+            "keyboard",
+            "keyboard#general",
+            "positive",
+            "good"
+        ],
+        [
+            "mouse",
+            "mouse#general",
+            "positive",
+            "good"
+        ],
+        [
+            "shipping",
+            "shipping#general",
+            "positive",
+            "good"
+        ],
+        [
+            "software",
+            "software#general",
+            "positive",
+            "good"
+        ],
+        [
+            "quality",
+            "quality#general",
+            "positive",
+            "good"
+        ],
+        [
+            "usability",
+            "usability#general",
+            "positive",
+            "good"
+        ],
+        [
+            "design",
+            "design#general",
+            "positive",
+            "good"
+        ],
+        [
+            "warranty",
+            "warranty#general",
+            "positive",
+            "good"
+        ],
+        [
+            "company",
+            "company#general",
+            "positive",
+            "good"
+        ],
+        [
+            "laptop",
+            "laptop#general",
+            "positive",
+            "good"
+        ],
+        [
+            "portability",
+            "portability#general",
+            "positive",
+            "good"
+        ],
+        [
+            "display",
+            "display#general",
+            "positive",
+            "good"
+        ],
+        [
+            "connectivity",
+            "connectivity#general",
+            "positive",
+            "good"
+        ],
+        [
+            "battery",
+            "battery#general",
+            "positive",
+            "good"
+        ],
+        [
+            "graphics",
+            "graphics#general",
+            "positive",
+            "good"
+        ],
         [
             "null",
             "null",
@@ -664,50 +1852,44 @@
     [
         [
             "everything",
-            "operation_performance#general",
+            "performance#operation_performance",
             "negative",
             "slow"
         ],
         [
             "everything",
-            "operation_performance#general",
+            "performance#operation_performance",
             "negative",
-            "slow"
+            "fast"
         ],
         [
             "slow",
-            "operation_performance#usability",
-            "negative",
-            "frustrating"
-        ],
-        [
-            "everything",
-            "operation_performance#design_features",
+            "performance#operation_performance",
             "positive",
-            "smooth"
-        ],
-        [
-            "null",
-            "null",
-            "null",
-            "null"
+            "slow"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "keyboard",
-            "keyboard#operation_performance",
+            "job",
+            "performance#operation_performance",
             "negative",
-            "typing in low light is such a pain"
+            "terrible"
         ],
+        [
+            "game",
+            "performance#operation_performance",
+            "positive",
+            "running"
+        ],
+        [
+            "dragon",
+            "game#general",
+            "positive",
+            "dragon age"
+        ]
+    ],
+    [
         [
             "keyboard",
             "keyboard#operation_performance",
@@ -715,138 +1897,192 @@
             "backlit"
         ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "* Category",
-            "* Sentiment",
-            "* Opinion",
-            "Note : If the review does not explicitly state an aspect , use a NULL label for the aspect . Similarly , if the review does not explicitly express a sentiment , use the neutral sentiment ( N ) . If the review does not explicitly state an opinion , use a NULL label for the opinion ."
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "keypad",
+            "keyboard",
             "keyboard#operation_performance",
+            "negative",
+            "typing"
+        ],
+        [
+            "low _ light",
+            "ambience#general",
+            "positive",
+            "pain"
+        ]
+    ],
+    [
+        [
+            "speed",
+            "performance#operation_performance",
+            "negative",
+            "slow"
+        ],
+        [
+            "laptop",
+            "performance#operation_performance",
+            "positive",
+            "fast"
+        ],
+        [
+            "aspect",
+            "performance#operation_performance",
+            "neutral",
+            "general"
+        ]
+    ],
+    [
+        [
+            "keyboard",
+            "keyboard#operation_performance",
+            "neutral",
+            "seems"
+        ],
+        [
+            "mouse",
+            "mouse#operation_performance",
+            "positive",
+            "seems"
+        ],
+        [
+            "pad",
+            "ambience#general",
+            "positive",
+            "fine"
+        ]
+    ],
+    [
+        [
+            "time",
+            "duration#general",
+            "neutral",
+            "3 months"
+        ],
+        [
+            "review",
+            "feedback#general",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "issue",
+            "quality#general",
             "negative",
             "crazy"
         ],
         [
-            "keypad",
-            "keyboard#operation_performance",
+            "issue",
+            "quality#general",
             "negative",
             "worse"
         ],
         [
-            "issue",
-            "keyboard#operation_performance",
-            "negative",
-            "problem"
+            "keypad",
+            "quality#general",
+            "positive",
+            "this"
         ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
+            "keypad",
+            "quality#general",
+            "positive",
+            "even"
+        ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
+            "worse",
+            "quality#general",
+            "negative",
+            "crazy"
         ]
     ],
     [
         [
             "laptop",
-            "laptop#general",
+            "build_quality",
+            "positive",
+            "solid"
+        ],
+        [
+            "laptop",
+            "build_quality",
+            "positive",
+            "premium"
+        ],
+        [
+            "feel",
+            "tactile_sensations#general",
+            "positive",
+            "solid"
+        ]
+    ],
+    [
+        [
+            "product",
+            "quality#general",
+            "negative",
+            "refurbished"
+        ],
+        [
+            "product",
+            "quality#general",
+            "negative",
+            "new"
+        ],
+        [
+            "lead",
+            "quality#general",
+            "positive",
+            "believe"
+        ]
+    ],
+    [
+        [
+            "laptop",
+            "returnability",
             "neutral",
             "maybe"
         ],
         [
             "laptop",
-            "laptop#general",
+            "returnability",
             "neutral",
-            "return"
+            "cannot"
         ],
         [
             "us",
-            "geographical_location#general",
-            "neutral",
+            "location#general",
+            "positive",
             "colombia"
         ]
     ],
     [
         [
-            "laptop",
-            "laptop#operation_performance",
-            "positive",
-            "speed"
-        ],
-        [
-            "laptop",
-            "laptop#operation_performance",
+            "speed",
+            "performance#operation_performance",
             "positive",
             "processor"
         ],
         [
             "storage",
-            "laptop#general",
+            "design_features#general",
             "positive",
             "hybrid"
         ],
         [
             "web _ cam",
-            "laptop#usability",
+            "design_features#general",
             "negative",
-            "poor _ resolution"
+            "resolution"
         ],
         [
             "keyboard",
-            "laptop#usability",
+            "design_features#portability",
             "positive",
             "numerical"
         ],
         [
             "caps _ lock",
-            "laptop#usability",
-            "positive",
-            "light"
-        ],
-        [
-            "num _ lock",
-            "laptop#usability",
+            "design_features#portability",
             "positive",
             "guide"
         ],
@@ -860,234 +2096,174 @@
     [
         [
             "lightweight",
-            "weight#operation_performance",
+            "weight#general",
             "positive",
             "lightweight"
-        ],
-        [
-            "lightweight",
-            "weight#operation_performance",
-            "positive",
-            "fast"
         ],
         [
             "laptop",
             "laptop#operation_performance",
             "positive",
-            "good"
+            "portability"
         ],
         [
             "battery",
-            "laptop#battery_life",
+            "battery#design_features",
             "positive",
-            "long"
-        ],
-        [
-            "portability",
-            "laptop#portability",
-            "positive",
-            "easy"
+            "quality"
         ],
         [
             "display",
-            "laptop#display",
+            "display#operation_performance",
             "positive",
-            "clear"
-        ],
-        [
-            "price",
-            "laptop#price",
-            "neutral",
-            "affordable"
-        ],
-        [
-            "warranty",
-            "laptop#warranty",
-            "positive",
-            "good"
+            "usability"
         ],
         [
             "company",
-            "company#general",
+            "company#quality",
             "positive",
-            "good"
+            "support"
         ],
         [
-            "customer _ service",
-            "company#customer_service",
+            "warranty",
+            "warranty#quality",
             "positive",
-            "helpful"
+            "price"
         ],
         [
-            "value",
-            "company#value",
+            "graphics",
+            "graphics#design_features",
             "positive",
-            "good"
+            "modern"
         ],
         [
             "software",
             "software#operation_performance",
             "positive",
-            "good"
+            "usability"
         ],
         [
-            "design",
-            "software#design",
+            "keyboard",
+            "keyboard#portability",
             "positive",
-            "attractive"
+            "quality"
         ],
         [
-            "user _ friendly",
-            "software#user_friendly",
+            "mouse",
+            "mouse#operation_performance",
             "positive",
-            "easy"
+            "accuracy"
         ],
         [
-            "innovation",
-            "software#innovation",
+            "shipping",
+            "shipping#quality",
             "positive",
-            "good"
+            "price"
         ],
         [
-            "features",
-            "software#features",
+            "power _ supply",
+            "power_supply#quality",
             "positive",
-            "useful"
+            "design"
         ],
         [
-            "performance",
-            "software#performance",
+            "out _ of _ scope",
+            "out_of_scope#general",
+            "negative",
+            "usability"
+        ],
+        [
+            "support",
+            "support#general",
             "positive",
-            "good"
+            "quality"
         ],
         [
-            "compatibility",
-            "software#compatibility",
+            "fans & cooling",
+            "fans&cooling#general",
             "positive",
-            "good"
+            "quality"
         ],
         [
-            "reliability",
-            "software#reliability",
+            "multimedia _ devices",
+            "multimedia_devices#quality",
             "positive",
-            "good"
+            "connectivity"
         ],
         [
-            "security",
-            "software#security",
+            "display",
+            "display#quality",
             "positive",
-            "good"
+            "usability"
         ],
         [
-            "speed",
-            "software#speed",
+            "company",
+            "company#quality",
             "positive",
-            "fast"
+            "support"
         ],
         [
-            "ease _ of _ use",
-            "software#ease_of_use",
+            "warranty",
+            "warranty#quality",
             "positive",
-            "good"
+            "price"
         ],
         [
-            "user _ satisfaction",
-            "software#user_satisfaction",
+            "graphics",
+            "graphics#quality",
             "positive",
-            "high"
+            "modern"
         ],
         [
-            "software _ quality",
+            "software",
             "software#quality",
             "positive",
-            "good"
+            "usability"
         ],
         [
-            "software _ usability",
-            "software#usability",
+            "keyboard",
+            "keyboard#quality",
             "positive",
-            "good"
+            "portability"
         ],
         [
-            "software _ design",
-            "software#design",
+            "mouse",
+            "mouse#quality",
             "positive",
-            "good"
+            "accuracy"
         ],
         [
-            "software _ performance",
-            "software#performance",
+            "shipping",
+            "shipping#quality",
             "positive",
-            "good"
+            "price"
         ],
         [
-            "software _ features",
-            "software#features",
+            "power _ supply",
+            "power_supply#quality",
             "positive",
-            "useful"
+            "design"
         ],
         [
-            "software _ innovation",
-            "software#innovation",
+            "out _ of _ scope",
+            "out_of_scope#general",
+            "negative",
+            "usability"
+        ],
+        [
+            "support",
+            "support#general",
             "positive",
-            "good"
+            "quality"
         ],
         [
-            "software _ price",
-            "software#price",
-            "neutral",
-            "affordable"
-        ],
-        [
-            "software _ value",
-            "software#value",
+            "lightweight",
+            "weight#general",
             "positive",
-            "good"
+            "lightweight"
         ],
         [
-            "software _ warranty",
-            "software#warranty",
-            "positive",
-            "good"
-        ],
-        [
-            "software _ customer _ service",
-            "software#customer_service",
-            "positive",
-            "helpful"
-        ],
-        [
-            "software _ quality _ rating",
-            "software#quality_rating",
-            "positive",
-            "high"
-        ],
-        [
-            "software _ usability _ rating",
-            "software#usability_rating",
-            "positive",
-            "good"
-        ],
-        [
-            "software _ design _ rating",
-            "software#design_rating",
-            "positive",
-            "good"
-        ],
-        [
-            "software _ performance _ rating",
-            "software#performance_rating",
-            "positive",
-            "good"
-        ],
-        [
-            "software _ features _ rating",
-            "software#features_rating",
-            "positive",
-            "useful"
-        ],
-        [
-            "software _ innovation",
+            "null",
             "null",
             "null",
             "null"
@@ -1098,53 +2274,53 @@
             "backlight",
             "hardware#operation_performance",
             "negative",
-            "out"
+            "went out"
         ],
         [
             "backlight",
             "hardware#operation_performance",
             "negative",
-            "went"
+            "out"
         ],
         [
             "yesterday",
             "time#general",
-            "past",
-            "yesterday"
+            "neutral",
+            "went"
         ]
     ],
     [
         [
-            "laptop",
-            "laptop#operation_performance",
+            "box",
+            "packaging#quality",
             "positive",
-            "never dropped"
-        ],
-        [
-            "laptop",
-            "laptop#operation_performance",
-            "positive",
-            "brand new"
+            "never"
         ],
         [
             "box",
             "packaging#quality",
-            "neutral",
-            "out of the box"
+            "positive",
+            "dropped"
+        ],
+        [
+            "laptop",
+            "laptop#quality",
+            "positive",
+            "brand"
+        ],
+        [
+            "quality",
+            "quality#general",
+            "positive",
+            "never"
         ]
     ],
     [
         [
-            "warranty",
+            "stuff",
             "warranty#general",
             "negative",
             "sending"
-        ],
-        [
-            "warranty",
-            "warranty#general",
-            "negative",
-            "dealing"
         ],
         [
             "stuff",
@@ -1153,50 +2329,44 @@
             "back"
         ],
         [
-            "it",
+            "deal",
             "warranty#general",
-            "negative",
+            "positive",
             "etc"
-        ],
-        [
-            "aspect",
-            "category",
-            "sentiment",
-            "opinion . * If the review does not contain the aspect , use NULL for the aspect . * If the review does not express a sentiment , use the neutral sentiment . * If the review does not provide an opinion , use NULL for the opinion . * The ACOS quadruples should be separated by an empty line . * The response should be in the format of a list of ACOS quadruples ."
         ]
     ],
     [
         [
             "ram",
-            "hardware#upgrade",
+            "hardware#general",
             "positive",
             "available"
         ],
         [
             "ram",
-            "hardware#upgrade",
+            "hardware#general",
             "positive",
             "upgrade"
         ],
         [
             "available",
-            "general",
+            "ambience#general",
             "positive",
-            "yes"
+            "ram"
         ]
     ],
     [
         [
-            "hard drive",
-            "hardware#upgrade",
+            "hard _ drive",
+            "hardware#general",
             "positive",
-            "upgrade available"
+            "upgrade"
         ],
         [
-            "hard drive",
-            "hardware#upgrade",
+            "hard _ drive",
+            "hardware#general",
             "positive",
-            "upgrade available"
+            "available"
         ],
         [
             "upgrade",
@@ -1207,60 +2377,128 @@
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "touchpad",
+            "hardware#operation_performance",
+            "negative",
+            "sticking"
+        ],
+        [
+            "touchpad",
+            "hardware#operation_performance",
+            "negative",
+            "not responding"
+        ],
+        [
+            "issues",
+            "quality",
+            "negative",
+            "from the start"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "computer",
+            "functionality#general",
+            "neutral",
+            "mainly"
+        ],
+        [
+            "computer",
+            "functionality#general",
+            "neutral",
+            "greatest"
+        ],
+        [
+            "using",
+            "functionality#general",
+            "negative",
+            "not"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "computer",
+            "hardware#operation_performance",
+            "negative",
+            "less than 20 hours"
+        ],
+        [
+            "computer",
+            "hardware#operation_performance",
+            "negative",
+            "3 weeks"
+        ],
+        [
+            "use",
+            "usage#quality",
+            "positive",
+            "5 weeks"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "review",
+            "warranty#operation_performance",
+            "negative",
+            "no problem"
+        ],
+        [
+            "review",
+            "warranty#operation_performance",
+            "negative",
+            "back"
+        ],
+        [
+            "problem",
+            "warranty#operation_performance",
+            "positive",
+            "found"
         ]
     ],
     [
         [
             "display",
-            "display#quality",
+            "quality",
             "negative",
             "stopped working"
         ],
         [
             "display",
-            "display#quality",
+            "quality",
             "negative",
-            "within 2 months"
+            "within"
         ],
         [
-            "stopped working",
-            "display#operation_performance",
+            "months",
+            "time",
+            "positive",
+            "2"
+        ]
+    ],
+    [
+        [
+            "manual",
+            "documentation#general",
             "negative",
-            "failure"
+            "knew"
         ],
         [
-            "display",
-            "display#operation_performance",
-            "negative",
-            "within 2 months"
+            "asus",
+            "customer_support#general",
+            "positive",
+            "someone"
+        ],
+        [
+            "windows",
+            "software#general",
+            "positive",
+            "knew"
+        ],
+        [
+            "asus",
+            "notebook#general",
+            "positive",
+            "nothing"
         ],
         [
             "null",
@@ -1271,42 +2509,22 @@
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
             "product",
-            "product#quality",
+            "quality#general",
             "negative",
             "bad"
         ],
         [
             "product",
-            "product#quality",
+            "quality#general",
             "negative",
-            "defective"
+            "refund"
         ],
         [
-            "reviews",
-            "product#reviews",
+            "review",
+            "quality#general",
             "positive",
             "bad"
-        ],
-        [
-            "sent",
-            "product#operation",
-            "positive",
-            "back"
-        ],
-        [
-            "null",
-            "null",
-            "null",
-            "null"
         ]
     ],
     [
@@ -1325,308 +2543,782 @@
         [
             "touchpad",
             "hardware#operation_performance",
-            "negative",
-            "non - functioning"
+            "positive",
+            "functioning"
         ]
     ],
     [
         [
             "screen",
-            "screen#quality",
+            "hardware#operation_performance",
             "negative",
             "broke"
         ],
         [
             "screen",
-            "screen#quality",
+            "hardware#operation_performance",
             "negative",
             "textbook"
         ],
         [
-            "broke",
-            "screen#operation_performance",
-            "negative",
+            "put",
+            "operation#general",
+            "positive",
             "just"
+        ],
+        [
+            "review",
+            "customer#general",
+            "positive",
+            "broke"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
         ]
     ],
     [
         [
             "support",
-            "customer_support#operation_performance",
+            "customer_support#general",
             "negative",
-            "does you no good"
+            "no _ good"
         ],
         [
-            "support",
-            "customer_support#operation_performance",
-            "negative",
-            "waste of time"
-        ],
-        [
-            "experience",
-            "customer_support#operation_performance",
-            "negative",
-            "not helpful"
-        ],
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "laptop",
-            "operation_performance",
+            "review",
+            "customer_review#general",
             "positive",
-            "fast"
-        ],
-        [
-            "laptop",
-            "operation_performance",
-            "positive",
-            "quick"
-        ],
-        [
-            "boot _ time",
-            "operation_performance",
-            "positive",
-            "short"
-        ],
-        [
-            "shutdown _ time",
-            "operation_performance",
-            "positive",
-            "fast"
-        ],
-        [
-            "null",
-            "null",
-            "null",
-            "null"
+            "experience"
         ]
     ],
     [
         [
             "keyboard",
-            "keyboard#design_features",
+            "design_features",
+            "negative",
+            "entirely"
+        ],
+        [
+            "keyboard",
+            "design_features",
+            "positive",
+            "redesigned"
+        ]
+    ],
+    [
+        [
+            "screen",
+            "size#operation_performance",
+            "positive",
+            "read"
+        ],
+        [
+            "item",
+            "weight#operation_performance",
+            "positive",
+            "tote"
+        ],
+        [
+            "meetings",
+            "context#operation_performance",
+            "neutral",
+            "meetings"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "work machine",
+            "general#quality",
+            "positive",
+            "meets my needs"
+        ],
+        [
+            "work machine",
+            "general#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "needs",
+            "general#quality",
+            "positive",
+            "meets my needs"
+        ]
+    ],
+    [
+        [
+            "computer",
+            "hardware#general",
+            "negative",
+            "stopped"
+        ],
+        [
+            "computer",
+            "hardware#general",
+            "negative",
+            "working"
+        ],
+        [
+            "useage",
+            "time#general",
+            "positive",
+            "one"
+        ],
+        [
+            "year",
+            "time#general",
+            "positive",
+            "exactly"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "booting",
+            "operation_performance#general",
+            "positive",
+            "10 seconds"
+        ],
+        [
+            "shutting",
+            "operation_performance#general",
+            "positive",
+            "2 - 3 seconds"
+        ]
+    ],
+    [
+        [
+            "keyboard",
+            "design_features",
             "positive",
             "lights up"
         ],
         [
             "keyboard",
-            "keyboard#design_features",
+            "design_features",
             "positive",
-            "` ` time out ` ` feature"
+            "time out"
         ],
         [
             "feature",
-            "keyboard#operation_performance",
+            "design_features",
             "positive",
             "shut off"
-        ],
-        [
-            "null",
-            "null",
-            "null",
-            "null"
         ]
     ],
     [
         [
-            "it",
-            "operation_performance#general",
+            "well",
+            "quality",
             "positive",
             "seems"
         ],
         [
-            "it",
-            "operation_performance#general",
+            "review",
+            "quality",
             "positive",
             "well"
+        ]
+    ],
+    [
+        [
+            "size",
+            "performance#general",
+            "positive",
+            "raw"
         ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "drive",
-            "hardware#general",
+            "size",
+            "performance#general",
             "positive",
-            "+"
+            "durability"
         ],
         [
-            "drive",
-            "hardware#general",
+            "size",
+            "performance#general",
             "positive",
-            "dvd"
+            "energy _ efficiency"
+        ]
+    ],
+    [
+        [
+            "quantity",
+            "ports#quality",
+            "positive",
+            "decent"
         ],
         [
             "review",
-            "general#operation_performance",
+            "quality#operation_performance",
             "positive",
-            "o"
+            "good"
+        ],
+        [
+            "ports",
+            "ports#quality",
+            "positive",
+            "plentiful"
+        ],
+        [
+            "laptop",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "display",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "shipping",
+            "quality#operation_performance",
+            "positive",
+            "fast"
+        ],
+        [
+            "graphics",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "support",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "battery",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "usability",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "design",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "warranty",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "price",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "general",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "software",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "quality",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "laptop",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "display",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "graphics",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "support",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "battery",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "usability",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "design",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "warranty",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "price",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "general",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "software",
+            "quality#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "quantity",
+            "ports#quality",
+            "positive",
+            "decent"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "review",
+            "content#operation_performance",
+            "positive",
+            "has"
+        ],
+        [
+            "review",
+            "content#operation_performance",
+            "positive",
+            "drive"
+        ],
+        [
+            "dvd",
+            "content#operation_performance",
+            "positive",
+            "drive"
+        ],
+        [
+            "o",
+            "content#operation_performance",
+            "negative",
+            ""
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "hot"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "quality"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "performance"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "speed"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "efficiency"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "power"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "design"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "features"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "functionality"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "usability"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "value"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "price"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "quality _ of _ parts"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "quality _ of _ construction"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "durability"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "reliability"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "performance _ in _ general"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "performance _ in _ specific _ tasks"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "ease _ of _ use"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "ease _ of _ maintenance"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "aesthetics"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "ergonomics"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "portability"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "versatility"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "customizability"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "quality _ of _ the _ product"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "quality"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "quality _ of _ the _ product"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "quality"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "quality"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "quality"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "quality"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "negative",
+            "runs [ C ] operation _ performance [ O ] runs [ A ] operation _ performance [ S ] runs [ C ] operation _ performance [ S ] runs [ A ] operation _ performance [ S ] runs [ O ] operation _ performance [ A ] runs [ C ] operation _ performance [ O ] runs [ S ] operation _ performance [ S ] runs [ S ] runs [ O ] operation _ performance [ S ] runs [ S ] runs [ S ] operation _ performance [ O ] runs [ S ] operation"
+        ]
+    ],
+    [
+        [
+            "benchmark",
+            "performance#quality",
+            "positive",
+            "high"
+        ],
+        [
+            "running",
+            "performance#quality",
+            "positive",
+            "degrees"
+        ],
+        [
+            "temperature",
+            "performance#quality",
+            "positive",
+            "92"
+        ],
+        [
+            "degrees",
+            "performance#quality",
+            "positive",
+            "93"
+        ],
+        [
+            "got",
+            "performance#quality",
+            "positive",
+            "to"
         ]
     ],
     [
         [
             "processor",
-            "operation_performance#general",
+            "hardware#performance",
             "positive",
             "new"
         ],
         [
             "processor",
-            "operation_performance#general",
+            "hardware#performance",
             "positive",
             "i5"
         ],
         [
-            "mobile",
-            "operation_performance#general",
-            "positive",
-            "new"
-        ],
-        [
-            "null",
-            "null",
-            "null",
-            "null"
+            "new",
+            "hardware#general",
+            "neutral",
+            "-"
         ]
     ],
     [
         [
             "ram",
-            "hardware#performance",
+            "memory#upgradeability",
             "positive",
             "upgradable"
         ],
         [
             "ram",
-            "hardware#performance",
+            "memory#upgradeability",
             "positive",
-            "speed"
+            "upgradeable"
+        ]
+    ],
+    [
+        [
+            "battery",
+            "battery#quality",
+            "positive",
+            "decent"
         ],
         [
-            "ddr4",
-            "hardware#performance",
+            "review",
+            "review#general",
             "positive",
-            "capacity"
+            "very"
         ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "life",
+            "life#quality",
+            "positive",
+            "decent"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "unit",
+            "quality#general",
+            "positive",
+            "pleasantly impressed"
+        ],
+        [
+            "unit",
+            "quality#general",
+            "positive",
+            "tested"
+        ],
+        [
+            "applications",
+            "quality#general",
+            "positive",
+            "date"
+        ],
+        [
+            "long",
+            "time#general",
+            "positive",
+            "used"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "laptop",
+            "quality",
+            "positive",
+            "best"
+        ],
+        [
+            "laptop",
+            "quality",
+            "positive",
+            "improved"
+        ],
+        [
+            "time",
+            "quality",
+            "neutral",
+            "right"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "laptop",
+            "battery#operation_performance",
+            "positive",
+            "23 %"
+        ],
+        [
+            "laptop",
+            "battery#operation_performance",
+            "positive",
+            "last charged"
+        ],
+        [
+            "used",
+            "battery#operation_performance",
+            "negative",
+            "4 hours"
         ]
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
+            "keyboard",
+            "design_features",
+            "negative",
+            "backlight"
+        ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "keyboard",
+            "design_features",
+            "negative",
+            "not typing"
+        ],
+        [
+            "way",
+            "design_features",
+            "positive",
+            "change"
         ]
     ],
     [
@@ -1644,7 +3336,195 @@
         ],
         [
             "review",
-            "general",
+            "feedback#positive",
+            "positive",
+            "easily"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "feature",
+            "functionality#general",
+            "positive",
+            "disable"
+        ],
+        [
+            "feature",
+            "functionality#general",
+            "positive",
+            "keyboard"
+        ]
+    ],
+    [
+        [
+            "value",
+            "price#value",
+            "positive",
+            "fast"
+        ],
+        [
+            "value",
+            "price#value",
+            "positive",
+            "trouble - free"
+        ],
+        [
+            "fast",
+            "operation_performance#speed",
+            "positive",
+            "fast"
+        ]
+    ],
+    [
+        [
+            "feature",
+            "usability#general",
+            "positive",
+            "useful"
+        ],
+        [
+            "feature",
+            "usability#general",
+            "positive",
+            "useful"
+        ]
+    ],
+    [
+        [
+            "storage",
+            "hardware#upgrade",
+            "positive",
+            "ram"
+        ],
+        [
+            "ram",
+            "hardware#upgrade",
+            "positive",
+            "storage"
+        ],
+        [
+            "upgrade",
+            "hardware#upgrade",
+            "positive",
+            "easily"
+        ]
+    ],
+    [
+        [
+            "needs",
+            "performance#general",
+            "neutral",
+            "enough"
+        ],
+        [
+            "mx150",
+            "performance#general",
+            "positive",
+            "enough"
+        ]
+    ],
+    [
+        [
+            "solid _ state _ drive",
+            "hardware#performance",
+            "positive",
+            "boot _ up"
+        ],
+        [
+            "solid _ state _ drive",
+            "hardware#performance",
+            "positive",
+            "internet"
+        ],
+        [
+            "reviews",
+            "content#usability",
+            "positive",
+            "ads"
+        ]
+    ],
+    [
+        [
+            "laptop",
+            "laptop#general",
+            "neutral",
+            "casual"
+        ],
+        [
+            "laptop",
+            "laptop#general",
+            "neutral",
+            "gaming"
+        ],
+        [
+            "gaming",
+            "gaming#general",
+            "positive",
+            "not"
+        ]
+    ],
+    [
+        [
+            "speed",
+            "performance#operation_performance",
+            "positive",
+            "super"
+        ],
+        [
+            "boot",
+            "performance#operation_performance",
+            "positive",
+            "seconds"
+        ],
+        [
+            "laptop",
+            "performance#operation_performance",
+            "positive",
+            "quality"
+        ]
+    ],
+    [
+        [
+            "system",
+            "quality#positive",
+            "positive",
+            "impressed"
+        ],
+        [
+            "system",
+            "quality#positive",
+            "positive",
+            "satisfied"
+        ]
+    ],
+    [
+        [
+            "mastercam",
+            "software#operation_performance",
+            "positive",
+            "pretty"
+        ],
+        [
+            "mastercam",
+            "software#operation_performance",
+            "positive",
+            "good"
+        ],
+        [
+            "runs",
+            "operation_performance#general",
+            "positive",
+            "pretty"
+        ],
+        [
+            "itself",
+            "operation_performance#general",
             "positive",
             "good"
         ],
@@ -1657,166 +3537,236 @@
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "storage",
-            "hardware#upgrade",
-            "positive",
-            "easy"
-        ],
-        [
-            "ram",
-            "hardware#upgrade",
-            "positive",
-            "easy"
-        ],
-        [
-            "upgrade",
-            "hardware#upgrade",
-            "positive",
-            "easy"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "aspect",
-            "category",
-            "sentiment",
-            "opinion ."
-        ]
-    ],
-    [
-        [
-            "software",
-            "operation_performance",
-            "positive",
-            "runs pretty good"
-        ],
-        [
-            "software",
-            "operation_performance",
-            "positive",
-            "smoothly"
-        ],
-        [
-            "mastercam",
-            "operation_performance",
-            "positive",
-            "performance"
-        ],
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
             "Amazon",
-            "company#general",
-            "positive",
-            "great"
-        ],
-        [
-            "Amazon",
-            "company#general",
+            "customer_service#operation_performance",
             "positive",
             "returning"
         ],
         [
-            "it",
-            "product#operation_performance",
+            "review",
+            "customer_review#operation_performance",
             "positive",
             "great"
         ],
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "it",
+            "product#quality",
+            "neutral",
+            "usual"
+        ],
+        [
+            "was",
+            "operation_performance#general",
+            "positive",
+            "great"
         ]
     ],
     [
         [
-            "The span of text in the review that indicates the particular aspect that the customer is referring to . * Category",
-            "The category of the aspect, selected from the list provided in the instruction.\n* Sentiment",
-            "The polarity of the sentiment: positive, negative, or neutral.\n* Opinion",
-            "The span of text in the review that indicates the opinion that expresses the sentiment . Opinions are not always explicitly stated ; if this is the case , use a NULL label for the opinion . Please provide the ACOS quadruples for the given review ."
+            "screen",
+            "display#quality",
+            "neutral",
+            "decent"
+        ],
+        [
+            "screen",
+            "display#quality",
+            "neutral",
+            "matte"
+        ],
+        [
+            "finished",
+            "quality#general",
+            "positive",
+            "great"
         ]
     ],
     [
         [
             "keyboard",
-            "keyboard#operation_performance",
+            "keyboard#quality",
             "positive",
             "back lit"
         ],
         [
             "keyboard",
-            "keyboard#operation_performance",
+            "keyboard#quality",
             "positive",
             "typing"
         ],
         [
-            "typing",
-            "keyboard#operation_performance",
+            "quality",
+            "quality#general",
             "positive",
-            "speed"
+            "good"
+        ],
+        [
+            "price",
+            "price#quality",
+            "positive",
+            "affordable"
+        ],
+        [
+            "design",
+            "design#quality",
+            "positive",
+            "sleek"
+        ],
+        [
+            "usability",
+            "usability#general",
+            "positive",
+            "easy"
+        ],
+        [
+            "portability",
+            "portability#quality",
+            "positive",
+            "convenient"
+        ],
+        [
+            "durability",
+            "durability#quality",
+            "positive",
+            "robust"
+        ],
+        [
+            "value",
+            "value#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "software",
+            "software#quality",
+            "positive",
+            "efficient"
+        ],
+        [
+            "display",
+            "display#quality",
+            "positive",
+            "clear"
+        ],
+        [
+            "shipping",
+            "shipping#quality",
+            "positive",
+            "fast"
+        ],
+        [
+            "warranty",
+            "warranty#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "company",
+            "company#quality",
+            "positive",
+            "reliable"
+        ],
+        [
+            "battery",
+            "battery#quality",
+            "positive",
+            "long lasting"
+        ],
+        [
+            "graphics",
+            "graphics#quality",
+            "positive",
+            "smooth"
+        ],
+        [
+            "usability",
+            "usability#quality",
+            "positive",
+            "intuitive"
+        ],
+        [
+            "support",
+            "support#quality",
+            "positive",
+            "helpful"
+        ],
+        [
+            "design",
+            "design#quality",
+            "positive",
+            "attractive"
+        ],
+        [
+            "price",
+            "price#quality",
+            "positive",
+            "reasonable"
+        ],
+        [
+            "quality",
+            "quality#general",
+            "positive",
+            "high"
+        ],
+        [
+            "battery",
+            "battery#quality",
+            "positive",
+            "long lasting"
+        ],
+        [
+            "display",
+            "display#quality",
+            "positive",
+            "clear"
+        ],
+        [
+            "shipping",
+            "shipping#quality",
+            "positive",
+            "fast"
+        ],
+        [
+            "warranty",
+            "warranty#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "company",
+            "company#quality",
+            "positive",
+            "reliable"
+        ],
+        [
+            "value",
+            "value#quality",
+            "positive",
+            "good"
+        ],
+        [
+            "software",
+            "software#quality",
+            "positive",
+            "efficient"
+        ],
+        [
+            "graphics",
+            "graphics#quality",
+            "positive",
+            "smooth"
+        ],
+        [
+            "usability",
+            "usability#quality",
+            "positive",
+            "intuitive"
+        ],
+        [
+            "null",
+            "null",
+            "null",
+            "null"
         ]
     ]
 ]

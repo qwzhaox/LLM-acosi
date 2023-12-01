@@ -9,7 +9,7 @@ for path in Path(".").rglob("output.pkl"):
 for path in output_paths:
     json_path = path.parent / "output.json"
     if json_path.exists():
-        continue
+        json_path.unlink()
     print(f"Converting {path} to {json_path}")
     run(
         [

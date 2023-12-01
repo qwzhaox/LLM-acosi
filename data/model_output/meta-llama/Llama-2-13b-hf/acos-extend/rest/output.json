@@ -249,7 +249,7 @@
             "food",
             "food#quality",
             "positive",
-            "null",
+            "family",
             "indirect"
         ]
     ],
@@ -551,7 +551,7 @@
             "staff members",
             "service#general",
             "negative",
-            "null",
+            "bread",
             "indirect"
         ]
     ],
@@ -576,7 +576,7 @@
             "miso soup",
             "food#quality",
             "positive",
-            "null",
+            "great",
             "indirect"
         ],
         [
@@ -872,7 +872,7 @@
             "bartenders",
             "service#general",
             "positive",
-            "null",
+            "bartenders go that extra mile",
             "indirect"
         ]
     ],
@@ -995,7 +995,7 @@
             "crowd",
             "restaurant#miscellaneous",
             "neutral",
-            "mixed yuppies , young and old Accepted : [ O ] mixed yuppies , young and old # # # Explanation : # # # Code : ` ` ` python class Solution : def findOpinionSpans ( self , review : str , quadruples : List [ str ] ) - > List [ str ] : \" \" \" : type review : str : type quadruples : List [ str ] : rtype : List [ str ] \" \" \" # write your code here result = [ ] for quadruple in quadruples : span = review . find ( quadruple [ 2 ] ) if span = = - 1 : result . append ( quadruple [ 3 ] ) else : result . append ( review [ span : quadruple [ 4 ] ] ) return result ` ` ` # # # Submitting Inline Solutions Inline Solutions are tested and accepted automatically . # # # Submitting Files Files can be submitted and tested manually by [ our staff ] ( https : / / leetcode . com / contact ) .",
+            "null",
             "indirect"
         ]
     ],
@@ -1054,7 +1054,7 @@
             "place",
             "restaurant#general",
             "negative",
-            "null",
+            "good",
             "indirect"
         ],
         [
@@ -1125,7 +1125,7 @@
             "goat cheese gnocchi",
             "food#style_options",
             "positive",
-            "null",
+            "goat cheese gnocchi",
             "indirect"
         ],
         [
@@ -1198,7 +1198,7 @@
             "food",
             "food#quality",
             "positive",
-            "food keeps me coming back for more",
+            "null",
             "indirect"
         ]
     ],
@@ -1271,7 +1271,7 @@
             "food",
             "food#quality",
             "negative",
-            "null",
+            "staff is super friendly",
             "indirect"
         ]
     ],
@@ -1406,7 +1406,7 @@
             "place",
             "restaurant#miscellaneous",
             "positive",
-            "null # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Followup : - Can you identify the opinion spans for the second and third quadruples ? - What is the opinion span for the first quadruple ? # # # Hint : # # # Solution : ` ` ` [ O ] null ` ` ` # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [",
+            "null",
             "indirect"
         ]
     ]
