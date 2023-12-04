@@ -45,9 +45,13 @@ Each quintuple is comprised of 5 components:
 
 def main(args):
     prompt, examples, response_head = get_ACOSI_extract_prompt()
-    output, response_key = run_pipeline(
-        args, prompt, examples, absa_task="acosi-extract"
-    )
+
+    if "gpt" in args.model_name.lower():
+        pass
+    else:
+        output, response_key = run_pipeline(
+            args, prompt, examples, absa_task="acosi-extract"
+        )
     formatted_output = format_output(output, response_key, response_head)
     dump_output(args.output_file, formatted_output)
 

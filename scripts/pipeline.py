@@ -49,31 +49,8 @@ def get_formatted_annotations(annotations):
     return annots_str
 
 
-def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
-    # Initialize the pipeline with the specified model, and set the device
-    tokenizer = AutoTokenizer.from_pretrained(
-        args.tokenizer_name, model_max_length=args.max_length
-    )
-    # model = AutoModelForCausalLM.from_pretrained(args.model_name)
-    gen_config = GenerationConfig.from_pretrained(args.model_name)
-    gen_config.max_new_tokens = args.max_new_tokens
-    gen_config.max_length = args.max_length
-    # pre_config = PretrainedConfig.from_pretrained(args.model_name)
-
-    print("Initializing pipeline...")
-
-    model_pipe = pipeline(
-        args.task,
-        model=args.model_name,
-        tokenizer=tokenizer,
-        device_map="auto",
-        trust_remote_code=args.remote,
-        # config=pre_config,
-    )
-
-    print("Loading dataset...")
-
-    with open(args.dataset_file, "r") as f:
+def get_prompts(dataset_file, prompt, examples=[], absa_task="extract-acosi"):
+    with open(dataset_file, "r") as f:
         dataset = f.readlines()
 
     formatted_prompt, response_key = alpaca_format_prompt()
@@ -82,7 +59,7 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
 
     prompts = []
 
-    for data in tqdm(dataset, desc="Processing", unit="item"):
+    for data in tqdm(dataset, desc="Processing Dataset", unit="item"):
         review = data.split("####")[0]
         annotations = eval(data.split("####")[1])
 
@@ -104,6 +81,33 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
         bare_prompt = prompt + review_str + annotations_str
         final_prompt = example_str + formatted_prompt.format(instruction=bare_prompt)
         prompts.append(final_prompt)
+
+    return prompts, response_key
+
+
+def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
+    prompts, response_key = get_prompts(args.dataset_file, prompt, examples, absa_task)
+
+    # Initialize the pipeline with the specified model, and set the device
+    tokenizer = AutoTokenizer.from_pretrained(
+        args.tokenizer_name, model_max_length=args.max_length
+    )
+    # model = AutoModelForCausalLM.from_pretrained(args.model_name)
+    gen_config = GenerationConfig.from_pretrained(args.model_name)
+    gen_config.max_new_tokens = args.max_new_tokens
+    gen_config.max_length = args.max_length
+    # pre_config = PretrainedConfig.from_pretrained(args.model_name)
+
+    print("Initializing pipeline...")
+
+    model_pipe = pipeline(
+        args.task,
+        model=args.model_name,
+        tokenizer=tokenizer,
+        device_map="auto",
+        trust_remote_code=args.remote,
+        # config=pre_config,
+    )
 
     print("Running pipeline...")
 

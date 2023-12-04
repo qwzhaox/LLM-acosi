@@ -72,9 +72,12 @@ def main(args):
     else:
         raise ValueError("Invalid dataset domain.")
 
-    output, response_key = run_pipeline(
-        args, prompt, examples, absa_task="acos_extract"
-    )
+    if "gpt" in args.model_name.lower():
+        pass
+    else:
+        output, response_key = run_pipeline(
+            args, prompt, examples, absa_task="acos_extract"
+        )
 
     formatted_output = format_output(output, response_key, response_head)
     formatted_output = [[quint[:-1] for quint in quints] for quints in formatted_output]

@@ -1,12 +1,29 @@
 [
-    [],
     [
         [
-            "service",
-            "service#general",
+            "NULL",
+            "restaurant#general",
             "positive",
+            "love"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "parking",
+            "parking#general",
+            "negative",
             "NULL"
-        ],
+        ]
+    ],
+    [
         [
             "food",
             "food#general",
@@ -14,8 +31,50 @@
             "NULL"
         ],
         [
-            "atmosphere",
+            "service",
+            "service#general",
+            "positive",
+            "excellent"
+        ]
+    ],
+    [
+        [
+            "crab rangoon",
+            "food#general",
+            "positive",
+            "delicious"
+        ],
+        [
+            "spicy tuna roll",
+            "food#general",
+            "positive",
+            "delicious"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "great"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "excellent"
+        ],
+        [
+            "NULL",
             "ambience#general",
+            "positive",
+            "nice"
+        ]
+    ],
+    [
+        [
+            "camera",
+            "camera#general",
             "positive",
             "NULL"
         ]
@@ -30,6 +89,152 @@
         [
             "service",
             "service#general",
+            "negative",
+            "bad"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "NULL",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "restaurant#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "decent"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "horrible"
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "positive",
+            "best"
+        ]
+    ],
+    [
+        [
+            "server",
+            "service#general",
+            "positive",
+            "great"
+        ],
+        [
+            "food",
+            "food#general",
+            "positive",
+            "really good"
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "negative",
+            "slow"
+        ],
+        [
+            "food",
+            "food#general",
+            "negative",
+            "not very good"
+        ]
+    ],
+    [
+        [
+            "sound quality",
+            "multimedia_devices#general",
+            "positive",
+            "good"
+        ],
+        [
+            "bass",
+            "multimedia_devices#general",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "good"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "book",
+            "book#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "book",
+            "book#general",
+            "negative",
+            "a little too technical"
+        ]
+    ],
+    [
+        [
+            "great place",
+            "restaurant#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "food",
+            "restaurant#food",
+            "positive",
+            "delicious"
+        ],
+        [
+            "service",
+            "restaurant#service",
+            "positive",
+            "excellent"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
             "positive",
             "good"
         ],
@@ -37,94 +242,60 @@
             "prices",
             "restaurant#prices",
             "positive",
-            "good"
-        ]
-    ],
-    [
-        [
-            "battery life",
-            "battery#general",
-            "negative",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "screen size",
-            "laptop#screen_size",
-            "positive",
-            "NULL"
-        ],
-        [
-            "resolution",
-            "laptop#screen_resolution",
-            "positive",
-            "NULL"
+            "reasonable"
         ]
     ],
     [
         [
             "hotel",
-            "hotel#general",
+            "location#general",
             "positive",
-            "clean"
+            "NULL"
         ],
         [
             "staff",
             "service#general",
             "positive",
             "friendly"
-        ],
-        [
-            "location",
-            "hotel#general",
-            "positive",
-            "good"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "negative",
-            "extremely slow"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "service",
-            "service#general",
-            "negative",
-            "NULL"
         ]
     ],
     [
         [
             "NULL",
-            "gifts#general",
+            "restaurant#general",
             "positive",
-            "NULL"
+            "good"
         ]
     ],
     [
         [
-            "place",
-            "restaurant#cleanliness",
+            "NULL",
+            "restaurant#general",
             "positive",
-            "clean"
+            "excellent"
         ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "negative",
+            "good"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "excellent"
+        ]
+    ],
+    [
         [
             "food",
             "restaurant#general",
@@ -132,10 +303,10 @@
             "great"
         ],
         [
-            "NULL",
+            "service",
             "restaurant#general",
             "positive",
-            "wonderful"
+            "great"
         ]
     ],
     [
@@ -144,18 +315,702 @@
             "food#general",
             "positive",
             "great"
+        ]
+    ],
+    [
+        [
+            "earphones",
+            "multimedia_devices#general",
+            "negative",
+            "cheap"
         ],
         [
-            "service",
+            "earphones",
+            "multimedia_devices#general",
+            "negative",
+            "flimsy"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "fresh and healthy"
+        ]
+    ],
+    [
+        [
+            "food",
+            "restaurant#general",
+            "positive",
+            "excellent"
+        ],
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "friendly and professional"
+        ],
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "warm and inviting"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "excellent"
+        ],
+        [
+            "NULL",
             "service#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "service",
+            "restaurant#service",
+            "positive",
+            "great"
+        ],
+        [
+            "food",
+            "restaurant#food",
             "positive",
             "great"
         ],
         [
             "atmosphere",
-            "ambience#general",
+            "restaurant#ambience",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "negative",
+            "very slow"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "service#general",
             "positive",
             "great"
+        ],
+        [
+            "food",
+            "food#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "food#style_options",
+            "negative",
+            "better"
+        ],
+        [
+            "chicken salad",
+            "food#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "good"
+        ],
+        [
+            "service",
+            "service#general",
+            "negative",
+            "very poor"
+        ]
+    ],
+    [
+        [
+            "case",
+            "laptop#accessories",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "service",
+            "service#general",
+            "negative",
+            "horrible"
+        ]
+    ],
+    [
+        [
+            "food",
+            "restaurant#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "service",
+            "service#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "sushi",
+            "food#general",
+            "positive",
+            "best"
+        ],
+        [
+            "restaurant",
+            "restaurant#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "they",
+            "shoes#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "they",
+            "shoes#general",
+            "positive",
+            "comfortable"
+        ]
+    ],
+    [
+        [
+            "sashimi",
+            "food#quality",
+            "positive",
+            "freshest and most tender"
+        ],
+        [
+            "nigiri",
+            "food#quality",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "great"
+        ],
+        [
+            "staff",
+            "service#general",
+            "positive",
+            "attentive"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "product#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "delicious"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "great"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "NULL",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "service",
+            "service#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "great"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "good"
+        ],
+        [
+            "ambiance",
+            "ambience#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "good"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "hotel#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "hotel#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "wine#general",
+            "positive",
+            "good"
+        ],
+        [
+            "food",
+            "food#general",
+            "negative",
+            "not very good"
+        ]
+    ],
+    [
+        [
+            "restaurant",
+            "restaurant#general",
+            "negative",
+            "worst"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "neutral",
+            "NULL"
+        ],
+        [
+            "service",
+            "service#general",
+            "negative",
+            "horrible"
+        ]
+    ],
+    [
+        [
+            "food",
+            "restaurant#general",
+            "positive",
+            "excellent"
+        ],
+        [
+            "service",
+            "restaurant#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "great food",
+            "restaurant#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "great service",
+            "service#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "great atmosphere",
+            "ambience#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "negative",
+            "just ok"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "prices",
+            "restaurant#prices",
+            "negative",
+            "high"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "delicious"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "excellent"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "great"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "extra mile"
+        ]
+    ],
+    [
+        [
+            "service",
+            "restaurant#service",
+            "negative",
+            "NULL"
+        ],
+        [
+            "food",
+            "restaurant#food",
+            "negative",
+            "mediocre"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "pizza",
+            "food#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "positive",
+            "great"
+        ],
+        [
+            "food",
+            "food#general",
+            "positive",
+            "good"
+        ],
+        [
+            "service",
+            "service#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "location",
+            "location#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "food",
+            "food#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "staff",
+            "restaurant#general",
+            "positive",
+            "friendly"
+        ],
+        [
+            "staff",
+            "restaurant#general",
+            "positive",
+            "helpful"
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "positive",
+            "courteous and attentive"
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "product",
+            "laptop#design_features",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "negative",
+            "NULL"
+        ],
+        [
+            "drinks",
+            "drinks#quality",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "negative",
+            "slow"
+        ],
+        [
+            "food",
+            "food#general",
+            "negative",
+            "awful"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "restaurant#prices",
+            "positive",
+            "worth"
+        ],
+        [
+            "NULL",
+            "restaurant#prices",
+            "negative",
+            "pricey"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "good"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "place",
+            "location#general",
+            "positive",
+            "nice"
+        ],
+        [
+            "food",
+            "food#general",
+            "positive",
+            "good"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "good"
         ]
     ],
     [
@@ -172,10 +1027,10 @@
             "great"
         ],
         [
-            "location",
-            "location#general",
+            "atmosphere",
+            "ambience#general",
             "positive",
-            "convenient"
+            "perfect"
         ]
     ],
     [
@@ -183,41 +1038,21 @@
             "food",
             "food#general",
             "positive",
-            "excellent"
+            "pretty good"
         ],
         [
-            "service",
+            "NULL",
             "service#general",
-            "positive",
-            "fast"
-        ],
-        [
-            "prices",
-            "restaurant#prices",
-            "positive",
-            "reasonable"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
             "negative",
-            "impressed"
+            "pretty bad"
         ]
     ],
     [
         [
-            "restaurant",
+            "NULL",
             "restaurant#general",
             "positive",
             "great"
-        ],
-        [
-            "staff",
-            "service#general",
-            "positive",
-            "great"
         ]
     ],
     [
@@ -227,101 +1062,11 @@
             "positive",
             "great"
         ],
-        [
-            "food",
-            "food#general",
-            "positive",
-            "excellent"
-        ]
-    ],
-    [
         [
             "waiter",
             "service#general",
             "positive",
-            "NULL"
-        ],
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ]
-    ],
-    [
-        [
-            "pizza",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "good"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "positive",
-            "great"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "very clean"
-        ]
-    ],
-    [
-        [
-            "food",
-            "restaurant#general",
-            "positive",
-            "excellent"
-        ],
-        [
-            "service",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "value",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "restaurant#general",
-            "negative",
-            "finish"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "fast"
+            "friendly"
         ]
     ],
     [
@@ -346,664 +1091,16 @@
     ],
     [
         [
-            "food",
-            "food#general",
-            "positive",
-            "amazing"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
-        ],
-        [
-            "atmosphere",
-            "ambiance#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "staff",
-            "service#general",
-            "positive",
-            "helpful"
-        ],
-        [
-            "location",
-            "hotel#location",
-            "positive",
-            "excellent"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "great"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
-        ],
-        [
-            "atmosphere",
-            "ambience#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "ambiance",
-            "ambience#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "food",
-            "food#general",
-            "negative",
-            "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "restaurant#general",
-            "positive",
-            "great"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "negative",
-            "lacking"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "excellent"
-        ]
-    ],
-    [
-        [
-            "sushi",
-            "food#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "2007 macbook",
-            "laptop#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "food",
-            "restaurant#general",
-            "positive",
-            "delicious"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
-        ],
-        [
-            "prices",
-            "restaurant#prices",
-            "positive",
-            "reasonable"
-        ]
-    ],
-    [
-        [
             "place",
-            "restaurant#general",
-            "positive",
-            "clean"
-        ],
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "positive",
-            "excellent"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "negative",
-            "slow"
-        ],
-        [
-            "waitress",
-            "service#general",
-            "negative",
-            "not friendly"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "place#general",
-            "positive",
-            "great"
-        ],
-        [
-            "place",
-            "place#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "food#general",
-            "neutral",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "negative",
-            "slow"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "great"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
-        ],
-        [
-            "atmosphere",
-            "ambience#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "atmosphere",
-            "ambience#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "delicious"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "food",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "sashimi",
-            "food#quality",
-            "positive",
-            "freshest and most tender"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "negative",
-            "bad"
-        ]
-    ],
-    [
-        [
-            "food",
-            "restaurant#general",
-            "positive",
-            "delicious"
-        ],
-        [
-            "service",
-            "restaurant#general",
-            "positive",
-            "excellent"
-        ],
-        [
-            "ambience",
-            "ambience#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "restaurant#general",
-            "negative",
-            "expecting"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "negative",
-            "not great"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "negative",
-            "rude"
-        ]
-    ],
-    [
-        [
-            "NULL",
             "location#general",
-            "positive",
-            "great"
-        ],
-        [
-            "staff",
-            "service#general",
-            "positive",
-            "friendly"
-        ],
-        [
-            "room",
-            "hotel#general",
-            "positive",
-            "clean"
-        ],
-        [
-            "bed",
-            "bed#general",
-            "positive",
-            "comfortable"
-        ]
-    ],
-    [
-        [
-            "food",
-            "restaurant#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
-        ],
-        [
-            "prices",
-            "restaurant#prices",
-            "positive",
-            "fair"
-        ]
-    ],
-    [
-        [
-            "food",
-            "restaurant#general",
-            "positive",
-            "very good"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "good"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "fine"
-        ],
-        [
-            "service",
-            "service#general",
-            "negative",
-            "slow"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "great"
-        ],
-        [
-            "margaritas",
-            "drinks#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "negative",
-            ""
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "pizza",
-            "food#general",
-            "negative",
-            "edible"
-        ],
-        [
-            "pizza",
-            "food#general",
-            "negative",
-            "edible"
-        ],
-        [
-            "NULL",
-            "pizza#general",
-            "negative",
-            "edible"
-        ]
-    ],
-    [
-        [
-            "this",
-            "laptop#general",
-            "positive",
-            "great"
-        ],
-        [
-            "battery",
-            "battery#general",
-            "positive",
-            "lasts forever"
-        ],
-        [
-            "sound",
-            "multimedia_devices#sound_quality",
-            "positive",
-            "good"
-        ],
-        [
-            "picture quality",
-            "multimedia_devices#image_quality",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
             "negative",
             "NULL"
         ],
         [
-            "service",
-            "service#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "place",
-            "restaurant#general",
-            "negative",
-            "dirty"
-        ]
-    ],
-    [
-        [
-            "service",
-            "service#general",
-            "positive",
-            "good"
-        ],
-        [
             "food",
             "food#general",
             "positive",
             "good"
-        ],
-        [
-            "ambience",
-            "ambience#general",
-            "positive",
-            "good"
-        ],
-        [
-            "prices",
-            "restaurant#prices",
-            "positive",
-            "reasonable"
-        ]
-    ],
-    [
-        [
-            "food",
-            "restaurant#food",
-            "positive",
-            "excellent"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "the service",
-            "restaurant#general",
-            "positive",
-            "great"
-        ],
-        [
-            "the food",
-            "restaurant#general",
-            "positive",
-            "delicious"
-        ],
-        [
-            "the atmosphere",
-            "restaurant#general",
-            "positive",
-            "nice"
-        ],
-        [
-            "the prices",
-            "restaurant#general",
-            "positive",
-            "reasonable"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "food"
-        ],
-        [
-            "service",
-            "restaurant#service",
-            "positive",
-            "NULL"
-        ],
-        [
-            "atmosphere",
-            "restaurant#ambience",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "hotel#general",
-            "negative",
-            "disappointing"
-        ],
-        [
-            "breakfast",
-            "breakfast#general",
-            "negative",
-            "free"
-        ]
-    ],
-    [
-        [
-            "food",
-            "restaurant#food",
-            "positive",
-            "great"
-        ],
-        [
-            "service",
-            "restaurant#service",
-            "positive",
-            "excellent"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "friendly"
         ],
         [
             "service",
@@ -1015,271 +1112,79 @@
     [
         [
             "food",
-            "restaurant#food",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "restaurant#service",
-            "negative",
-            "terrible"
-        ]
-    ],
-    [
-        [
-            "food",
             "food#general",
-            "positive",
-            "tasty"
-        ],
-        [
-            "portions",
-            "food#general",
-            "negative",
-            "small"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "negative",
-            "good"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "excellent"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "good"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "nice"
-        ],
-        [
-            "NULL",
-            "location#general",
-            "positive",
-            "great"
-        ],
-        [
-            "NULL",
-            "location#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "owner",
-            "owner#general",
-            "positive",
-            "friendly"
-        ],
-        [
-            "owner",
-            "owner#general",
-            "positive",
-            "nice"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "restaurant#general",
             "positive",
             "NULL"
         ],
         [
-            "food",
-            "food#general",
-            "positive",
-            "very good"
-        ],
-        [
             "service",
             "service#general",
-            "negative",
-            "terrible"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "great"
-        ],
-        [
-            "service",
-            "service#general",
-            "negative",
-            "terrible"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "negative",
-            "not so good"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "very good"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "fresh and delicious"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "product#general",
             "positive",
             "NULL"
-        ],
-        [
-            "NULL",
-            "product#operation_performance",
-            "positive",
-            "easy"
-        ],
-        [
-            "NULL",
-            "product#weight",
-            "positive",
-            "lightweight"
         ]
     ],
     [
         [
             "NULL",
             "restaurant#general",
+            "positive",
+            "best"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "service",
+            "service#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "love"
+        ],
+        [
+            "food",
+            "food#general",
+            "positive",
+            "customize"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
             "positive",
             "amazing"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "great"
         ]
     ],
     [
         [
-            "steak and cheese sub",
-            "food#prices",
-            "positive",
-            "$ 10"
-        ],
-        [
-            "fries",
-            "food#prices",
-            "positive",
-            "$ 10"
-        ],
-        [
-            "drink",
-            "food#prices",
-            "positive",
-            "$ 10"
-        ]
-    ],
-    [
-        [
-            "bar area",
+            "food",
             "restaurant#general",
-            "negative",
-            "NULL"
+            "positive",
+            "good"
         ],
         [
             "NULL",
             "restaurant#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "food",
-            "food#quality",
-            "negative",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "staff",
-            "service#general",
             "positive",
-            "friendly"
-        ],
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "ok"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "good"
+            "recommend"
         ]
     ],
     [
@@ -1289,165 +1194,11 @@
             "positive",
             "great"
         ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
-        ],
-        [
-            "atmosphere",
-            "ambience#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
         [
             "service",
             "service#general",
             "positive",
             "NULL"
-        ],
-        [
-            "service",
-            "service#general",
-            "",
-            "null"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "restaurant#general",
-            "negative",
-            "crowded"
-        ],
-        [
-            "service",
-            "service#general",
-            "negative",
-            "slow"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "negative",
-            "terrible"
-        ]
-    ],
-    [
-        [
-            "service",
-            "service#general",
-            "positive",
-            "good"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "negative",
-            "overwhelmed"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "excellent"
-        ]
-    ],
-    [
-        [
-            "food",
-            "restaurant#food_quality",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "restaurant#service_quality",
-            "positive",
-            "excellent"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "great"
-        ],
-        [
-            "service",
-            "service#general",
-            "negative",
-            "awful"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "laptop#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
-        ],
-        [
-            "food",
-            "food#general",
-            "positive",
-            "great"
-        ],
-        [
-            "ambience",
-            "ambience#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "good"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "good"
         ]
     ],
     [
@@ -1461,63 +1212,75 @@
             "service",
             "service#general",
             "positive",
-            "superb"
+            "good"
+        ],
+        [
+            "restaurant",
+            "restaurant#general",
+            "positive",
+            "nice"
         ]
     ],
     [
         [
-            "location",
+            "NULL",
             "location#general",
             "positive",
-            "NULL"
+            "great"
         ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "excellent"
+        ]
+    ],
+    [
         [
             "food",
             "food#general",
             "positive",
-            "great"
+            "good"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "good"
+        ],
+        [
+            "price",
+            "food#prices",
+            "positive",
+            "reasonable"
         ]
     ],
     [
+        [
+            "hotel",
+            "hotel#general",
+            "positive",
+            "clean"
+        ],
         [
             "staff",
-            "service#general",
+            "hotel#general",
             "positive",
             "friendly"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
         ]
     ],
     [
         [
-            "NULL",
+            "price",
             "restaurant#prices",
-            "positive",
-            "great"
-        ],
-        [
-            "NULL",
-            "restaurant#prices",
-            "positive",
-            "value"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "great"
-        ],
-        [
-            "service",
-            "service#general",
             "negative",
-            "NULL"
+            "high"
+        ],
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "get what you pay for"
         ]
     ],
     [
@@ -1528,24 +1291,10 @@
             "good"
         ],
         [
-            "NULL",
-            "food#general",
-            "positive",
-            "enjoyed"
-        ]
-    ],
-    [
-        [
-            "food",
-            "restaurant#general",
-            "positive",
-            "good"
-        ],
-        [
             "service",
-            "restaurant#general",
-            "negative",
-            "slow"
+            "service#general",
+            "positive",
+            "great"
         ]
     ]
 ]

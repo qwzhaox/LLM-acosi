@@ -75,9 +75,12 @@ def get_ACOSI_annotations(acos_annotations, formatted_output):
 
 def main(args):
     prompt, examples, response_head = get_ACOS_extend_prompt()
-    opinion_spans, response_key = run_pipeline(
-        args, prompt, examples, absa_task="acos-extend"
-    )
+    if "gpt" in args.model_name.lower():
+        pass
+    else:
+        opinion_spans, response_key = run_pipeline(
+            args, prompt, examples, absa_task="acos-extend"
+        )
     formatted_output = format_output(opinion_spans, response_key, response_head)
     acos_annotations = get_ACOS_annotations(len(formatted_output))
     formatted_output = get_ACOSI_annotations(acos_annotations, formatted_output)

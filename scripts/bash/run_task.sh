@@ -17,17 +17,17 @@ max_length=1024
 if [ "$ABSA_TASK" = "acosi-extract" ]; then
     echo "Running ACOSI extract"
     ABSA_TASK_SCRIPT="scripts/acosi_extract.py"
-    max_length=2048
+    max_length=4096
     max_new_tokens=1024
 elif [ "$ABSA_TASK" = "acos-extract" ]; then
     echo "Running ACOS extract"
     ABSA_TASK_SCRIPT="scripts/acos_extract.py"
-    max_length=2048
+    max_length=4096
     max_new_tokens=1024
 elif [ "$ABSA_TASK" = "acos-extend" ]; then
     echo "Running ACOS extend"
     ABSA_TASK_SCRIPT="scripts/acos_extend.py"
-    max_length=2048
+    max_length=4096
     max_new_tokens=512
 else
     echo "Error: Invalid ABSA_TASK - $ABSA_TASK"

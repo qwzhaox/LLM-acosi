@@ -1,22 +1,34 @@
 [
     [
         [
-            "The",
-            "place",
+            "food",
+            "food#quality",
             "positive",
-            "NULL"
+            "good"
+        ],
+        [
+            "service",
+            "service#general",
+            "negative",
+            "slow"
         ]
     ],
     [
         [
-            "It",
-            "restaurant",
+            "food",
+            "food#general",
             "positive",
             "NULL"
         ],
         [
-            "NULL",
-            "restaurant",
+            "service",
+            "service#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "price",
+            "price#general",
             "positive",
             "NULL"
         ]
@@ -24,21 +36,17 @@
     [
         [
             "food",
-            "food#quality",
+            "food#general",
             "positive",
-            "very"
-        ],
+            "good"
+        ]
+    ],
+    [
         [
-            "service",
-            "service#general",
+            "food",
+            "food#general",
             "positive",
-            "very"
-        ],
-        [
-            "ambience",
-            "ambience#general",
-            "positive",
-            "very"
+            "NULL"
         ]
     ],
     [
@@ -49,398 +57,28 @@
             "great"
         ],
         [
-            "service",
-            "service#general",
-            "positive",
-            "excellent"
-        ]
-    ],
-    [
-        [
             "NULL",
-            "restaurant#service",
+            "staff#general",
             "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "I went",
-            "location#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "to this restaurant",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "a group of 8 people",
-            "group#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
+            "helpful"
         ],
         [
             "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "the food",
-            "food#quality",
-            "positive",
-            "good"
-        ],
-        [
-            "the service",
-            "service#general",
-            "positive",
-            "good"
-        ],
-        [
-            "the atmosphere",
             "atmosphere#general",
             "positive",
-            "good"
+            "lovely"
         ]
     ],
     [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
-        ],
-        [
-            "prices",
-            "prices#general",
-            "positive",
-            "reasonable"
-        ]
-    ],
-    [
-        [
-            "place",
-            "restaurant#operation_performance",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "great"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "good"
-        ],
-        [
-            "atmosphere",
-            "ambience#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "the food",
-            "food#quality",
-            "positive",
-            "good"
-        ]
-    ],
-    [
-        [
-            "the waitress",
-            "service#general",
-            "negative [O",
-            "null"
-        ]
-    ],
-    [
-        [
-            "ambience",
-            "ambience#general",
-            "positive",
-            "nice"
-        ],
         [
             "food",
             "food#general",
-            "positive",
-            "great"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "good"
-        ],
-        [
-            "NULL",
-            "restaurant#prices",
-            "negative",
-            "pricey"
-        ]
-    ],
-    [
-        [
-            "hate",
-            "game#general",
-            "negative",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "very good"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "very good"
-        ]
-    ],
-    [
-        [
-            "restaurant",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "clean"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "food"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "good"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "waiter"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "friendly"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
             "positive",
             "delicious"
         ],
         [
             "NULL",
-            "service#general",
-            "negative",
-            "horrible"
-        ]
-    ],
-    [
-        [
-            "NULL",
             "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "delicious"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
-        ],
-        [
-            "atmosphere",
-            "ambience#general",
-            "positive",
-            "beautiful"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "food#quality",
-            "positive",
-            "delicious"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "restaurant#food_drinks",
-            "positive",
-            "very"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "",
-            "null"
-        ]
-    ],
-    [
-        [
-            "i",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "amazing"
-        ],
-        [
-            "service",
-            "service#general",
-            "positive",
-            "great"
-        ],
-        [
-            "atmosphere",
-            "ambience#general",
-            "positive",
-            "wonderful"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#atmosphere",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#service_quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#service_quality",
-            "positive [",
-            "null"
-        ]
-    ],
-    [
-        [
-            "atmosphere",
-            "ambience#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "food",
-            "food#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "food#quality",
-            "negative",
-            "not good"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "amazing"
-        ],
-        [
-            "NULL",
-            "service#general",
             "positive",
             "excellent"
         ],
@@ -448,52 +86,66 @@
             "atmosphere",
             "ambience#general",
             "positive",
-            "great"
+            "lovely"
         ]
     ],
     [
         [
             "NULL",
-            "ambience#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "ambience#general",
-            "positive",
-            "clean"
-        ],
-        [
-            "NULL",
-            "ambience#general",
-            "positive",
-            "comfortable"
-        ]
-    ],
-    [
-        [
-            "I",
             "restaurant#general",
             "positive",
             "NULL"
         ],
         [
-            "went",
+            "NULL",
             "restaurant#general",
             "positive",
-            "good"
+            "NULL"
         ],
         [
             "NULL",
             "restaurant#general",
             "positive",
-            "ok"
+            "NULL"
         ]
     ],
     [
         [
-            "NULL",
+            "waiter",
+            "staff#general",
+            "positive",
+            "friendly"
+        ],
+        [
+            "helpful",
+            "staff#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "good food",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "great service",
+            "service#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "great drinks",
+            "drinks#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
             "food#general",
             "positive",
             "amazing"
@@ -501,6 +153,42 @@
     ],
     [
         [
+            "NULL",
+            "staff#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "staff#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "they",
+            "food#quality",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "I love this game",
+            "game#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "gameplay",
+            "gameplay#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
             "food",
             "food#quality",
             "positive",
@@ -508,43 +196,21 @@
         ],
         [
             "NULL",
-            "service#general",
-            "positive",
-            "fast"
+            "restaurant#general",
+            "negative",
+            "service"
+        ],
+        [
+            "NULL",
+            "restaurant#general",
+            "negative",
+            "poor"
         ]
     ],
     [
         [
             "food",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "service",
-            "service#general",
-            "negative",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "the service",
-            "restaurant#service_performance",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#food_quality",
-            "positive",
-            "so fresh"
-        ]
-    ],
-    [
-        [
-            "pizza",
-            "food#quality",
+            "food#general",
             "positive",
             "great"
         ],
@@ -557,15 +223,287 @@
     ],
     [
         [
-            "null",
-            "null",
-            "null",
-            "null"
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "great"
         ]
     ],
     [
         [
-            "the food",
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "non - existent"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
             "food#general",
             "positive",
             "NULL"
@@ -575,96 +513,174 @@
             "service#general",
             "negative",
             "NULL"
-        ]
-    ],
-    [
-        [
-            "the service",
-            "restaurant#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#quality",
-            "negative",
-            "average"
-        ],
-        [
-            "NULL",
-            "restaurant#cleanliness",
-            "negative",
-            "dirty"
-        ]
-    ],
-    [
-        [
-            "the food",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#prices",
-            "positive",
-            "decent"
         ],
         [
             "NULL",
             "service#general",
+            "negative",
+            "terrible"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "location#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "location#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "location#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "this",
+            "product#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "product#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "product#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "product#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "food#quality",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "great",
+            "food#quality",
+            "positive",
+            "food"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "service"
+        ],
+        [
+            "NULL",
+            "ambience#general",
+            "positive",
+            "ambience"
+        ],
+        [
+            "NULL",
+            "location#general",
+            "positive",
+            "location"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
             "positive",
             "good"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "friendly"
+        ],
+        [
+            "ambiance",
+            "ambience#general",
+            "positive",
+            "great"
         ]
     ],
     [
         [
-            "only",
-            "restaurant#prices",
-            "negative",
+            "waitress",
+            "restaurant#staff",
+            "positive",
+            "nice"
+        ],
+        [
+            "food",
+            "food#general",
+            "positive",
+            "good"
+        ],
+        [
+            "NULL",
+            "restaurant#service",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
             "NULL"
         ],
         [
-            "complaint",
-            "service#general",
-            "negative",
-            "that"
-        ],
-        [
             "NULL",
-            "service#general",
-            "negative",
-            "they"
-        ],
+            "restaurant#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
         [
-            "NULL",
-            "service#general",
-            "negative",
-            "are"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "negative",
-            "very"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "negative",
-            "expensive"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "negative",
-            "but"
-        ],
-        [
-            "null",
-            "null",
-            "null",
-            "null"
+            "food",
+            "food#general",
+            "positive",
+            "great"
         ]
     ],
     [
@@ -672,19 +688,7 @@
             "NULL",
             "food#general",
             "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "amazing"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "positive",
-            "NULL"
+            "great"
         ],
         [
             "NULL",
@@ -694,9 +698,57 @@
         ],
         [
             "NULL",
-            "service#general",
+            "experience#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "i had",
+            "food#general",
             "positive",
             "NULL"
+        ],
+        [
+            "chicken",
+            "food#prices",
+            "positive",
+            "excellent"
+        ]
+    ],
+    [
+        [
+            "fish",
+            "food#quality",
+            "positive",
+            "NULL"
+        ],
+        [
+            "batter",
+            "batter#general",
+            "positive",
+            "light"
+        ],
+        [
+            "chips",
+            "food#quality",
+            "positive",
+            "crisp"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "food"
         ],
         [
             "NULL",
@@ -706,27 +758,27 @@
         ],
         [
             "NULL",
-            "service#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "service#general",
+            "ambience#general",
             "positive",
             "NULL"
         ]
     ],
     [
         [
-            "food",
-            "food#quality",
+            "restaurant",
+            "restaurant#operation_hours",
             "positive",
-            "amazing"
+            "NULL"
         ],
         [
-            "drinks",
-            "drinks#quality",
+            "open",
+            "restaurant#operation_hours",
+            "positive",
+            "NULL"
+        ],
+        [
+            "food",
+            "food#general",
             "positive",
             "great"
         ],
@@ -734,13 +786,41 @@
             "service",
             "service#general",
             "positive",
-            "fantastic"
+            "friendly"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "very"
         ],
         [
-            "NULL",
+            "service",
+            "service#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "great"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "great"
+        ],
+        [
+            "ambiance",
             "ambience#general",
             "positive",
-            "beautiful"
+            "great"
         ]
     ],
     [
@@ -748,55 +828,81 @@
             "food",
             "food#quality",
             "positive",
-            "good"
+            "excellent"
         ],
         [
             "NULL",
             "service#general",
             "negative",
-            "slow"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "fresh"
-        ],
-        [
-            "delicious",
-            "food#quality",
-            "positive",
-            "delicious"
+            "very slow"
         ]
     ],
     [
         [
             "NULL",
-            "service#general",
-            "negative",
+            "restaurant#general",
+            "positive",
             "NULL"
         ],
         [
             "NULL",
-            "service#general",
-            "negative",
-            "NULL"
+            "food#general",
+            "positive",
+            "excellent"
+        ],
+        [
+            "NULL",
+            "staff#general",
+            "positive",
+            "friendly"
+        ],
+        [
+            "NULL",
+            "prices#general",
+            "positive",
+            "fair"
         ]
     ],
     [
         [
-            "food",
+            "I",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "love",
             "food#general",
             "positive",
             "NULL"
         ],
         [
             "NULL",
+            "atmosphere#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
             "service#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#quality",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "staff",
+            "staff#general",
             "negative",
-            "bad"
+            "NULL"
         ]
     ],
     [
@@ -804,161 +910,141 @@
             "food",
             "food#quality",
             "positive",
+            "great"
+        ],
+        [
+            "staff",
+            "service#general",
+            "positive",
+            "very friendly"
+        ],
+        [
+            "atmosphere",
+            "ambience#general",
+            "positive",
+            "very good"
+        ]
+    ],
+    [
+        [
+            "food is delicious",
+            "food#quality",
+            "positive",
             "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "amazing"
+        ],
+        [
+            "NULL",
+            "place#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "miso soup"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "complex rolls"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "food#quality",
+            "positive",
+            "delicious"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "amazing"
+        ]
+    ],
+    [
+        [
+            "great experience",
+            "restaurant#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "great value for money",
+            "restaurant#prices",
+            "positive",
+            "NULL"
+        ],
+        [
+            "great price",
+            "restaurant#prices",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "quality#general",
+            "positive",
+            "great"
+        ],
+        [
+            "NULL",
+            "price#general",
+            "positive",
+            "little"
+        ],
+        [
+            "NULL",
+            "price#general",
+            "positive",
+            "pricey"
+        ]
+    ],
+    [
+        [
+            "price",
+            "restaurant#prices",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "negative",
+            "not great"
         ],
         [
             "waiters",
             "service#general",
             "negative",
             "rude"
-        ]
-    ],
-    [
-        [
-            "I",
-            "NULL",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "i am",
-            "customer#general",
-            "positive",
-            "very happy"
-        ]
-    ],
-    [
-        [
-            "table",
-            "table#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "service",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "neutral",
-            "fine"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "neutral",
-            "some"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "neutral",
-            "little"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "neutral",
-            "tastier"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "neutral",
-            "normal"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "neutral",
-            "salsa"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "great"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "negative",
-            "slow"
-        ],
-        [
-            "waitress",
-            "service#general",
-            "positive",
-            "very friendly"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "negative",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "pizza",
-            "pizza#general",
-            "positive",
-            "delicious"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "positive",
-            "fast"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "positive",
-            "friendly"
         ]
     ],
     [
@@ -970,7 +1056,7 @@
         ],
         [
             "great food",
-            "food#quality",
+            "food#general",
             "positive",
             "NULL"
         ],
@@ -983,173 +1069,159 @@
     ],
     [
         [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "deck#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "deck#general",
-            "positive",
-            "best"
-        ],
-        [
-            "NULL",
-            "deck#general",
-            "positive",
-            "blanket"
-        ]
-    ],
-    [
-        [
-            "The food was",
+            "food",
             "food#quality",
             "positive",
-            "NULL"
+            "good"
         ],
         [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "food is",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
+            "service",
             "service#general",
             "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "staff#general",
-            "positive",
             "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "negative",
-            "not"
-        ],
-        [
-            "food",
-            "food#quality",
-            "negative",
-            "great"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "ok"
-        ]
-    ],
-    [
-        [
-            "coffee",
-            "coffee#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "coffee#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "coffee#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "coffee#general",
-            "positive",
-            "NULL"
         ]
     ],
     [
         [
             "great",
-            "food#general",
+            "restaurant#general",
             "positive",
             "NULL"
         ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "staff"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#service_staff",
+            "null",
+            "null"
+        ]
+    ],
+    [
         [
             "food",
             "food#general",
@@ -1158,9 +1230,607 @@
         ],
         [
             "NULL",
+            "food#quality",
+            "positive",
+            "great"
+        ],
+        [
+            "NULL",
             "service#general",
             "positive",
             "NULL"
+        ],
+        [
+            "NULL",
+            "atmosphere#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "great"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "mama mia",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "i",
+            "pizza#general",
+            "positive",
+            "live"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "negative",
+            "slow"
+        ]
+    ],
+    [
+        [
+            "i",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "huge fan",
+            "pizza#operation_performance",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "very"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "food#quality",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#quality",
+            "positive",
+            "excellent"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "food#quality",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#quality",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "good service",
+            "restaurant#service",
+            "positive",
+            "NULL"
+        ],
+        [
+            "good food",
+            "restaurant#food",
+            "positive",
+            "NULL"
+        ],
+        [
+            "good place",
+            "restaurant#location",
+            "positive",
+            "NULL"
+        ],
+        [
+            "good atmosphere",
+            "null",
+            "null",
+            "null"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "great"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "good"
+        ],
+        [
+            "prices",
+            "prices#general",
+            "positive",
+            "reasonable"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "ambience#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "great"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "great"
+        ],
+        [
+            "NULL",
+            "value_for_money#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "local"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "favorite"
+        ],
+        [
+            "NULL",
+            "pizza#general",
+            "positive",
+            "worth"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "great"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "fantastic"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "great"
+        ],
+        [
+            "NULL",
+            "staff#general",
+            "positive",
+            "friendly"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "delicious"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "location#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "location#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "location#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "great"
+        ],
+        [
+            "price",
+            "price#general",
+            "neutral",
+            "fair"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "fish#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "fish#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "fish#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "the restaurant",
+            "location#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#quality",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "phone#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "phone#general",
+            "positive",
+            "love"
+        ],
+        [
+            "NULL",
+            "phone#general",
+            "positive",
+            "looks"
+        ],
+        [
+            "NULL",
+            "phone#general",
+            "positive",
+            "feels"
+        ],
+        [
+            "NULL",
+            "phone#general",
+            "positive",
+            "performs"
         ]
     ],
     [
@@ -1171,396 +1841,76 @@
             "amazing"
         ],
         [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "great"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "drinks#general",
-            "positive",
-            "delicious"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "drinks#prices",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "food#quality",
-            "positive",
-            "great"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "great"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
             "service",
             "service#general",
             "positive",
-            "excellent"
-        ],
-        [
-            "food",
-            "food#general",
-            "positive",
-            "delicious"
-        ],
-        [
-            "price",
-            "price#general",
-            "positive",
-            "reasonable"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "fish#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "fish#general",
-            "positive",
-            "wide"
-        ],
-        [
-            "NULL",
-            "fish#general",
-            "positive",
-            "variety"
-        ],
-        [
-            "NULL",
-            "fish#general",
-            "positive",
-            "oceans"
-        ],
-        [
-            "NULL",
-            "fish#general",
-            "positive",
-            "atlantic"
-        ],
-        [
-            "NULL",
-            "fish#general",
-            "positive",
-            "pacific"
-        ]
-    ],
-    [
-        [
-            "null",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "romantic",
-            "restaurant#general",
-            "positive",
             "great"
         ],
         [
-            "service",
-            "service#general",
+            "NULL",
+            "staff#general",
+            "positive",
+            "friendly"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
             "positive",
             "good"
         ],
         [
-            "food",
-            "food#quality",
-            "positive",
-            "very"
-        ]
-    ],
-    [
-        [
-            "great place",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "great food",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#ambience",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "I",
-            "NULL",
-            "positive",
-            "NULL"
-        ],
-        [
-            "had",
-            "NULL",
-            "positive",
-            "great"
-        ],
-        [
-            "time",
-            "ambience#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "ambience#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "ambience#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "ambience#general",
-            "positive",
-            "NULL [ S"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "delicious"
-        ],
-        [
             "NULL",
             "service#general",
-            "positive",
-            "good"
-        ]
-    ],
-    [
-        [
-            "service",
-            "service#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "food",
-            "food#quality",
             "negative",
-            "not so"
-        ]
-    ],
-    [
-        [
-            "the",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "excellent"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "great"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "great"
+            "not"
         ],
         [
             "NULL",
             "service#general",
+            "negative",
+            "good"
+        ]
+    ],
+    [
+        [
+            "the service",
+            "service#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "good"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
+            "positive",
+            "great"
+        ],
+        [
+            "staff",
+            "staff#general",
             "positive",
             "awesome"
         ]
@@ -1568,15 +1918,389 @@
     [
         [
             "food",
+            "food#quality",
+            "positive",
+            "excellent"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "fantastic"
+        ],
+        [
+            "staff",
+            "staff#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "I",
+            "location#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "went",
+            "location#general",
+            "positive",
+            "for"
+        ],
+        [
+            "dinner",
+            "food#general",
+            "positive",
+            "with"
+        ],
+        [
+            "my",
+            "location#general",
+            "positive",
+            "family"
+        ],
+        [
+            "NULL",
+            "location#general",
+            "",
+            "null"
+        ]
+    ],
+    [
+        [
+            "they",
+            "personnel#general",
+            "positive",
+            "friendly"
+        ],
+        [
+            "were",
+            "personnel#general",
+            "positive",
+            "helpful"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "excellent"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "great"
+        ],
+        [
+            "ambience",
+            "ambience#general",
+            "positive",
+            "nice"
+        ],
+        [
+            "service",
+            "service#general",
+            "positive",
+            "good"
+        ],
+        [
+            "NULL",
+            "restaurant#prices",
+            "positive",
+            "expensive"
+        ]
+    ],
+    [
+        [
+            "\u2013 i",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "pumpkin ravioli",
+            "food#prices",
+            "positive",
+            "NULL"
+        ],
+        [
+            "goat cheese gnocchi",
+            "food#quality",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
             "food#general",
             "positive",
             "NULL"
         ],
         [
             "NULL",
-            "NULL",
-            "NULL",
+            "food#general",
+            "positive",
             "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
+            ""
+        ]
+    ],
+    [
+        [
+            "service",
+            "service#general",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "best",
+            "restaurant#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "place"
         ]
     ],
     [
@@ -1585,9 +2309,7 @@
             "service#general",
             "positive",
             "great"
-        ]
-    ],
-    [
+        ],
         [
             "food",
             "food#general",
@@ -1595,14 +2317,22 @@
             "good"
         ],
         [
-            "service",
-            "service#general",
-            "negative",
-            "poor"
+            "atmosphere",
+            "ambience#general",
+            "positive",
+            "nice"
         ],
         [
-            "ambience",
-            "ambience#general",
+            "prices",
+            "prices#general",
+            "positive",
+            "high"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "food#general",
             "positive",
             "good"
         ],
@@ -1610,69 +2340,87 @@
             "NULL",
             "drinks#general",
             "positive",
+            "cold"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "great"
+        ]
+    ],
+    [
+        [
+            "the food is",
+            "food#quality",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#quality",
+            "positive",
+            "amazing"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "great"
+        ],
+        [
+            "NULL",
+            "ambience#general",
+            "positive",
+            "perfect"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "restaurant#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "friendly"
+        ]
+    ],
+    [
+        [
+            "cake",
+            "food#style_options",
+            "positive",
+            "NULL"
+        ],
+        [
+            "chocolate",
+            "food#style_options",
+            "positive",
+            "NULL"
+        ]
+    ],
+    [
+        [
+            "NULL",
+            "service#general",
+            "positive",
+            "NULL"
+        ],
+        [
+            "NULL",
+            "food#general",
+            "positive",
             "good"
         ]
     ],
     [
         [
-            "pumpkin ravioli",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "goat cheese gnocchi",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
             "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "filet mignon",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "spinach",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "mashed potatoes",
-            "food#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#quality",
+            "restaurant#general",
             "positive",
             "NULL"
         ]
@@ -1682,19 +2430,43 @@
             "food",
             "food#quality",
             "positive",
-            "NULL"
+            "really good"
         ],
         [
             "NULL",
-            "restaurant#operation_performance",
+            "service#general",
+            "negative",
+            "terrible"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#quality",
             "positive",
-            "fast"
+            "loved"
+        ]
+    ],
+    [
+        [
+            "the food is",
+            "food#quality",
+            "positive",
+            "amazing"
+        ]
+    ],
+    [
+        [
+            "food",
+            "food#general",
+            "positive",
+            "all"
         ],
         [
             "NULL",
-            "ambience#general",
-            "positive",
-            "good"
+            "food#spice_level",
+            "negative",
+            "mild"
         ]
     ],
     [
@@ -1706,66 +2478,32 @@
         ],
         [
             "food",
-            "food#general",
+            "food#quality",
             "positive",
-            "delicious"
+            "great"
         ]
     ],
     [
         [
-            "food",
-            "food#general",
+            "i love this place",
+            "restaurant#general",
             "positive",
-            "delicious"
+            "NULL"
         ],
         [
             "NULL",
-            "staff#general",
+            "restaurant#general",
+            "positive",
+            "great"
+        ],
+        [
+            "NULL",
+            "restaurant#general",
             "positive",
             "friendly"
         ],
         [
             "NULL",
-            "atmosphere#general",
-            "positive",
-            "great"
-        ]
-    ],
-    [
-        [
-            "I have eaten",
-            "experience#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "here a few times",
-            "location#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "it ' s",
-            "experience#general",
-            "positive",
-            "always [ SSEP"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "restaurant#general",
-            "positive",
-            "great"
-        ],
-        [
-            "NULL",
             "restaurant#general",
             "positive",
             "great"
@@ -1774,699 +2512,41 @@
     [
         [
             "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
             "NULL",
-            "food#general",
-            "positive",
-            "fresh"
-        ],
-        [
-            "NULL",
-            "drinks#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "drinks#general",
-            "positive",
-            "reasonable"
-        ]
-    ],
-    [
-        [
-            "service",
-            "service#general",
             "positive",
             "NULL"
         ],
         [
             "food",
-            "food#general",
+            "food#quality",
             "positive",
-            "NULL"
+            "great"
         ],
         [
             "drinks",
             "drinks#general",
             "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "quality#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "negative",
-            "NULL"
-        ],
-        [
-            "NULL [ C",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ]
-    ],
-    [
-        [
-            "food [",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "food",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL [ C",
-            "null",
-            "null",
-            "null"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#quality",
-            "positive",
-            "best"
-        ],
-        [
-            "NULL",
-            "food#quality",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#quality",
-            "positive [",
-            "null"
-        ]
-    ],
-    [
-        [
-            "the food",
-            "food#general",
-            "positive",
-            "NULL"
-        ],
-        [
-            "NULL",
-            "food#quality",
-            "positive",
             "great"
-        ],
-        [
-            "NULL",
-            "service#general",
-            "positive",
-            "good"
         ]
     ],
     [
         [
             "NULL",
-            "location#general",
+            "ambience#general",
             "positive",
             "NULL"
         ],
         [
             "NULL",
-            "location#general [S",
-            "null",
-            "null"
+            "ambience#general",
+            "positive",
+            "NULL"
         ]
     ],
     [
         [
-            "NULL",
-            "service#general",
+            "food",
+            "food#general",
             "positive",
             "NULL"
         ],
@@ -2475,26 +2555,12 @@
             "food#general",
             "positive",
             "NULL"
-        ]
-    ],
-    [
-        [
-            "NULL",
-            "location#general",
-            "positive",
-            "NULL"
         ],
         [
             "NULL",
-            "location#general",
+            "food#general",
             "positive",
             "NULL"
-        ],
-        [
-            "NULL",
-            "location#general",
-            "positive",
-            "NULL [ S"
         ]
     ]
 ]
