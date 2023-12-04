@@ -7,19 +7,19 @@ from datetime import datetime
 # from pytorch_lightning.loggers import TensorBoardLogger
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
-
 import time
 import asyncio
-
-import os
-
 
 from langchain.chat_models import AzureChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage
 
-
 from tqdm.asyncio import tqdm as tqdm_async
 from tqdm import tqdm
+from dotenv import load_dotenv
+
+env_path = "config/.env"
+
+load_dotenv(env_path)
 
 
 def comparison_fn(
