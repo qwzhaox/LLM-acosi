@@ -1,6 +1,7 @@
 import json
 from pickle import dump
-from pipeline import run_pipeline
+from pipeline import run_pipeline, get_prompts
+from gpt_pipeline import query_gpt
 from utils import get_file_path, format_output, get_args, dump_output
 
 laptop_category_file_path = get_file_path("laptop-acos-cate-list.json")
@@ -73,7 +74,15 @@ def main(args):
         raise ValueError("Invalid dataset domain.")
 
     if "gpt" in args.model_name.lower():
-        pass
+        prompts, _ = get_prompts(
+            args.dataset_file,
+            prompts,
+            absa_task="acos-extract",
+            model=args.model_name.lower(),
+        )
+        output, response_key = query_gpt(
+            prompts, examples, max_tokens=args.max_new_tokens
+        )
     else:
         output, response_key = run_pipeline(
             args, prompt, examples, absa_task="acos_extract"

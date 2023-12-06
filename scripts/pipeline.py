@@ -14,23 +14,24 @@ SENTIMENT_IDX = 2
 OPINION_IDX = 3
 IMPLICIT_INDICATOR_IDX = 4
 
+ALPACA_INSTRUCTION_KEY = "### Instruction:"
+ALPACA_RESPONSE_KEY = "### Response:"
+ALPACA_INTRO_BLURB = "Below is an instruction that describes a task. Write a response that appropriately completes the request."
+
 
 def alpaca_format_prompt():
-    instruction_key = "### Instruction:"
-    response_key = "### Response:"
-    intro_blurb = "Below is an instruction that describes a task. Write a response that appropriately completes the request."
     prompt_for_generation_format = """{intro}
-    
+
 {instruction_key}
 {instruction}
 {response_key}
 """.format(
-        intro=intro_blurb,
-        instruction_key=instruction_key,
+        intro=ALPACA_INTRO_BLURB,
+        instruction_key=ALPACA_INSTRUCTION_KEY,
         instruction="{instruction}",
-        response_key=response_key,
+        response_key=ALPACA_RESPONSE_KEY,
     )
-    return prompt_for_generation_format, response_key
+    return prompt_for_generation_format, ALPACA_RESPONSE_KEY
 
 
 def get_formatted_annotations(annotations):
@@ -49,7 +50,9 @@ def get_formatted_annotations(annotations):
     return annots_str
 
 
-def get_prompts(dataset_file, prompt, examples=[], absa_task="extract-acosi"):
+def get_prompts(
+    dataset_file, prompt, examples=[], absa_task="extract-acosi", model="llama-2"
+):
     with open(dataset_file, "r") as f:
         dataset = f.readlines()
 
@@ -70,17 +73,25 @@ def get_prompts(dataset_file, prompt, examples=[], absa_task="extract-acosi"):
                 f"ACOS quadruples: {get_formatted_annotations(annotations)}\n"
             )
 
-        example_prompts = []
-        for example in examples:
-            bare_example_prompt = prompt + example[EXAMPLE_REVIEW]
-            example_prompt = formatted_prompt.format(instruction=bare_example_prompt)
-            complete_example = example_prompt + example[EXAMPLE_RESPONSE]
-            example_prompts.append(complete_example)
-
-        example_str = "\n".join(example_prompts) + "\n"
         bare_prompt = prompt + review_str + annotations_str
-        final_prompt = example_str + formatted_prompt.format(instruction=bare_prompt)
-        prompts.append(final_prompt)
+
+        if "gpt" in model.lower():
+            prompts.append(bare_prompt)
+        else:
+            example_prompts = []
+            for example in examples:
+                bare_example_prompt = prompt + example[EXAMPLE_REVIEW]
+                example_prompt = formatted_prompt.format(
+                    instruction=bare_example_prompt
+                )
+                complete_example = example_prompt + example[EXAMPLE_RESPONSE]
+                example_prompts.append(complete_example)
+
+            example_str = "\n".join(example_prompts) + "\n"
+            final_prompt = example_str + formatted_prompt.format(
+                instruction=bare_prompt
+            )
+            prompts.append(final_prompt)
 
     return prompts, response_key
 

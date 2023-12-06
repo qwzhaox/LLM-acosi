@@ -29,9 +29,9 @@ def get_args():
     parser = ArgumentParser()
     parser.add_argument("--model_name", type=str, required=True, help="LLM model name")
     parser.add_argument(
-        "--tokenizer_name", type=str, required=True, help="Tokenizer name"
+        "--tokenizer_name", type=str, default=None, help="Tokenizer name"
     )
-    parser.add_argument("--task", type=str, required=True, help="Task name")
+    parser.add_argument("--task", type=str, default=None, help="Task name")
     parser.add_argument(
         "--remote", action="store_true", help="Whether to trust remote code"
     )

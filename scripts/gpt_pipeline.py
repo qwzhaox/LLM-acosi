@@ -1,155 +1,188 @@
-import os
 import re
 
-import argparse
-from datetime import datetime
-
 # from pytorch_lightning.loggers import TensorBoardLogger
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from transformers import AutoTokenizer
 
 import time
 import asyncio
 
 from langchain.chat_models import AzureChatOpenAI
-from langchain.schema import HumanMessage, SystemMessage
+from langchain.schema import HumanMessage, SystemMessage, AIMessage
 
 from tqdm.asyncio import tqdm as tqdm_async
 from tqdm import tqdm
 from dotenv import load_dotenv
+
+from pipeline import ALPACA_INTRO_BLURB, ALPACA_INSTRUCTION_KEY, ALPACA_RESPONSE_KEY
 
 env_path = "config/.env"
 
 load_dotenv(env_path)
 
 
-def comparison_fn(
-    exs,
-    prefix,
-    sys_prefix,
+def alpaca_format_prompt_gpt():
+    formatted_prompt = """
+    {instruction_key}
+    {instruction}
+    {response}
+    """.format(
+        instruction_key=ALPACA_INSTRUCTION_KEY,
+        instruction="{instruction}",
+        response=ALPACA_RESPONSE_KEY,
+    )
+    return formatted_prompt, ALPACA_RESPONSE_KEY
+
+
+def get_formatted_example_prompts(examples, formatted_prompt):
+    formatted_example_prompts = []
+    for ex in examples:
+        formatted_example_prompts.extend(
+            [
+                SystemMessage(content=ALPACA_INTRO_BLURB),
+                HumanMessage(content=formatted_prompt.format(instruction=ex[0])),
+                AIMessage(content=ex[1]),
+            ]
+        )
+    return formatted_example_prompts
+
+
+def query_gpt(
+    prompts,
+    examples,
     deployment_name,
+    max_tokens=1024,
     serial=False,
     parallel=True,
-    num_examples=None,
+    num_prompts=None,
 ):
     llm = AzureChatOpenAI(
         openai_api_version="2023-07-01-preview",
         azure_deployment=deployment_name,
         temperature=0.0,
-        max_tokens=400,
+        max_tokens=max_tokens,
         max_retries=7,
     )
 
-    if not num_examples:
-        num_examples = len(exs)
+    if not num_prompts:
+        num_prompts = len(prompts)
 
-    print(f"{num_examples} examples.")
-    abbreviated_exs = exs[:num_examples]
+    print(f"{num_prompts} examples.")
+    abbreviated_prompts = prompts[:num_prompts]
 
-    def invoke_serially(llm, exs):
+    formatted_prompt, response_key = alpaca_format_prompt_gpt()
+    formatted_example_prompts = get_formatted_example_prompts(
+        examples, formatted_prompt
+    )
+
+    print(formatted_example_prompts)
+
+    def invoke_serially(llm, prompts):
         import pdb
 
         pdb.set_trace()
         return [
             llm.invoke(
-                [
-                    SystemMessage(content=sys_prefix),
-                    HumanMessage(content=prefix + query),
+                formatted_example_prompts
+                + [
+                    SystemMessage(content=ALPACA_INTRO_BLURB),
+                    HumanMessage(content=formatted_prompt.format(instruction=prompt)),
                 ]
             )
-            for query in tqdm(exs)
+            for prompt in tqdm(prompts)
         ]
 
     # async def async_invoke(llm, message):
     #     resp = await llm.ainvoke([message])
     #     return resp.content
 
-    async def invoke_concurrently_batch(llm, exs):
+    async def invoke_concurrently_batch(llm, prompts):
         resp = await llm.abatch(
             [
-                [
-                    SystemMessage(content=sys_prefix),
-                    HumanMessage(content=prefix + query),
+                formatted_example_prompts
+                + [
+                    SystemMessage(content=ALPACA_INTRO_BLURB),
+                    HumanMessage(content=formatted_prompt.format(instruction=prompt)),
                 ]
-                for query in exs
+                for prompt in prompts
             ],
             {"max_concurrency": 5},
         )
-        filtered = [ex.content for ex in resp]
+        filtered = [rev.content for rev in resp]
         return filtered
 
     if serial:
         s = time.perf_counter()
-        output = invoke_serially(llm, abbreviated_exs)
+        output = invoke_serially(llm, abbreviated_prompts)
         elapsed = time.perf_counter() - s
         print(
             "\033[1m"
-            + f"Serial executed {num_examples} examples in {elapsed:0.2f} seconds."
+            + f"Serial executed {num_prompts} examples in {elapsed:0.2f} seconds."
             + "\033[0m"
         )
 
     if parallel:
         s = time.perf_counter()
         # output = asyncio.run(invoke_concurrently(llm, abbreviated_exs))
-        output = asyncio.run(invoke_concurrently_batch(llm, abbreviated_exs))
+        output = asyncio.run(invoke_concurrently_batch(llm, abbreviated_prompts))
         elapsed = time.perf_counter() - s
         print(
             "\033[1m"
-            + f"Concurrent executed {num_examples} examples in {elapsed:0.2f} seconds."
+            + f"Concurrent executed {num_prompts} examples in {elapsed:0.2f} seconds."
             + "\033[0m"
         )
 
-    return output
+    return output, response_key
 
 
-def main(config):
-    """
-    Trains the model
+# def main(config):
+#     """
+#     Trains the model
 
-    :param config:
-    :return:
-    """
+#     :param config:
+#     :return:
+#     """
 
-    if config.model_architecture == "OpenAI":
-        replace_list = ["</s>", "<s>", "<pad>"]
-        tokenizer = AutoTokenizer.from_pretrained("allenai/PRIMERA")
-        dataset_reader = get_dataset_reader(config)
-        datamodule = FinetuneDataModule(config, tokenizer, dataset_reader)
+#     if config.model_architecture == "OpenAI":
+#         replace_list = ["</s>", "<s>", "<pad>"]
+#         tokenizer = AutoTokenizer.from_pretrained("allenai/PRIMERA")
+#         dataset_reader = get_dataset_reader(config)
+#         datamodule = FinetuneDataModule(config, tokenizer, dataset_reader)
 
-        dataset = dataset_reader.get_full_dataset(tokenizer)
+#         dataset = dataset_reader.get_full_dataset(tokenizer)
 
-        _val_inputs = [
-            tokenizer.decode(elt["input_ids"], skip_special_tokens=False)
-            for elt in dataset["val"]
-        ]
-        cleaned_val_inputs = [
-            re.sub(r"|".join(map(re.escape, replace_list)), "", elt)
-            for elt in _val_inputs
-        ]
-        val_gold = [
-            tokenizer.decode(elt["output_ids"], skip_special_tokens=True)
-            for elt in dataset["val"]
-        ]
+#         _val_inputs = [
+#             tokenizer.decode(elt["input_ids"], skip_special_tokens=False)
+#             for elt in dataset["val"]
+#         ]
+#         cleaned_val_inputs = [
+#             re.sub(r"|".join(map(re.escape, replace_list)), "", elt)
+#             for elt in _val_inputs
+#         ]
+#         val_gold = [
+#             tokenizer.decode(elt["output_ids"], skip_special_tokens=True)
+#             for elt in dataset["val"]
+#         ]
 
-        _test_inputs = [
-            tokenizer.decode(elt["input_ids"], skip_special_tokens=False)
-            for elt in dataset["test"]
-        ]
-        test_gold = [
-            tokenizer.decode(elt["output_ids"], skip_special_tokens=True)
-            for elt in dataset["test"]
-        ]
-        cleaned_test_inputs = [
-            re.sub(r"|".join(map(re.escape, replace_list)), "", elt)
-            for elt in _test_inputs
-        ]
+#         _test_inputs = [
+#             tokenizer.decode(elt["input_ids"], skip_special_tokens=False)
+#             for elt in dataset["test"]
+#         ]
+#         test_gold = [
+#             tokenizer.decode(elt["output_ids"], skip_special_tokens=True)
+#             for elt in dataset["test"]
+#         ]
+#         cleaned_test_inputs = [
+#             re.sub(r"|".join(map(re.escape, replace_list)), "", elt)
+#             for elt in _test_inputs
+#         ]
 
-        # val_pred = [get_chatgpt_results(elt, config.input_prefix) for elt in cleaned_val_inputs]
-        # test_pred = [get_chatgpt_results(elt, config.input_prefix) for elt in cleaned_test_inputs]
+#         # val_pred = [get_chatgpt_results(elt, config.input_prefix) for elt in cleaned_val_inputs]
+#         # test_pred = [get_chatgpt_results(elt, config.input_prefix) for elt in cleaned_test_inputs]
 
-        # JOE -> WENZHAO: cleaned_val_inputs is a list of examples
-        pred = comparison_fn(
-            cleaned_val_inputs,
-            config.input_prefix,
-            config.sys_prefix,
-            config.deployment_name,
-        )
+#         # JOE -> WENZHAO: cleaned_val_inputs is a list of examples
+#         pred = comparison_fn(
+#             cleaned_val_inputs,
+#             config.input_prefix,
+#             config.sys_prefix,
+#             config.deployment_name,
+#         )
