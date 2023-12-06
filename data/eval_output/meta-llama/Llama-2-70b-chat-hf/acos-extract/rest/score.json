@@ -7,11 +7,11 @@
         "avg local IoU": 0.08283333333333333
     },
     "aspect": {
-        "precision": 0,
-        "recall": 0,
-        "f1-score": 0,
-        "global IoU": 0,
-        "avg local IoU": 0.0
+        "precision": 0.5990338164251208,
+        "recall": 0.6262626262626263,
+        "f1-score": 0.6123456790123457,
+        "global IoU": 0.4412811387900356,
+        "avg local IoU": 0.49300000000000005
     },
     "category": {
         "precision": 0.35,
@@ -28,28 +28,28 @@
         "avg local IoU": 0.8433333333333333
     },
     "opinion": {
-        "precision": 0,
-        "recall": 0,
-        "f1-score": 0,
-        "global IoU": 0,
-        "avg local IoU": 0.0
+        "precision": 0.4297872340425532,
+        "recall": 0.5838150289017341,
+        "f1-score": 0.4950980392156863,
+        "global IoU": 0.3289902280130293,
+        "avg local IoU": 0.4113095238095238
     },
     "avg partial": {
-        "precision": 0.2903688524590164,
-        "recall": 0.35976368159203975,
-        "f1-score": 0.32000781046602444,
-        "global IoU": 0.25521917649780246,
-        "avg local IoU": 0.29854166666666665
+        "precision": 0.5475741150759349,
+        "recall": 0.6622830953831298,
+        "f1-score": 0.5968687400230325,
+        "global IoU": 0.44778701819856864,
+        "avg local IoU": 0.5246190476190477
     },
     "reviews": [
         {
             "idx": 0,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "yum !",
             "pred": [
                 [
@@ -71,11 +71,11 @@
         {
             "idx": 1,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.625,
             "review": "serves really good sushi .",
             "pred": [
                 [
@@ -103,11 +103,11 @@
         {
             "idx": 2,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.2,
+            "avg partial local IoU": 0.425,
             "review": "not the biggest portions but adequate .",
             "pred": [
                 [
@@ -141,11 +141,11 @@
         {
             "idx": 3,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "green tea creme brulee is a must !",
             "pred": [
                 [
@@ -167,11 +167,11 @@
         {
             "idx": 4,
             "exact local IoU": 1.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 1.0,
             "review": "it has great sushi and even better service .",
             "pred": [
                 [
@@ -205,11 +205,11 @@
         {
             "idx": 5,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.375,
             "review": "the entire staff was extremely accomodating and tended to my every need .",
             "pred": [
                 [
@@ -243,11 +243,11 @@
         {
             "idx": 6,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.20833333333333331,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.3333333333333333,
             "review": "i ' ve been to this restaurant over a dozen times with no complaints to date .",
             "pred": [
                 [
@@ -281,10 +281,10 @@
         {
             "idx": 7,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.25,
             "review": "the owner is belligerent to guests that have a complaint .",
             "pred": [
@@ -313,11 +313,11 @@
         {
             "idx": 8,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "good food !",
             "pred": [
                 [
@@ -339,11 +339,11 @@
         {
             "idx": 9,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.3333333333333333,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.41666666666666663,
             "review": "this is a great place to get a delicious meal .",
             "pred": [
                 [
@@ -377,11 +377,11 @@
         {
             "idx": 10,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "the staff is pretty friendly .",
             "pred": [
                 [
@@ -403,10 +403,10 @@
         {
             "idx": 11,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.5,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.125,
             "review": "the onion rings are great !",
             "pred": [
@@ -435,10 +435,10 @@
         {
             "idx": 12,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.20833333333333331,
             "review": "the lemon chicken tasted like sticky sweet donuts and the honey walnut prawns , the few they actually give you . . . . . were not good .",
             "pred": [
@@ -479,10 +479,10 @@
         {
             "idx": 13,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.25,
             "review": "nice ambience , but highly overrated place .",
             "pred": [
@@ -517,11 +517,11 @@
         {
             "idx": 14,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.5,
             "review": "worst service i ever had",
             "pred": [
                 [
@@ -543,11 +543,11 @@
         {
             "idx": 15,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.3333333333333333,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.4583333333333333,
             "review": "everyone that sat in the back outside agreed that it was the worst service we had ever received .",
             "pred": [
                 [
@@ -581,11 +581,11 @@
         {
             "idx": 16,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.3333333333333333,
+            "opinion local IoU": 0.42857142857142855,
+            "avg partial local IoU": 0.44047619047619047,
             "review": "our waiter was non - existent and after our food finally arrived over an hour after we ordered , we were not given any water or utensils .",
             "pred": [
                 [
@@ -625,11 +625,11 @@
         {
             "idx": 17,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.25,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.75,
+            "avg partial local IoU": 0.5,
             "review": "i complained to the manager , but he was not even apologetic .",
             "pred": [
                 [
@@ -657,10 +657,10 @@
         {
             "idx": 18,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.25,
             "review": "fabulous italian food !",
             "pred": [
@@ -689,10 +689,10 @@
         {
             "idx": 19,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.25,
             "review": "\u2013 i highly recommend mioposto .",
             "pred": [
@@ -715,10 +715,10 @@
         {
             "idx": 20,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.25,
             "review": "i am so happy to have a wonderful italian restaurant in my neighborhood .",
             "pred": [
@@ -759,11 +759,11 @@
         {
             "idx": 21,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.1,
+            "avg partial local IoU": 0.525,
             "review": "the wine list is wonderful and the food reminds me of my recent trip to italy .",
             "pred": [
                 [
@@ -797,11 +797,11 @@
         {
             "idx": 22,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.875,
             "review": "i love this restaurant",
             "pred": [
                 [
@@ -823,11 +823,11 @@
         {
             "idx": 23,
             "exact local IoU": 0.2,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.875,
             "review": "\u2013 i will never forget the amazing meal , service , and ambiance i experience at this restaurant .",
             "pred": [
                 [
@@ -873,11 +873,11 @@
         {
             "idx": 24,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.2,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.175,
             "review": "the wine list is incredible and extensive and diverse , the food is all incredible and the staff was all very nice , good at their jobs and cultured .",
             "pred": [
                 [
@@ -947,10 +947,10 @@
         {
             "idx": 25,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.5,
             "review": "i have not a bad thing to say about this place .",
             "pred": [
@@ -973,11 +973,11 @@
         {
             "idx": 26,
             "exact local IoU": 0.3333333333333333,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.20833333333333331,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.4583333333333333,
             "review": "the food was great !",
             "pred": [
                 [
@@ -1011,11 +1011,11 @@
         {
             "idx": 27,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.625,
             "review": "it ' s * very * reasonably priced , esp for the quality of the food .",
             "pred": [
                 [
@@ -1049,10 +1049,10 @@
         {
             "idx": 28,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.5,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.25,
             "review": "i had the kafta plate and it was perfect .",
             "pred": [
@@ -1081,11 +1081,11 @@
         {
             "idx": 29,
             "exact local IoU": 0.25,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.25,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.1875,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.3958333333333333,
             "review": "\u2013 in a age of incremental cost cutting in restaurants , its nice to see a place that bucks that trend , and just plain delivers high quality food and good service , period .",
             "pred": [
                 [
@@ -1125,11 +1125,11 @@
         {
             "idx": 30,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.3333333333333333,
+            "opinion local IoU": 0.75,
+            "avg partial local IoU": 0.6041666666666666,
             "review": "this is the place to relax and enjoy the finest quality food the industry can offer .",
             "pred": [
                 [
@@ -1175,11 +1175,11 @@
         {
             "idx": 31,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "caution - its real food for people who love the best .",
             "pred": [
                 [
@@ -1213,11 +1213,11 @@
         {
             "idx": 32,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.6666666666666666,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.41666666666666663,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.75,
             "review": "i liked the atmosphere very much but the food was not worth the price .",
             "pred": [
                 [
@@ -1257,11 +1257,11 @@
         {
             "idx": 33,
             "exact local IoU": 0.5,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.16666666666666666,
+            "avg partial local IoU": 0.5416666666666666,
             "review": "i may not be a sushi guru but i can tell you that the food here is just okay and that there is not much else to it .",
             "pred": [
                 [
@@ -1289,11 +1289,11 @@
         {
             "idx": 34,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 0.125,
+            "avg partial local IoU": 0.78125,
             "review": "rice is too dry , tuna was n ' t so fresh either .",
             "pred": [
                 [
@@ -1327,11 +1327,11 @@
         {
             "idx": 35,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.25,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.3125,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.5625,
             "review": "i have eaten here three times and have found the quality and variety of the fish to be excellent .",
             "pred": [
                 [
@@ -1371,11 +1371,11 @@
         {
             "idx": 36,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.75,
             "review": "however , the value and service are both severely lacking .",
             "pred": [
                 [
@@ -1409,11 +1409,11 @@
         {
             "idx": 37,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.4583333333333333,
             "review": "furthermore , while the fish is unquestionably fresh , rolls tend to be inexplicably bland .",
             "pred": [
                 [
@@ -1447,11 +1447,11 @@
         {
             "idx": 38,
             "exact local IoU": 0.3333333333333333,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.875,
             "review": "the service ranges from mediocre to offensive .",
             "pred": [
                 [
@@ -1485,11 +1485,11 @@
         {
             "idx": 39,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.25,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.2857142857142857,
+            "avg partial local IoU": 0.5089285714285714,
             "review": "on a recent trip , our waiter was extremely dismissive , while no less than three staff members waited hand - and - foot on a pair of japanese girls seated nearby .",
             "pred": [
                 [
@@ -1529,10 +1529,10 @@
         {
             "idx": 40,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.3333333333333333,
             "review": "freshest sushi \u2013 i love this restaurant .",
             "pred": [
@@ -1567,11 +1567,11 @@
         {
             "idx": 41,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.75,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.6875,
             "review": "they pay such detail to everything from miso soup to complex rolls .",
             "pred": [
                 [
@@ -1605,11 +1605,11 @@
         {
             "idx": 42,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.875,
             "review": "the sashimi was the freshest and most tender i have ever tasted .",
             "pred": [
                 [
@@ -1637,11 +1637,11 @@
         {
             "idx": 43,
             "exact local IoU": 1.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 1.0,
             "review": "their apps are all delicious .",
             "pred": [
                 [
@@ -1663,11 +1663,11 @@
         {
             "idx": 44,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.3333333333333333,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.5833333333333333,
             "review": "the only drawback is that this place is really expensive and the portions are on the small side .",
             "pred": [
                 [
@@ -1701,11 +1701,11 @@
         {
             "idx": 45,
             "exact local IoU": 0.25,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.20833333333333331,
+            "opinion local IoU": 0.6666666666666666,
+            "avg partial local IoU": 0.625,
             "review": "but the space is small and lovely , and the service is helpful .",
             "pred": [
                 [
@@ -1745,11 +1745,11 @@
         {
             "idx": 46,
             "exact local IoU": 0.3333333333333333,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.8333333333333333,
             "review": "\u2013 the food was not great & the waiters were rude .",
             "pred": [
                 [
@@ -1783,11 +1783,11 @@
         {
             "idx": 47,
             "exact local IoU": 1.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 1.0,
             "review": "great service",
             "pred": [
                 [
@@ -1809,11 +1809,11 @@
         {
             "idx": 48,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "my service was stellar !",
             "pred": [
                 [
@@ -1835,11 +1835,11 @@
         {
             "idx": 49,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.6666666666666666,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.6666666666666666,
             "review": "the bus boy even spotted that my table was shaking a stabilized it for me .",
             "pred": [
                 [
@@ -1867,11 +1867,11 @@
         {
             "idx": 50,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.4583333333333333,
             "review": "food was fine , with a some little - tastier - than - normal salsa .",
             "pred": [
                 [
@@ -1905,11 +1905,11 @@
         {
             "idx": 51,
             "exact local IoU": 0.16666666666666666,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.25,
             "category local IoU": 0.6666666666666666,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.41666666666666663,
+            "opinion local IoU": 0.2,
+            "avg partial local IoU": 0.5291666666666667,
             "review": "the food was great , the margaritas too but the waitress was too busy being nice to her other larger party than to take better care of my friend and me .",
             "pred": [
                 [
@@ -1961,11 +1961,11 @@
         {
             "idx": 52,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.4583333333333333,
             "review": "mama mia \u2013 i live in the neighborhood and feel lucky to live by such a great pizza place .",
             "pred": [
                 [
@@ -1993,11 +1993,11 @@
         {
             "idx": 53,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.5,
             "review": "the only problem is you really have to warm up the pizza before it ' s edible , even when you order ahead .",
             "pred": [
                 [
@@ -2025,11 +2025,11 @@
         {
             "idx": 54,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.875,
             "review": "but once done , it ' s not too much dough , not too much cheese , not too much sauce .",
             "pred": [
                 [
@@ -2057,11 +2057,11 @@
         {
             "idx": 55,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.625,
             "review": "best sushi in town .",
             "pred": [
                 [
@@ -2089,11 +2089,11 @@
         {
             "idx": 56,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.5833333333333334,
             "review": "the best calamari in seattle !",
             "pred": [
                 [
@@ -2121,11 +2121,11 @@
         {
             "idx": 57,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.125,
             "review": "\u2013 . . . and the best summertime deck experience - - they will even bring you a blanket if you get cold in the seattle evening weather .",
             "pred": [
                 [
@@ -2165,11 +2165,11 @@
         {
             "idx": 58,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.125,
+            "avg partial local IoU": 0.28125,
             "review": "a perfect place to take out of town guests any time of the year .",
             "pred": [
                 [
@@ -2197,11 +2197,11 @@
         {
             "idx": 59,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.2857142857142857,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.3214285714285714,
             "review": "endless fun , awesome music , great staff ! ! !",
             "pred": [
                 [
@@ -2247,11 +2247,11 @@
         {
             "idx": 60,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.375,
             "review": "\u2013 by far the best bar in the east village . . .",
             "pred": [
                 [
@@ -2279,11 +2279,11 @@
         {
             "idx": 61,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.6,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.48333333333333334,
             "review": "great draft and bottle selection and the pizza rocks .",
             "pred": [
                 [
@@ -2323,11 +2323,11 @@
         {
             "idx": 62,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.25,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.2,
+            "avg partial local IoU": 0.3625,
             "review": "definitely has one of the best jukebox ' s i ' ve seen in a long long time .",
             "pred": [
                 [
@@ -2355,11 +2355,11 @@
         {
             "idx": 63,
             "exact local IoU": 0.25,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.6666666666666666,
             "category local IoU": 0.6666666666666666,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.41666666666666663,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.6666666666666666,
             "review": "the food is great , the bartenders go that extra mile .",
             "pred": [
                 [
@@ -2399,11 +2399,11 @@
         {
             "idx": 64,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.8,
+            "avg partial local IoU": 0.7,
             "review": "the owners are great fun and the beer selection is worth staying for .",
             "pred": [
                 [
@@ -2443,11 +2443,11 @@
         {
             "idx": 65,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "and the upstairs is a great place to hang out .",
             "pred": [
                 [
@@ -2469,11 +2469,11 @@
         {
             "idx": 66,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.3333333333333333,
             "review": "not alot of smoking places left in new york , but i have found my favorite smoking balconey in the city .",
             "pred": [
                 [
@@ -2501,11 +2501,11 @@
         {
             "idx": 67,
             "exact local IoU": 1.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 1.0,
             "review": "the sushi here is delicious !",
             "pred": [
                 [
@@ -2527,11 +2527,11 @@
         {
             "idx": 68,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.16666666666666666,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.2916666666666667,
             "review": "they have a wide variety of fish and they even list which oceans they come from ; atlantic or pacific .",
             "pred": [
                 [
@@ -2559,10 +2559,10 @@
         {
             "idx": 69,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.0,
             "review": "i ' ve had the jellyfish , horse mackerel , blue fin tuna and the sake ikura roll among others , and they were all good .",
             "pred": [
@@ -2609,11 +2609,11 @@
         {
             "idx": 70,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.375,
             "review": "my only negative comment is that i wish the pieces were a little bigger .",
             "pred": [
                 [
@@ -2641,11 +2641,11 @@
         {
             "idx": 71,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.375,
             "review": "the decor is rustic , traditional japanese .",
             "pred": [
                 [
@@ -2679,11 +2679,11 @@
         {
             "idx": 72,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.375,
             "review": "the crowd is mixed yuppies , young and old .",
             "pred": [
                 [
@@ -2711,11 +2711,11 @@
         {
             "idx": 73,
             "exact local IoU": 0.3333333333333333,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "the service was courteous and attentive .",
             "pred": [
                 [
@@ -2749,11 +2749,11 @@
         {
             "idx": 74,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.25,
             "review": "mediocre food",
             "pred": [
                 [
@@ -2781,11 +2781,11 @@
         {
             "idx": 75,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.375,
             "review": "the outside patio area has an abbreviated menu .",
             "pred": [
                 [
@@ -2813,11 +2813,11 @@
         {
             "idx": 76,
             "exact local IoU": 0.25,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.6666666666666666,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.41666666666666663,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.625,
             "review": "my g / f and i both agreed the food was very mediocre especially considering the price .",
             "pred": [
                 [
@@ -2857,11 +2857,11 @@
         {
             "idx": 77,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.25,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.1875,
+            "opinion local IoU": 0.25,
+            "avg partial local IoU": 0.3333333333333333,
             "review": "we are locals , and get the feeling the only way this place survives with such average food is because most customers are probably one - time customer tourists .",
             "pred": [
                 [
@@ -2901,11 +2901,11 @@
         {
             "idx": 78,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "service was decent .",
             "pred": [
                 [
@@ -2927,10 +2927,10 @@
         {
             "idx": 79,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.125,
             "review": "drinks were good .",
             "pred": [
@@ -2959,11 +2959,11 @@
         {
             "idx": 80,
             "exact local IoU": 0.5,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 0.4,
+            "avg partial local IoU": 0.85,
             "review": "excellent food , nice ambience , fairly expensive",
             "pred": [
                 [
@@ -3009,11 +3009,11 @@
         {
             "idx": 81,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.7142857142857143,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.6785714285714286,
             "review": "\u2013 i loved the pumpkin ravioli and the goat cheese gnocchi ( 5 big ones to a plate instead of 20 or so little gnocchis ) and my sister loved her filet mignon on top of spinach and mashed potatoes .",
             "pred": [
                 [
@@ -3077,11 +3077,11 @@
         {
             "idx": 82,
             "exact local IoU": 0.25,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.5,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.4,
+            "avg partial local IoU": 0.475,
             "review": "the ambiance was a peaceful and relaxing break amongst all the kids running around in downtown disney .",
             "pred": [
                 [
@@ -3121,10 +3121,10 @@
         {
             "idx": 83,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.0,
             "review": "best indian food in l . a .",
             "pred": [
@@ -3159,11 +3159,11 @@
         {
             "idx": 84,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "the chicken curry and chicken tikka masala are my favorite meat dishes .",
             "pred": [
                 [
@@ -3197,11 +3197,11 @@
         {
             "idx": 85,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.6666666666666666,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.5416666666666666,
             "review": "the chana masala ( garbanzo beans ) are also excellent .",
             "pred": [
                 [
@@ -3229,11 +3229,11 @@
         {
             "idx": 86,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.25,
+            "avg partial local IoU": 0.1875,
             "review": "it ' s located in a strip mall near the beverly center , not the greatest location , but the food keeps me coming back for more .",
             "pred": [
                 [
@@ -3267,11 +3267,11 @@
         {
             "idx": 87,
             "exact local IoU": 0.3333333333333333,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.3333333333333333,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.8333333333333333,
             "review": "never too crowded and always great service .",
             "pred": [
                 [
@@ -3305,11 +3305,11 @@
         {
             "idx": 88,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.41666666666666663,
             "review": "i think i have probably tried each item on their menu at least once it is all excellent .",
             "pred": [
                 [
@@ -3337,11 +3337,11 @@
         {
             "idx": 89,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.75,
             "review": "i can highly recommend their various saag and paneer and korma .",
             "pred": [
                 [
@@ -3387,11 +3387,11 @@
         {
             "idx": 90,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.5,
             "review": "i appreciate their delivery too .",
             "pred": [
                 [
@@ -3413,11 +3413,11 @@
         {
             "idx": 91,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.5,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.25,
+            "avg partial local IoU": 0.5625,
             "review": "nice food but no spice !",
             "pred": [
                 [
@@ -3451,11 +3451,11 @@
         {
             "idx": 92,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.375,
             "review": "\u2013 i really enjoyed my meal here .",
             "pred": [
                 [
@@ -3483,11 +3483,11 @@
         {
             "idx": 93,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.625,
             "review": "i had yummy lamb korma , saag paneer , samosas , naan , etc .",
             "pred": [
                 [
@@ -3545,11 +3545,11 @@
         {
             "idx": 94,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.5,
             "sentiment local IoU": 0.3333333333333333,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.20833333333333331,
+            "opinion local IoU": 0.25,
+            "avg partial local IoU": 0.3958333333333333,
             "review": "the food was all good but it was way too mild .",
             "pred": [
                 [
@@ -3583,11 +3583,11 @@
         {
             "idx": 95,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.6666666666666666,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.20833333333333331,
+            "opinion local IoU": 0.16666666666666666,
+            "avg partial local IoU": 0.4166666666666667,
             "review": "the naan was some of the best i ' ve had and i really enjoyed the bhartha , not too tomatoey .",
             "pred": [
                 [
@@ -3627,10 +3627,10 @@
         {
             "idx": 96,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.20833333333333331,
             "review": "even the chickpeas , which i normally find too dry , were good .",
             "pred": [
@@ -3665,11 +3665,11 @@
         {
             "idx": 97,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.3333333333333333,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.3333333333333333,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.7083333333333333,
             "review": "\u2013 i do n ' t understand how i was a stranger to this place for so long . . . the fajita salad , the colorado , the fajitas - everything is delicious .",
             "pred": [
                 [
@@ -3727,11 +3727,11 @@
         {
             "idx": 98,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.25,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.5625,
             "review": "i love the warm & cosy environment .",
             "pred": [
                 [
@@ -3759,11 +3759,11 @@
         {
             "idx": 99,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.2,
+            "avg partial local IoU": 0.3,
             "review": "i just found out that you can have the place to yourself on nights and weekends for a private party - ca n ' t wait to celebrate my next birthday there .",
             "pred": [
                 [

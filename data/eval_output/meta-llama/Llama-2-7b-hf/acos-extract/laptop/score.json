@@ -7,11 +7,11 @@
         "avg local IoU": 0.0
     },
     "aspect": {
-        "precision": 0,
-        "recall": 0,
-        "f1-score": 0,
-        "global IoU": 0,
-        "avg local IoU": 0.0
+        "precision": 0.36585365853658536,
+        "recall": 0.5806451612903226,
+        "f1-score": 0.44887780548628425,
+        "global IoU": 0.28938906752411575,
+        "avg local IoU": 0.413986013986014
     },
     "category": {
         "precision": 0.030303030303030304,
@@ -28,28 +28,28 @@
         "avg local IoU": 0.5723333333333334
     },
     "opinion": {
-        "precision": 0,
-        "recall": 0,
-        "f1-score": 0,
-        "global IoU": 0,
-        "avg local IoU": 0.0
+        "precision": 0.031323048153342685,
+        "recall": 0.5153846153846153,
+        "f1-score": 0.05905685323931248,
+        "global IoU": 0.030426884650317895,
+        "avg local IoU": 0.26097290491766106
     },
     "avg partial": {
-        "precision": 0.13595413595413594,
-        "recall": 0.18841959494547342,
-        "f1-score": 0.1579050543993204,
-        "global IoU": 0.11096098231640829,
-        "avg local IoU": 0.15308333333333335
+        "precision": 0.23524831262661794,
+        "recall": 0.4624270391142079,
+        "f1-score": 0.2848887190807196,
+        "global IoU": 0.19091497036001667,
+        "avg local IoU": 0.32182306305925207
     },
     "reviews": [
         {
             "idx": 0,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.25,
+            "avg partial local IoU": 0.3125,
             "review": "the unit cost $ 275 to start with , so it is not worth repairing .",
             "pred": [
                 [
@@ -83,11 +83,11 @@
         {
             "idx": 1,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.6666666666666666,
+            "avg partial local IoU": 0.29166666666666663,
             "review": "going from acer 15 to acer 11 was difficult , 11 inches seems too small for me .",
             "pred": [
                 [
@@ -127,11 +127,11 @@
         {
             "idx": 2,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.125,
             "review": "also it ' s not a true ssd drive in there but emmc , which makes a difference .",
             "pred": [
                 [
@@ -159,11 +159,11 @@
         {
             "idx": 3,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.375,
             "review": "the computer has difficulty switching between tablet and computer .",
             "pred": [
                 [
@@ -197,11 +197,11 @@
         {
             "idx": 4,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.08333333333333333,
             "review": "2 / 28 / 18 - a couple days ago i updated the chrome os .",
             "pred": [
                 [
@@ -235,11 +235,11 @@
         {
             "idx": 5,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.5,
             "review": "it ' s just that chrome doesn ' t work the same with a chromebook as it does with windows .",
             "pred": [
                 [
@@ -267,11 +267,11 @@
         {
             "idx": 6,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.375,
             "review": "hopefully in 10 years they ' ll have this figured out and it won ' t suck so badly .",
             "pred": [
                 [
@@ -317,11 +317,11 @@
         {
             "idx": 7,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.25,
             "review": "bought this last year on july .",
             "pred": [
                 [
@@ -349,11 +349,11 @@
         {
             "idx": 8,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.375,
             "review": "i rarely use the keyboard .",
             "pred": [
                 [
@@ -381,11 +381,11 @@
         {
             "idx": 9,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.25,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.3958333333333333,
             "review": "- great price for a touchscreen chromebook",
             "pred": [
                 [
@@ -431,11 +431,11 @@
         {
             "idx": 10,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.375,
             "review": "it is glitchy , and barely usable .",
             "pred": [
                 [
@@ -481,11 +481,11 @@
         {
             "idx": 11,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.6666666666666666,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.7916666666666666,
             "review": "i ordered one , the touch pad failed to work consistently .",
             "pred": [
                 [
@@ -513,11 +513,11 @@
         {
             "idx": 12,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.375,
             "review": "i often find i ' ve typed an entire sentence ( or more ) with my fingers on the wrong keys , which is very unproductive when trying to take real - time notes in a meeting !",
             "pred": [
                 [
@@ -545,11 +545,11 @@
         {
             "idx": 13,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.2,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.25,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0625,
+            "opinion local IoU": 0.25,
+            "avg partial local IoU": 0.175,
             "review": "i know it only takes a few seconds , but a new device should not be doing this and makes me question if it ' ll get worse in the future .",
             "pred": [
                 [
@@ -805,10 +805,10 @@
         {
             "idx": 14,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.25,
             "review": "i also have to press the trackpad very hard for left click ( not as badly as the first unit , though ) , and i lost right click functionality on the track pad 2 days into my voyage with this thing .",
             "pred": [
@@ -843,11 +843,11 @@
         {
             "idx": 15,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.25,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.0625,
             "review": "i tried factory resetting after i updated the os , and it still drained 9 % over 8 hours .",
             "pred": [
                 [
@@ -899,11 +899,11 @@
         {
             "idx": 16,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.5,
             "review": "hdmi out doesn ' t work right .",
             "pred": [
                 [
@@ -937,10 +937,10 @@
         {
             "idx": 17,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.0,
             "review": "they had it over a week and then shipped back .",
             "pred": [
@@ -981,11 +981,11 @@
         {
             "idx": 18,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.007194244604316547,
+            "avg partial local IoU": 0.21013189448441244,
             "review": "i was excited to receive this chromebook , only to watch that excitement dissipate within mere hours as i noticed the touchscreen did n ' t work at all on tablet mode .",
             "pred": [
                 [
@@ -1211,10 +1211,10 @@
         {
             "idx": 19,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.125,
             "review": "clearly there is some kind of major defect here that acer has n ' t resolved .",
             "pred": [
@@ -1243,10 +1243,10 @@
         {
             "idx": 20,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.0,
             "review": "i bought this for my daughter to use to take online classes while she ' s overseas in europe for a year .",
             "pred": [
@@ -1287,11 +1287,11 @@
         {
             "idx": 21,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.625,
             "review": "decent sound quality .",
             "pred": [
                 [
@@ -1319,11 +1319,11 @@
         {
             "idx": 22,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.375,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.75,
             "review": "flimsy power adapter .",
             "pred": [
                 [
@@ -1357,11 +1357,11 @@
         {
             "idx": 23,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.375,
             "review": "wi - fi slows down to crowl and speeds back up intermittently .",
             "pred": [
                 [
@@ -1395,10 +1395,10 @@
         {
             "idx": 24,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.25,
             "review": "regret buying it at times .",
             "pred": [
@@ -1433,11 +1433,11 @@
         {
             "idx": 25,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.625,
             "review": "it just turned off and will not turn back on .",
             "pred": [
                 [
@@ -1477,11 +1477,11 @@
         {
             "idx": 26,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.6666666666666666,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.5416666666666666,
             "review": "the product is great , but the customer support is horrible .",
             "pred": [
                 [
@@ -1515,11 +1515,11 @@
         {
             "idx": 27,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.16666666666666666,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.16666666666666666,
             "review": "called support a second time after 10 minutes of verifying some type of info they told me to call google without even trying to help .",
             "pred": [
                 [
@@ -1577,11 +1577,11 @@
         {
             "idx": 28,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.25,
+            "avg partial local IoU": 0.0625,
             "review": "but i ' m getting into photography now , and it ' s terrible for loading , storing , and editing pictures .",
             "pred": [
                 [
@@ -1627,10 +1627,10 @@
         {
             "idx": 29,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.0,
             "review": "i have sent it in twice already and waiting for it to come back .",
             "pred": [
@@ -1665,11 +1665,11 @@
         {
             "idx": 30,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "the screen looked great .",
             "pred": [
                 [
@@ -1697,11 +1697,11 @@
         {
             "idx": 31,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.125,
             "review": "no matter how many times i reinserted the charging adapter , i kept getting this message .",
             "pred": [
                 [
@@ -1729,11 +1729,11 @@
         {
             "idx": 32,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.25,
             "review": "i had no option but to shut down the computer , unplug it , plug it back in , and then reboot .",
             "pred": [
                 [
@@ -1761,11 +1761,11 @@
         {
             "idx": 33,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.14285714285714285,
+            "avg partial local IoU": 0.2857142857142857,
             "review": "it has worked well except for an initial hiccup on turning it on .",
             "pred": [
                 [
@@ -1829,11 +1829,11 @@
         {
             "idx": 34,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.09090909090909091,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.25,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0625,
+            "opinion local IoU": 0.16666666666666666,
+            "avg partial local IoU": 0.1268939393939394,
             "review": "the screen flashes for a second every 30 seconds or so .",
             "pred": [
                 [
@@ -2167,11 +2167,11 @@
         {
             "idx": 35,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.5,
             "review": "i noticed the battery went down to 67 % for no reason .",
             "pred": [
                 [
@@ -2199,11 +2199,11 @@
         {
             "idx": 36,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.6666666666666666,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.29166666666666663,
             "review": "works good but the fan kicks in pretty often , which is to keep the laptop cool but the sound is annoying .",
             "pred": [
                 [
@@ -2249,11 +2249,11 @@
         {
             "idx": 37,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.5833333333333333,
             "review": "nano edge display is nice .",
             "pred": [
                 [
@@ -2275,11 +2275,11 @@
         {
             "idx": 38,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.375,
             "review": "everything was fine and i went out for an hour .",
             "pred": [
                 [
@@ -2307,11 +2307,11 @@
         {
             "idx": 39,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.5,
             "review": "the audio is almost impossible to hear .",
             "pred": [
                 [
@@ -2339,11 +2339,11 @@
         {
             "idx": 40,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.25,
             "review": "it is slow to do everything .",
             "pred": [
                 [
@@ -2371,11 +2371,11 @@
         {
             "idx": 41,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.25,
             "review": "here ' s the kicker : it is doing a terrible job running dragon age .",
             "pred": [
                 [
@@ -2403,11 +2403,11 @@
         {
             "idx": 42,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.2,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.2,
+            "avg partial local IoU": 0.22499999999999998,
             "review": "it doesn ' t has backlit keyboard : ( typing in low light is such a pain .",
             "pred": [
                 [
@@ -2453,11 +2453,11 @@
         {
             "idx": 43,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.375,
             "review": "very disappointed in how slow it seems .",
             "pred": [
                 [
@@ -2491,11 +2491,11 @@
         {
             "idx": 44,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.75,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.5625,
             "review": "keyboard and mouse pad seem fine , but overall it seems strangely slow .",
             "pred": [
                 [
@@ -2559,11 +2559,11 @@
         {
             "idx": 45,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.25,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.0625,
             "review": "i have been using this for just 3 months .",
             "pred": [
                 [
@@ -2615,11 +2615,11 @@
         {
             "idx": 46,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.6666666666666666,
+            "avg partial local IoU": 0.5416666666666666,
             "review": "crazy keypad : this issue is even worse .",
             "pred": [
                 [
@@ -2659,11 +2659,11 @@
         {
             "idx": 47,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.375,
             "review": "overall , the laptop has a solid feel to it .",
             "pred": [
                 [
@@ -2697,11 +2697,11 @@
         {
             "idx": 48,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.20833333333333331,
             "review": "this lead me to believe that although i purchased a \u201c new \u201d product , they sent me a refurbished one instead .",
             "pred": [
                 [
@@ -2741,10 +2741,10 @@
         {
             "idx": 49,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.0,
             "review": "i ' m out from us , i live in colombia , and maybe i can not return these laptop .",
             "pred": [],
@@ -2760,11 +2760,11 @@
         {
             "idx": 50,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3076923076923077,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.006097560975609756,
+            "avg partial local IoU": 0.32844746716697937,
             "review": "i like the speed , the processor the hybrid storage units ( 128ssd and 1tera ) , but the web cam sucks , really poor resolution and the keyboard doesn ' t have the numerical part and the caps lock or num lock don ' t have any light or guide to help you .",
             "pred": [
                 [
@@ -3032,11 +3032,11 @@
         {
             "idx": 51,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.001001001001001001,
+            "avg partial local IoU": 0.2502502502502503,
             "review": "lightweight .",
             "pred": [
                 [
@@ -3058,11 +3058,11 @@
         {
             "idx": 52,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.29166666666666663,
             "review": "yesterday the backlight went out .",
             "pred": [
                 [
@@ -3126,11 +3126,11 @@
         {
             "idx": 53,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.25,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.0625,
             "review": "it was brand new out of the box , i ' ve never dropped it .",
             "pred": [
                 [
@@ -3170,11 +3170,11 @@
         {
             "idx": 54,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.08333333333333333,
             "review": "now i have to deal with warranty stuff and sending it back etc .",
             "pred": [
                 [
@@ -3208,11 +3208,11 @@
         {
             "idx": 55,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.625,
             "review": "ram upgrade available",
             "pred": [
                 [
@@ -3240,11 +3240,11 @@
         {
             "idx": 56,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.5,
             "review": "hard drive upgrade available",
             "pred": [
                 [
@@ -3272,11 +3272,11 @@
         {
             "idx": 57,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.375,
             "review": "i had issues with the touchpad sticking or not responding to click correctly from the start .",
             "pred": [
                 [
@@ -3310,11 +3310,11 @@
         {
             "idx": 58,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.2,
+            "avg partial local IoU": 0.3,
             "review": "it ' s still a mainly functional computer , but using it is just not the greatest .",
             "pred": [
                 [
@@ -3348,11 +3348,11 @@
         {
             "idx": 59,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.125,
             "review": "we ' ve had the computer for 5 weeks , used it a total of less than 20 hours , and now it will be gone for 3 weeks .",
             "pred": [
                 [
@@ -3386,11 +3386,11 @@
         {
             "idx": 60,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.07142857142857142,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.14285714285714285,
             "review": "i send it to asus warranty and now after a week they ' re sending it back stating the no problem was found .",
             "pred": [
                 [
@@ -3616,11 +3616,11 @@
         {
             "idx": 61,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.25,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.25,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0625,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.125,
             "review": "display stop working within 2 months .",
             "pred": [
                 [
@@ -3888,11 +3888,11 @@
         {
             "idx": 62,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.2857142857142857,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.19642857142857142,
             "review": "since it came with no user manual , i had to call asus customer support and got someone who knew all about windows 10 software but nothing about my asus notebook .",
             "pred": [
                 [
@@ -3950,11 +3950,11 @@
         {
             "idx": 63,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.625,
             "review": "after reading all the bad reviews , just sent it back for a refund .",
             "pred": [
                 [
@@ -3982,11 +3982,11 @@
         {
             "idx": 64,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.20833333333333331,
             "review": "all over this asus laptop which has a non - functioning touchpad .",
             "pred": [
                 [
@@ -4194,11 +4194,11 @@
         {
             "idx": 65,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.25,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0625,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.22916666666666663,
             "review": "my screen broke when just putting a textbook on it .",
             "pred": [
                 [
@@ -4442,11 +4442,11 @@
         {
             "idx": 66,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.5,
             "review": "don ' t even bother calling customer support , in my experience , they do you no good .",
             "pred": [
                 [
@@ -4474,11 +4474,11 @@
         {
             "idx": 67,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.5,
             "review": "keyboard needs to be redesigned entirely .",
             "pred": [
                 [
@@ -4506,10 +4506,10 @@
         {
             "idx": 68,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.25,
             "review": "6 ` ` screen is big enough to read with ease , yet the item itself is light enough to tote to meetings .",
             "pred": [
@@ -4550,11 +4550,11 @@
         {
             "idx": 69,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.4583333333333333,
             "review": "so far , this looks as if it meets my needs as a good ` ` work machine . ` `",
             "pred": [
                 [
@@ -4582,11 +4582,11 @@
         {
             "idx": 70,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.5,
             "review": "after exactly one year of useage this computer completely stopped working .",
             "pred": [
                 [
@@ -4614,11 +4614,11 @@
         {
             "idx": 71,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.2,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.05,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.3,
             "review": "it boots up in 10 seconds and shuts down in 2 to 3 seconds .",
             "pred": [
                 [
@@ -4862,11 +4862,11 @@
         {
             "idx": 72,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.625,
             "review": "i like the idea that the keyboard lights up and has a ` ` time out ` ` feature to shut off .",
             "pred": [
                 [
@@ -4900,11 +4900,11 @@
         {
             "idx": 73,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.375,
             "review": "it seems put together well .",
             "pred": [
                 [
@@ -4932,11 +4932,11 @@
         {
             "idx": 74,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.2,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.05,
+            "opinion local IoU": 0.16666666666666666,
+            "avg partial local IoU": 0.09166666666666667,
             "review": "what they lack in size , they make up for in raw speed , durability , and energy efficiency .",
             "pred": [
                 [
@@ -5180,11 +5180,11 @@
         {
             "idx": 75,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.018518518518518517,
+            "avg partial local IoU": 0.21296296296296294,
             "review": "+ decent quantity of available ports",
             "pred": [
                 [
@@ -5446,11 +5446,11 @@
         {
             "idx": 76,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.25,
             "review": "+ it has a dvd drive : o",
             "pred": [
                 [
@@ -5478,10 +5478,10 @@
         {
             "idx": 77,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.0,
             "review": "- it runs hot !",
             "pred": [
@@ -5516,10 +5516,10 @@
         {
             "idx": 78,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.0,
             "review": "running grid benchmark , it got to a high 92 / 93 degrees c !",
             "pred": [
@@ -5548,11 +5548,11 @@
         {
             "idx": 79,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.6,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.0,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.15,
             "review": "- new i5 mobile processor .",
             "pred": [
                 [
@@ -5808,11 +5808,11 @@
         {
             "idx": 80,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.4583333333333333,
             "review": "- ddr4 ram that is upgradable .",
             "pred": [
                 [
@@ -5846,11 +5846,11 @@
         {
             "idx": 81,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.625,
             "review": "- very decent battery life .",
             "pred": [
                 [
@@ -5878,11 +5878,11 @@
         {
             "idx": 82,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.14285714285714285,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.3333333333333333,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.08333333333333333,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.11904761904761904,
             "review": "so far i am pleasantly impressed with this unit , however i have not used it a long time or tested many applications to date .",
             "pred": [
                 [
@@ -6144,11 +6144,11 @@
         {
             "idx": 83,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.08333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.04,
+            "avg partial local IoU": 0.15583333333333335,
             "review": "i can certainly say this is the best laptop i ' ve ever had ( but then again i ' ve only had 3 , and you would expect these things to improve over time , right ) .",
             "pred": [
                 [
@@ -6410,10 +6410,10 @@
         {
             "idx": 84,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.25,
             "review": "i ' ve been using it for at least 4 hours since last charged in that 23 % used up .",
             "pred": [
@@ -6442,11 +6442,11 @@
         {
             "idx": 85,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.16666666666666666,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.2,
+            "avg partial local IoU": 0.21666666666666667,
             "review": "- as others have mentioned , the keyboard backlight turns off after just a few seconds of not typing , which can be annoying and there doesn ' t seem to be a way to change this .",
             "pred": [
                 [
@@ -6498,10 +6498,10 @@
         {
             "idx": 86,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.25,
             "review": "- easily upgradeable ram",
             "pred": [
@@ -6530,10 +6530,10 @@
         {
             "idx": 87,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.25,
             "review": "one feature that i love is the ability to disable the touchpad from the keyboard .",
             "pred": [
@@ -6760,11 +6760,11 @@
         {
             "idx": 88,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.8571428571428571,
+            "avg partial local IoU": 0.4642857142857143,
             "review": "it ' s not fancy , but it ' s good value and fast and trouble - free .",
             "pred": [
                 [
@@ -6822,11 +6822,11 @@
         {
             "idx": 89,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "after spending some time with it , the feature can really be useful .",
             "pred": [
                 [
@@ -6854,11 +6854,11 @@
         {
             "idx": 90,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.375,
             "review": "easily upgrade to storage and ram .",
             "pred": [
                 [
@@ -6886,10 +6886,10 @@
         {
             "idx": 91,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.0,
-            "opinion local IoU": 0,
+            "opinion local IoU": 0.0,
             "avg partial local IoU": 0.0,
             "review": "this does not really matter to me because the mx150 is enough for my needs .",
             "pred": [
@@ -6918,11 +6918,11 @@
         {
             "idx": 92,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.6666666666666666,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.41666666666666663,
             "review": "i love the solid state drive , as reviews or ads say you can boot up and get onto internet in 10 to 15 seconds .",
             "pred": [
                 [
@@ -6956,11 +6956,11 @@
         {
             "idx": 93,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.16666666666666666,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.5,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.5416666666666667,
             "review": "it ' s not a ` ` gaming ` ` laptop even it can do some more casual gaming .",
             "pred": [
                 [
@@ -7192,11 +7192,11 @@
         {
             "idx": 94,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.41666666666666663,
             "review": "it ' s super fast , boots up in seconds .",
             "pred": [
                 [
@@ -7230,11 +7230,11 @@
         {
             "idx": 95,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 1.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 1.0,
+            "avg partial local IoU": 0.75,
             "review": "i am very impressed with this system .",
             "pred": [
                 [
@@ -7262,11 +7262,11 @@
         {
             "idx": 96,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.3333333333333333,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.0078125,
+            "avg partial local IoU": 0.3352864583333333,
             "review": "mastercam itself runs pretty good .",
             "pred": [
                 [
@@ -7516,11 +7516,11 @@
         {
             "idx": 97,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.3333333333333333,
+            "avg partial local IoU": 0.4583333333333333,
             "review": "as usual amazon was great about returning it .",
             "pred": [
                 [
@@ -7554,11 +7554,11 @@
         {
             "idx": 98,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.5,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.25,
+            "opinion local IoU": 0.5,
+            "avg partial local IoU": 0.5,
             "review": "screen is decent , not great , it is matte finished .",
             "pred": [
                 [
@@ -7598,11 +7598,11 @@
         {
             "idx": 99,
             "exact local IoU": 0.0,
-            "aspect local IoU": 0,
+            "aspect local IoU": 0.25,
             "category local IoU": 0.0,
             "sentiment local IoU": 0.5,
-            "opinion local IoU": 0,
-            "avg partial local IoU": 0.125,
+            "opinion local IoU": 0.0,
+            "avg partial local IoU": 0.1875,
             "review": "i like the back lit keyboard .",
             "pred": [
                 [
