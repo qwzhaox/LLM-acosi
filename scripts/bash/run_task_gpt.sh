@@ -12,7 +12,7 @@ DATASET_FILE="$2"
 python_file=""
 max_new_tokens=512
 max_length=1024
-model="gpt-4"
+model="gpt-4-short"
 
 if [ "$ABSA_TASK" = "acosi-extract" ]; then
     echo "Running ACOSI extract"
@@ -57,4 +57,4 @@ fi
 OUTPUT_FILE="data/model_output/${model}/${ABSA_TASK}/${DATASET}/output.pkl"
 
 # Run script
-python3 "$python_file" --model_name "$model" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length"
+python3 "$python_file" --model_name "$model" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length"

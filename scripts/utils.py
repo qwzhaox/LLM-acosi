@@ -5,6 +5,8 @@ from argparse import ArgumentParser
 from itertools import chain
 from pickle import dump
 from string import punctuation
+from pipeline import get_prompts, run_pipeline
+from gpt_pipeline import query_gpt
 
 
 EXAMPLE_REVIEW = 0
@@ -43,6 +45,26 @@ def get_args():
     parser.add_argument("--output_file", type=str, required=True, help="Output file")
     args = parser.parse_args()
     return args
+
+
+def get_model_output(args, prompt, examples, absa_task):
+    if "gpt" in args.model_name.lower():
+        prompts, _ = get_prompts(
+            args.dataset_file,
+            prompt,
+            absa_task=absa_task,
+            model=args.model_name.lower(),
+        )
+        output, response_key = query_gpt(
+            prompts,
+            examples,
+            args.model_name,
+            max_tokens=args.max_new_tokens,
+        )
+    else:
+        output, response_key = run_pipeline(args, prompt, examples, absa_task=absa_task)
+
+    return output, response_key
 
 
 def flatten_output(output):

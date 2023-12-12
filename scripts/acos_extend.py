@@ -1,8 +1,6 @@
 from pickle import dump, load
 from pprint import pprint
-from pipeline import run_pipeline, get_prompts
-from gpt_pipeline import query_gpt
-from utils import get_args, format_output, dump_output
+from utils import get_args, get_model_output, format_output, dump_output
 
 OPINION_IDX = 3
 
@@ -76,20 +74,9 @@ def get_ACOSI_annotations(acos_annotations, formatted_output):
 
 def main(args):
     prompt, examples, response_head = get_ACOS_extend_prompt()
-    if "gpt" in args.model_name.lower():
-        prompts, _ = get_prompts(
-            args.dataset_file,
-            prompts,
-            absa_task="acos-extend",
-            model=args.model_name.lower(),
-        )
-        opinion_spans, response_key = query_gpt(
-            prompts, examples, max_tokens=args.max_new_tokens
-        )
-    else:
-        opinion_spans, response_key = query_gpt(
-            args, prompt, examples, absa_task="acos-extend"
-        )
+    opinion_spans, response_key = get_model_output(
+        args.model_file, prompt, examples, absa_task="acos-extend"
+    )
     formatted_output = format_output(opinion_spans, response_key, response_head)
     acos_annotations = get_ACOS_annotations(len(formatted_output))
     formatted_output = get_ACOSI_annotations(acos_annotations, formatted_output)

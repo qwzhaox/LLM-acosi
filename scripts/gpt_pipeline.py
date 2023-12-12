@@ -1,23 +1,19 @@
-import re
-
-# from pytorch_lightning.loggers import TensorBoardLogger
-from transformers import AutoTokenizer
-
+import os
 import time
 import asyncio
 
 from langchain.chat_models import AzureChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage, AIMessage
 
-from tqdm.asyncio import tqdm as tqdm_async
 from tqdm import tqdm
 from dotenv import load_dotenv
 
 from pipeline import ALPACA_INTRO_BLURB, ALPACA_INSTRUCTION_KEY, ALPACA_RESPONSE_KEY
 
-env_path = "config/.env"
+ENV_PATH = "config/.env"
 
-load_dotenv(env_path)
+load_dotenv(ENV_PATH)
+print(os.environ)
 
 
 def alpaca_format_prompt_gpt():
@@ -43,6 +39,7 @@ def get_formatted_example_prompts(examples, formatted_prompt):
                 AIMessage(content=ex[1]),
             ]
         )
+    print(formatted_example_prompts)
     return formatted_example_prompts
 
 
