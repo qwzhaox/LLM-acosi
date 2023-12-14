@@ -8,7 +8,7 @@ from langchain.schema import HumanMessage, SystemMessage, AIMessage
 from tqdm import tqdm
 from dotenv import load_dotenv
 
-from pipeline import ALPACA_INTRO_BLURB, ALPACA_INSTRUCTION_KEY, ALPACA_RESPONSE_KEY
+from utils import alpaca_format_prompt
 
 ENV_PATH = "config/.env"
 
@@ -16,30 +16,16 @@ load_dotenv(ENV_PATH)
 print(os.environ)
 
 
-def alpaca_format_prompt_gpt():
-    formatted_prompt = """
-    {instruction_key}
-    {instruction}
-    {response}
-    """.format(
-        instruction_key=ALPACA_INSTRUCTION_KEY,
-        instruction="{instruction}",
-        response=ALPACA_RESPONSE_KEY,
-    )
-    return formatted_prompt, ALPACA_RESPONSE_KEY
-
-
-def get_formatted_example_prompts(examples, formatted_prompt):
+def get_formatted_example_prompts(examples, formatted_prompt, intro_blurb):
     formatted_example_prompts = []
     for ex in examples:
         formatted_example_prompts.extend(
             [
-                SystemMessage(content=ALPACA_INTRO_BLURB),
+                SystemMessage(content=intro_blurb),
                 HumanMessage(content=formatted_prompt.format(instruction=ex[0])),
                 AIMessage(content=ex[1]),
             ]
         )
-    print(formatted_example_prompts)
     return formatted_example_prompts
 
 
@@ -66,9 +52,9 @@ def query_gpt(
     print(f"{num_prompts} examples.")
     abbreviated_prompts = prompts[:num_prompts]
 
-    formatted_prompt, response_key = alpaca_format_prompt_gpt()
+    formatted_prompt, response_key, intro_blurb = alpaca_format_prompt()
     formatted_example_prompts = get_formatted_example_prompts(
-        examples, formatted_prompt
+        examples, formatted_prompt, intro_blurb
     )
 
     print(formatted_example_prompts)
@@ -81,7 +67,7 @@ def query_gpt(
             llm.invoke(
                 formatted_example_prompts
                 + [
-                    SystemMessage(content=ALPACA_INTRO_BLURB),
+                    SystemMessage(content=intro_blurb),
                     HumanMessage(content=formatted_prompt.format(instruction=prompt)),
                 ]
             )
@@ -97,7 +83,7 @@ def query_gpt(
             [
                 formatted_example_prompts
                 + [
-                    SystemMessage(content=ALPACA_INTRO_BLURB),
+                    SystemMessage(content=intro_blurb),
                     HumanMessage(content=formatted_prompt.format(instruction=prompt)),
                 ]
                 for prompt in prompts

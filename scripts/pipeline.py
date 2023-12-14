@@ -2,7 +2,13 @@ import torch
 from transformers import pipeline, AutoTokenizer
 from tqdm import tqdm
 from nltk import word_tokenize
-from utils import flatten_output, EXAMPLE_REVIEW, EXAMPLE_RESPONSE
+from utils import (
+    flatten_output,
+    alpaca_format_prompt_w_header,
+    EXAMPLE_REVIEW,
+    EXAMPLE_RESPONSE,
+)
+from gpt_pipeline import query_gpt
 
 from transformers.generation import GenerationConfig
 
@@ -13,25 +19,6 @@ CATEGORY_IDX = 1
 SENTIMENT_IDX = 2
 OPINION_IDX = 3
 IMPLICIT_INDICATOR_IDX = 4
-
-ALPACA_INSTRUCTION_KEY = "### Instruction:"
-ALPACA_RESPONSE_KEY = "### Response:"
-ALPACA_INTRO_BLURB = "Below is an instruction that describes a task. Write a response that appropriately completes the request."
-
-
-def alpaca_format_prompt():
-    prompt_for_generation_format = """{intro}
-
-{instruction_key}
-{instruction}
-{response_key}
-""".format(
-        intro=ALPACA_INTRO_BLURB,
-        instruction_key=ALPACA_INSTRUCTION_KEY,
-        instruction="{instruction}",
-        response_key=ALPACA_RESPONSE_KEY,
-    )
-    return prompt_for_generation_format, ALPACA_RESPONSE_KEY
 
 
 def get_formatted_annotations(annotations):
@@ -56,7 +43,7 @@ def get_prompts(
     with open(dataset_file, "r") as f:
         dataset = f.readlines()
 
-    formatted_prompt, response_key = alpaca_format_prompt()
+    formatted_prompt, response_key = alpaca_format_prompt_w_header()
 
     print("Processing dataset...")
 
@@ -130,5 +117,25 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
         total_out_tokens += len(word_tokenize(out["generated_text"].strip()))
     print(f"Total output tokens: {total_out_tokens}")
     print(f"Avg out tokens per prompt: {total_out_tokens/len(prompts)}")
+
+    return output, response_key
+
+
+def get_model_output(args, prompt, examples, absa_task):
+    if "gpt" in args.model_name.lower():
+        prompts, _ = get_prompts(
+            args.dataset_file,
+            prompt,
+            absa_task=absa_task,
+            model=args.model_name.lower(),
+        )
+        output, response_key = query_gpt(
+            prompts,
+            examples,
+            args.model_name + "-long",
+            max_tokens=args.max_new_tokens,
+        )
+    else:
+        output, response_key = run_pipeline(args, prompt, examples, absa_task=absa_task)
 
     return output, response_key

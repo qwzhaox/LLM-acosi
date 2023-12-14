@@ -5,9 +5,10 @@ from argparse import ArgumentParser
 from itertools import chain
 from pickle import dump
 from string import punctuation
-from pipeline import get_prompts, run_pipeline
-from gpt_pipeline import query_gpt
 
+ALPACA_INSTRUCTION_KEY = "### Instruction:"
+ALPACA_RESPONSE_KEY = "### Response:"
+ALPACA_INTRO_BLURB = "Below is an instruction that describes a task. Write a response that appropriately completes the request."
 
 EXAMPLE_REVIEW = 0
 EXAMPLE_RESPONSE = 1
@@ -47,24 +48,23 @@ def get_args():
     return args
 
 
-def get_model_output(args, prompt, examples, absa_task):
-    if "gpt" in args.model_name.lower():
-        prompts, _ = get_prompts(
-            args.dataset_file,
-            prompt,
-            absa_task=absa_task,
-            model=args.model_name.lower(),
-        )
-        output, response_key = query_gpt(
-            prompts,
-            examples,
-            args.model_name,
-            max_tokens=args.max_new_tokens,
-        )
-    else:
-        output, response_key = run_pipeline(args, prompt, examples, absa_task=absa_task)
+def alpaca_format_prompt():
+    formatted_prompt = """
+{instruction_key}
+{instruction}
+{response}
+""".format(
+        instruction_key=ALPACA_INSTRUCTION_KEY,
+        instruction="{instruction}",
+        response=ALPACA_RESPONSE_KEY,
+    )
+    return formatted_prompt, ALPACA_RESPONSE_KEY, ALPACA_INTRO_BLURB
 
-    return output, response_key
+
+def alpaca_format_prompt_w_header():
+    prompt_sans_header, _, intro_blurb = alpaca_format_prompt()
+    prompt_for_generation_format = intro_blurb + "\n" + prompt_sans_header
+    return prompt_for_generation_format, ALPACA_RESPONSE_KEY
 
 
 def flatten_output(output):

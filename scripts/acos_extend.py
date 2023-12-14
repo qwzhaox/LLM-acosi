@@ -1,6 +1,7 @@
 from pickle import dump, load
 from pprint import pprint
-from utils import get_args, get_model_output, format_output, dump_output
+from pipeline import get_model_output
+from utils import get_args, format_output, dump_output
 
 OPINION_IDX = 3
 
@@ -75,7 +76,7 @@ def get_ACOSI_annotations(acos_annotations, formatted_output):
 def main(args):
     prompt, examples, response_head = get_ACOS_extend_prompt()
     opinion_spans, response_key = get_model_output(
-        args.model_file, prompt, examples, absa_task="acos-extend"
+        args, prompt, examples, absa_task="acos-extend"
     )
     formatted_output = format_output(opinion_spans, response_key, response_head)
     acos_annotations = get_ACOS_annotations(len(formatted_output))

@@ -1,11 +1,11 @@
 from argparse import ArgumentParser
 from tqdm import tqdm
 from nltk import word_tokenize
-from pipeline import alpaca_format_prompt, get_formatted_annotations
+from pipeline import get_formatted_annotations
 from acos_extend import get_ACOS_extend_prompt
 from acos_extract import get_ACOS_extract_prompt
 from acosi_extract import get_ACOSI_extract_prompt
-from utils import EXAMPLE_REVIEW, EXAMPLE_RESPONSE
+from utils import alpaca_format_prompt_w_header, EXAMPLE_REVIEW, EXAMPLE_RESPONSE
 
 parser = ArgumentParser()
 parser.add_argument(
@@ -34,7 +34,7 @@ elif args.absa_task == "acosi-extract":
 else:
     raise ValueError(f"Invalid ABSA task {args.absa_task}")
 
-formatted_prompt, response_key = alpaca_format_prompt()
+formatted_prompt, response_key = alpaca_format_prompt_w_header()
 
 prompts = []
 total_tokens = 0
