@@ -1,4 +1,3 @@
-import os
 import time
 import asyncio
 
@@ -13,7 +12,6 @@ from utils import alpaca_format_prompt
 ENV_PATH = "config/.env"
 
 load_dotenv(ENV_PATH)
-print(os.environ)
 
 
 def get_formatted_example_prompts(examples, formatted_prompt, intro_blurb):
@@ -56,8 +54,6 @@ def query_gpt(
     formatted_example_prompts = get_formatted_example_prompts(
         examples, formatted_prompt, intro_blurb
     )
-
-    print(formatted_example_prompts)
 
     def invoke_serially(llm, prompts):
         import pdb

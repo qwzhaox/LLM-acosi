@@ -113,7 +113,10 @@ def fix_brackets(prediction):
 
 
 def clean_output(out, response_key, response_head):
-    prediction = out["generated_text"].strip()
+    try:
+        prediction = out["generated_text"].strip()
+    except:
+        prediction = out.strip()
 
     if response_key in prediction:
         prediction = prediction[prediction.rfind(response_key) :].strip()
