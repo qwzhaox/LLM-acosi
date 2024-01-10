@@ -1,7 +1,10 @@
-from pickle import dump, load
-from pprint import pprint
 from pipeline import get_model_output
-from utils import get_args, format_output, dump_output
+from utils import (
+    get_args,
+    format_output,
+    get_formatted_output_w_metadata,
+    dump_output,
+)
 
 OPINION_IDX = 3
 
@@ -21,14 +24,24 @@ Given an online customer review and its corresponding ACOS (Aspect-Category-Opin
 
     response_head = "Opinion spans:"
 
+    # example1 = [
+    #     "Review: looks nice , and the surface is smooth , but certain apps take seconds to respond .\nACOS quadruples: [A] surface [C] design [S] positive [O] smooth [SSEP] [A] NULL [C] design [S] positive [O] nice [SSEP] [A] apps [C] software [S] negative [O] NULL [END]\n",
+    #     f'{response_head} [O] smooth [SSEP] [O] nice [SSEP] [O] apps take seconds to respond [END]\n\nThe opinion span for the first quadruple is "smooth", the opinion span for the second quadruple is "nice", and the implicit opinion span for the third quadruple (originally labeled NULL) is "apps take seconds to respond".\n\n',
+    # ]
+
+    # example2 = [
+    #     "Review: with the theater 2 blocks away we had a delicious meal in a beautiful room .\nACOS quadruples: [A] meal [C] food#quality [S] positive [O] delicious [SSEP] [A] NULL [C] location#general [S] positive [O] NULL [SSEP] [A] room [C] ambience#general [S] positive [O] beautiful [END]\n",
+    #     f'{response_head} [O] delicious [SSEP] [O] theater 2 blocks away [SSEP] [O] beautiful [END]\n\nThe opinion span for the first quadruple is "delicious", the implicit opinion span for the second quadruple (originally labeled NULL) is "theater 2 blocks away", and the opinion span for the third quadruple is "beautiful".\n\n',
+    # ]
+
     example1 = [
-        "Review: looks nice , and the surface is smooth , but certain apps take seconds to respond .\nACOS quadruples: [A] surface [C] design [S] positive [O] smooth [SSEP] [A] NULL [C] design [S] positive [O] nice [SSEP] [A] apps [C] software [S] negative [O] NULL [END]\n",
-        f'{response_head} [O] smooth [SSEP] [O] nice [SSEP] [O] apps take seconds to respond [END]\n\nThe opinion span for the first quadruple is "smooth", the opinion span for the second quadruple is "nice", and the implicit opinion span for the third quadruple (originally labeled NULL) is "apps take seconds to respond".\n\n',
+        "Review: the design is great poor color choices too bland . color choices from previous shoes was much better .\nACOS quadruples: [A] NULL [C] appearance#form [S] positive [O] design is great [SSEP] [A] NULL [C] appearance#color [S] negative [O] poor color choices [SSEP] [A] shoes [C] appearance#color [S] negative [O] NULL [END]\n",
+        f'{response_head} [O] design is great [SSEP] [O] poor color choices [SSEP] [O] color choices from previous shoes was much better [END]\n\nThe opinion span for the first quadruple is "design is great", the opinion span for the second quadruple is "poor color choices", and the implicit opinion span for the third quadruple (originally labeled NULL) is "color choices from previous shoes was much better".\n\n',
     ]
 
     example2 = [
-        "Review: with the theater 2 blocks away we had a delicious meal in a beautiful room .\nACOS quadruples: [A] meal [C] food#quality [S] positive [O] delicious [SSEP] [A] NULL [C] location#general [S] positive [O] NULL [SSEP] [A] room [C] ambience#general [S] positive [O] beautiful [END]\n",
-        f'{response_head} [O] delicious [SSEP] [O] theater 2 blocks away [SSEP] [O] beautiful [END]\n\nThe opinion span for the first quadruple is "delicious", the implicit opinion span for the second quadruple (originally labeled NULL) is "theater 2 blocks away", and the opinion span for the third quadruple is "beautiful".\n\n',
+        "Review: omg these are the most comfortable sneakers in the world . i can walk 5 , 6 , 7 miles in them . my whole body may be tired but my feet are great !\nACOS quadruples: [A] sneakers [C] performance#comfort [S] positive [O] omg these are the most comfortable sneakers in the world [SSEP] [A] NULL [C] performance#use case applicability [S] positive [O] NULL [SSEP] [A] NULL [C] performance#comfort [S] positive [O] NULL [SSEP] [A] NULL [C] performance#general [S] positive [O] NULL [END]\n",
+        f'{response_head} [O] omg these are the most comfortable sneakers in the world [SSEP] [O] i can walk 5 , 6 , 7 miles [SSEP] [O] i can walk 5 , 6 , 7 miles [SSEP] [O] my whole body may be tired but my feet are great [END]\n\nThe opinion span for the first quadruple is "omg these are the most comfortable sneakers in the world ", the implicit opinion span for the second quadruple (originally labeled NULL) is "i can walk 5 , 6 , 7 miles", the opinion span for the third quadruple (originally labeled NULL) is "i can walk 5 , 6 , 7 miles", and the opinion span for the fourth quadruple (originally labeled NULL) is "my whole body may be tired but my feet are great".\n\n',
     ]
 
     examples = [example1, example2]
@@ -75,14 +88,20 @@ def get_ACOSI_annotations(acos_annotations, formatted_output):
 
 def main(args):
     prompt, examples, response_head = get_ACOS_extend_prompt()
-    opinion_spans, response_key = get_model_output(
+    opinion_spans, response_key, reviews = get_model_output(
         args, prompt, examples, absa_task="acos-extend"
     )
-    formatted_output = format_output(opinion_spans, response_key, response_head)
+    formatted_output, raw_predictions = format_output(
+        opinion_spans, response_key, response_head
+    )
     acos_annotations = get_ACOS_annotations(len(formatted_output))
     formatted_output = get_ACOSI_annotations(acos_annotations, formatted_output)
 
+    formatted_output_w_metadata = get_formatted_output_w_metadata(
+        formatted_output, raw_predictions, reviews
+    )
     dump_output(args.output_file, formatted_output)
+    dump_output(args.output_file + "_METADATA", formatted_output_w_metadata)
 
 
 if __name__ == "__main__":

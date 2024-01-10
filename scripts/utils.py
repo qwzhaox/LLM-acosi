@@ -1,9 +1,10 @@
 import re
+import pickle
+import json
 import numpy as np
 from pathlib import Path
 from argparse import ArgumentParser
 from itertools import chain
-from pickle import dump
 from string import punctuation
 
 ALPACA_INSTRUCTION_KEY = "### Instruction:"
@@ -127,45 +128,16 @@ def clean_output(out, response_key, response_head):
     if "\n" in prediction:
         prediction = prediction[: prediction.find("\n")]
 
-    print("Raw Prediction: ", prediction)
+    print("Raw prediction: ", prediction)
 
+    raw_prediction = prediction
     prediction = fix_brackets(prediction)
 
     if "[END]" in prediction:
         prediction = prediction[: prediction.find("[END]")]
     prediction = prediction.strip()
 
-    return prediction
-
-
-# def extract_list_str(prediction):
-#     if "[" in prediction and "]" in prediction:
-#         prediction = prediction[prediction.find("[") : prediction.find("]") + 1]
-#     elif "[" in prediction:
-#         prediction = prediction[prediction.find("[") : prediction.rfind(")") + 1] + "]"
-#     else:
-#         return "", False
-#     return prediction, True
-
-
-# def format_list_str(prediction, response_head):
-#     if "span" in response_head.lower():
-#         for i, char in prediction:
-
-#     else:
-
-#     prediction = prediction.lower()
-#     return prediction
-
-
-# def eval_list_str(prediction):
-#     try:
-#         formatted_tuples = literal_eval(prediction)
-#     except Exception as e:
-#         print("ERROR MESSAGE:", e)
-#         print("INVALID OUTPUT: ", prediction, "\n")
-#         return []
-#     return formatted_tuples
+    return prediction, raw_prediction
 
 
 def clean_punctuation(words):
@@ -239,30 +211,51 @@ def extract_spans(seq):
 def format_output(output, response_key, response_head):
     output = flatten_output(output)
     formatted_output = []
+    raw_predictions = []
     for out in output:
-        prediction = clean_output(out, response_key, response_head)
+        prediction, raw_prediction = clean_output(out, response_key, response_head)
 
         print("Prediction: ", prediction)
 
         quints = extract_spans(prediction)
         formatted_output.append(quints)
+        raw_predictions.append(raw_prediction)
 
         print("Quints: ", quints)
 
-        # prediction, valid = extract_list_str(prediction)
-        # if not valid:
-        #     formatted_output.append([])
-        #     continue
+    return formatted_output, raw_predictions
 
-        # prediction = format_list_str(prediction, response_head)
-        # formatted_tuples = eval_list_str(prediction)
-        # formatted_output.append(formatted_tuples)
 
-    return formatted_output
+def get_formatted_output_w_metadata(formatted_output, raw_predictions, reviews):
+    formatted_output_w_metadata = []
+    if len(formatted_output) == len(raw_predictions) == len(reviews):
+        for annotation, raw_prediction, review in zip(
+            formatted_output, raw_predictions, reviews
+        ):
+            annotation_w_metadatum = {}
+            annotation_w_metadatum["annotation"] = annotation
+            annotation_w_metadatum["review"] = review
+            annotation_w_metadatum["raw_predictions"] = raw_prediction
+            formatted_output_w_metadata.append(annotation_w_metadatum)
+    else:
+        print(
+            f"Length of formatted output {len(formatted_output)} does not match corresponding lengths: {len(raw_predictions)}, {len(reviews)}"
+        )
+    return formatted_output_w_metadata
 
 
 def dump_output(output_file, formatted_output):
+    output_file = (
+        output_file + ".pkl"
+        if "_METADATA" not in output_file
+        else output_file + ".json"
+    )
     if "/" in output_file:
         Path(output_file[: output_file.rfind("/")]).mkdir(parents=True, exist_ok=True)
-    with open(output_file, "wb") as f:
-        dump(formatted_output, f)
+
+    if ".pkl" in output_file:
+        with open(output_file, "wb") as f:
+            pickle.dump(formatted_output, f)
+    elif ".json" in output_file:
+        with open(output_file, "w") as f:
+            json.dump(formatted_output, f, indent=4)

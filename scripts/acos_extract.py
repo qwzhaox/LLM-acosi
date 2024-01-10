@@ -1,7 +1,12 @@
 import json
-from pickle import dump
 from pipeline import get_model_output
-from utils import get_file_path, format_output, get_args, dump_output
+from utils import (
+    get_file_path,
+    format_output,
+    get_args,
+    get_formatted_output_w_metadata,
+    dump_output,
+)
 
 laptop_category_file_path = get_file_path("laptop-acos-cate-list.json")
 restaurant_category_file_path = get_file_path("restaurant-acos-cate-list.json")
@@ -72,13 +77,19 @@ def main(args):
     else:
         raise ValueError("Invalid dataset domain.")
 
-    output, response_key = get_model_output(
+    output, response_key, reviews = get_model_output(
         args, prompt, examples, absa_task="acos-extract"
     )
-    formatted_output = format_output(output, response_key, response_head)
+    formatted_output, raw_predictions = format_output(
+        output, response_key, response_head
+    )
     formatted_output = [[quint[:-1] for quint in quints] for quints in formatted_output]
+    formatted_output_w_metadata = get_formatted_output_w_metadata(
+        formatted_output, raw_predictions, reviews
+    )
 
     dump_output(args.output_file, formatted_output)
+    dump_output(args.output_file + "_METADATA", formatted_output_w_metadata)
 
 
 if __name__ == "__main__":

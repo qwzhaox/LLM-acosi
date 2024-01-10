@@ -50,7 +50,7 @@ def query_gpt(
     print(f"{num_prompts} examples.")
     abbreviated_prompts = prompts[:num_prompts]
 
-    formatted_prompt, response_key, intro_blurb = alpaca_format_prompt()
+    formatted_prompt, _, intro_blurb = alpaca_format_prompt()
     formatted_example_prompts = get_formatted_example_prompts(
         examples, formatted_prompt, intro_blurb
     )
@@ -110,58 +110,4 @@ def query_gpt(
             + "\033[0m"
         )
 
-    return output, response_key
-
-
-# def main(config):
-#     """
-#     Trains the model
-
-#     :param config:
-#     :return:
-#     """
-
-#     if config.model_architecture == "OpenAI":
-#         replace_list = ["</s>", "<s>", "<pad>"]
-#         tokenizer = AutoTokenizer.from_pretrained("allenai/PRIMERA")
-#         dataset_reader = get_dataset_reader(config)
-#         datamodule = FinetuneDataModule(config, tokenizer, dataset_reader)
-
-#         dataset = dataset_reader.get_full_dataset(tokenizer)
-
-#         _val_inputs = [
-#             tokenizer.decode(elt["input_ids"], skip_special_tokens=False)
-#             for elt in dataset["val"]
-#         ]
-#         cleaned_val_inputs = [
-#             re.sub(r"|".join(map(re.escape, replace_list)), "", elt)
-#             for elt in _val_inputs
-#         ]
-#         val_gold = [
-#             tokenizer.decode(elt["output_ids"], skip_special_tokens=True)
-#             for elt in dataset["val"]
-#         ]
-
-#         _test_inputs = [
-#             tokenizer.decode(elt["input_ids"], skip_special_tokens=False)
-#             for elt in dataset["test"]
-#         ]
-#         test_gold = [
-#             tokenizer.decode(elt["output_ids"], skip_special_tokens=True)
-#             for elt in dataset["test"]
-#         ]
-#         cleaned_test_inputs = [
-#             re.sub(r"|".join(map(re.escape, replace_list)), "", elt)
-#             for elt in _test_inputs
-#         ]
-
-#         # val_pred = [get_chatgpt_results(elt, config.input_prefix) for elt in cleaned_val_inputs]
-#         # test_pred = [get_chatgpt_results(elt, config.input_prefix) for elt in cleaned_test_inputs]
-
-#         # JOE -> WENZHAO: cleaned_val_inputs is a list of examples
-#         pred = comparison_fn(
-#             cleaned_val_inputs,
-#             config.input_prefix,
-#             config.sys_prefix,
-#             config.deployment_name,
-#         )
+    return output

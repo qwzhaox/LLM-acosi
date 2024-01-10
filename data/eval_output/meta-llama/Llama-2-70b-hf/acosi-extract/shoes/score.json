@@ -1,10 +1,10 @@
 {
     "exact": {
-        "precision": 0.010948905109489052,
-        "recall": 0.0071090047393364926,
-        "f1-score": 0.008620689655172412,
-        "global IoU": 0.004329004329004329,
-        "avg local IoU": 0.01
+        "precision": 0.0036496350364963502,
+        "recall": 0.002369668246445498,
+        "f1-score": 0.0028735632183908046,
+        "global IoU": 0.0014388489208633094,
+        "avg local IoU": 0.002
     },
     "aspect": {
         "precision": 0.9029126213592233,
@@ -51,7 +51,7 @@
     "reviews": [
         {
             "idx": 0,
-            "exact local IoU": 1.0,
+            "exact local IoU": 0.2,
             "aspect local IoU": 1.0,
             "category local IoU": 1.0,
             "sentiment local IoU": 1.0,
@@ -61,14 +61,14 @@
             "review": "the design is great poor color choices too bland . color choices from previous shoes was much better .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "design is great",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "poor color choices",
@@ -211,7 +211,7 @@
             "review": "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? ! other than that , it ' s a looks well constructed , would love a pair that fits like my sneakers !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "general",
                     "positive",
                     "these shoes are great",
@@ -445,7 +445,7 @@
             "review": "i like the fit and cimfort . not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#use\\_case",
                     "neutral",
                     "i bought these shoes for my son who plays basketball",
@@ -1092,35 +1092,35 @@
             "review": "good for around the house . if your looking to exercise in these , i would recommend something else . not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\_context",
                     "neutral",
                     "i am a size 10 in most shoes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing/fit",
                     "negative",
                     "ordered a size 10 in these shoes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing/fit",
                     "negative",
                     "were too big",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing/fit",
                     "negative",
                     "were too small",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing/fit",
                     "negative",
                     "were too big",
@@ -1340,7 +1340,7 @@
             "review": "the shoe i purchased runs small . order a size or two bigger than normal size . they also need to adjust the return and exchange date . otherwise , the shoe is a classic .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "negative",
                     "shoe looks good but the size is too big",
@@ -2319,7 +2319,7 @@
             "review": "this shoe fits completely different than the last pair of adidas running sneakers i purchased . they are very long and a bit too narrow . i do love the color scheme and style though .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "shoe is very comfortable",
@@ -2468,7 +2468,7 @@
             "review": "these shoes are so comfortable ! they look good with every athletic outfit and i love pairing them with leggings and a tank top or even a sweatshirt and a tennis skirt . if you ' re trying to find the perfect white athletic shoe , this is your sign ! here they are !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\_context",
                     "neutral",
                     "have not had a chance to wear them yet but i did try them on",
@@ -3595,14 +3595,14 @@
             "review": "really small you should go up a size or two . good material for the top strap .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "very comfortable",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "cost/value",
                     "positive",
                     "the price was right",
@@ -3645,7 +3645,7 @@
             "review": "comfortable and just as described . not to big or small .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "very comfortable",
@@ -3688,7 +3688,7 @@
             "review": "i must have gotten a defective pair . sides of both slides appear to be lifting : / poorly glued together . want to return but worried about the hassle of trying to get a better pair reordered .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "very comfortable",
@@ -4659,7 +4659,7 @@
             "review": "i need an orthopedic lift in one shoe . reebox still manufactures a fine shoe which can still be modified .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "misc",
                     "positive",
                     "great shoe",
@@ -4759,7 +4759,7 @@
             "review": "it ' s a great shoes but need different size . i recommend it",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\_context",
                     "neutral",
                     "i am not sure about the size",
@@ -5161,7 +5161,7 @@
             "review": "still look cool , but not what they used to be . quality has lowered significantly\u2014bummer . plus sizing has changed . i ' ve always been a good snug 7 . 5 in these and now the 7 . 5 is too small and the 8 is too big . these are just built differently now and i ' m so sad : (",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "general",
                     "positive",
                     "love the look and comfort",
@@ -5598,14 +5598,14 @@
             "review": "i ' ve worn these shoes so many times ! they ' re true to size , comfortable and fly . perfect fall colors . the top was a bit uncomfortable without socks , but jist wear socks . : )",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\_context",
                     "positive",
                     "i ' m a 7 . 5 and i got the 8 . 5 and they ' re perfect",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "i ' m a 7 . 5 and i got the 8 . 5 and they ' re perfect",
@@ -5712,14 +5712,14 @@
             "review": "but i ' d rather have the classic in leather . i would buy many pairs .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "love the color",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "love the color",
@@ -6489,14 +6489,14 @@
             "review": "i have been wearing these for years ! i use to always get an 8 1 / 2 ( women ' s ) but i got a 9 this time and they were really tight on my feet . so i ' d recommend going up at least a half size",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "neutral",
                     "i have been wearing these for years",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "i use to always get an 8 1 / 2 ( women ' s ) but i got a 9 this time and they were really tight on my feet",
@@ -6688,7 +6688,7 @@
             "review": "i typically wear a standard to slightly narrow width . this shoe is extremely narrow , making it unwearable for me . i believe the quality is very good , just to narrow .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "negative",
                     "too small",

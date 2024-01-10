@@ -38,7 +38,7 @@ def get_formatted_annotations(annotations):
 
 
 def get_prompts(
-    dataset_file, prompt, examples=[], absa_task="extract-acosi", model="llama-2"
+    dataset_file, bare_prompt, examples=[], absa_task="acosi-extract", model="llama-2"
 ):
     with open(dataset_file, "r") as f:
         dataset = f.readlines()
@@ -48,9 +48,11 @@ def get_prompts(
     print("Processing dataset...")
 
     prompts = []
+    reviews = []
 
     for data in tqdm(dataset, desc="Processing Dataset", unit="item"):
         review = data.split("####")[0]
+        reviews.append(review)
         annotations = eval(data.split("####")[1])
 
         review_str = f"Review: {review.strip()}\n"
@@ -60,14 +62,14 @@ def get_prompts(
                 f"ACOS quadruples: {get_formatted_annotations(annotations)}\n"
             )
 
-        bare_prompt = prompt + review_str + annotations_str
+        bare_prompt = bare_prompt + review_str + annotations_str
 
         if "gpt" in model.lower():
             prompts.append(bare_prompt)
         else:
             example_prompts = []
             for example in examples:
-                bare_example_prompt = prompt + example[EXAMPLE_REVIEW]
+                bare_example_prompt = bare_prompt + example[EXAMPLE_REVIEW]
                 example_prompt = formatted_prompt.format(
                     instruction=bare_example_prompt
                 )
@@ -80,12 +82,10 @@ def get_prompts(
             )
             prompts.append(final_prompt)
 
-    return prompts, response_key
+    return prompts, response_key, reviews
 
 
-def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
-    prompts, response_key = get_prompts(args.dataset_file, prompt, examples, absa_task)
-
+def run_pipeline(args, prompts):
     # Initialize the pipeline with the specified model, and set the device
     tokenizer = AutoTokenizer.from_pretrained(
         args.tokenizer_name, model_max_length=args.max_length
@@ -118,24 +118,25 @@ def run_pipeline(args, prompt, examples=[], absa_task="extract-acosi"):
     print(f"Total output tokens: {total_out_tokens}")
     print(f"Avg out tokens per prompt: {total_out_tokens/len(prompts)}")
 
-    return output, response_key
+    return output
 
 
-def get_model_output(args, prompt, examples, absa_task):
+def get_model_output(args, bare_prompt, examples, absa_task):
+    prompts, response_key, reviews = get_prompts(
+        args.dataset_file,
+        bare_prompt,
+        examples,
+        absa_task=absa_task,
+        model=args.model_name.lower(),
+    )
     if "gpt" in args.model_name.lower():
-        prompts, _ = get_prompts(
-            args.dataset_file,
-            prompt,
-            absa_task=absa_task,
-            model=args.model_name.lower(),
-        )
-        output, response_key = query_gpt(
+        output = query_gpt(
             prompts,
             examples,
             args.model_name + "-long",
             max_tokens=args.max_new_tokens,
         )
     else:
-        output, response_key = run_pipeline(args, prompt, examples, absa_task=absa_task)
+        output = run_pipeline(args, prompts)
 
-    return output, response_key
+    return output, response_key, reviews

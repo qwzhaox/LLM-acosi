@@ -1,18 +1,18 @@
 #!/bin/bash
 
-if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 <ABSA_TASK> <dataset_file>"
+if [ "$#" -ne 3 ]; then
+    echo "Usage: $0 <ABSA_TASK> <dataset_file> <model>"
     exit 1
 fi
 
 
 ABSA_TASK="$1"
 DATASET_FILE="$2"
+model="$3"
 
 python_file=""
 max_new_tokens=512
 max_length=1024
-model="gpt-4"
 
 if [ "$ABSA_TASK" = "acosi-extract" ]; then
     echo "Running ACOSI extract"
@@ -54,7 +54,7 @@ else
     exit 1
 fi
 
-OUTPUT_FILE="data/model_output/${model}/${ABSA_TASK}/${DATASET}/output.pkl"
+OUTPUT_FILE="data/model_output/gpt/${model}/${ABSA_TASK}/${DATASET}/output"
 
 # Run script
 python3 "$python_file" --model_name "$model" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length"

@@ -6,8 +6,11 @@ output_paths = []
 for path in Path(".").rglob("output.pkl"):
     output_paths.append(path)
 
+for path in Path(".").rglob("output_METADATA.pkl"):
+    output_paths.append(path)
+
 for path in output_paths:
-    json_path = path.parent / "output.json"
+    json_path = path.parent / path.name.replace(".pkl", ".json")
     if json_path.exists():
         json_path.unlink()
     print(f"Converting {path} to {json_path}")

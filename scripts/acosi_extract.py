@@ -1,12 +1,42 @@
 import json
-from pickle import dump
 from pipeline import get_model_output
-from utils import get_file_path, format_output, get_args, dump_output
+from utils import (
+    get_file_path,
+    format_output,
+    get_args,
+    get_formatted_output_w_metadata,
+    dump_output,
+)
 
 category_file_path = get_file_path("shoes-acosi-cate-list.json")
 
 with open(category_file_path, "r") as f:
     shoes_cate_list = json.load(f)
+
+
+# categories_with_descriptions = [
+#     "shoe (the item in mention)"
+#     "shoe.performance (Relating to the performance and function of the item)",
+#     "shoe.performance.functional_applicability (Functional ability to enable/perform a specified action or activity; work; operate.)",
+#     "shoe.performance.sizing (Relates to the sizing)",
+#     "shoe.performance.comfort (Producing or affording physical comfort, support, or ease.)",
+#     "shoe.performance.durability (Able to exist for a long time without significant deterioration in quality or value.)",
+#     "shoe.performance.stability (The quality, state, or degree of being stable)",
+#     "shoe.context_of_use (The situation in which something happens; The group of conditions that exist where and when something happens.)",
+#     "shoe.context_of_use.usage_frequency (the frequency of use of a product)",
+#     "shoe.context_of_use.use_case (For what is the product used for. )",
+#     "shoe.context_of_use.place (Where the product is being used; the user's environment.)",
+#     "shoe.context_of_use.review_temporality (A statement on the product and the user's time of use with it.)",
+#     "shoe.context_of_use.purchase_context (Other factors that led the user to purchasing the shoe.)",
+#     "shoe.appearance (The aesthetic appearance of the shoe. The way that someone or something looks.)",
+#     "shoe.appearance.color (A quality such as red, blue, green, yellow, etc., that you see when you look at something; visual perception that enables one to differentiate otherwise identical objects.)",
+#     "shoe.appearance.material (The quality or state of being material; an product quality relating to, derived from, or consisting of matter.)",
+#     "shoe.appearance.shoe_component (a constituent part; one of the parts that form the shoe)",
+#     "shoe.appearance.form (A particular form or shape of an object; the Spatial form or contour of the object.)",
+#     "shoe.misc (Things that don't fall in the other categories)",
+# ]
+
+# shoes_cate_list = categories_with_descriptions
 
 
 def get_ACOSI_extract_prompt():
@@ -34,8 +64,8 @@ Each quintuple is comprised of 5 components:
     ]
 
     example2 = [
-        "Review: had to order a larger size than what i normally wear . shoe would be better if offered as an adjustable shoe . shoe is overpriced for quality . i bought cheaper slides in the past that were more comfortable .",
-        f"{response_head} [A] NULL [C] performance#sizing_fit [S] neutral [O] had to order a larger size than what i normally wear [I] direct [SSEP] [A] NULL [C] contextofuse#purchase\\\\_context [S] negative [O] had to order a larger size than what i normally wear [I] direct [SSEP] [A] shoe [C] appearance#form [S] neutral [O] would be better if offered as an adjustable shoe [I] direct [SSEP] [A] shoe [C] cost/value [S] negative [O] overpriced for quality [I] direct [SSEP] [A] slides [C] cost/value [S] negative [O] i bought cheaper slides in the past that were more comfortable [I] direct [SSEP] [A] slides [C] performance#comfort [S] negative [O] i bought cheaper slides in the past that were more comfortable [I] direct [END]\n\n",
+        "Review: omg these are the most comfortable sneakers in the world . i can walk 5 , 6 , 7 miles in them . my whole body may be tired but my feet are great !",
+        f"{response_head} [A] sneakers [C] performance#comfort [S] positive [O] omg these are the most comfortable sneakers in the world [I] direct [SSEP] [A] NULL [C] performance#use case applicability [S] positive [O] i can walk 5 , 6 , 7 miles [I] indirect [SSEP] [A] NULL [C] performance#comfort [S] positive [O] i can walk 5 , 6 , 7 miles [I] indirect [SSEP] [A] NULL [C] performance#general [S] positive [O] my whole body may be tired but my feet are great [I] indirect [END]\n\n",
     ]
 
     examples = [example1, example2]
@@ -45,11 +75,17 @@ Each quintuple is comprised of 5 components:
 
 def main(args):
     prompt, examples, response_head = get_ACOSI_extract_prompt()
-    output, response_key = get_model_output(
+    output, response_key, reviews = get_model_output(
         args, prompt, examples, absa_task="acosi-extract"
     )
-    formatted_output = format_output(output, response_key, response_head)
+    formatted_output, raw_predictions = format_output(
+        output, response_key, response_head
+    )
+    formatted_output_w_metadata = get_formatted_output_w_metadata(
+        formatted_output, raw_predictions, reviews
+    )
     dump_output(args.output_file, formatted_output)
+    dump_output(args.output_file + "_METADATA", formatted_output_w_metadata)
 
 
 if __name__ == "__main__":

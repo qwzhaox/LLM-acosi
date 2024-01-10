@@ -53,7 +53,7 @@
             "review": "yum !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "food#taste",
                     "positive",
                     "yum"
@@ -61,7 +61,7 @@
             ],
             "true": [
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
                     "yum"
@@ -79,7 +79,7 @@
             "review": "serves really good sushi .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "food#quality",
                     "positive",
                     "good"
@@ -88,7 +88,7 @@
                     "sushi",
                     "food#style_options",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -117,10 +117,10 @@
                     "adequate"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#general",
                     "neutral",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -219,16 +219,16 @@
                     "extremely"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "service#attentiveness",
                     "positive",
                     "tended"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "service#overall_quality",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -251,22 +251,22 @@
             "review": "i ' ve been to this restaurant over a dozen times with no complaints to date .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#reliability",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "restaurant",
                     "restaurant#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#prices",
                     "neutral",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -295,7 +295,7 @@
                     "overcooked"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "food#taste",
                     "negative",
                     "lacked flavor"
@@ -321,7 +321,7 @@
             "review": "good food !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "food#quality",
                     "positive",
                     "good"
@@ -347,16 +347,16 @@
             "review": "this is a great place to get a delicious meal .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#food_quality",
                     "positive",
                     "delicious"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -417,10 +417,10 @@
                     "not worth"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "food#quality",
                     "negative",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -446,7 +446,7 @@
                     "ambience",
                     "ambience#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "food",
@@ -490,7 +490,7 @@
                     "service",
                     "service#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "food",
@@ -525,7 +525,7 @@
             "review": "worst service i ever had",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "service#general",
                     "negative",
                     "worst"
@@ -589,7 +589,7 @@
             "review": "our waiter was non - existent and after our food finally arrived over an hour after we ordered , we were not given any water or utensils .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "service#general",
                     "negative",
                     "non - existent"
@@ -601,16 +601,16 @@
                     "over an hour"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "service#general",
                     "negative",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "utensils",
                     "restaurant#miscellaneous",
                     "negative",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -636,7 +636,7 @@
                     "complained to the manager",
                     "service#complaint_handling",
                     "negative",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "manager",
@@ -671,7 +671,7 @@
                     "friendly"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "service#attentiveness",
                     "positive",
                     "attentive"
@@ -697,7 +697,7 @@
             "review": "\u2013 i highly recommend mioposto .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#recommendation",
                     "positive",
                     "highly"
@@ -732,10 +732,10 @@
                     "fries",
                     "food#quality",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#prices",
                     "positive",
                     "good"
@@ -790,7 +790,7 @@
                     "food",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ]
         },
@@ -805,7 +805,7 @@
             "review": "i love this restaurant",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#general",
                     "positive",
                     "i love"
@@ -840,13 +840,13 @@
                     "service",
                     "service#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "ambiance",
                     "ambience#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -884,13 +884,13 @@
                     "location",
                     "location#convenience",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "ambiance",
                     "ambiance#pleasant",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "service",
@@ -955,10 +955,10 @@
             "review": "i have not a bad thing to say about this place .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -1028,7 +1028,7 @@
                     "quality",
                     "food#quality",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -1089,7 +1089,7 @@
             "review": "\u2013 in a age of incremental cost cutting in restaurants , its nice to see a place that bucks that trend , and just plain delivers high quality food and good service , period .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#quality_food",
                     "positive",
                     "high quality"
@@ -1101,7 +1101,7 @@
                     "good"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#prices",
                     "neutral",
                     "incremental cost cutting"
@@ -1133,7 +1133,7 @@
             "review": "this is the place to relax and enjoy the finest quality food the industry can offer .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#general",
                     "positive",
                     "relax"
@@ -1145,7 +1145,7 @@
                     "finest"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#general",
                     "positive",
                     "enjoy"
@@ -1183,7 +1183,7 @@
             "review": "caution - its real food for people who love the best .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "food#quality",
                     "positive",
                     "real"
@@ -1224,7 +1224,7 @@
                     "atmosphere",
                     "ambience#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "food",
@@ -1271,7 +1271,7 @@
                     "okay"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "food#general",
                     "negative",
                     "not much else to it"
@@ -1335,7 +1335,7 @@
             "review": "i have eaten here three times and have found the quality and variety of the fish to be excellent .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#quality",
                     "positive",
                     "excellent"
@@ -1344,10 +1344,10 @@
                     "fish",
                     "food#quality",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#variety",
                     "positive",
                     "excellent"
@@ -1382,13 +1382,13 @@
                     "value",
                     "restaurant#prices",
                     "negative",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "service",
                     "service#general",
                     "negative",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -1502,7 +1502,7 @@
                     "service",
                     "service#general",
                     "negative",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "staff",
@@ -1522,7 +1522,7 @@
                     "staff members",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ]
             ]
         },
@@ -1578,13 +1578,13 @@
                     "miso soup",
                     "food#quality",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "complex rolls",
                     "food#style_options",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -1592,7 +1592,7 @@
                     "miso soup",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "rolls",
@@ -1846,7 +1846,7 @@
                     "bus boy",
                     "service#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "table",
@@ -1860,7 +1860,7 @@
                     "bus boy",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ]
         },
@@ -1922,7 +1922,7 @@
                     "drinks",
                     "drinks#prices",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "service",
@@ -1931,7 +1931,7 @@
                     "too busy"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "service#general",
                     "negative",
                     "poor care"
@@ -1969,7 +1969,7 @@
             "review": "mama mia \u2013 i live in the neighborhood and feel lucky to live by such a great pizza place .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "location#proximity",
                     "positive",
                     "lucky"
@@ -2047,10 +2047,10 @@
             ],
             "true": [
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ]
         },
@@ -2065,7 +2065,7 @@
             "review": "best sushi in town .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "food#quality",
                     "positive",
                     "best"
@@ -2074,7 +2074,7 @@
                     "sushi",
                     "food#style_options",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -2103,10 +2103,10 @@
                     "the best"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "location#general",
                     "positive",
-                    "Seattle"
+                    "seattle"
                 ]
             ],
             "true": [
@@ -2155,7 +2155,7 @@
                     "best"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
                     "best"
@@ -2173,13 +2173,13 @@
             "review": "a perfect place to take out of town guests any time of the year .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "location#ambiance",
                     "positive",
                     "a perfect place"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "location#seasonal_availability",
                     "positive",
                     "any time of the year"
@@ -2208,19 +2208,19 @@
                     "endless fun",
                     "entertainment#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "awesome music",
                     "music#quality",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "great staff",
                     "service#staff",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -2237,7 +2237,7 @@
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
                     "fun"
@@ -2255,16 +2255,16 @@
             "review": "\u2013 by far the best bar in the east village . . .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "bar#general",
                     "positive",
                     "best"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "location#east_village",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -2296,7 +2296,7 @@
                     "bottle",
                     "beer#selection",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "pizza",
@@ -2337,10 +2337,10 @@
                     "one of the best"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "entertainment#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -2372,10 +2372,10 @@
                     "bartenders",
                     "service#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#service",
                     "positive",
                     "go that extra mile"
@@ -2392,7 +2392,7 @@
                     "bartenders",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ]
         },
@@ -2477,7 +2477,7 @@
             "review": "not alot of smoking places left in new york , but i have found my favorite smoking balconey in the city .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "smoking#places",
                     "negative",
                     "not alot"
@@ -2538,13 +2538,13 @@
                     "variety of fish",
                     "food#quality",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "list of oceans",
                     "food#sourcing",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -2623,10 +2623,10 @@
                     "bigger"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "food#general",
                     "neutral",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -2634,7 +2634,7 @@
                     "pieces",
                     "food#style_options",
                     "negative",
-                    "null"
+                    "NULL"
                 ]
             ]
         },
@@ -2655,7 +2655,7 @@
                     "rustic"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "ambience#style_options",
                     "positive",
                     "traditional japanese"
@@ -2693,7 +2693,7 @@
                     "mixed"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "ambience#age_range",
                     "neutral",
                     "young and old"
@@ -2704,7 +2704,7 @@
                     "crowd",
                     "restaurant#miscellaneous",
                     "neutral",
-                    "null"
+                    "NULL"
                 ]
             ]
         },
@@ -2725,7 +2725,7 @@
                     "courteous"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "service#attentiveness",
                     "positive",
                     "attentive"
@@ -2757,13 +2757,13 @@
             "review": "mediocre food",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "prices#general",
                     "negative",
                     "overpriced"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "service#general",
                     "negative",
                     "poor"
@@ -2789,7 +2789,7 @@
             "review": "the outside patio area has an abbreviated menu .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#patio",
                     "neutral",
                     "abbreviated"
@@ -2798,7 +2798,7 @@
                     "menu",
                     "restaurant#menu",
                     "negative",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -2830,10 +2830,10 @@
                     "price",
                     "food#prices",
                     "negative",
-                    "NULL"
+                    "null"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#prices",
                     "negative",
                     "overpriced"
@@ -2865,7 +2865,7 @@
             "review": "we are locals , and get the feeling the only way this place survives with such average food is because most customers are probably one - time customer tourists .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#reputation",
                     "negative",
                     "survives"
@@ -2874,10 +2874,10 @@
                     "food",
                     "food#quality",
                     "average",
-                    "NULL"
+                    "null"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#clientele",
                     "negative",
                     "tourists"
@@ -2888,7 +2888,7 @@
                     "place",
                     "restaurant#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "food",
@@ -2944,7 +2944,7 @@
                     "service",
                     "service#wait_time",
                     "negative",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -2979,7 +2979,7 @@
                     "nice"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#prices",
                     "negative",
                     "fairly expensive"
@@ -2999,7 +2999,7 @@
                     "nice"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#prices",
                     "negative",
                     "expensive"
@@ -3038,13 +3038,13 @@
                     "spinach",
                     "food#sides",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "mashed potatoes",
                     "food#sides",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -3064,7 +3064,7 @@
                     "goat cheese gnocchi",
                     "food#style_options",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "filet mignon on top of spinach and mashed potatoes",
@@ -3091,13 +3091,13 @@
                     "peaceful"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "ambience#general",
                     "positive",
                     "relaxing"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "location#downtown_disney",
                     "negative",
                     "kids running around"
@@ -3129,19 +3129,19 @@
             "review": "best indian food in l . a .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "management#general",
                     "negative",
                     "poorly managed"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "maintenance#general",
                     "negative",
                     "poorly maintained"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "prices#general",
                     "negative",
                     "overpriced"
@@ -3214,7 +3214,7 @@
                     "garbanzo beans",
                     "food#ingredients",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -3260,7 +3260,7 @@
                     "food",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ]
         },
@@ -3275,7 +3275,7 @@
             "review": "never too crowded and always great service .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "ambience#crowd_level",
                     "positive",
                     "never too crowded"
@@ -3295,7 +3295,7 @@
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#miscellaneous",
                     "positive",
                     "never too crowded"
@@ -3316,10 +3316,10 @@
                     "menu items",
                     "restaurant#food_options",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#food_quality",
                     "positive",
                     "all excellent"
@@ -3348,19 +3348,19 @@
                     "saag",
                     "food#quality",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "paneer",
                     "food#quality",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "korma",
                     "food#quality",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -3398,7 +3398,7 @@
                     "delivery",
                     "delivery#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -3427,7 +3427,7 @@
                     "no spice"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "food#general",
                     "positive",
                     "nice"
@@ -3444,7 +3444,7 @@
                     "food",
                     "food#quality",
                     "negative",
-                    "null"
+                    "NULL"
                 ]
             ]
         },
@@ -3459,16 +3459,16 @@
             "review": "\u2013 i really enjoyed my meal here .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#food_quality",
                     "positive",
                     "enjoyed"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#food_general",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -3492,27 +3492,27 @@
             "pred": [
                 [
                     "lamb korma",
-                    "food#Indian",
+                    "food#indian",
                     "positive",
                     "yummy"
                 ],
                 [
                     "saag paneer",
-                    "food#Indian",
+                    "food#indian",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "samosas",
-                    "food#Indian",
+                    "food#indian",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "naan",
-                    "food#Indian",
+                    "food#indian",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -3559,10 +3559,10 @@
                     "mild"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "food#style_options",
-                    "NULL",
-                    "NULL"
+                    "null",
+                    "null"
                 ]
             ],
             "true": [
@@ -3594,16 +3594,16 @@
                     "naan",
                     "food#bread",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "bhartha",
-                    "food#Indian_dishes",
+                    "food#indian_dishes",
                     "positive",
                     "enjoyed"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "food#quality",
                     "neutral",
                     "not too tomatoey"
@@ -3647,7 +3647,7 @@
                     "overcooked"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "food#style_options",
                     "negative",
                     "lacked flavor"
@@ -3673,7 +3673,7 @@
             "review": "\u2013 i do n ' t understand how i was a stranger to this place for so long . . . the fajita salad , the colorado , the fajitas - everything is delicious .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#general",
                     "positive",
                     "delicious"
@@ -3682,19 +3682,19 @@
                     "fajita salad",
                     "food#prices",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "colorado",
                     "food#quality",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "fajitas",
                     "food#quality",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -3717,7 +3717,7 @@
                     "delicious"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
                     "delicious"
@@ -3738,7 +3738,7 @@
                     "warm & cosy environment",
                     "ambience#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ]
             ],
             "true": [
@@ -3767,19 +3767,19 @@
             "review": "i just found out that you can have the place to yourself on nights and weekends for a private party - ca n ' t wait to celebrate my next birthday there .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "restaurant#private_events",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
                     "restaurant # availability",
                     "restaurant#general",
                     "positive",
-                    "NULL"
+                    "null"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "restaurant#ambience",
                     "positive",
                     "can ' t wait"
@@ -3790,7 +3790,7 @@
                     "place",
                     "restaurant#miscellaneous",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ]
         }

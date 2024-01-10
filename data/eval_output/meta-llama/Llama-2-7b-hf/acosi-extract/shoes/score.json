@@ -1,10 +1,10 @@
 {
     "exact": {
-        "precision": 0.007957559681697613,
-        "recall": 0.014218009478672985,
-        "f1-score": 0.01020408163265306,
-        "global IoU": 0.005128205128205128,
-        "avg local IoU": 0.007769230769230768
+        "precision": 0.006631299734748011,
+        "recall": 0.011848341232227487,
+        "f1-score": 0.008503401360544218,
+        "global IoU": 0.004269854824935952,
+        "avg local IoU": 0.005769230769230769
     },
     "aspect": {
         "precision": 0.8382352941176471,
@@ -28,11 +28,11 @@
         "avg local IoU": 0.5508333333333335
     },
     "opinion": {
-        "precision": 0.6227967097532315,
-        "recall": 0.5206286836935167,
-        "f1-score": 0.5671482075976457,
-        "global IoU": 0.39581777445855115,
-        "avg local IoU": 0.3645525775604086
+        "precision": 0.623094958968347,
+        "recall": 0.5221021611001965,
+        "f1-score": 0.5681453768038481,
+        "global IoU": 0.3967898469578201,
+        "avg local IoU": 0.36558706031902927
     },
     "implicit indicator": {
         "precision": 0.696551724137931,
@@ -42,11 +42,11 @@
         "avg local IoU": 0.5750000000000002
     },
     "avg partial": {
-        "precision": 0.5862313990654798,
-        "recall": 0.5257030710128971,
-        "f1-score": 0.5389384172652834,
-        "global IoU": 0.3859805078917618,
-        "avg local IoU": 0.43043096584777985
+        "precision": 0.5862910489085029,
+        "recall": 0.5259977664942331,
+        "f1-score": 0.5391378511065238,
+        "global IoU": 0.38617492239161566,
+        "avg local IoU": 0.4306378623995039
     },
     "reviews": [
         {
@@ -61,14 +61,14 @@
             "review": "the design is great poor color choices too bland . color choices from previous shoes was much better .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "had to order a larger size than what i normally wear",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "had to order a larger size than what i normally wear",
@@ -139,14 +139,14 @@
             "review": "usually wear size 10 on pr1 . 11 on pr2 . should get 1 size bigger for comfort",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "i bought these for my 12 year old son . they are great for him . he is 5 ' 8 \" and wears a size 9 .",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#place",
                     "positive",
                     "i bought these for my 12 year old son . they are great for him . he is 5 ' 8 \" and wears a size 9 .",
@@ -203,7 +203,7 @@
             "review": "these shoes are awesome ! ! very comfortable ! and they are true to size !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "these shoes are awesome !",
@@ -288,77 +288,77 @@
             "review": "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? ! other than that , it ' s a looks well constructed , would love a pair that fits like my sneakers !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? !",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "positive",
                     "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? !",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "cost/value",
                     "positive",
                     "looks well constructed , would love a pair that fits like my sneakers !",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "negative",
                     "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? !",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "positive",
                     "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? !",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "positive",
                     "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? !",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "negative",
                     "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? !",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? !",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "negative",
                     "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? !",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? !",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "negative",
                     "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? !",
@@ -422,70 +422,70 @@
             "review": "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review_temporality",
                     "negative",
                     "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "negative",
                     "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#support/stability",
                     "negative",
                     "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "negative",
                     "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#durability",
                     "negative",
                     "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#use_case_applicability",
                     "negative",
                     "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "cost/value",
                     "negative",
                     "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "general",
                     "negative",
                     "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though",
@@ -563,14 +563,14 @@
             "review": "this shoe is just roomier all around . not sure if i ' ll keep yet . . . it slips off a little when i walk . i have a wider foot than many and this just feel so bit . i got a half size smaller than usual and length - wise it fits good . i love the style of it in person !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "this shoe is just roomier all around .",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "i got a half size smaller than usual and length - wise it fits good .",
@@ -802,98 +802,98 @@
             "review": "i like the fit and cimfort . not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "i like the fit and cimfort",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "positive",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#place",
                     "positive",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase_context",
                     "positive",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "cost/value",
                     "positive",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#durability",
                     "positive",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#general",
                     "positive",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#misc",
                     "positive",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#support/stability",
                     "positive",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#use_case_applicability",
                     "positive",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "versatility",
                     "positive",
                     "not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
@@ -950,14 +950,14 @@
             "review": "i didn ' t like the shoes at all . the material felt very cheap , but the shoes were very light .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "the shoes were very comfortable and lightweight",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "the shoes were very comfortable and lightweight",
@@ -1021,7 +1021,7 @@
             "review": "amazing shoes , great price . i only wear adidas so , perfect as usual .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "i bought these shoes for my daughter , she loves them",
@@ -1071,14 +1071,14 @@
             "review": "beautiful kicks and will never need laces again . however , they are not true to size , oddly wide and misshapped . comfortable but huge - like boats .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "the shoes are comfortable . i like the color and style",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "the shoes are comfortable . i like the color and style",
@@ -1170,14 +1170,14 @@
             "review": "both my mother and i bought these shoes in our respectable size , and they didn ' t fit us . the opening to the show is too narrow for a foot to go in . very disappointing !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "both my mother and i bought these shoes in our respectable size , and they didn ' t fit us . the opening to the show is too narrow for a foot to go in . very disappointing !",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "had to order a larger size than what i normally wear",
@@ -1388,14 +1388,14 @@
             "review": "needed new shoes so i bought these online , reviews looked fine and i haven ' t had a problem with adidas before . tried them on and felt fine . however . after working a shift , i can confirm that these are the most uncomfortable shoes , i ' ve ever worn . i worked a 7 hour shift and by the 3rd hour , my feet were killing me . do not buy these shoes ! !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "had to order a larger size than what i normally wear",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "had to order a larger size than what i normally wear",
@@ -1494,14 +1494,14 @@
             "review": "i love them im a caregiver so i ' m on my feet all day and they are so comfortable",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "i love them",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "they are so comfortable",
@@ -1565,7 +1565,7 @@
             "review": "i like adidas products . but , this shoe is difficult for me to put on . takes more time and effort than i would like to get in to . once its on , comfortable , a little more snug than i would like but overall , a sharp functional sneaker .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "poor color choices",
@@ -1643,14 +1643,14 @@
             "review": "these are comfortable enough but they are difficult to get on . i was looking for something easy to slip on , seems the heel of the shoe is more trouble than shoestrings .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "neutral",
                     "the shoes are too big",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "the shoes are too big",
@@ -1707,14 +1707,14 @@
             "review": "shoes is comfortable & true to size . glad i purchased one .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "shoes is comfortable & true to size",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#place",
                     "negative",
                     "glad i purchased one",
@@ -1921,7 +1921,7 @@
                     "appearance#form",
                     "neutral",
                     "glad i purchased one",
-                    "direct [S]SE"
+                    "direct [s]se"
                 ]
             ],
             "true": [
@@ -1960,28 +1960,28 @@
             "review": "good for around the house . if your looking to exercise in these , i would recommend something else . not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "good for around the house",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#place",
                     "neutral",
                     "if your looking to exercise in these , i would recommend something else . not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "neutral",
                     "if your looking to exercise in these , i would recommend something else . not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "cost/value",
                     "negative",
                     "not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
@@ -2009,14 +2009,14 @@
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#use\\_case",
                     "neutral",
                     "if your looking to exercise in these , i would recommend something else . not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "versatility",
                     "neutral",
                     "if your looking to exercise in these , i would recommend something else . not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
@@ -2030,7 +2030,7 @@
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#support_stability",
                     "negative",
                     "if your looking to exercise in these , i would recommend something else . not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
@@ -2044,14 +2044,14 @@
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#use\\_case\\_applicability",
                     "neutral",
                     "if your looking to exercise in these , i would recommend something else . not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\_context",
                     "negative",
                     "",
@@ -2129,14 +2129,14 @@
             "review": "i recommend these shoes . however , the position of the velcro on the left and right shoes is different .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\_context",
                     "positive",
                     "i recommend these shoes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "i recommend these shoes",
@@ -2200,14 +2200,14 @@
             "review": "this is a great shoe to wear on a regular day basis . also , if you cheer or dance this is a comfortable shoe for those type of activities !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase_context",
                     "neutral",
                     "the shoes are comfortable and stylish",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "the shoes are comfortable and stylish",
@@ -2257,7 +2257,7 @@
             "review": "these shoes look and feel cheap . nothing like the originals . sizing is off , returning these .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase_context",
                     "neutral",
                     "i ordered a 5 and i wear a 6",
@@ -2349,49 +2349,49 @@
             "review": "the shoe i purchased runs small . order a size or two bigger than normal size . they also need to adjust the return and exchange date . otherwise , the shoe is a classic .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "the shoe i purchased runs small",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "order a size or two bigger than normal size",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "negative",
                     "they also need to adjust the return and exchange date",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\_context",
                     "negative",
                     "they also need to adjust the return and exchange date",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "the shoe is a classic",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "positive",
                     "the shoe is a classic",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "cost/value",
                     "negative",
                     "otherwise , the shoe is",
@@ -2448,14 +2448,14 @@
             "review": "gives me the support i was looking for . i have been wearing them for 30 years .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#durability",
                     "negative",
                     "the only reason i gave it 4 stars was because of the price",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "the only reason i gave it 4 stars was because of the price",
@@ -2512,217 +2512,217 @@
             "review": "every thing about my order went accordingly received my order earlier than expected . i will definitely order online again",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "positive",
                     "every thing about my order went accordingly",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#place",
                     "negative",
                     "i will definitely order online again",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "cost/value",
                     "positive",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#support/stability",
                     "negative",
                     "i will definitely order online again",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#use case applicability",
                     "negative",
                     "i will definitely order online again",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "versatility",
                     "negative",
                     "i will definitely order online again",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#durability",
                     "negative",
                     "i will definitely order online again",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#general",
                     "negative",
                     "i will definitely order online again",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#misc",
                     "negative",
                     "i will definitely order online again",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#shoe component",
                     "negative",
                     "i will definitely order online again",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "i will definitely order online again",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#general",
                     "positive",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#misc",
                     "negative",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#support/stability",
                     "negative",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#use case applicability",
                     "negative",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "versatility",
                     "negative",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#durability",
                     "negative",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "cost/value",
                     "positive",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#general",
                     "negative",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#misc",
                     "negative",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#shoe component",
                     "negative",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#general",
                     "negative",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#misc",
                     "negative",
                     "received my order earlier than expected",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#support/stability",
                     "negative",
                     "received",
@@ -2758,14 +2758,14 @@
             "review": "shoes are comfortable but have glue all over . not happy about that at all .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "shoes are comfortable",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "have glue all over",
@@ -2843,14 +2843,14 @@
             "review": "the lie about the sizes i ordered a 9 and them shoes were so tight i gave them to my daughter . i well never never never buy them . . .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "i have a pair of these shoes and i love them .",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "positive",
                     "i have a pair of these shoes and i love them .",
@@ -2963,7 +2963,7 @@
             "review": "i ' ve always admired these so i finally got a pair . well they didn ' t fit . these are very tight and snugged fitting . if you have a fat foot or anything other than slim , then this is not the shoe for you .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "design is great",
@@ -3020,14 +3020,14 @@
             "review": "i gave this rating due to receiving my order almost a month later . it was a christmas gift , so it was a late gift . initially they sent me two different sizes . i was not contacted in regards of the situation .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "i gave this rating due to receiving my order almost a month later",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "initially they sent me two different sizes",
@@ -3041,175 +3041,175 @@
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "it was a christmas gift , so it was a late gift . initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#support/stability",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#use case applicability",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "cost/value",
                     "negative",
                     "it was a christmas gift , so it was a late gift . initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#general",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#durability",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#misc",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#general",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#misc",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#general",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#support/stability",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#use case applicability",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#general",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#support/stability",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#use case applicability",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#general",
                     "positive",
                     "initially they sent me two different sizes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "initially they sent me two different sizes",
@@ -3259,7 +3259,7 @@
             "review": "the slides are narrower than other adidas pairs that i own . comfortable and stylish .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "comfortable and stylish",
@@ -3280,14 +3280,14 @@
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#misc",
                     "positive",
                     "comfortable and stylish",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase_context",
                     "positive",
                     "comfortable and stylish",
@@ -3519,14 +3519,14 @@
             "review": "while these slides are very attractive they are also rather stiff . the top of the slide does not have enough suppleness to conform to your foot .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "negative",
                     "very uncomfortable",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#place",
                     "positive",
                     "very uncomfortable",
@@ -3632,14 +3632,14 @@
             "review": "i ended up giving these to my gf . they are a little short and very very narrow . i didn ' t want to return them because that ' s a pain . love adidas . not sure these are winners though .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "the design is great",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "color choices from previous shoes was much better",
@@ -3703,14 +3703,14 @@
             "review": "nice looking slides . but they ' re too narrow . go up 1 / 2 size .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "nice looking slides",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "too narrow",
@@ -3935,14 +3935,14 @@
             "review": "i purchased the shoes based on a review that they were very comfortable and good for walking . the shoes are not easy to get on without using my fingers as a shoe horn and are somewhat comfortable for walking .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "had to order a larger size than what i normally wear",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "had to order a larger size than what i normally wear",
@@ -4027,14 +4027,14 @@
             "review": "i loved these shoes at first . they are super cute shoes and comfortable too . i have owned them for less than a year and there are holes near the toe already . they have mostly been worn to work where i sit or stand in one place for prolonged periods . disappointed that they are falling apart with such little use .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "they are super cute shoes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "they are super cute shoes",
@@ -4280,14 +4280,14 @@
             "review": "i love the shoe and enjoy how they on my feet . i also like the design .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "i love the shoe and enjoy how they on my feet",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#place",
                     "positive",
                     "i love the shoe and enjoy how they on my feet",
@@ -4533,7 +4533,7 @@
             "review": "this shoe fits completely different than the last pair of adidas running sneakers i purchased . they are very long and a bit too narrow . i do love the color scheme and style though .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "these shoes are perfect for people with wide feet",
@@ -4618,14 +4618,14 @@
             "review": "i loved these shoes at first . they are super cute shoes and comfortable too . i have owned them for less than a year and there are holes near the toe already . they have mostly been worn to work where i sit or stand in one place for prolonged periods . disappointed that they are falling apart with such little use .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "i loved these shoes at first",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\_context",
                     "negative",
                     "they are super cute shoes and comfortable too",
@@ -4724,7 +4724,7 @@
             "review": "these shoes are so comfortable ! they look good with every athletic outfit and i love pairing them with leggings and a tank top or even a sweatshirt and a tennis skirt . if you ' re trying to find the perfect white athletic shoe , this is your sign ! here they are !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "these shoes are so comfortable !",
@@ -4872,7 +4872,7 @@
             "review": "i love the shoes because not only are they comfortable but they are very stylish , i get tons of compliments . i also have the black and gold pair because of how comfortable they are .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "had to order a larger size than what i normally wear",
@@ -4943,7 +4943,7 @@
             "review": "the design of this shoe is terrible . . the fit is not great either . very much dislike this shoe .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "the design is great poor color choices too bland .",
@@ -5000,14 +5000,14 @@
             "review": "i was looking for something lightweight and comfortable for work these babies does the job ! ! ! after 16 hours in them my feet doesn ' t hurt at all and has great arch support !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "i was looking for something lightweight and comfortable for work these babies does the job ! ! !",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "had to order a larger size than what i normally wear",
@@ -5106,14 +5106,14 @@
             "review": "color was nice size little loose but ok . but too wide from the front and the worst was the it came with the security tag . my last purchase before this one was like a size smaller so i had to give them away . i will not buy online again to much issues . . . .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "my favorite shoe i have ever had . my feet love them . . .",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#place",
                     "positive",
                     "my favorite shoe i have ever had . my feet love them . . .",
@@ -5212,14 +5212,14 @@
             "review": "these are the widest shoes . i have a fairley wide foot but these shoes make my feet feel like they are swimming without water . i have a coworker who purchased these shoe as well and she wore them once and retired them bc of the width . i returned mine .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "these are the widest shoes . i have a fairley wide foot but these shoes make my feet feel like they are swimming without water . i have a coworker who purchased these shoe as well and she wore them once and retired them bc of the width . i returned mine .",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "positive",
                     "these are the widest shoes . i have a fairley wide foot but these shoes make my feet feel like they are swimming without water . i have a coworker who purchased these shoe as well and she wore them once and retired them bc of the width . i returned mine .",
@@ -5339,14 +5339,14 @@
             "review": "as an adidas lover , i was super excited to purchase these . i own countless running shoes from this company and have never had an issue like i did with these . the laces are held together by elastics and after 3 wears the elastic snapped on one shoe making them unwearable . beautiful sneaker , super disappointing quality .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "comfortable",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "i am a little disappointed with the quality of these . the shoe is comfortable and looks great . i have not had any problems with the shoe , but the laces are not durable . they are made out of some thin plastic that is not very durable . after 2 wears the laces broke . the shoe is great otherwise .",
@@ -5431,14 +5431,14 @@
             "review": "i race with the nb fuel cell prism and love the shoe , i would like to purchase the rc elite except they do not come in wide",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "the shoe is comfortable and well made",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "negative",
                     "the shoe is comfortable and well made",
@@ -5502,7 +5502,7 @@
             "review": "i ordered a 10w and it was definitely not wider than normal . it is a very cute boot but i have wide feet and it is not very comfortable for me .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "the design is great",
@@ -5580,14 +5580,14 @@
             "review": "i had to exchange my first order and ordered a size up . then the band of the bigger size sort of cuts into my foot . i am a size 5 women . . . i won ' t return them because i already exchanged for a bigger size but more importantly : it cut into my foot .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "i had to exchange my first order and ordered a size up . then the band of the bigger size sort of cuts into my foot . i am a size 5 women . . . i won ' t return them because i already exchanged for a bigger size but more importantly : it cut into my foot",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "i had to exchange my first order and ordered a size up . then the band of the bigger size sort of cuts into my foot . i am a size 5 women . . . i won ' t return them because i already exchanged for a bigger size but more importantly : it cut into my foot",
@@ -5665,14 +5665,14 @@
             "review": "do not buy , these are very hard . find a softer sandal .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "i have to return these",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "i have to return these",
@@ -5736,7 +5736,7 @@
             "review": "i got the pair in my exact shoe size & these are too tight on me . i can ' t wear them all the way or my feet feel like they ' re being strangled . i don ' t understand why you ' d make these almost unwearable for the correct size",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "design is great",
@@ -5786,14 +5786,14 @@
             "review": "it was a little bit uncomfortable at first , maybe because the form was too hard . a week later , the form became softer so it was good .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "the design is great poor color choices too bland . color choices from previous shoes was much better",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "color choices from previous shoes was much better",
@@ -5892,14 +5892,14 @@
             "review": "had to order a larger size than what i normally wear . shoe would be better if offered as an adjustable shoe . shoe is overpriced for quality . i bought cheaper slides in the past that were more comfortable .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "had to order a larger size than what i normally wear",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "had to order a larger size than what i normally wear",
@@ -5991,7 +5991,7 @@
             "review": "really small you should go up a size or two . good material for the top strap .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "poor color choices",
@@ -6005,14 +6005,14 @@
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "negative",
                     "had to order a larger size than what i normally wear",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "cost/value",
                     "negative",
                     "overpriced for quality",
@@ -6059,7 +6059,7 @@
         },
         {
             "idx": 51,
-            "exact local IoU": 0.2,
+            "exact local IoU": 0.0,
             "aspect local IoU": 1.0,
             "category local IoU": 0.25,
             "sentiment local IoU": 1.0,
@@ -6069,14 +6069,14 @@
             "review": "comfortable and just as described . not to big or small .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "comfortable and just as described",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "comfortable and just as described",
@@ -6126,14 +6126,14 @@
             "review": "i must have gotten a defective pair . sides of both slides appear to be lifting : / poorly glued together . want to return but worried about the hassle of trying to get a better pair reordered .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "the shoes are comfortable",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\_context",
                     "negative",
                     "the shoes are comfortable",
@@ -6211,14 +6211,14 @@
             "review": "they are so comfortable and i love the red . anything with the trifold i ' m down !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "they are so comfortable",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "anything with the trifold i ' m down !",
@@ -6436,21 +6436,21 @@
             "review": "met all my needs in a shoe . very durable and comfy . i wear them all day for work . would recommend",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#durability",
                     "positive",
                     "very durable and comfy",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#general",
                     "positive",
                     "i wear them all day for work",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#use_case",
                     "positive",
                     "would recommend",
@@ -6710,14 +6710,14 @@
             "review": "i use these shoes just slip on for practical reasons . running to the store or just for general leisure . great quality ! however , run a little small . i wear mine without socks , and that solved the size issue .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\_context",
                     "neutral",
                     "i use these shoes just slip on for practical reasons",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "great quality ! however , run a little small",
@@ -6942,14 +6942,14 @@
             "review": "this is a really nice shoe . i bought this product for my husband and he really likes the shoe . glad i stay on this website daily\ud83d\ude0a",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "i have had this product for a month now and i love it . i have been wearing it every day . it is so comfortable .",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "had to order a larger size than what i normally wear",
@@ -7020,14 +7020,14 @@
             "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "the shoe has a very wide toe box . i normally wear a 7 1 / 2 and the 8 was too big . the shoe is also very narrow in the heel and the ball of the foot . i had to return the shoe .",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "negative",
                     "the shoe has a very wide toe box . i normally wear a 7 1 / 2 and the 8 was too big . the shoe is also very narrow in the heel and the ball of the foot . i had to return the shoe .",
@@ -7084,14 +7084,14 @@
             "review": "my white laces on the nast collab pair have dirt spots on the laces and thread coming out from a lace , out the package like wow the laces are shot and shoe hasn ' t even been worn yet . thought i ' d give reebok a try again because of nast and they threw that out the window . not his fault it ' s reebok and their manufacturer . disappointed they ruined this shoe for me i was looking forward to his collab .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "my white laces on the nast collab pair have dirt spots on the laces and thread coming out from a lace , out the package like wow the laces are shot and shoe hasn ' t even been worn yet . thought i ' d give reebok a try again because of nast and they threw that out the window . not his fault it ' s reebok and their manufacturer . disappointed they ruined this shoe for me i was looking forward to his collab .",
                     "null"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "my white laces on the nast collab pair have dirt spots on the laces and thread coming out from a lace , out the package like wow the laces are shot and shoe hasn ' t even been worn yet . thought i ' d give reebok a try again because of nast and they threw that out the window . not his fault it ' s reebok and their manufacturer . disappointed they ruined this shoe for me i was looking forward to his collab .",
@@ -7204,7 +7204,7 @@
             "review": "i live in ny i walk a lot but cmon the fabric over the toes needs to be reinforced with leather or something . my toes immediately have made a hole",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "design is great",
@@ -7268,14 +7268,14 @@
             "review": "i was disappointed in the color , from the pictures the top looks white but it ' s actually blue , which made a difference when i received them . i wasn ' t wanting that color scheme .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "the color is a very light blue , almost a turquoise .",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "would be better if offered as an adjustable shoe",
@@ -7367,7 +7367,7 @@
             "review": "i ' ve been a reebok classic woman for years . i don ' t wear any other brand of athletic shoes . they are comfortable and easy to walk in . i wear a 1 / 2 \" heel lift in my shoe for balance and these shoes have the perfect depth that keeps the heel of the shoe snug to my feet - no slipping off .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "positive",
                     "the shoe is very comfortable",
@@ -7452,14 +7452,14 @@
             "review": "too tight and uncomfortable . tried cushions , still not so good .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "good quality",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "tried cushions , still not so good",
@@ -7530,7 +7530,7 @@
             "review": "these tennis shoes are very comfortable . i own every color they sale . i highly recommend them .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "this shoe is very comfortable",
@@ -7608,14 +7608,14 @@
             "review": "i need an orthopedic lift in one shoe . reebox still manufactures a fine shoe which can still be modified .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "cost/value",
                     "negative",
                     "the product is not worth the money",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "the product is not worth the money",
@@ -7629,7 +7629,7 @@
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "the product is not worth the money",
@@ -7643,7 +7643,7 @@
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "the product is not worth the money",
@@ -7657,7 +7657,7 @@
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "the product is not worth the money",
@@ -7700,14 +7700,14 @@
             "review": "these look awful in the larger sizes . also , they are undersized , order 1 / 2 size up or go easy on yourself and don ' t order .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "i bought these because they looked cool and i was intrigued by the design",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "had to order a larger size than what i normally wear",
@@ -7778,7 +7778,7 @@
             "review": "it ' s a great shoes but need different size . i recommend it",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "design is great",
@@ -7828,7 +7828,7 @@
             "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "design is great",
@@ -7941,14 +7941,14 @@
             "review": "i really like how comfortable these shoes are ! ! ! i would get them in all colors .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#general",
                     "positive",
                     "i really like how comfortable these shoes are ! ! !",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "i really like how comfortable these shoes are ! ! !",
@@ -8152,14 +8152,14 @@
             "review": "still look cool , but not what they used to be . quality has lowered significantly\u2014bummer . plus sizing has changed . i ' ve always been a good snug 7 . 5 in these and now the 7 . 5 is too small and the 8 is too big . these are just built differently now and i ' m so sad : (",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "very comfortable and cute",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#misc",
                     "negative",
                     "i got a lot of compliments on them",
@@ -8237,7 +8237,7 @@
             "review": "these sneakers look great and feel so comfy . they fit perfect .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "they are comfy and fit true to size",
@@ -8315,7 +8315,7 @@
             "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "the color on the site has neutral beige / brown tones",
@@ -8596,14 +8596,14 @@
             "review": "i ' ve worn these shoes so many times ! they ' re true to size , comfortable and fly . perfect fall colors . the top was a bit uncomfortable without socks , but jist wear socks . : )",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "i ' ve worn these shoes so many times ! they ' re true to size , comfortable and fly . perfect fall colors . the top was a bit uncomfortable without socks , but jist wear socks . : )",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "i ' ve worn these shoes so many times ! they ' re true to size , comfortable and fly . perfect fall colors . the top was a bit uncomfortable without socks , but jist wear socks . : )",
@@ -8779,14 +8779,14 @@
             "review": "am returning them and will not be buying these cheap shoes anymore . sure don ' t make them like you use to ! ! ! !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#general",
                     "positive",
                     "i like the style but the shoes are uncomfortable and the material is not good",
                     "indirect"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "negative",
                     "i like the style but the shoes are uncomfortable and the material is not good",
@@ -8829,7 +8829,7 @@
             "review": "but i ' d rather have the classic in leather . i would buy many pairs .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "i had to return the shoes",
@@ -8872,14 +8872,14 @@
             "review": "every time i put them on i feel like i can run a marathon . one of the most best fitting shoes i have true to size",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "color choices from previous shoes was much better",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "color choices too bland .",
@@ -8929,14 +8929,14 @@
             "review": "i really enjoy these shoes . they ' re pretty comfortable to wear all day and i really like the classic style . would recommend",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "i really enjoy these shoes",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "would recommend",
@@ -9203,7 +9203,7 @@
             "review": "tried returning my shoes because they were too big but i wasn ' t able to because the website didn ' t let me",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "color choices from previous shoes was much better",
@@ -9233,44 +9233,44 @@
             "aspect local IoU": 0.0,
             "category local IoU": 0.0,
             "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
+            "opinion local IoU": 0.10344827586206896,
             "implicit indicator local IoU": 0.5,
-            "avg partial local IoU": 0.3,
+            "avg partial local IoU": 0.32068965517241377,
             "review": "the size is a half size smaller then what i wear . next time i will need to order a 6 1 / 2 instead of my normal size 6\u2026",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "negative",
-                    "The shoe was too small",
+                    "the shoe was too small",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
-                    "The shoe was too small",
+                    "the shoe was too small",
                     "direct"
                 ],
                 [
                     "shoe",
                     "appearance#form",
                     "negative",
-                    "The shoe was too small",
+                    "the shoe was too small",
                     "direct"
                 ],
                 [
                     "shoe",
                     "cost/value",
                     "negative",
-                    "The shoe was too small",
+                    "the shoe was too small",
                     "direct"
                 ],
                 [
                     "slides",
                     "cost/value",
                     "negative",
-                    "The shoe was too small",
+                    "the shoe was too small",
                     "direct"
                 ]
             ],
@@ -9310,18 +9310,18 @@
             "review": "it gets dirty easily but quality is good . they are comfortable and has a great design .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "i love the shoes but they are a little bit expensive",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "i love the shoes but they are a little bit expensive",
-                    "direct [S]"
+                    "direct [s]"
                 ]
             ],
             "true": [
@@ -9367,14 +9367,14 @@
             "review": "comfortable and timeless . if you ' re looking for a super comfortable pairs of kicks . , the classic is the way to go .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "positive",
                     "comfortable and timeless",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "if you ' re looking for a super comfortable pairs of kicks . , the classic is the way to go .",
@@ -9557,14 +9557,14 @@
             "review": "this is my 5th pair of classics . i ' ll be buying another pair soon",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "they are not as comfortable as the originals",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "they are not as comfortable as the originals",
@@ -9621,14 +9621,14 @@
             "review": "i ordered my size but for me they run small . i wore them just to see if i could break them in . . . i wouldn ' t advise that ! so give yourself some wiggle room and order the 1 / 2 .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "i ordered my size but for me they run small",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "had to order a larger size than what i normally wear",
@@ -9713,14 +9713,14 @@
             "review": "way too narrow by the toes . i ' m reliably a size six and these didn ' t fit me . : (",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "shoe is a good looking shoe",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "had to order a larger size than what i normally wear",
@@ -9791,14 +9791,14 @@
             "review": "i like the shoe itself and want to keep it . but it is too small and i can ' t find my order number to exchange it",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "i like the shoe itself and want to keep it",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "it is too small and i can ' t find my order number to exchange it",
@@ -9939,14 +9939,14 @@
             "review": "the shoes look amazing but the durability just isn ' t there . if you have long toe nails they will poke right through the cheap material along your toe .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "the shoe is very comfortable and the color is beautiful",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "positive",
                     "the shoe is very comfortable and the color is beautiful",
@@ -10003,14 +10003,14 @@
             "review": "when i put this shoe on my foot it fit , it just didn ' t feel comfortable . it was too narrow , i could feel my foot falling off on the sides .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#misc",
                     "negative",
                     "it was too narrow",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "it was too narrow",
@@ -10270,14 +10270,14 @@
             "review": "i ' m truly a size 8 but that size here was a bit tight . i would probably size up next time .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#review\\_temporality",
                     "negative",
                     "i ' m truly a size 8 but that size here was a bit tight",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "i ' m truly a size 8 but that size here was a bit tight",
@@ -10418,14 +10418,14 @@
             "review": "i have been wearing these for years ! i use to always get an 8 1 / 2 ( women ' s ) but i got a 9 this time and they were really tight on my feet . so i ' d recommend going up at least a half size",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\_context",
                     "neutral",
                     "these shoes are not true to size",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "i ordered a 10 and they are too small",
@@ -10489,14 +10489,14 @@
             "review": "the shoes are beautiful , i love them , the color is amazing , the quality is good , but i ordered the size according to the length in the sizes and are 1 cm larger than the description . i did not return them , because i worn them before realizing that they were that big and i put the box in the garbage .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "positive",
                     "i would like to know if the size 6 1 / 2 is the same as the size 6",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "i would like to know if the size 6 1 / 2 is the same as the size 6",
@@ -10595,14 +10595,14 @@
             "review": "i love the look and style of this shoe but i think they can do a little better with the quality of it . i also had to buy a half size larger they run small .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "neutral",
                     "the shoe is comfortable and stylish",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "neutral",
                     "the shoe is comfortable and stylish",
@@ -10659,7 +10659,7 @@
             "review": "i typically wear a standard to slightly narrow width . this shoe is extremely narrow , making it unwearable for me . i believe the quality is very good , just to narrow .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "the design is great poor color choices too bland",
@@ -10758,7 +10758,7 @@
             "review": "shoe is shorter & narrower than stated size . order at least half size larger than usual .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "the design is great",
@@ -10843,14 +10843,14 @@
             "review": "shoes are comfortable and very versatile . the sizing runs small so i had to exchange for a half size up . but after wearing these shoes twice , the upper leather ripped ! i am disappointed in the quality and had high expectations .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#durability",
                     "negative",
                     "the upper leather ripped !",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "sizing runs small so i had to exchange for a half size up",
@@ -10921,14 +10921,14 @@
             "review": "shoe is shorter & narrower than stated size . order at least half size larger than usual .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "positive",
                     "design is great",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "appearance#color",
                     "negative",
                     "color choices from previous shoes was much better",
@@ -10964,7 +10964,7 @@
             "review": "if you have even the slightest bit of width to your foot , do not buy these . i would consider my foot slightly wide , often not even having to buy the wide version of shoes . however , the balls of my feet completely bulged out of the side of the sole on these shoes . these are the most narrow shoes i have ever tried on in my life . also , your \" print label \" button on your return site doesn ' t work .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#support/stability",
                     "negative",
                     "the shoe is not comfortable and the sole is thin . the shoe is also too narrow . i normally wear a size 10 . 5 but i had to order a size 11 . i normally buy a size 10 . 5 and a size 11 for wide shoes . these shoes are the most narrow shoes i have ever tried on in my life . i had to order a size 11 . i will not be buying these shoes again",
@@ -11042,14 +11042,14 @@
             "review": "shoes are comfortable and very versatile . the sizing runs small so i had to exchange for a half size up . but after wearing these shoes twice , the upper leather ripped ! i am disappointed in the quality and had high expectations .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "positive",
                     "these shoes are not waterproof",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "performance#comfort",
                     "negative",
                     "these shoes are not waterproof",
@@ -11141,7 +11141,7 @@
             "review": "too tight and uncomfortable . tried cushions , still not so good .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "appearance#form",
                     "negative",
                     "too tight and uncomfortable",
@@ -11261,14 +11261,14 @@
             "review": "i ' m truly a size 8 but that size here was a bit tight . i would probably size up next time .",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "negative",
                     "i ' m truly a size 8 but that size here was a bit tight",
                     "direct"
                 ],
                 [
-                    "NULL",
+                    "null",
                     "contextofuse#purchase\\\\_context",
                     "negative",
                     "i ' m truly a size 8 but that size here was a bit tight",
@@ -11332,7 +11332,7 @@
             "review": "as someone with a kind of wide foot , i really wanted this shoe to fit because i love the look ! reebok is a go - to brand for me because their shoes often fit my wide feet well in a way other brands don ' t . however , this shoe is a lot narrower than reebok ' s other offerings , so i wouldn ' t recommend it if you have wide feet . but it is a very cute shoe so i recommend it otherwise !",
             "pred": [
                 [
-                    "NULL",
+                    "null",
                     "performance#sizing_fit",
                     "neutral",
                     "i think the shoes are pretty cute . i love the look of them . i am not a big fan of the material because it feels a bit cheap . i think it would",
