@@ -62,14 +62,14 @@ def get_prompts(
                 f"ACOS quadruples: {get_formatted_annotations(annotations)}\n"
             )
 
-        bare_prompt = bare_prompt + review_str + annotations_str
+        prompt = bare_prompt + review_str + annotations_str
 
         if "gpt" in model.lower():
-            prompts.append(bare_prompt)
+            prompts.append(prompt)
         else:
             example_prompts = []
             for example in examples:
-                bare_example_prompt = bare_prompt + example[EXAMPLE_REVIEW]
+                bare_example_prompt = prompt + example[EXAMPLE_REVIEW]
                 example_prompt = formatted_prompt.format(
                     instruction=bare_example_prompt
                 )
@@ -77,9 +77,7 @@ def get_prompts(
                 example_prompts.append(complete_example)
 
             example_str = "\n".join(example_prompts) + "\n"
-            final_prompt = example_str + formatted_prompt.format(
-                instruction=bare_prompt
-            )
+            final_prompt = example_str + formatted_prompt.format(instruction=prompt)
             prompts.append(final_prompt)
 
     return prompts, response_key, reviews

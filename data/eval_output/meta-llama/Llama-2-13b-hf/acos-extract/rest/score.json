@@ -3,53 +3,46 @@
         "precision": 0.02109704641350211,
         "recall": 0.028901734104046242,
         "f1-score": 0.024390243902439022,
-        "global IoU": 0.012345679012345678,
-        "avg local IoU": 0.0175
+        "macro IoU": 0.012345679012345678,
+        "avg micro IoU": 0.0175
     },
     "aspect": {
         "precision": 0.2602739726027397,
         "recall": 0.1919191919191919,
         "f1-score": 0.22093023255813954,
-        "global IoU": 0.12418300653594772,
-        "avg local IoU": 0.15535026737967916
+        "macro IoU": 0.12418300653594772,
+        "avg micro IoU": 0.15535026737967916
     },
     "category": {
         "precision": 0.2564102564102564,
         "recall": 0.373134328358209,
         "f1-score": 0.303951367781155,
-        "global IoU": 0.17921146953405018,
-        "avg local IoU": 0.2623333333333333
+        "macro IoU": 0.17921146953405018,
+        "avg micro IoU": 0.2623333333333333
     },
     "sentiment": {
         "precision": 0.7699115044247787,
         "recall": 0.8055555555555556,
         "f1-score": 0.7873303167420814,
-        "global IoU": 0.6492537313432836,
-        "avg local IoU": 0.775
+        "macro IoU": 0.6492537313432836,
+        "avg micro IoU": 0.775
     },
     "opinion": {
         "precision": 0.2601626016260163,
         "recall": 0.18497109826589594,
         "f1-score": 0.21621621621621623,
-        "global IoU": 0.12121212121212122,
-        "avg local IoU": 0.14816666666666664
-    },
-    "avg partial": {
-        "precision": 0.38668958376594775,
-        "recall": 0.38889504352471305,
-        "f1-score": 0.38210703332439805,
-        "global IoU": 0.2684650821563507,
-        "avg local IoU": 0.33521256684491973
+        "macro IoU": 0.12121212121212122,
+        "avg micro IoU": 0.14816666666666664
     },
     "reviews": [
         {
             "idx": 0,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 1.0,
-            "category local IoU": 0.5,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 1.0,
+            "category micro IoU": 0.5,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "yum !",
             "pred": [
                 [
@@ -76,31 +69,31 @@
         },
         {
             "idx": 1,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "serves really good sushi .",
             "pred": [
                 [
                     "food",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "service",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "price",
                     "price#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -114,12 +107,12 @@
         },
         {
             "idx": 2,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.0,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.0,
             "review": "not the biggest portions but adequate .",
             "pred": [
                 [
@@ -146,19 +139,19 @@
         },
         {
             "idx": 3,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "green tea creme brulee is a must !",
             "pred": [
                 [
                     "food",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -172,12 +165,12 @@
         },
         {
             "idx": 4,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.25,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.3333333333333333,
-            "avg partial local IoU": 0.3958333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.25,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.3333333333333333,
+            "avg partial micro IoU": 0.3958333333333333,
             "review": "it has great sushi and even better service .",
             "pred": [
                 [
@@ -187,13 +180,13 @@
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "staff#general",
                     "positive",
                     "helpful"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "atmosphere#general",
                     "positive",
                     "lovely"
@@ -216,12 +209,12 @@
         },
         {
             "idx": 5,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "the entire staff was extremely accomodating and tended to my every need .",
             "pred": [
                 [
@@ -231,7 +224,7 @@
                     "delicious"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
                     "excellent"
@@ -254,31 +247,31 @@
         },
         {
             "idx": 6,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "i ' ve been to this restaurant over a dozen times with no complaints to date .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -292,12 +285,12 @@
         },
         {
             "idx": 7,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.0,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.0,
             "review": "the owner is belligerent to guests that have a complaint .",
             "pred": [
                 [
@@ -310,7 +303,7 @@
                     "helpful",
                     "staff#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -324,31 +317,31 @@
         },
         {
             "idx": 8,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.3333333333333333,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.3333333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.3333333333333333,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.3333333333333333,
             "review": "good food !",
             "pred": [
                 [
                     "good food",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "great service",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "great drinks",
                     "drinks#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -362,12 +355,12 @@
         },
         {
             "idx": 9,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "this is a great place to get a delicious meal .",
             "pred": [
                 [
@@ -394,25 +387,25 @@
         },
         {
             "idx": 10,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "the staff is pretty friendly .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "staff#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "staff#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -426,19 +419,19 @@
         },
         {
             "idx": 11,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "the onion rings are great !",
             "pred": [
                 [
                     "they",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -452,19 +445,19 @@
         },
         {
             "idx": 12,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.0,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.0,
             "review": "the lemon chicken tasted like sticky sweet donuts and the honey walnut prawns , the few they actually give you . . . . . were not good .",
             "pred": [
                 [
-                    "i love this game",
+                    "I love this game",
                     "game#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "gameplay",
@@ -496,12 +489,12 @@
         },
         {
             "idx": 13,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.3333333333333333,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.3333333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.3333333333333333,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.3333333333333333,
             "review": "nice ambience , but highly overrated place .",
             "pred": [
                 [
@@ -511,13 +504,13 @@
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "negative",
                     "service"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "negative",
                     "poor"
@@ -540,12 +533,12 @@
         },
         {
             "idx": 14,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.5,
-            "category local IoU": 0.5,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.375,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.5,
+            "category micro IoU": 0.5,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.375,
             "review": "worst service i ever had",
             "pred": [
                 [
@@ -572,22 +565,22 @@
         },
         {
             "idx": 15,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.0,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.0,
             "review": "everyone that sat in the back outside agreed that it was the worst service we had ever received .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
                     "great"
@@ -604,277 +597,277 @@
         },
         {
             "idx": 16,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.75,
-            "avg partial local IoU": 0.6875,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.75,
+            "avg partial micro IoU": 0.6875,
             "review": "our waiter was non - existent and after our food finally arrived over an hour after we ordered , we were not given any water or utensils .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
                     "non - existent"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -888,28 +881,28 @@
         },
         {
             "idx": 17,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.5,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.5,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "i complained to the manager , but he was not even apologetic .",
             "pred": [
                 [
                     "food",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
                     "terrible"
@@ -926,31 +919,31 @@
         },
         {
             "idx": 18,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "fabulous italian food !",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "location#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "location#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "location#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -964,37 +957,37 @@
         },
         {
             "idx": 19,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "\u2013 i highly recommend mioposto .",
             "pred": [
                 [
                     "this",
                     "product#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "product#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "product#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "product#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -1008,19 +1001,19 @@
         },
         {
             "idx": 20,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "i am so happy to have a wonderful italian restaurant in my neighborhood .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -1040,31 +1033,31 @@
         },
         {
             "idx": 21,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.25,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.5,
-            "avg partial local IoU": 0.4375,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.25,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.5,
+            "avg partial micro IoU": 0.4375,
             "review": "the wine list is wonderful and the food reminds me of my recent trip to italy .",
             "pred": [
                 [
                     "food",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -1084,12 +1077,12 @@
         },
         {
             "idx": 22,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 1.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 1.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "i love this restaurant",
             "pred": [
                 [
@@ -1099,19 +1092,19 @@
                     "food"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
                     "service"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "ambience#general",
                     "positive",
                     "ambience"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "location#general",
                     "positive",
                     "location"
@@ -1128,12 +1121,12 @@
         },
         {
             "idx": 23,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.5,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.625,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.5,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.625,
             "review": "\u2013 i will never forget the amazing meal , service , and ambiance i experience at this restaurant .",
             "pred": [
                 [
@@ -1178,12 +1171,12 @@
         },
         {
             "idx": 24,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.2,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.3333333333333333,
-            "avg partial local IoU": 0.3833333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.2,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.3333333333333333,
+            "avg partial micro IoU": 0.3833333333333333,
             "review": "the wine list is incredible and extensive and diverse , the food is all incredible and the staff was all very nice , good at their jobs and cultured .",
             "pred": [
                 [
@@ -1199,7 +1192,7 @@
                     "good"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service",
                     "positive",
                     "great"
@@ -1246,25 +1239,25 @@
         },
         {
             "idx": 25,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "i have not a bad thing to say about this place .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -1278,12 +1271,12 @@
         },
         {
             "idx": 26,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 1.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 1.0,
-            "avg partial local IoU": 0.75,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 1.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 1.0,
+            "avg partial micro IoU": 0.75,
             "review": "the food was great !",
             "pred": [
                 [
@@ -1304,28 +1297,28 @@
         },
         {
             "idx": 27,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "it ' s * very * reasonably priced , esp for the quality of the food .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "experience#general",
                     "positive",
                     "great"
@@ -1348,19 +1341,19 @@
         },
         {
             "idx": 28,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "i had the kafta plate and it was perfect .",
             "pred": [
                 [
                     "i had",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "chicken",
@@ -1380,19 +1373,19 @@
         },
         {
             "idx": 29,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.3333333333333333,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.3333333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.3333333333333333,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.3333333333333333,
             "review": "\u2013 in a age of incremental cost cutting in restaurants , its nice to see a place that bucks that trend , and just plain delivers high quality food and good service , period .",
             "pred": [
                 [
                     "fish",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "batter",
@@ -1424,37 +1417,37 @@
         },
         {
             "idx": 30,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.25,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.3125,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.25,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.3125,
             "review": "this is the place to relax and enjoy the finest quality food the industry can offer .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
                     "food"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "ambience#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -1480,25 +1473,25 @@
         },
         {
             "idx": 31,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.5,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.375,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.5,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.375,
             "review": "caution - its real food for people who love the best .",
             "pred": [
                 [
                     "restaurant",
                     "restaurant#operation_hours",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "open",
                     "restaurant#operation_hours",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "food",
@@ -1530,12 +1523,12 @@
         },
         {
             "idx": 32,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.3333333333333333,
-            "category local IoU": 0.25,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.2708333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.3333333333333333,
+            "category micro IoU": 0.25,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.2708333333333333,
             "review": "i liked the atmosphere very much but the food was not worth the price .",
             "pred": [
                 [
@@ -1574,12 +1567,12 @@
         },
         {
             "idx": 33,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.5,
-            "category local IoU": 0.3333333333333333,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.20833333333333331,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.5,
+            "category micro IoU": 0.3333333333333333,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.20833333333333331,
             "review": "i may not be a sushi guru but i can tell you that the food here is just okay and that there is not much else to it .",
             "pred": [
                 [
@@ -1612,12 +1605,12 @@
         },
         {
             "idx": 34,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.5,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.5,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "rice is too dry , tuna was n ' t so fresh either .",
             "pred": [
                 [
@@ -1627,7 +1620,7 @@
                     "excellent"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
                     "very slow"
@@ -1650,34 +1643,34 @@
         },
         {
             "idx": 35,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.5,
-            "avg partial local IoU": 0.375,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.5,
+            "avg partial micro IoU": 0.375,
             "review": "i have eaten here three times and have found the quality and variety of the fish to be excellent .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
                     "excellent"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "staff#general",
                     "positive",
                     "friendly"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "prices#general",
                     "positive",
                     "fair"
@@ -1700,31 +1693,31 @@
         },
         {
             "idx": 36,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.0,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.0,
             "review": "however , the value and service are both severely lacking .",
             "pred": [
                 [
-                    "i",
+                    "I",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "love",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "atmosphere#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -1744,25 +1737,25 @@
         },
         {
             "idx": 37,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.5,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.5,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "furthermore , while the fish is unquestionably fresh , rolls tend to be inexplicably bland .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -1782,19 +1775,19 @@
         },
         {
             "idx": 38,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "the service ranges from mediocre to offensive .",
             "pred": [
                 [
                     "staff",
                     "staff#general",
                     "negative",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -1814,12 +1807,12 @@
         },
         {
             "idx": 39,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.25,
-            "category local IoU": 0.3333333333333333,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.5,
-            "avg partial local IoU": 0.2708333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.25,
+            "category micro IoU": 0.3333333333333333,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.5,
+            "avg partial micro IoU": 0.2708333333333333,
             "review": "on a recent trip , our waiter was extremely dismissive , while no less than three staff members waited hand - and - foot on a pair of japanese girls seated nearby .",
             "pred": [
                 [
@@ -1858,37 +1851,37 @@
         },
         {
             "idx": 40,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.5,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.375,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.5,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.375,
             "review": "freshest sushi \u2013 i love this restaurant .",
             "pred": [
                 [
                     "food is delicious",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
                     "amazing"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "place#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -1908,28 +1901,28 @@
         },
         {
             "idx": 41,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.4,
-            "avg partial local IoU": 0.35,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.4,
+            "avg partial micro IoU": 0.35,
             "review": "they pay such detail to everything from miso soup to complex rolls .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
                     "miso soup"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
                     "complex rolls"
@@ -1952,22 +1945,22 @@
         },
         {
             "idx": 42,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.5,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.375,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.5,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.375,
             "review": "the sashimi was the freshest and most tender i have ever tasted .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
                     "delicious"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
                     "amazing"
@@ -1990,31 +1983,31 @@
         },
         {
             "idx": 43,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "their apps are all delicious .",
             "pred": [
                 [
                     "great experience",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "great value for money",
                     "restaurant#prices",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "great price",
                     "restaurant#prices",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -2028,12 +2021,12 @@
         },
         {
             "idx": 44,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.0,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.0,
             "review": "the only drawback is that this place is really expensive and the portions are on the small side .",
             "pred": [
                 [
@@ -2043,13 +2036,13 @@
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "price#general",
                     "positive",
                     "little"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "price#general",
                     "positive",
                     "pricey"
@@ -2072,12 +2065,12 @@
         },
         {
             "idx": 45,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "but the space is small and lovely , and the service is helpful .",
             "pred": [
                 [
@@ -2110,12 +2103,12 @@
         },
         {
             "idx": 46,
-            "exact local IoU": 1.0,
-            "aspect local IoU": 1.0,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 1.0,
-            "avg partial local IoU": 1.0,
+            "exact micro IoU": 1.0,
+            "aspect micro IoU": 1.0,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 1.0,
+            "avg partial micro IoU": 1.0,
             "review": "\u2013 the food was not great & the waiters were rude .",
             "pred": [
                 [
@@ -2148,31 +2141,31 @@
         },
         {
             "idx": 47,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.3333333333333333,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.3333333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.3333333333333333,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.3333333333333333,
             "review": "great service",
             "pred": [
                 [
                     "great service",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "great food",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "great atmosphere",
                     "ambience#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -2186,12 +2179,12 @@
         },
         {
             "idx": 48,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.5,
-            "category local IoU": 0.5,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.5,
+            "category micro IoU": 0.5,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "my service was stellar !",
             "pred": [
                 [
@@ -2218,151 +2211,151 @@
         },
         {
             "idx": 49,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 1.0,
-            "avg partial local IoU": 0.375,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 1.0,
+            "avg partial micro IoU": 0.375,
             "review": "the bus boy even spotted that my table was shaking a stabilized it for me .",
             "pred": [
                 [
                     "great",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
                     "staff"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#service_staff",
                     "null",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -2376,37 +2369,37 @@
         },
         {
             "idx": 50,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.3333333333333333,
-            "category local IoU": 0.25,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.3958333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.3333333333333333,
+            "category micro IoU": 0.25,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.3958333333333333,
             "review": "food was fine , with a some little - tastier - than - normal salsa .",
             "pred": [
                 [
                     "food",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "atmosphere#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -2426,12 +2419,12 @@
         },
         {
             "idx": 51,
-            "exact local IoU": 0.25,
-            "aspect local IoU": 0.25,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 0.3333333333333333,
-            "avg partial local IoU": 0.5208333333333334,
+            "exact micro IoU": 0.25,
+            "aspect micro IoU": 0.25,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 0.3333333333333333,
+            "avg partial micro IoU": 0.5208333333333334,
             "review": "the food was great , the margaritas too but the waitress was too busy being nice to her other larger party than to take better care of my friend and me .",
             "pred": [
                 [
@@ -2441,7 +2434,7 @@
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
                     "good"
@@ -2470,19 +2463,19 @@
         },
         {
             "idx": 52,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "mama mia \u2013 i live in the neighborhood and feel lucky to live by such a great pizza place .",
             "pred": [
                 [
                     "mama mia",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "i",
@@ -2491,244 +2484,244 @@
                     "live"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -2742,22 +2735,22 @@
         },
         {
             "idx": 53,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.125,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.125,
             "review": "the only problem is you really have to warm up the pizza before it ' s edible , even when you order ahead .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
                     "slow"
@@ -2774,25 +2767,25 @@
         },
         {
             "idx": 54,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 1.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 1.0,
-            "avg partial local IoU": 0.75,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 1.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 1.0,
+            "avg partial micro IoU": 0.75,
             "review": "but once done , it ' s not too much dough , not too much cheese , not too much sauce .",
             "pred": [
                 [
                     "i",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "huge fan",
                     "pizza#operation_performance",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -2806,12 +2799,12 @@
         },
         {
             "idx": 55,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "best sushi in town .",
             "pred": [
                 [
@@ -2832,22 +2825,22 @@
         },
         {
             "idx": 56,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "the best calamari in seattle !",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
                     "excellent"
@@ -2864,12 +2857,12 @@
         },
         {
             "idx": 57,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.5,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.375,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.5,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.375,
             "review": "\u2013 . . . and the best summertime deck experience - - they will even bring you a blanket if you get cold in the seattle evening weather .",
             "pred": [
                 [
@@ -2896,25 +2889,25 @@
         },
         {
             "idx": 58,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "a perfect place to take out of town guests any time of the year .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -2928,37 +2921,37 @@
         },
         {
             "idx": 59,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.3333333333333333,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.20833333333333331,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.3333333333333333,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.20833333333333331,
             "review": "endless fun , awesome music , great staff ! ! !",
             "pred": [
                 [
                     "good service",
                     "restaurant#service",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "good food",
                     "restaurant#food",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "good place",
                     "restaurant#location",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "good atmosphere",
                     "null",
                     "null",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -2984,12 +2977,12 @@
         },
         {
             "idx": 60,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "\u2013 by far the best bar in the east village . . .",
             "pred": [
                 [
@@ -3022,34 +3015,34 @@
         },
         {
             "idx": 61,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.5,
-            "avg partial local IoU": 0.375,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.5,
+            "avg partial micro IoU": 0.375,
             "review": "great draft and bottle selection and the pizza rocks .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "ambience#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "value_for_money#general",
                     "positive",
                     "great"
@@ -3072,34 +3065,34 @@
         },
         {
             "idx": 62,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "definitely has one of the best jukebox ' s i ' ve seen in a long long time .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
                     "local"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
                     "favorite"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "pizza#general",
                     "positive",
                     "worth"
@@ -3116,12 +3109,12 @@
         },
         {
             "idx": 63,
-            "exact local IoU": 0.3333333333333333,
-            "aspect local IoU": 0.3333333333333333,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 1.0,
-            "avg partial local IoU": 0.8333333333333333,
+            "exact micro IoU": 0.3333333333333333,
+            "aspect micro IoU": 0.3333333333333333,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 1.0,
+            "avg partial micro IoU": 0.8333333333333333,
             "review": "the food is great , the bartenders go that extra mile .",
             "pred": [
                 [
@@ -3154,28 +3147,28 @@
         },
         {
             "idx": 64,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.25,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.16666666666666666,
-            "avg partial local IoU": 0.3541666666666667,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.25,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.16666666666666666,
+            "avg partial micro IoU": 0.3541666666666667,
             "review": "the owners are great fun and the beer selection is worth staying for .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "staff#general",
                     "positive",
                     "friendly"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
                     "delicious"
@@ -3204,31 +3197,31 @@
         },
         {
             "idx": 65,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "and the upstairs is a great place to hang out .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "location#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "location#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "location#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -3242,19 +3235,19 @@
         },
         {
             "idx": 66,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.125,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.125,
             "review": "not alot of smoking places left in new york , but i have found my favorite smoking balconey in the city .",
             "pred": [
                 [
                     "service",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "food",
@@ -3280,12 +3273,12 @@
         },
         {
             "idx": 67,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "the sushi here is delicious !",
             "pred": [
                 [
@@ -3306,31 +3299,31 @@
         },
         {
             "idx": 68,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "they have a wide variety of fish and they even list which oceans they come from ; atlantic or pacific .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "fish#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "fish#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "fish#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -3344,25 +3337,25 @@
         },
         {
             "idx": 69,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.09090909090909091,
-            "category local IoU": 0.5,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.3977272727272727,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.09090909090909091,
+            "category micro IoU": 0.5,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.3977272727272727,
             "review": "i ' ve had the jellyfish , horse mackerel , blue fin tuna and the sake ikura roll among others , and they were all good .",
             "pred": [
                 [
                     "the restaurant",
                     "location#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -3394,40 +3387,40 @@
         },
         {
             "idx": 70,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 1.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 1.0,
+            "avg partial micro IoU": 0.25,
             "review": "my only negative comment is that i wish the pieces were a little bigger .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "phone#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "phone#general",
                     "positive",
                     "love"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "phone#general",
                     "positive",
                     "looks"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "phone#general",
                     "positive",
                     "feels"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "phone#general",
                     "positive",
                     "performs"
@@ -3444,12 +3437,12 @@
         },
         {
             "idx": 71,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.0,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.0,
             "review": "the decor is rustic , traditional japanese .",
             "pred": [
                 [
@@ -3465,7 +3458,7 @@
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "staff#general",
                     "positive",
                     "friendly"
@@ -3488,12 +3481,12 @@
         },
         {
             "idx": 72,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 1.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 1.0,
+            "avg partial micro IoU": 0.25,
             "review": "the crowd is mixed yuppies , young and old .",
             "pred": [
                 [
@@ -3503,13 +3496,13 @@
                     "good"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
                     "not"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
                     "good"
@@ -3526,31 +3519,31 @@
         },
         {
             "idx": 73,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.3333333333333333,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5833333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.3333333333333333,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5833333333333333,
             "review": "the service was courteous and attentive .",
             "pred": [
                 [
                     "the service",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -3570,12 +3563,12 @@
         },
         {
             "idx": 74,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 1.0,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 1.0,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "mediocre food",
             "pred": [
                 [
@@ -3596,12 +3589,12 @@
         },
         {
             "idx": 75,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.0,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.0,
             "review": "the outside patio area has an abbreviated menu .",
             "pred": [
                 [
@@ -3628,12 +3621,12 @@
         },
         {
             "idx": 76,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.5,
-            "category local IoU": 0.25,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.1875,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.5,
+            "category micro IoU": 0.25,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.1875,
             "review": "my g / f and i both agreed the food was very mediocre especially considering the price .",
             "pred": [
                 [
@@ -3672,19 +3665,19 @@
         },
         {
             "idx": 77,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.3333333333333333,
-            "avg partial local IoU": 0.08333333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.3333333333333333,
+            "avg partial micro IoU": 0.08333333333333333,
             "review": "we are locals , and get the feeling the only way this place survives with such average food is because most customers are probably one - time customer tourists .",
             "pred": [
                 [
-                    "i",
+                    "I",
                     "location#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "went",
@@ -3705,10 +3698,10 @@
                     "family"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "location#general",
                     "",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -3728,12 +3721,12 @@
         },
         {
             "idx": 78,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 0.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.0,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 0.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.0,
             "review": "service was decent .",
             "pred": [
                 [
@@ -3760,16 +3753,16 @@
         },
         {
             "idx": 79,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "drinks were good .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
                     "excellent"
@@ -3786,12 +3779,12 @@
         },
         {
             "idx": 80,
-            "exact local IoU": 0.16666666666666666,
-            "aspect local IoU": 1.0,
-            "category local IoU": 0.4,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 0.6666666666666666,
-            "avg partial local IoU": 0.6416666666666666,
+            "exact micro IoU": 0.16666666666666666,
+            "aspect micro IoU": 1.0,
+            "category micro IoU": 0.4,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 0.6666666666666666,
+            "avg partial micro IoU": 0.6416666666666666,
             "review": "excellent food , nice ambience , fairly expensive",
             "pred": [
                 [
@@ -3813,7 +3806,7 @@
                     "good"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#prices",
                     "positive",
                     "expensive"
@@ -3842,274 +3835,274 @@
         },
         {
             "idx": 81,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.29411764705882354,
-            "category local IoU": 0.25,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.5,
-            "avg partial local IoU": 0.5110294117647058,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.29411764705882354,
+            "category micro IoU": 0.25,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.5,
+            "avg partial micro IoU": 0.5110294117647058,
             "review": "\u2013 i loved the pumpkin ravioli and the goat cheese gnocchi ( 5 big ones to a plate instead of 20 or so little gnocchis ) and my sister loved her filet mignon on top of spinach and mashed potatoes .",
             "pred": [
                 [
                     "\u2013 i",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "pumpkin ravioli",
                     "food#prices",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "goat cheese gnocchi",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
                     ""
@@ -4144,19 +4137,19 @@
         },
         {
             "idx": 82,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "the ambiance was a peaceful and relaxing break amongst all the kids running around in downtown disney .",
             "pred": [
                 [
                     "service",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -4176,22 +4169,22 @@
         },
         {
             "idx": 83,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "best indian food in l . a .",
             "pred": [
                 [
                     "best",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
                     "place"
@@ -4208,12 +4201,12 @@
         },
         {
             "idx": 84,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "the chicken curry and chicken tikka masala are my favorite meat dishes .",
             "pred": [
                 [
@@ -4258,28 +4251,28 @@
         },
         {
             "idx": 85,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "the chana masala ( garbanzo beans ) are also excellent .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
                     "good"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "drinks#general",
                     "positive",
                     "cold"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
                     "great"
@@ -4296,34 +4289,34 @@
         },
         {
             "idx": 86,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.25,
-            "sentiment local IoU": 0.5,
-            "opinion local IoU": 0.25,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.25,
+            "sentiment micro IoU": 0.5,
+            "opinion micro IoU": 0.25,
+            "avg partial micro IoU": 0.25,
             "review": "it ' s located in a strip mall near the beverly center , not the greatest location , but the food keeps me coming back for more .",
             "pred": [
                 [
                     "the food is",
                     "food#quality",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#quality",
                     "positive",
                     "amazing"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "ambience#general",
                     "positive",
                     "perfect"
@@ -4346,22 +4339,22 @@
         },
         {
             "idx": 87,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.5,
-            "category local IoU": 0.3333333333333333,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.4583333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.5,
+            "category micro IoU": 0.3333333333333333,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.4583333333333333,
             "review": "never too crowded and always great service .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
                     "friendly"
@@ -4384,25 +4377,25 @@
         },
         {
             "idx": 88,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "i think i have probably tried each item on their menu at least once it is all excellent .",
             "pred": [
                 [
                     "cake",
                     "food#style_options",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "chocolate",
                     "food#style_options",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -4416,22 +4409,22 @@
         },
         {
             "idx": 89,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "i can highly recommend their various saag and paneer and korma .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
                     "good"
@@ -4460,19 +4453,19 @@
         },
         {
             "idx": 90,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "i appreciate their delivery too .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -4486,12 +4479,12 @@
         },
         {
             "idx": 91,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.5,
-            "category local IoU": 0.5,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.5,
-            "avg partial local IoU": 0.625,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.5,
+            "category micro IoU": 0.5,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.5,
+            "avg partial micro IoU": 0.625,
             "review": "nice food but no spice !",
             "pred": [
                 [
@@ -4501,7 +4494,7 @@
                     "really good"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "service#general",
                     "negative",
                     "terrible"
@@ -4524,12 +4517,12 @@
         },
         {
             "idx": 92,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "\u2013 i really enjoyed my meal here .",
             "pred": [
                 [
@@ -4550,12 +4543,12 @@
         },
         {
             "idx": 93,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "i had yummy lamb korma , saag paneer , samosas , naan , etc .",
             "pred": [
                 [
@@ -4594,12 +4587,12 @@
         },
         {
             "idx": 94,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.5,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.25,
-            "avg partial local IoU": 0.4375,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.5,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.25,
+            "avg partial micro IoU": 0.4375,
             "review": "the food was all good but it was way too mild .",
             "pred": [
                 [
@@ -4609,7 +4602,7 @@
                     "all"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#spice_level",
                     "negative",
                     "mild"
@@ -4632,12 +4625,12 @@
         },
         {
             "idx": 95,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.5,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.375,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.5,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.375,
             "review": "the naan was some of the best i ' ve had and i really enjoyed the bhartha , not too tomatoey .",
             "pred": [
                 [
@@ -4670,34 +4663,34 @@
         },
         {
             "idx": 96,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.25,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.25,
             "review": "even the chickpeas , which i normally find too dry , were good .",
             "pred": [
                 [
                     "i love this place",
                     "restaurant#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
                     "great"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
                     "friendly"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "restaurant#general",
                     "positive",
                     "great"
@@ -4714,19 +4707,19 @@
         },
         {
             "idx": 97,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.2,
-            "category local IoU": 0.3333333333333333,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.3833333333333333,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.2,
+            "category micro IoU": 0.3333333333333333,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.3833333333333333,
             "review": "\u2013 i do n ' t understand how i was a stranger to this place for so long . . . the fajita salad , the colorado , the fajitas - everything is delicious .",
             "pred": [
                 [
-                    "null",
-                    "null",
+                    "NULL",
+                    "NULL",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
                     "food",
@@ -4770,25 +4763,25 @@
         },
         {
             "idx": 98,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 1.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 0.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 1.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 0.0,
+            "avg partial micro IoU": 0.5,
             "review": "i love the warm & cosy environment .",
             "pred": [
                 [
-                    "null",
+                    "NULL",
                     "ambience#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "ambience#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [
@@ -4808,31 +4801,31 @@
         },
         {
             "idx": 99,
-            "exact local IoU": 0.0,
-            "aspect local IoU": 0.0,
-            "category local IoU": 0.0,
-            "sentiment local IoU": 1.0,
-            "opinion local IoU": 1.0,
-            "avg partial local IoU": 0.5,
+            "exact micro IoU": 0.0,
+            "aspect micro IoU": 0.0,
+            "category micro IoU": 0.0,
+            "sentiment micro IoU": 1.0,
+            "opinion micro IoU": 1.0,
+            "avg partial micro IoU": 0.5,
             "review": "i just found out that you can have the place to yourself on nights and weekends for a private party - ca n ' t wait to celebrate my next birthday there .",
             "pred": [
                 [
                     "food",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ],
                 [
-                    "null",
+                    "NULL",
                     "food#general",
                     "positive",
-                    "null"
+                    "NULL"
                 ]
             ],
             "true": [

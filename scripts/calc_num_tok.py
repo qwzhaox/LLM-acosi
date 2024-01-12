@@ -34,7 +34,7 @@ elif args.absa_task == "acosi-extract":
 else:
     raise ValueError(f"Invalid ABSA task {args.absa_task}")
 
-prompts = get_prompts(args.dataset_file, bare_prompt, examples, args.absa_task)
+prompts, _, _ = get_prompts(args.dataset_file, bare_prompt, examples, args.absa_task)
 total_tokens = 0
 
 for prompt in prompts:
