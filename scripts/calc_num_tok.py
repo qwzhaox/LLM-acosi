@@ -38,6 +38,7 @@ prompts, _, _ = get_prompts(args.dataset_file, bare_prompt, examples, args.absa_
 total_tokens = 0
 
 for prompt in prompts:
+    print(prompt)
     total_tokens += len(word_tokenize(prompt))
 
 print(f"Total input tokens: {total_tokens}")

@@ -14,31 +14,6 @@ with open(category_file_path, "r") as f:
     shoes_cate_list = json.load(f)
 
 
-# categories_with_descriptions = [
-#     "shoe (the item in mention)"
-#     "shoe.performance (Relating to the performance and function of the item)",
-#     "shoe.performance.functional_applicability (Functional ability to enable/perform a specified action or activity; work; operate.)",
-#     "shoe.performance.sizing (Relates to the sizing)",
-#     "shoe.performance.comfort (Producing or affording physical comfort, support, or ease.)",
-#     "shoe.performance.durability (Able to exist for a long time without significant deterioration in quality or value.)",
-#     "shoe.performance.stability (The quality, state, or degree of being stable)",
-#     "shoe.context_of_use (The situation in which something happens; The group of conditions that exist where and when something happens.)",
-#     "shoe.context_of_use.usage_frequency (the frequency of use of a product)",
-#     "shoe.context_of_use.use_case (For what is the product used for. )",
-#     "shoe.context_of_use.place (Where the product is being used; the user's environment.)",
-#     "shoe.context_of_use.review_temporality (A statement on the product and the user's time of use with it.)",
-#     "shoe.context_of_use.purchase_context (Other factors that led the user to purchasing the shoe.)",
-#     "shoe.appearance (The aesthetic appearance of the shoe. The way that someone or something looks.)",
-#     "shoe.appearance.color (A quality such as red, blue, green, yellow, etc., that you see when you look at something; visual perception that enables one to differentiate otherwise identical objects.)",
-#     "shoe.appearance.material (The quality or state of being material; an product quality relating to, derived from, or consisting of matter.)",
-#     "shoe.appearance.shoe_component (a constituent part; one of the parts that form the shoe)",
-#     "shoe.appearance.form (A particular form or shape of an object; the Spatial form or contour of the object.)",
-#     "shoe.misc (Things that don't fall in the other categories)",
-# ]
-
-# shoes_cate_list = categories_with_descriptions
-
-
 def get_ACOSI_extract_prompt():
     prompt = """Given a product review, extract the corresponding ACOSI (Aspect-Category-Opinion-Sentiment-Implicit/Explicit) quintuples.
 
