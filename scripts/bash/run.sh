@@ -91,8 +91,9 @@ if [[ "$is_llama_model" == true ]]; then
 else
     # Run the task with the provided model
     if [ "$task" = "acos-extract" ]; then
-        bash scripts/bash/run_task_gpt.sh "$task" "data/acos/rest/toy.txt" "$model"
-        bash scripts/bash/run_task_gpt.sh "$task" "data/acos/laptop/toy.txt" "$model"
+        # bash scripts/bash/run_task_gpt.sh "$task" "data/acos/rest/toy.txt" "$model"
+        # bash scripts/bash/run_task_gpt.sh "$task" "data/acos/laptop/toy.txt" "$model"
+        bash scripts/bash/run_task_gpt.sh "$task" "data/acos/shoes/toy.txt" "$model"
     elif [ "$task" = "acos-extend" ]; then
         # bash scripts/bash/run_task_gpt.sh "$task" "data/acos/rest/toy.txt" "$model"
         # bash scripts/bash/run_task_gpt.sh "$task" "data/acos/laptop/toy.txt" "$model"

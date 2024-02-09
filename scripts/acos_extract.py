@@ -10,12 +10,16 @@ from utils import (
 
 laptop_category_file_path = get_file_path("laptop-acos-cate-list.json")
 restaurant_category_file_path = get_file_path("restaurant-acos-cate-list.json")
+shoes_category_file_path = get_file_path("shoes-acosi-cate-list.json")
 
 with open(laptop_category_file_path, "r") as f:
     laptop_cate_list = json.load(f)
 
 with open(restaurant_category_file_path, "r") as f:
     restaurant_cate_list = json.load(f)
+
+with open(shoes_category_file_path, "r") as f:
+    shoes_cate_list = json.load(f)
 
 
 def get_ACOS_extract_prompt(dataset_domain):
@@ -34,6 +38,8 @@ Each quadruple is comprised of 4 components:
         category_list = "[" + ",".join(laptop_cate_list) + "]"
     elif dataset_domain == "restaurant":
         category_list = "[" + ",".join(restaurant_cate_list) + "]"
+    elif dataset_domain == "shoes":
+        category_list = "[" + ",".join(shoes_cate_list) + "]"
     else:
         raise ValueError("Invalid dataset domain.")
 
@@ -61,10 +67,22 @@ Each quadruple is comprised of 4 components:
         f"{response_head} [A] powers up [C] laptop#operation_performance [S] positive [O] NULL [SSEP] [A] battery life [C] battery#general [S] positive [O] great [SSEP] [A] keyboard [C] keyboard#general [S] positive [O] NULL [SSEP] [A] NULL [C] laptop#design_features [S] positive [O] amazing [END]\n\n",
     ]
 
+    example5 = [
+        "Review: the design is great poor color choices too bland . color choices from previous shoes was much better .\n",
+        f"{response_head} [A] NULL [C] appearance#form [S] positive [O] design is great [SSEP] [A] NULL [C] appearance#color [S] negative [O] poor color choices [SSEP] [A] shoes [C] appearance#color [S] negative [O] NULL [END]\n\n",
+    ]
+
+    example6 = [
+        "Review: omg these are the most comfortable sneakers in the world . i can walk 5 , 6 , 7 miles in them . my whole body may be tired but my feet are great !",
+        f"{response_head} [A] sneakers [C] performance#comfort [S] positive [O] omg these are the most comfortable sneakers in the world [SSEP] [A] NULL [C] performance#use case applicability [S] positive [O] NULL [SSEP] [A] NULL [C] performance#comfort [S] positive [O] NULL [SSEP] [A] NULL [C] performance#general [S] positive [O] NULL [END]\n\n",
+    ]
+
     if dataset_domain == "laptop":
         return prompt, [example1, example2], response_head
     elif dataset_domain == "restaurant":
         return prompt, [example3, example4], response_head
+    elif dataset_domain == "shoes":
+        return prompt, [example5, example6], response_head
     else:
         raise ValueError("Invalid dataset domain.")
 
@@ -74,6 +92,8 @@ def main(args):
         prompt, examples, response_head = get_ACOS_extract_prompt("restaurant")
     elif "laptop" in args.dataset_file:
         prompt, examples, response_head = get_ACOS_extract_prompt("laptop")
+    elif "shoes" in args.dataset_file:
+        prompt, examples, response_head = get_ACOS_extract_prompt("shoes")
     else:
         raise ValueError("Invalid dataset domain.")
 
