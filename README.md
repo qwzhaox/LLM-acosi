@@ -1,4 +1,4 @@
-# EECS595Project
+# LLM-acosi
 
 ## Setup
 Please use Python 3.10

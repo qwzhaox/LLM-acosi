@@ -1,40 +1,23 @@
 from argparse import ArgumentParser
-from tqdm import tqdm
 from nltk import word_tokenize
-from pipeline import get_formatted_annotations
-from acos_extend import get_ACOS_extend_prompt
-from acos_extract import get_ACOS_extract_prompt
-from acosi_extract import get_ACOSI_extract_prompt
+from sys import path
+path.insert(1, './scripts/run_llm/')
 from pipeline import get_prompts
+from utils import get_xu_etal_formatted_annotations, get_old_formatted_annotations
 
 parser = ArgumentParser()
 parser.add_argument(
     "-d", "--dataset_file", type=str, required=True, help="Dataset file"
 )
 parser.add_argument("-a", "--absa_task", type=str, required=True, help="Task to run")
+parser.add_argument("-o", "--is_old_prompt", action="store_true", help="Use old prompt")
 
 args = parser.parse_args()
 
 with open(args.dataset_file, "r") as f:
     dataset = f.readlines()
-
-if args.absa_task == "acos-extend":
-    bare_prompt, examples, _ = get_ACOS_extend_prompt()
-elif args.absa_task == "acos-extract":
-    if "laptop" in args.dataset_file:
-        bare_prompt, examples, _ = get_ACOS_extract_prompt("laptop")
-    elif "rest" in args.dataset_file:
-        bare_prompt, examples, _ = get_ACOS_extract_prompt("restaurant")
-    else:
-        raise ValueError(
-            f"Invalid dataset file {args.dataset_file} for ABSA task {args.absa_task}"
-        )
-elif args.absa_task == "acosi-extract":
-    bare_prompt, examples, _ = get_ACOSI_extract_prompt()
-else:
-    raise ValueError(f"Invalid ABSA task {args.absa_task}")
-
-prompts, _, _ = get_prompts(args.dataset_file, bare_prompt, examples, args.absa_task)
+get_formatted_annotations = get_old_formatted_annotations if args.is_old_prompt else get_xu_etal_formatted_annotations
+prompts, _ = get_prompts(args.dataset_file, k_examples=5, limit=None, is_old_prompt=args.is_old_prompt, absa_task=args.absa_task, model="llama-2")
 total_tokens = 0
 
 for prompt in prompts:

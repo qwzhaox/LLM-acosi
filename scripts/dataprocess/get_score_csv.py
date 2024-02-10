@@ -17,7 +17,7 @@ parser.add_argument(
 )
 
 # get all score.json files
-score_path="~/Shoes-ACOSI-models/EECS595Project/data/eval_output/meta-llama/"
+score_path="~/Shoes-ACOSI-models/LLM-acosi/eval_output/meta-llama/"
 command = "find " + score_path + " -name score.json"
 score_files = subprocess.run(command, shell=True, stdout=subprocess.PIPE, universal_newlines=True)
 score_files = score_files.stdout.strip().split('\n')
@@ -65,7 +65,7 @@ for file in score_files:
 
 # print(model_scores)
 # write to csv files
-csv_path = "/home/haitongc/Shoes-ACOSI-models/EECS595Project/data/score_comp/"
+csv_path = "/home/haitongc/Shoes-ACOSI-models/LLM-acosi/data/score_comp/"
 for a in annotation:
     csv_file = csv_path + task + "_" + dataset + "_" + a + ".csv"
     # csv_file = task + "_" + dataset + "_" + a + ".csv"
