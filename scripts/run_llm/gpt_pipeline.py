@@ -1,7 +1,7 @@
 import time
 import asyncio
 
-from langchain_community.chat_models import AzureChatOpenAI
+from langchain_openai import AzureChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage, AIMessage
 
 from tqdm import tqdm
@@ -100,7 +100,7 @@ def query_gpt(
         pdb.set_trace()
         return [
             llm.invoke(prompt)
-            for prompt in tqdm(prompts, desc="Serially invoking GPT-3", unit="prompt")
+            for prompt in tqdm(prompts, desc=f"Serially invoking {deployment_name.upper()}", unit="prompt")
         ]
 
     # async def async_invoke(llm, message):
@@ -111,7 +111,7 @@ def query_gpt(
         resp = await llm.abatch(
             [
                 prompt
-                for prompt in tqdm(prompts, desc="Concurrently invoking GPT-3", unit="prompts")
+                for prompt in tqdm(prompts, desc=f"Concurrently invoking {deployment_name.upper()}", unit="prompt")
             ],
             {"max_concurrency": 5},
         )

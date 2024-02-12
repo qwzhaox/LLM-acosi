@@ -1,4 +1,4 @@
-from pipeline import get_model_output
+from pipeline import Pipeline
 from utils import (
     get_args,
     format_output,
@@ -46,8 +46,11 @@ def get_ACOSI_annotations(acos_annotations, formatted_output):
 
 
 def main(args):
-    opinion_spans, reviews = get_model_output(args)
-    formatted_output, raw_predictions = format_output(opinion_spans, is_old_prompt=args.is_old_prompt)
+
+    pipeline = Pipeline(args)
+    output, reviews = pipeline.get_model_output()
+    
+    formatted_output, raw_predictions = format_output(output, is_old_prompt=args.is_old_prompt)
 
     if args.absa_task == "acos-extract":
         formatted_output = [[quint[:-1] for quint in quints] for quints in formatted_output]

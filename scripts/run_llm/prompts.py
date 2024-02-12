@@ -45,7 +45,7 @@ PROMPTS = {
         "output-format": "(aspect, category, sentiment, opinion, implicitIndicator)",
     },
     "acos-extend": {
-        "instruction": "Extend aspect-category-sentiment-opinion quadruples to aspect-category-sentiment-opinion-implicitIndicator quintuples from input data.",
+        "instruction": "Identify opinion spans from input data and aspect-category-sentiment-opinion quadruples. For implicit opinions (labeled NULL), identify the span of text that best expresses the sentiment implicitly.",
         "context": "An aspect must be a term existing in input data or null if non-existing; an opinion must be a term existing in input data; the category is one in the predefined list; the sentiment is positive, negative or neutral; do not ask me for more information, I am unable to provide it, and just try your best to finish the task. You can learn from the following examples.",
         "output-format": "(opinion)",
     },

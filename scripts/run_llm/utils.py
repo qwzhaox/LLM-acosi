@@ -6,8 +6,6 @@ from pathlib import Path
 from argparse import ArgumentParser
 from itertools import chain
 from string import punctuation
-from random import sample
-from prompts import PROMPTS_OLD
 
 OLD_INTRO_BLURB = "Below is an instruction that describes a task. Write a response that appropriately completes the request."
 OLD_INSTRUCTION_KEY = "### Instruction:"
@@ -53,9 +51,10 @@ def get_args():
     )
     parser.add_argument("--dataset_file", type=str, required=True, help="Dataset file")
     parser.add_argument("--output_file", type=str, required=True, help="Output file")
-    parser.add_argument("--k_examples", type=int, default=1, help="Number of examples")
-    parser.add_argument("--limit", type=int, default=None, help="Limit number of examples to choose from.")
-    parser.add_argument("--is_old_prompt", action="store_true", help="Use old prompt format")
+    parser.add_argument("-k", "--k_examples", type=int, default=10, help="Number of examples")
+    parser.add_argument("-l", "--limit", type=int, default=None, help="Limit number of examples to choose from.")
+    parser.add_argument("-s", "--selection_method", type=str, default="tf-idf", help="Selection method")
+    parser.add_argument("-old", "--is_old_prompt", action="store_true", help="Use old prompt format")
     args = parser.parse_args()
     return args
 
@@ -87,19 +86,16 @@ def xu_etal_format_prompt(instruction, context, output_format):
 def get_xu_etal_formatted_annotations(annotations, opinion_span_only=False):
     annots = []
     for annotation in annotations:
-        category = annotation[CATEGORY_IDX].replace('#', ' ').replace('\\_', '_').lower()
+        annotation[CATEGORY_IDX] = annotation[CATEGORY_IDX].replace('#', ' ').replace('\\_', '_').lower()
         if opinion_span_only:
-            new_annot_str = f"({annotation[OPINION_IDX]})"
-        elif len(annotation) == 4:
-            # new_annot_str = f"(Aspect: {annotation[ASPECT_IDX]}, Category: {annotation[CATEGORY_IDX]}, Sentiment: {annotation[SENTIMENT_IDX]}, Opinion: {annotation[OPINION_IDX]})"
-            new_annot_str = f"({annotation[ASPECT_IDX]}, {category}, {annotation[SENTIMENT_IDX]}, {annotation[OPINION_IDX]})"
-        elif len(annotation) == 5:
-            new_annot_str = f"({annotation[ASPECT_IDX]}, {category}, {annotation[SENTIMENT_IDX]}, {annotation[OPINION_IDX]}, {annotation[IMPLICIT_INDICATOR_IDX]})"
+            new_annot_str = f'("{annotation[OPINION_IDX]}")'
+        elif len(annotation) == 4 or len(annotation) == 5:
+            new_annot_str = tuple(annotation)
 
         annots.append(new_annot_str)
-
-    annots_str = "[" + ",".join(annots) + "]"
-    return annots_str
+        if opinion_span_only:
+            return "[" + ", ".join(annots) + "]"
+    return str(annots)
 
 
 def old_format_prompt(instruction, context, output_format):
@@ -132,69 +128,7 @@ def get_old_formatted_annotations(annotations):
     annots_str = " [SSEP] ".join(annots) + " [END]"
 
     return annots_str
-
-def get_review_str(review, absa_task, annotations, old_prompt=False):
-    review_str = f"{review.strip()}\n"
-    annotations_str = ""
-    if absa_task == "acos-extend":
-        if old_prompt:
-            annotations_str = f"ACOS quadruples: {get_old_formatted_annotations(annotations)}\n"
-        else:
-            annotations_str = f"ACOS quadruples: {get_xu_etal_formatted_annotations(annotations)}\n"
-
-    review_str = review_str + annotations_str
-    return review_str
-
-
-def get_examples(dataset_path, absa_task, is_old_prompt=False, k_examples=5, limit=None):
-    examples = []
-
-    if is_old_prompt:
-        dataset = dataset_path.name
-        for example in PROMPTS_OLD[absa_task]["examples"][dataset]:
-            if absa_task == "acos-extend":
-                review = f"{example['review']}\nACOS quadruples: {example['acos-quadruples']}"
-                response = f"{example['response']}\n{example['response-explanation']}"
-            else:
-                review = example["review"]
-                response = example["response"]
-
-            examples.append((review, response))
-
-        return examples
-
-    with open(Path(dataset_path / "train.txt"), "r") as f:
-        train_dataset = f.readlines()
     
-    response_train_dataset_path = Path(str(dataset_path).replace('acos', 'acosi'))
-    response_train_dataset = []
-    if absa_task == "acos-extend":
-        with open(Path(response_train_dataset_path / "train.txt"), "r") as f:
-            response_train_dataset = f.readlines()
-
-    if limit:
-        limit_indices = sample(range(len(train_dataset)), k=limit)
-        train_dataset = [train_dataset[i] for i in limit_indices]
-        response_train_dataset = [response_train_dataset[i] for i in limit_indices]
-
-    indices = sample(range(len(train_dataset)), k=k_examples)
-
-    for idx in indices:
-        review = train_dataset[idx].split("####")[0]
-        annotations = eval(train_dataset[idx].split("####")[1])
-        annotations = get_xu_etal_formatted_annotations(annotations)
-
-        if absa_task == "acos-extend":
-            review = f"{review}\nACOS annotations: {annotations}"
-            annotations = eval(response_train_dataset[idx].split("####")[1])
-            response = get_xu_etal_formatted_annotations(annotations, opinion_span_only=True)
-        else:
-            response = annotations
-        
-        examples.append((review, response))
-    
-    return examples
-
 
 def flatten_output(output):
     if type(output[0]) is list:
@@ -262,6 +196,12 @@ def clean_output(out, response_key):
 
     if "[END]" in prediction:
         prediction = prediction[: prediction.find("[END]")]
+
+    if prediction[-1] == ",":
+        prediction = prediction[:-1] + "]"
+    if prediction[-1] == ")":
+        prediction += "]"
+
     prediction = prediction.strip()
 
     return prediction, raw_prediction
@@ -297,15 +237,16 @@ def extract_spans(seq):
         sents = eval(seq)
     except:
         return quints
-
     for s in sents:
-        if len(s) == 1:
-            ot = s[0]
+        at, ac, sp, ot, ie = "null", "null", "null", "null", "null"
+
+        if type(s) is str:
+            ot = s
             ac, sp, at, ie = "null", "null", "null", "null"
-        if len(s) == 4:
+        elif len(s) == 4:
             at, ac, sp, ot = s
             ie = "null"
-        if len(s) == 5:
+        elif len(s) == 5:
             at, ac, sp, ot, ie = s
 
         at, ac, sp, ot, ie, is_all_null = clean_terms(at, ac, sp, ot, ie)
@@ -376,7 +317,7 @@ def format_output(output, is_old_prompt=False):
         prediction, raw_prediction = clean_output(out, response_key)
 
         print("Prediction: ", prediction)
-        quints = extract_spans_old(prediction) if is_old_prompt else extract_spans_old(prediction)
+        quints = extract_spans_old(prediction) if is_old_prompt else extract_spans(prediction)
 
         formatted_output.append(quints)
         raw_predictions.append(raw_prediction)
@@ -387,7 +328,7 @@ def format_output(output, is_old_prompt=False):
 
 
 def get_formatted_output_and_metadata(formatted_output, raw_predictions, reviews):
-    formatted_output_w_metadata = []
+    formatted_output_and_metadata = []
     if len(formatted_output) == len(raw_predictions) == len(reviews):
         for annotation, raw_prediction, review in zip(
             formatted_output, raw_predictions, reviews
@@ -396,12 +337,12 @@ def get_formatted_output_and_metadata(formatted_output, raw_predictions, reviews
             annotation_w_metadatum["annotation"] = annotation
             annotation_w_metadatum["review"] = review
             annotation_w_metadatum["raw_predictions"] = raw_prediction
-            formatted_output_w_metadata.append(annotation_w_metadatum)
+            formatted_output_and_metadata.append(annotation_w_metadatum)
     else:
         print(
             f"Length of formatted output {len(formatted_output)} does not match corresponding lengths: {len(raw_predictions)}, {len(reviews)}"
         )
-    return formatted_output_w_metadata
+    return formatted_output_and_metadata
 
 
 def dump_output(output_file, formatted_output):

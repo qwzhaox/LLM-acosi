@@ -74,23 +74,24 @@ echo "Size: $size"
 echo "Model: $model"
 
 if [[ "$is_llama_model" == true ]]; then
+    dataset_to_use="test.txt"
     # Run the task with the provided size and model
     if [ "$task" = "acos-extract" ]; then
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/rest/test.txt" "config/${size}_llama.json"
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/laptop/test.txt" "config/${size}_llama.json"
+        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/rest/$dataset_to_use" "config/${size}_llama.json"
+        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/laptop/$dataset_to_use" "config/${size}_llama.json"
     elif [ "$task" = "acos-extend" ]; then
-        # bash scripts/bash/run_task.sh "$task" "data/acos_dataset/rest/toy.txt" "config/${size}_llama.json"
-        # bash scripts/bash/run_task.sh "$task" "data/acos_dataset/laptop/toy.txt" "config/${size}_llama.json"
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/shoes/test.txt" "config/${size}_llama.json"
+        # bash scripts/bash/run_task.sh "$task" "data/acos_dataset/rest/$dataset_to_use" "config/${size}_llama.json"
+        # bash scripts/bash/run_task.sh "$task" "data/acos_dataset/laptop/$dataset_to_use" "config/${size}_llama.json"
+        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/shoes/$dataset_to_use" "config/${size}_llama.json"
     elif [ "$task" = "acosi-extract" ]; then
-        bash scripts/bash/run_task.sh "$task" "data/acosi_dataset/shoes/test.txt" "config/${size}_llama.json"
+        bash scripts/bash/run_task.sh "$task" "data/acosi_dataset/shoes/$dataset_to_use" "config/${size}_llama.json"
     else
         echo "Error: Invalid task - $task"
         exit 1
     fi
 else
     # Run the task with the provided model
-    dataset_to_use="gpt-check.txt"
+    dataset_to_use="test.txt"
     if [ "$task" = "acos-extract" ]; then
         bash scripts/bash/run_task.sh "$task" "data/acos_dataset/rest/$dataset_to_use" "$model"
         bash scripts/bash/run_task.sh "$task" "data/acos_dataset/laptop/$dataset_to_use" "$model"
