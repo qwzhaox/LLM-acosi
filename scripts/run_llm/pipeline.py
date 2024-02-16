@@ -23,15 +23,14 @@ from utils import (
     EXAMPLE_RESPONSE,
 )
 from gpt_pipeline import query_gpt
-from prompts import PROMPTS, PROMPTS_OLD, CATE_DICT
-
+from prompts import PROMPTS, PROMPTS_OLD, PROMPTS_COMBO, CATE_DICT
 
 device = 0 if torch.cuda.is_available() else -1
 
 class Pipeline:
     def __init__(self, args):
         self.dataset_file = args.dataset_file
-        self.model = args.model_name.lower()
+        self.model = args.model_name
         self.task = args.task
         self.absa_task = args.absa_task
         self.tokenizer_name = args.tokenizer_name
@@ -41,12 +40,14 @@ class Pipeline:
         self.limit = args.limit
         self.selection_method = args.selection_method
         self.is_old_prompt = args.is_old_prompt
+        self.is_combo_prompt = args.is_combo_prompt
+        self.remote = args.remote
 
     def get_model_output(self):
         prompts, reviews = self.get_prompts()
-        if "gpt" in self.model:
+        if "gpt" in self.model.lower():
             output = query_gpt(
-                self.model,
+                self.model.lower(),
                 prompts,
                 max_tokens=self.max_new_tokens,
                 is_old_prompt=self.is_old_prompt,
@@ -142,7 +143,12 @@ class Pipeline:
 
     ### HELPERS ###
     def __get_prompt_info(self, dataset_domain):
-        prompt_dict = PROMPTS_OLD if self.is_old_prompt else PROMPTS
+        if self.is_combo_prompt:
+            prompt_dict = PROMPTS_COMBO
+        elif self.is_old_prompt:
+            prompt_dict = PROMPTS_OLD
+        else:
+            prompt_dict = PROMPTS
 
         instruction = prompt_dict[self.absa_task]["instruction"]
         context = prompt_dict[self.absa_task]["context"].format(category_list=CATE_DICT[dataset_domain])
@@ -162,7 +168,7 @@ class Pipeline:
         review_str = f"{review.strip()}\n"
         annotations_str = ""
         if self.absa_task == "acos-extend":
-            if self.is_old_prompt:
+            if self.is_old_prompt or self.is_combo_prompt:
                 annotations_str = f"ACOS quadruples: {get_old_formatted_annotations(annotations)}\n"
             else:
                 annotations_str = f"ACOS quadruples: {get_xu_etal_formatted_annotations(annotations)}\n"
@@ -206,12 +212,18 @@ class Pipeline:
         for idx in indices:
             review = train_dataset[idx].split("####")[0]
             annotations = eval(train_dataset[idx].split("####")[1])
-            annotations = get_xu_etal_formatted_annotations(annotations)
+            if self.is_combo_prompt:
+                annotations = get_old_formatted_annotations(annotations)
+            else:
+                annotations = get_xu_etal_formatted_annotations(annotations)
 
             if self.absa_task == "acos-extend":
                 review = f"{review}\nACOS quadruples: {annotations}"
                 annotations = eval(response_train_dataset[idx].split("####")[1])
-                response = get_xu_etal_formatted_annotations(annotations, opinion_span_only=True)
+                if self.is_combo_prompt:
+                    response = get_old_formatted_annotations(annotations)
+                else:
+                    response = get_xu_etal_formatted_annotations(annotations, opinion_span_only=True)
             else:
                 response = annotations
             

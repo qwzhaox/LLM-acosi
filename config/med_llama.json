@@ -3,12 +3,32 @@
         "model": "meta-llama/Llama-2-13b-hf",
         "tokenizer": "meta-llama/Llama-2-13b-hf",
         "task": "text-generation",
-        "remote": false
+        "remote": false,
+        "k_examples": 5,
+        "selection_method": "random"
     },
     {
         "model": "meta-llama/Llama-2-13b-chat-hf",
         "tokenizer": "meta-llama/Llama-2-13b-chat-hf",
         "task": "text-generation",
-        "remote": false
+        "remote": false,
+        "k_examples": 5,
+        "selection_method": "tf-idf"
+    },
+    {
+        "model": "meta-llama/Llama-2-13b-hf",
+        "tokenizer": "meta-llama/Llama-2-13b-hf",
+        "task": "text-generation",
+        "remote": false,
+        "k_examples": 10,
+        "selection_method": "random"
+    },
+    {
+        "model": "meta-llama/Llama-2-13b-chat-hf",
+        "tokenizer": "meta-llama/Llama-2-13b-chat-hf",
+        "task": "text-generation",
+        "remote": false,
+        "k_examples": 10,
+        "selection_method": "tf-idf"
     }
 ]

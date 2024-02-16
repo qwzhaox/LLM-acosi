@@ -7,6 +7,7 @@ from argparse import ArgumentParser
 from itertools import chain
 from string import punctuation
 
+ENV_PATH = "config/.env"
 OLD_INTRO_BLURB = "Below is an instruction that describes a task. Write a response that appropriately completes the request."
 OLD_INSTRUCTION_KEY = "### Instruction:"
 OLD_CONTEXT_KEY = "Context:"
@@ -52,9 +53,10 @@ def get_args():
     parser.add_argument("--dataset_file", type=str, required=True, help="Dataset file")
     parser.add_argument("--output_file", type=str, required=True, help="Output file")
     parser.add_argument("-k", "--k_examples", type=int, default=10, help="Number of examples")
-    parser.add_argument("-l", "--limit", type=int, default=None, help="Limit number of examples to choose from.")
     parser.add_argument("-s", "--selection_method", type=str, default="tf-idf", help="Selection method")
+    parser.add_argument("-l", "--limit", type=int, default=None, help="Limit number of examples to choose from.")
     parser.add_argument("-old", "--is_old_prompt", action="store_true", help="Use old prompt format")
+    parser.add_argument("-combo", "--is_combo_prompt", action="store_true", help="Use combo prompt format.") 
     args = parser.parse_args()
     return args
 
@@ -88,13 +90,13 @@ def get_xu_etal_formatted_annotations(annotations, opinion_span_only=False):
     for annotation in annotations:
         annotation[CATEGORY_IDX] = annotation[CATEGORY_IDX].replace('#', ' ').replace('\\_', '_').lower()
         if opinion_span_only:
-            new_annot_str = f'("{annotation[OPINION_IDX]}")'
+            new_annot_str = f'(\'{annotation[OPINION_IDX]}\')'
         elif len(annotation) == 4 or len(annotation) == 5:
             new_annot_str = tuple(annotation)
 
         annots.append(new_annot_str)
-        if opinion_span_only:
-            return "[" + ", ".join(annots) + "]"
+    if opinion_span_only:
+        return "[" + ", ".join(annots) + "]"
     return str(annots)
 
 
@@ -175,16 +177,72 @@ def fix_brackets(prediction):
     return prediction
 
 
-def clean_output(out, response_key):
+def close_open_brackets(s):
+    # Count the number of open and close brackets
+    open_square_brackets = s.count('[')
+    close_square_brackets = s.count(']')
+    open_round_brackets = s.count('(')
+    close_round_brackets = s.count(')')
+
+    # Add missing close square brackets
+    if open_square_brackets > close_square_brackets:
+        s += ']' * (open_square_brackets - close_square_brackets)
+
+    # Add missing close round brackets
+    if open_round_brackets > close_round_brackets:
+        s += ')' * (open_round_brackets - close_round_brackets)
+
+    # Add missing open square brackets at the beginning
+    if close_square_brackets > open_square_brackets:
+        s = '[' * (close_square_brackets - open_square_brackets) + s
+
+    # Add missing open round brackets at the beginning
+    if close_round_brackets > open_round_brackets:
+        s = '(' * (close_round_brackets - open_round_brackets) + s
+
+    return s
+
+
+    # Split the string into parts based on commas and brackets
+def ensure_quoted_words(s):
+    # Use a regular expression to split the string while ignoring commas inside single quotes
+    parts = re.split(r",(?=(?:[^']*'[^']*')*[^']*$)", s)
+
+    # Process each part
+    for i, part in enumerate(parts):
+        # Strip leading and trailing whitespace and brackets
+        stripped_part = part.strip().strip('[').strip(']').strip('(').strip(')')
+
+        # Check if the word has an uneven number of single quotes
+        if stripped_part.count("'") % 2 != 0:
+            # Add a single quote at the beginning if missing
+            if not stripped_part.startswith("'"):
+                stripped_part = "'" + stripped_part
+            # Add a single quote at the end if missing
+            if not stripped_part.endswith("'"):
+                stripped_part += "'"
+
+        # Add single quotes around the word if they are missing
+        if not (stripped_part.startswith("'") and stripped_part.endswith("'")):
+            parts[i] = part.replace(stripped_part, f"'{stripped_part}'")
+
+    # Reassemble the string
+    return ','.join(parts)
+
+
+def clean_output(out, response_key, is_old_prompt=False, is_combo_prompt=False):
     try:
         prediction = out["generated_text"].strip()
     except:
         prediction = out.strip()
 
+    if not prediction:
+        return ""
+
     if response_key in prediction:
         prediction = prediction[prediction.rfind(response_key)+len(response_key):].strip()
     if ":" in prediction:
-        prediction = prediction[prediction.rfind(":") + 1:].strip()
+        prediction = prediction[prediction.find(":") + 1:].strip()
 
     if "\n" in prediction:
         prediction = prediction[: prediction.find("\n")]
@@ -192,15 +250,19 @@ def clean_output(out, response_key):
     print("Raw prediction: ", prediction)
 
     raw_prediction = prediction
-    prediction = fix_brackets(prediction)
+    if is_old_prompt or is_combo_prompt:
+        prediction = fix_brackets(prediction)
+    # else:
+    #     prediction = close_open_brackets(prediction)
+    #     prediction = ensure_quoted_words(prediction)
 
     if "[END]" in prediction:
         prediction = prediction[: prediction.find("[END]")]
 
-    if prediction[-1] == ",":
-        prediction = prediction[:-1] + "]"
-    if prediction[-1] == ")":
-        prediction += "]"
+    # if prediction[-1] == ",":
+    #     prediction = prediction[:-1] + "]"
+    # if prediction[-1] == ")":
+    #     prediction += "]"
 
     prediction = prediction.strip()
 
@@ -243,6 +305,15 @@ def extract_spans(seq):
         if type(s) is str:
             ot = s
             ac, sp, at, ie = "null", "null", "null", "null"
+        elif len(s) == 1:
+            ot = s[0]
+            ac, sp, at, ie = "null", "null", "null", "null"
+        elif len(s) == 2:
+            ot, ie = s
+            ac, sp, at = "null", "null", "null"
+        elif len(s) == 3:
+            at, ac, sp = s
+            ot, ie = "null", "null"
         elif len(s) == 4:
             at, ac, sp, ot = s
             ie = "null"
@@ -307,17 +378,17 @@ def extract_spans_old(seq):
     return quints
 
 
-def format_output(output, is_old_prompt=False):
+def format_output(output, is_old_prompt=False, is_combo_prompt=False):
     response_key = OLD_RESPONSE_KEY if is_old_prompt else XU_ETAL_OUTPUT_KEY
 
     output = flatten_output(output)
     formatted_output = []
     raw_predictions = []
     for out in output:
-        prediction, raw_prediction = clean_output(out, response_key)
+        prediction, raw_prediction = clean_output(out, response_key, is_old_prompt=is_old_prompt, is_combo_prompt=is_combo_prompt)
 
         print("Prediction: ", prediction)
-        quints = extract_spans_old(prediction) if is_old_prompt else extract_spans(prediction)
+        quints = extract_spans_old(prediction) if is_old_prompt or is_combo_prompt else extract_spans(prediction)
 
         formatted_output.append(quints)
         raw_predictions.append(raw_prediction)

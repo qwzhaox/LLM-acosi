@@ -5,7 +5,6 @@ from langchain_openai import AzureChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage, AIMessage
 
 from tqdm import tqdm
-from dotenv import load_dotenv
 
 from utils import (
     XU_ETAL_INPUT_KEY,
@@ -16,10 +15,6 @@ from utils import (
     EXAMPLE_REVIEW, 
     EXAMPLE_RESPONSE
 )
-
-ENV_PATH = "config/.env"
-
-load_dotenv(ENV_PATH)
 
 
 def get_gpt_prompt_instr(prompt_instr, is_old_prompt=False):
@@ -55,7 +50,7 @@ def get_gpt_prompts(abbreviated_prompts, gpt_prompt_instr, review_key, response_
         gpt_prompt = examples + gpt_prompt_instr if is_old_prompt else gpt_prompt_instr + examples
         gpt_prompt.extend([
             HumanMessage(content=f"{review_key} {prompt['review']}"),
-            HumanMessage(content=response_key),
+            HumanMessage(content=f"{response_key} "),
         ])
         
         gpt_prompts.append(gpt_prompt)

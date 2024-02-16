@@ -51,6 +51,24 @@ PROMPTS = {
     },
 }
 
+PROMPTS_COMBO = {
+    "acos-extract": {
+        "instruction": "Extract aspect-category-sentiment-opinion quadruples from input data.",
+        "context": "An aspect or opinion must be a term existing in input data or null if non-existing; the category is one in the predefined list {category_list}; the sentiment is positive, negative or neutral; do not ask me for more information, I am unable to provide it, and just try your best to finish the task. You can learn from the following examples.",
+        "output-format": "[A] aspect [C] category [S] sentiment [O] opinion\n[END] is used to mark the end of the set of quadruples associated with a review and [SSEP] is used to separate individual quadruples in the set.",
+    },
+    "acosi-extract": {
+        "instruction": "Extract aspect-category-sentiment-opinion-implicitIndicator quintuples from input data.",
+        "context": "An aspect must be a term existing in input data or null if non-existing; an opinion must be a term existing in input data; the category is one in the predefined list {category_list}; the sentiment is positive, negative or neutral, the implicitIndicator is direct or indirect; do not ask me for more information, I am unable to provide it, and just try your best to finish the task. You can learn from the following examples.",
+        "output-format": "[A] aspect [C] category [S] sentiment [O] opinion [I] implicitIndicator\n[END] is used to mark the end of the set of quadruples associated with a review and [SSEP] is used to separate individual quadruples in the set.",
+    },
+    "acos-extend": {
+        "instruction": "Identify opinion spans from input data and aspect-category-sentiment-opinion quadruples. For implicit opinions (labeled NULL), identify the span of text that best expresses the sentiment implicitly.",
+        "context": "An aspect must be a term existing in input data or null if non-existing; an opinion must be a term existing in input data; the category is one in the predefined list; the sentiment is positive, negative or neutral; do not ask me for more information, I am unable to provide it, and just try your best to finish the task. You can learn from the following examples.",
+        "output-format": "[O] opinion\n[END] is used to mark the end of the set of quadruples associated with a review and [SSEP] is used to separate individual quadruples in the set.",
+    },
+}
+
 PROMPTS_OLD = {
     "acos-extract": {
         "instruction": "Given a product review, extract the corresponding ACOS (Aspect-Category-Opinion-Sentiment) quadruples.",

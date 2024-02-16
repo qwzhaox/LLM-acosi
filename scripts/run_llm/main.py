@@ -1,9 +1,11 @@
+from dotenv import load_dotenv
 from pipeline import Pipeline
 from utils import (
     get_args,
     format_output,
     get_formatted_output_and_metadata,
-    dump_output
+    dump_output,
+    ENV_PATH
 )
 
 OPINION_IDX = 3
@@ -46,11 +48,12 @@ def get_ACOSI_annotations(acos_annotations, formatted_output):
 
 
 def main(args):
+    load_dotenv(ENV_PATH)
 
     pipeline = Pipeline(args)
     output, reviews = pipeline.get_model_output()
     
-    formatted_output, raw_predictions = format_output(output, is_old_prompt=args.is_old_prompt)
+    formatted_output, raw_predictions = format_output(output, is_old_prompt=args.is_old_prompt, is_combo_prompt=args.is_combo_prompt)
 
     if args.absa_task == "acos-extract":
         formatted_output = [[quint[:-1] for quint in quints] for quints in formatted_output]

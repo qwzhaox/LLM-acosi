@@ -64,19 +64,28 @@ if [ -f "$3" ]; then
         tokenizer=$(echo "$line" | jq -r '.tokenizer')
         task=$(echo "$line" | jq -r '.task')
         remote=$(echo "$line" | jq -r '.remote')
+        k_examples=$(echo "$line" | jq -r '.k_examples')
+        selection_method=$(echo "$line" | jq -r '.selection_method')
+
+        model_type=$(echo "$model" | cut -d'/' -f1)
+        model_name=$(echo "$model" | cut -d'/' -f2-)
 
         # Set the output file name
-        OUTPUT_FILE="model_output/${model}/${ABSA_TASK}/${DATASET}/output"
-
+        OUTPUT_FILE="model_output/${model_type}-${selection_method}-${k_examples}/${model_name}/${ABSA_TASK}/${DATASET}/output"
+        
         # Set the remote flag for the Python script
         if [ "$remote" = "true" ]; then
-            python3 "$PYTHON_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" --remote
+            python3 "$PYTHON_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" --k_examples "$k_examples" --selection_method "$selection_method" --remote --is_combo_prompt
         else
-            python3 "$PYTHON_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" 
+            python3 "$PYTHON_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" --k_examples "$k_examples" --selection_method "$selection_method" --is_combo_prompt
         fi
     done
 else
     MODEL="$3"
-    OUTPUT_FILE="model_output/gpt/${MODEL}/${ABSA_TASK}/${DATASET}/output"
-    python3 "$PYTHON_SCRIPT" --model_name "$MODEL" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length"
+    for k_examples in 5 10; do
+        for selection_method in random tf-idf; do
+            OUTPUT_FILE="model_output/gpt-${selection_method}-${k_examples}/${MODEL}/${ABSA_TASK}/${DATASET}/output"
+            python3 "$PYTHON_SCRIPT" --model_name "$MODEL" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" --k_examples "$k_examples" --selection_method "$selection_method"
+        done
+    done
 fi
