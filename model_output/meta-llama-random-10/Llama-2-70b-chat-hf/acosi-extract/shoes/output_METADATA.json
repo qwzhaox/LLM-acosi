@@ -1,0 +1,2188 @@
+[
+    {
+        "annotation": [
+            [
+                "shoe",
+                "performance#sizing/fit",
+                "negative",
+                "a bit",
+                "null"
+            ]
+        ],
+        "review": "the design is great poor color choices too bland . color choices from previous shoes was much better .",
+        "raw_predictions": "[A] shoe [C] performance#sizing/fit [S] negative [O] a bit"
+    },
+    {
+        "annotation": [
+            [
+                "NULL",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "i have a pair of new balance 928v3",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "positive",
+                "they are comfortable",
+                ""
+            ]
+        ],
+        "review": "usually wear size 10 on pr1 . 11 on pr2 . should get 1 size bigger for comfort",
+        "raw_predictions": "[A] NULL [C] contextofuse#purchase\\_context [S] positive [O] i have a pair of new balance 928v3 [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive [O] they are comfortable [I]"
+    },
+    {
+        "annotation": [
+            [
+                "new balance 990v5",
+                "performance#sizing/fit",
+                "negative",
+                "too narrow",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#durability",
+                "negative",
+                "not as durable as the previous versions",
+                "direct"
+            ],
+            [
+                "NULL",
+                "appearance#misc",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "these shoes are awesome ! ! very comfortable ! and they are true to size !",
+        "raw_predictions": "[A] new balance 990v5 [C] performance#sizing/fit [S] negative [O] too narrow [I] direct [SSEP] [A] NULL [C] performance#durability [S] negative [O] not as durable as the previous versions [I] direct [SSEP] [A] NULL [C] appearance#misc"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "contextofuse#usage frequency",
+                "positive",
+                "i wear them to school and play basketball in them",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "positive",
+                "very comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "appearance#style",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? ! other than that , it ' s a looks well constructed , would love a pair that fits like my sneakers !",
+        "raw_predictions": "[A] shoe [C] contextofuse#usage frequency [S] positive [O] i wear them to school and play basketball in them [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] NULL [C] appearance#style ["
+    },
+    {
+        "annotation": [
+            [
+                "aspect",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though .",
+        "raw_predictions": "* [A] aspect"
+    },
+    {
+        "annotation": [
+            [
+                "product",
+                "cost/value",
+                "positive",
+                "very happy",
+                "direct"
+            ],
+            [
+                "shoe",
+                "performance#fit",
+                "positive",
+                "fit is perfect",
+                "direct"
+            ],
+            [
+                "brand",
+                "general",
+                "positive",
+                "would definitely recommend this product to anyone looking for a comfortable and stylish shoe",
+                ""
+            ]
+        ],
+        "review": "this shoe is just roomier all around . not sure if i ' ll keep yet . . . it slips off a little when i walk . i have a wider foot than many and this just feel so bit . i got a half size smaller than usual and length - wise it fits good . i love the style of it in person !",
+        "raw_predictions": "[A] product [C] cost/value [S] positive [O] very happy [I] direct [SSEP] [A] shoe [C] performance#fit [S] positive [O] fit is perfect [I] direct [SSEP] [A] brand [C] general [S] positive [O] would definitely recommend this product to anyone looking for a comfortable and stylish shoe [I]"
+    },
+    {
+        "annotation": [],
+        "review": "i like the fit and cimfort . not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
+        "raw_predictions": "these are great for running. they are comfortable and the price was good. the only issue is that the sole is a bit"
+    },
+    {
+        "annotation": [],
+        "review": "i didn ' t like the shoes at all . the material felt very cheap , but the shoes were very light .",
+        "raw_predictions": "i am very disappointed with these shoes. they are not comfortable and the quality"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "shoe",
+                "performance#support/stability",
+                "positive",
+                "supportive",
+                "direct"
+            ],
+            [
+                "heel",
+                "performance#support/stability",
+                "negative",
+                "a little loose",
+                "direct"
+            ],
+            [
+                "NULL",
+                "general",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "amazing shoes , great price . i only wear adidas so , perfect as usual .",
+        "raw_predictions": "[A] shoe [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] shoe [C] performance#support/stability [S] positive [O] supportive [I] direct [SSEP] [A] heel [C] performance#support/stability [S] negative [O] a little loose [I] direct [SSEP] [A] NULL [C] general"
+    },
+    {
+        "annotation": [
+            [
+                "sho",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "beautiful kicks and will never need laces again . however , they are not true to size , oddly wide and misshapped . comfortable but huge - like boats .",
+        "raw_predictions": "[A] sho"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "appearance#form",
+                "positive",
+                "stylish",
+                "direct"
+            ]
+        ],
+        "review": "both my mother and i bought these shoes in our respectable size , and they didn ' t fit us . the opening to the show is too narrow for a foot to go in . very disappointing !",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] NULL [C] appearance#form [S] positive [O] stylish [I] direct [SSEP] [A] NULL"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#use case",
+                "positive",
+                "very happy with this purchase",
+                "direct"
+            ],
+            [
+                "NULL",
+                "appearance#form",
+                "positive",
+                "look great",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ]
+        ],
+        "review": "needed new shoes so i bought these online , reviews looked fine and i haven ' t had a problem with adidas before . tried them on and felt fine . however . after working a shift , i can confirm that these are the most uncomfortable shoes , i ' ve ever worn . i worked a 7 hour shift and by the 3rd hour , my feet were killing me . do not buy these shoes ! !",
+        "raw_predictions": "[A] shoes [C] contextofuse#use case [S] positive [O] very happy with this purchase [I] direct [SSEP] [A] NULL [C] appearance#form [S] positive [O] look great [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive [O] comfortable [I] direct [END]"
+    },
+    {
+        "annotation": [
+            [
+                "chef",
+                "contextofuse#usage frequency",
+                "neutral",
+                "they are so comfortable and easy to slip on and off",
+                "indirect"
+            ],
+            [
+                "these shoes",
+                "performance#comfort",
+                "positive",
+                "so comfortable",
+                "direct"
+            ]
+        ],
+        "review": "i love them im a caregiver so i ' m on my feet all day and they are so comfortable",
+        "raw_predictions": "[A] chef [C] contextofuse#usage frequency [S] neutral [O] they are so comfortable and easy to slip on and off [I] indirect [SSEP] [A] these shoes [C] performance#comfort [S] positive [O] so comfortable [I] direct [SSEP"
+    },
+    {
+        "annotation": [
+            [
+                "aspect",
+                "category",
+                "sentiment",
+                "opinion",
+                "implicitIndicator. The sentiment can be positive, negative, or neutral. The implicitIndicator can be direct or indirect."
+            ]
+        ],
+        "review": "i like adidas products . but , this shoe is difficult for me to put on . takes more time and effort than i would like to get in to . once its on , comfortable , a little more snug than i would like but overall , a sharp functional sneaker .",
+        "raw_predictions": "The input data is in a raw format and may contain grammatical errors, typos, or other issues. The output format is [A] aspect [C] category [S] sentiment [O] opinion [I] implicitIndicator. The sentiment can be positive, negative, or neutral. The implicitIndicator can be direct or indirect."
+    },
+    {
+        "annotation": [],
+        "review": "these are comfortable enough but they are difficult to get on . i was looking for something easy to slip on , seems the heel of the shoe is more trouble than shoestrings .",
+        "raw_predictions": "nice looking shoes. but they run small and after a couple of hours wearing them they hurt his toes. disappointed because we can't return because he wore once."
+    },
+    {
+        "annotation": [],
+        "review": "shoes is comfortable & true to size . glad i purchased one .",
+        "raw_predictions": "The input data has been preprocessed and the aspects, categories, sentiments, opinions, and implicitIndicators have been extracted using a machine learning model. The output format is the same as the input data, with the addition of the implicitIndicator column. The implicitIndicator is direct or indirect, indicating whether the aspect is explicitly mentioned in the input data (direct) or inferred from the context (indirect)."
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "i am very happy with my purchase",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "",
+                "null"
+            ]
+        ],
+        "review": "good for around the house . if your looking to exercise in these , i would recommend something else . not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
+        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] positive [O] i am very happy with my purchase [I] direct [SSEP] [A] shoes [C] performance#comfort [S] positive [O]"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "appearance#material",
+                "negative",
+                "material is not what i expected",
+                "null"
+            ]
+        ],
+        "review": "i recommend these shoes . however , the position of the velcro on the left and right shoes is different .",
+        "raw_predictions": "[A] shoe [C] appearance#material [S] negative [O] material is not what i expected"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "appearance#color",
+                "negative",
+                "not as pictured",
+                "direct"
+            ],
+            [
+                "shoe",
+                "appearance#color",
+                "negative",
+                "more of a dark brown than a light brown",
+                "direct"
+            ]
+        ],
+        "review": "this is a great shoe to wear on a regular day basis . also , if you cheer or dance this is a comfortable shoe for those type of activities !",
+        "raw_predictions": "[A] shoe [C] appearance#color [S] negative [O] not as pictured [I] direct [SSEP] [A] shoe [C] appearance#color [S] negative [O] more of a dark brown than a light brown [I] direct [END]"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#use case",
+                "positive",
+                "perfect for casual wear",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "appearance#form",
+                "positive",
+                "stylish",
+                "direct"
+            ]
+        ],
+        "review": "these shoes look and feel cheap . nothing like the originals . sizing is off , returning these .",
+        "raw_predictions": "[A] shoes [C] contextofuse#use case [S] positive [O] perfect for casual wear [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] NULL [C] appearance#form [S] positive [O] stylish [I] direct [END]"
+    },
+    {
+        "annotation": [
+            [
+                "aspect",
+                "category",
+                "sentiment",
+                "opinion",
+                "implicitIndicator"
+            ]
+        ],
+        "review": "the shoe i purchased runs small . order a size or two bigger than normal size . they also need to adjust the return and exchange date . otherwise , the shoe is a classic .",
+        "raw_predictions": "[A] aspect [C] category [S] sentiment [O] opinion [I] implicitIndicator"
+    },
+    {
+        "annotation": [],
+        "review": "gives me the support i was looking for . i have been wearing them for 30 years .",
+        "raw_predictions": "i am very disappointed with this shoe. the material is not what i expected. it's not comfortable at all."
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "love",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "misc",
+                "positive",
+                "stylish",
+                "direct"
+            ],
+            [
+                "NULL",
+                "contextofuse#",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "every thing about my order went accordingly received my order earlier than expected . i will definitely order online again",
+        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] positive [O] love [I] direct [SSEP] [A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] NULL [C] misc [S] positive [O] stylish [I] direct [SSEP] [A] NULL [C] contextofuse#"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "glue",
+                "appearance#misc",
+                "negative",
+                "not happy about that at all",
+                "indirect"
+            ],
+            [
+                "glue",
+                "performance#durability",
+                "negative",
+                "not happy about that at all",
+                "indirect"
+            ]
+        ],
+        "review": "shoes are comfortable but have glue all over . not happy about that at all .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] glue [C] appearance#misc [S] negative [O] not happy about that at all [I] indirect [SSEP] [A] glue [C] performance#durability [S] negative [O] not happy about that at all [I] indirect [END]"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "negative",
+                "not comfortable",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance#support",
+                "negative",
+                "do not provide",
+                "null"
+            ]
+        ],
+        "review": "the lie about the sizes i ordered a 9 and them shoes were so tight i gave them to my daughter . i well never never never buy them . . .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] negative [O] not comfortable [I] direct [SSEP] [A] shoes [C] performance#support [S] negative [O] do not provide"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#purchase\\_context",
+                "neutral",
+                "i am very happy with these shoes",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i ' ve always admired these so i finally got a pair . well they didn ' t fit . these are very tight and snugged fitting . if you have a fat foot or anything other than slim , then this is not the shoe for you .",
+        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] neutral [O] i am very happy with these shoes [I] direct [SSEP] [A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] shoes [C] performance"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "general",
+                "positive",
+                "great",
+                ""
+            ]
+        ],
+        "review": "i gave this rating due to receiving my order almost a month later . it was a christmas gift , so it was a late gift . initially they sent me two different sizes . i was not contacted in regards of the situation .",
+        "raw_predictions": "[A] shoes [C] general [S] positive [O] great [I"
+    },
+    {
+        "annotation": [
+            [
+                "aspect",
+                "category",
+                "sentiment",
+                "opinion",
+                "implicitIndicator."
+            ]
+        ],
+        "review": "the slides are narrower than other adidas pairs that i own . comfortable and stylish .",
+        "raw_predictions": "The input data is a list of quintuples, where each quintuple consists of an aspect (A), a category (C), a sentiment (S), an opinion (O), and an implicitIndicator (I). The output format is [A] aspect [C] category [S] sentiment [O] opinion [I] implicitIndicator."
+    },
+    {
+        "annotation": [
+            [
+                "product",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "perfect for her",
+                "direct"
+            ],
+            [
+                "NULL",
+                "appearance#form",
+                "positive",
+                "loves it",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "positive",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "while these slides are very attractive they are also rather stiff . the top of the slide does not have enough suppleness to conform to your foot .",
+        "raw_predictions": "[A] product [C] contextofuse#purchase\\_context [S] positive [O] perfect for her [I] direct [SSEP] [A] NULL [C] appearance#form [S] positive [O] loves it [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive"
+    },
+    {
+        "annotation": [
+            [
+                "NULL",
+                "contextofuse#purchase\\_context",
+                "neutral",
+                "i ended up giving these to my gf",
+                "indirect"
+            ],
+            [
+                "NULL",
+                "performance#durability",
+                "negative",
+                "they are a little short and very very narrow",
+                "direct"
+            ],
+            [
+                "adidas",
+                "general",
+                "positive",
+                "love adidas",
+                "indirect"
+            ],
+            [
+                "NULL",
+                "performance#use case applicability",
+                "negative",
+                "not sure these are winners though",
+                "direct"
+            ]
+        ],
+        "review": "i ended up giving these to my gf . they are a little short and very very narrow . i didn ' t want to return them because that ' s a pain . love adidas . not sure these are winners though .",
+        "raw_predictions": "[A] NULL [C] contextofuse#purchase\\_context [S] neutral [O] i ended up giving these to my gf [I] indirect [SSEP] [A] NULL [C] performance#durability [S] negative [O] they are a little short and very very narrow [I] direct [SSEP] [A] adidas [C] general [S] positive [O] love adidas [I] indirect [SSEP] [A] NULL [C] performance#use case applicability [S] negative [O] not sure these are winners though [I] direct [END]"
+    },
+    {
+        "annotation": [
+            [
+                "represents the aspect of the input data .",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "nice looking slides . but they ' re too narrow . go up 1 / 2 size .",
+        "raw_predictions": "* [A] represents the aspect of the input data."
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "appearance#form",
+                "positive",
+                "look great",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "positive",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i purchased the shoes based on a review that they were very comfortable and good for walking . the shoes are not easy to get on without using my fingers as a shoe horn and are somewhat comfortable for walking .",
+        "raw_predictions": "[A] shoes [C] appearance#form [S] positive [O] look great [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive ["
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "appearance#form",
+                "positive",
+                "perfect for work",
+                "direct"
+            ],
+            [
+                "sho",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i loved these shoes at first . they are super cute shoes and comfortable too . i have owned them for less than a year and there are holes near the toe already . they have mostly been worn to work where i sit or stand in one place for prolonged periods . disappointed that they are falling apart with such little use .",
+        "raw_predictions": "[A] shoes [C] appearance#form [S] positive [O] perfect for work [I] direct [SSEP] [A] sho"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "negative",
+                "not comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#quality",
+                "negative",
+                "poor quality",
+                "direct"
+            ],
+            [
+                "NULL",
+                "contextofuse#purchase\\_context",
+                "negative",
+                "very disappointed",
+                "indirect"
+            ]
+        ],
+        "review": "i love the shoe and enjoy how they on my feet . i also like the design .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] negative [O] not comfortable [I] direct [SSEP] [A] NULL [C] performance#quality [S] negative [O] poor quality [I] direct [SSEP] [A] NULL [C] contextofuse#purchase\\_context [S] negative [O] very disappointed [I] indirect [END]"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "performance#sizing/fit",
+                "negative",
+                "fit is not good",
+                "direct"
+            ],
+            [
+                "shoe",
+                "performance#quality",
+                "negative",
+                "quality is poor",
+                "direct"
+            ],
+            [
+                "NULL",
+                "contextofuse#review\\_temporality",
+                "negative",
+                "would not recommend this shoe to anyone",
+                "indirect"
+            ]
+        ],
+        "review": "this shoe fits completely different than the last pair of adidas running sneakers i purchased . they are very long and a bit too narrow . i do love the color scheme and style though .",
+        "raw_predictions": "[A] shoe [C] performance#sizing/fit [S] negative [O] fit is not good [I] direct [SSEP] [A] shoe [C] performance#quality [S] negative [O] quality is poor [I] direct [SSEP] [A] NULL [C] contextofuse#review\\_temporality [S] negative [O] would not recommend this shoe to anyone [I] indirect [END]"
+    },
+    {
+        "annotation": [
+            [
+                "aspect",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i loved these shoes at first . they are super cute shoes and comfortable too . i have owned them for less than a year and there are holes near the toe already . they have mostly been worn to work where i sit or stand in one place for prolonged periods . disappointed that they are falling apart with such little use .",
+        "raw_predictions": "* [A] aspect"
+    },
+    {
+        "annotation": [],
+        "review": "these shoes are so comfortable ! they look good with every athletic outfit and i love pairing them with leggings and a tank top or even a sweatshirt and a tennis skirt . if you ' re trying to find the perfect white athletic shoe , this is your sign ! here they are !",
+        "raw_predictions": "these shoes are perfect for working out. they are comfortable and provide great support. i love them."
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#usage frequency",
+                "positive",
+                "i have been wearing these shoes for a while now and i have to say they are very comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "positive",
+                "very comfortable",
+                ""
+            ]
+        ],
+        "review": "i love the shoes because not only are they comfortable but they are very stylish , i get tons of compliments . i also have the black and gold pair because of how comfortable they are .",
+        "raw_predictions": "[A] shoes [C] contextofuse#usage frequency [S] positive [O] i have been wearing these shoes for a while now and i have to say they are very comfortable [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive [O] very comfortable [I]"
+    },
+    {
+        "annotation": [
+            [
+                "design",
+                "appearance#general",
+                "negative",
+                "terrible",
+                "direct"
+            ],
+            [
+                "fit",
+                "performance#sizing/fit",
+                "negative",
+                "not great either",
+                "direct"
+            ],
+            [
+                "NULL",
+                "cost/value",
+                "negative",
+                "very much dislike this shoe",
+                "direct"
+            ]
+        ],
+        "review": "the design of this shoe is terrible . . the fit is not great either . very much dislike this shoe .",
+        "raw_predictions": "[A] design [C] appearance#general [S] negative [O] terrible [I] direct [SSEP] [A] fit [C] performance#sizing/fit [S] negative [O] not great either [I] direct [SSEP] [A] NULL [C] cost/value [S] negative [O] very much dislike this shoe [I] direct [END]"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "i was excited to try these shoes out",
+                "indirect"
+            ],
+            [
+                "shoes",
+                "performance#support/stability",
+                "negative",
+                "not supportive enough for my feet",
+                "direct"
+            ],
+            [
+                "NULL",
+                "cost/value",
+                "negative",
+                "did not work",
+                "null"
+            ]
+        ],
+        "review": "i was looking for something lightweight and comfortable for work these babies does the job ! ! ! after 16 hours in them my feet doesn ' t hurt at all and has great arch support !",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] i was excited to try these shoes out [I] indirect [SSEP] [A] shoes [C] performance#support/stability [S] negative [O] not supportive enough for my feet [I] direct [SSEP] [A] NULL [C] cost/value [S] negative [O] did not work"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ]
+        ],
+        "review": "color was nice size little loose but ok . but too wide from the front and the worst was the it came with the security tag . my last purchase before this one was like a size smaller so i had to give them away . i will not buy online again to much issues . . . .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A"
+    },
+    {
+        "annotation": [],
+        "review": "these are the widest shoes . i have a fairley wide foot but these shoes make my feet feel like they are swimming without water . i have a coworker who purchased these shoe as well and she wore them once and retired them bc of the width . i returned mine .",
+        "raw_predictions": "these shoes are very comfortable and have good support. i like the style and the color. however the sizing is a bit off. i normally wear a size 9 but these feel like they are a size 7"
+    },
+    {
+        "annotation": [],
+        "review": "as an adidas lover , i was super excited to purchase these . i own countless running shoes from this company and have never had an issue like i did with these . the laces are held together by elastics and after 3 wears the elastic snapped on one shoe making them unwearable . beautiful sneaker , super disappointing quality .",
+        "raw_predictions": "i have been wearing these shoes for a few days now and i have to say that they are really comfortable. they are also very light"
+    },
+    {
+        "annotation": [
+            [
+                "NULL",
+                "performance#comfort",
+                "positive",
+                "very comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#support/stability",
+                "positive",
+                "supportive",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#cushioning",
+                "positive",
+                "amazing",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#sizing/fit",
+                "positive",
+                "perfect",
+                "direct"
+            ],
+            [
+                "NULL",
+                "cost/value",
+                "positive",
+                "highly recommend them",
+                "direct"
+            ]
+        ],
+        "review": "i race with the nb fuel cell prism and love the shoe , i would like to purchase the rc elite except they do not come in wide",
+        "raw_predictions": "[A] NULL [C] performance#comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] NULL [C] performance#support/stability [S] positive [O] supportive [I] direct [SSEP] [A] NULL [C] performance#cushioning [S] positive [O] amazing [I] direct [SSEP] [A] NULL [C] performance#sizing/fit [S] positive [O] perfect [I] direct [SSEP] [A] NULL [C] cost/value [S] positive [O] highly recommend them [I] direct [END]"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "shoes",
+                "appearance#form",
+                "positive",
+                "stylish",
+                "direct"
+            ],
+            [
+                "NULL",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "bought these shoes for my wife",
+                "direct"
+            ]
+        ],
+        "review": "i ordered a 10w and it was definitely not wider than normal . it is a very cute boot but i have wide feet and it is not very comfortable for me .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] shoes [C] appearance#form [S] positive [O] stylish [I] direct [SSEP] [A] NULL [C] contextofuse#purchase\\_context [S] positive [O] bought these shoes for my wife [I] direct"
+    },
+    {
+        "annotation": [
+            [
+                "NULL",
+                "contextofuse#purchase",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i had to exchange my first order and ordered a size up . then the band of the bigger size sort of cuts into my foot . i am a size 5 women . . . i won ' t return them because i already exchanged for a bigger size but more importantly : it cut into my foot .",
+        "raw_predictions": "[A] NULL [C] contextofuse#purchase"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#usage frequency",
+                "positive",
+                "a few years now",
+                "indirect"
+            ],
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "shoes",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "do not buy , these are very hard . find a softer sandal .",
+        "raw_predictions": "[A] shoes [C] contextofuse#usage frequency [S] positive [O] a few years now [I] indirect [SSEP] [A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] shoes"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance#sizing/fit",
+                "positive",
+                "fit well",
+                "indirect"
+            ]
+        ],
+        "review": "i got the pair in my exact shoe size & these are too tight on me . i can ' t wear them all the way or my feet feel like they ' re being strangled . i don ' t understand why you ' d make these almost unwearable for the correct size",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] shoes [C] performance#sizing/fit [S] positive [O] fit well [I] indirect [SSEP] [A] NULL ["
+    },
+    {
+        "annotation": [
+            [
+                "price",
+                "cost/value",
+                "negative",
+                "too high",
+                "direct"
+            ],
+            [
+                "shoe",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ]
+        ],
+        "review": "it was a little bit uncomfortable at first , maybe because the form was too hard . a week later , the form became softer so it was good .",
+        "raw_predictions": "[A] price [C] cost/value [S] negative [O] too high [I] direct [SSEP] [A] shoe [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP"
+    },
+    {
+        "annotation": [
+            [
+                "represents the aspect of the review , which can be NULL if the review does not mention any aspect .",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "had to order a larger size than what i normally wear . shoe would be better if offered as an adjustable shoe . shoe is overpriced for quality . i bought cheaper slides in the past that were more comfortable .",
+        "raw_predictions": "* [A] represents the aspect of the review, which can be NULL if the review does not mention any aspect."
+    },
+    {
+        "annotation": [],
+        "review": "really small you should go up a size or two . good material for the top strap .",
+        "raw_predictions": "the shoe is"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#use case applicability",
+                "positive",
+                "great for running",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance#support",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "comfortable and just as described . not to big or small .",
+        "raw_predictions": "[A] shoes [C] performance#use case applicability [S] positive [O] great for running [I] direct [SSEP] [A] shoes [C] performance#support"
+    },
+    {
+        "annotation": [
+            [
+                "product",
+                "performance#easeofuse",
+                "positive",
+                "it is easy to use",
+                "direct"
+            ]
+        ],
+        "review": "i must have gotten a defective pair . sides of both slides appear to be lifting : / poorly glued together . want to return but worried about the hassle of trying to get a better pair reordered .",
+        "raw_predictions": "[A] product [C] performance#easeofuse [S] positive [O] it is easy to use [I] direct [SSEP"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#support/stability",
+                "positive",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "they are so comfortable and i love the red . anything with the trifold i ' m down !",
+        "raw_predictions": "[A] shoe [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] NULL [C] performance#support/stability [S] positive"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "very comfortable",
+                "direct"
+            ]
+        ],
+        "review": "met all my needs in a shoe . very durable and comfy . i wear them all day for work . would recommend",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] very comfortable [I] direct"
+    },
+    {
+        "annotation": [],
+        "review": "i use these shoes just slip on for practical reasons . running to the store or just for general leisure . great quality ! however , run a little small . i wear mine without socks , and that solved the size issue .",
+        "raw_predictions": "these shoes are great. they are comfortable and supportive. i have a high arch and these sho"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "negative",
+                "uncomfortable",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance#general",
+                "negative",
+                "look terrible",
+                "direct"
+            ],
+            [
+                "NULL",
+                "cost/value",
+                "negative",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "this is a really nice shoe . i bought this product for my husband and he really likes the shoe . glad i stay on this website daily\ud83d\ude0a",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] negative [O] uncomfortable [I] direct [SSEP] [A] shoes [C] performance#general [S] negative [O] look terrible [I] direct [SSEP] [A] NULL [C] cost/value [S] negative"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "appearance#form",
+                "positive",
+                "fit well",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#support/stability",
+                "positive",
+                "have a high arch",
+                "direct"
+            ]
+        ],
+        "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] NULL [C] appearance#form [S] positive [O] fit well [I] direct [SSEP] [A] NULL [C] performance#support/stability [S] positive [O] have a high arch [I] direct [SSEP] [A] NULL ["
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "general",
+                "negative",
+                "horrible",
+                "direct"
+            ],
+            [
+                "quality",
+                "performance#quality",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "my white laces on the nast collab pair have dirt spots on the laces and thread coming out from a lace , out the package like wow the laces are shot and shoe hasn ' t even been worn yet . thought i ' d give reebok a try again because of nast and they threw that out the window . not his fault it ' s reebok and their manufacturer . disappointed they ruined this shoe for me i was looking forward to his collab .",
+        "raw_predictions": "[A] shoes [C] general [S] negative [O] horrible [I] direct [SSEP] [A] quality [C] performance#quality ["
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "appearance#color",
+                "positive",
+                "blue and red",
+                "direct"
+            ],
+            [
+                "NULL",
+                "appearance#general",
+                "positive",
+                "stylish",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "contextofuse#usage frequency",
+                "",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i live in ny i walk a lot but cmon the fabric over the toes needs to be reinforced with leather or something . my toes immediately have made a hole",
+        "raw_predictions": "[A] shoes [C] appearance#color [S] positive [O] blue and red [I] direct [SSEP] [A] NULL [C] appearance#general [S] positive [O] stylish [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] NULL [C] contextofuse#usage frequency [S]"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "contextofuse#purchase\\_context",
+                "neutral",
+                "looking for a shoe that would be comfortable for walking",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#support/stability",
+                "negative",
+                "do not provide enough support for walking",
+                "direct"
+            ]
+        ],
+        "review": "i was disappointed in the color , from the pictures the top looks white but it ' s actually blue , which made a difference when i received them . i wasn ' t wanting that color scheme .",
+        "raw_predictions": "[A] shoe [C] contextofuse#purchase\\_context [S] neutral [O] looking for a shoe that would be comfortable for walking [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] NULL [C] performance#support/stability [S] negative [O] do not provide enough support for walking [I] direct ["
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "material",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i ' ve been a reebok classic woman for years . i don ' t wear any other brand of athletic shoes . they are comfortable and easy to walk in . i wear a 1 / 2 \" heel lift in my shoe for balance and these shoes have the perfect depth that keeps the heel of the shoe snug to my feet - no slipping off .",
+        "raw_predictions": "[A] shoe [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] material ["
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance#support/stability",
+                "positive",
+                "supportive",
+                "direct"
+            ],
+            [
+                "shoes",
+                "contextofuse#review\\_tem",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "too tight and uncomfortable . tried cushions , still not so good .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] shoes [C] performance#support/stability [S] positive [O] supportive [I] direct [SSEP] [A] shoes [C] contextofuse#review\\_tem"
+    },
+    {
+        "annotation": [],
+        "review": "these tennis shoes are very comfortable . i own every color they sale . i highly recommend them .",
+        "raw_predictions": "i bought these shoes because they were on sale but they are not worth the price. they are uncomfortable and the quality is not good."
+    },
+    {
+        "annotation": [],
+        "review": "i need an orthopedic lift in one shoe . reebox still manufactures a fine shoe which can still be modified .",
+        "raw_predictions": "[A"
+    },
+    {
+        "annotation": [
+            [
+                "NULL",
+                "contextofuse#purchase_context",
+                "negative",
+                "the quality of this product is not good",
+                ""
+            ]
+        ],
+        "review": "these look awful in the larger sizes . also , they are undersized , order 1 / 2 size up or go easy on yourself and don ' t order .",
+        "raw_predictions": "[A] NULL [C] contextofuse#purchase_context [S] negative [O] the quality of this product is not good [I"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "very cute and comfortable",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "still look great",
+                "direct"
+            ],
+            [
+                "NULL",
+                "cost/value",
+                "positive",
+                "",
+                "null"
+            ]
+        ],
+        "review": "it ' s a great shoes but need different size . i recommend it",
+        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] positive [O] very cute and comfortable [I] direct [SSEP] [A] shoes [C] performance#comfort [S] positive [O] still look great [I] direct [SSEP] [A] NULL [C] cost/value [S] positive [O"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "so comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#sizing/fit",
+                "positive",
+                "fit great",
+                ""
+            ]
+        ],
+        "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] so comfortable [I] direct [SSEP] [A] NULL [C] performance#sizing/fit [S] positive [O] fit great [I]"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#p",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i really like how comfortable these shoes are ! ! ! i would get them in all colors .",
+        "raw_predictions": "[A] shoes [C] contextofuse#p"
+    },
+    {
+        "annotation": [],
+        "review": "still look cool , but not what they used to be . quality has lowered significantly\u2014bummer . plus sizing has changed . i ' ve always been a good snug 7 . 5 in these and now the 7 . 5 is too small and the 8 is too big . these are just built differently now and i ' m so sad : (",
+        "raw_predictions": "The input data contains various typos, grammatical errors, and misspellings, but the expected output should still be generated based on the provided information."
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "general",
+                "positive",
+                "love the style",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "negative",
+                "a bit uncomfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "contextofuse#p",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "these sneakers look great and feel so comfy . they fit perfect .",
+        "raw_predictions": "[A] shoes [C] general [S] positive [O] love the style [I] direct [SSEP] [A] NULL [C] performance#comfort [S] negative [O] a bit uncomfortable [I] direct [SSEP] [A] NULL [C] contextofuse#p"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#grip",
+                "negative",
+                "not grippy at all",
+                "direct"
+            ]
+        ],
+        "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
+        "raw_predictions": "[A] shoes [C] performance#grip [S] negative [O] not grippy at all [I] direct [SSEP"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "",
+                "null"
+            ]
+        ],
+        "review": "i ' ve worn these shoes so many times ! they ' re true to size , comfortable and fly . perfect fall colors . the top was a bit uncomfortable without socks , but jist wear socks . : )",
+        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] positive [O]"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "performance#comfort",
+                "positive",
+                "is very comfortable",
+                "direct"
+            ],
+            [
+                "sole",
+                "appearance#shoe component",
+                "negative",
+                "slippery",
+                "indirect"
+            ],
+            [
+                "NULL",
+                "context",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "am returning them and will not be buying these cheap shoes anymore . sure don ' t make them like you use to ! ! ! !",
+        "raw_predictions": "[A] shoe [C] performance#comfort [S] positive [O] is very comfortable [I] direct [SSEP] [A] sole [C] appearance#shoe component [S] negative [O] slippery [I] indirect [SSEP] [A] NULL [C] context"
+    },
+    {
+        "annotation": [],
+        "review": "but i ' d rather have the classic in leather . i would buy many pairs .",
+        "raw_predictions": "the shoes"
+    },
+    {
+        "annotation": [
+            [
+                "represents the aspect of the review , which can be NULL if not existing .",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "every time i put them on i feel like i can run a marathon . one of the most best fitting shoes i have true to size",
+        "raw_predictions": "* [A] represents the aspect of the review, which can be NULL if not existing."
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#purchase\\_context",
+                "neutral",
+                "i bought these shoes for my son",
+                "direct"
+            ],
+            [
+                "shoes",
+                "contextofuse#use case",
+                "positive",
+                "perfect for school",
+                "indirect"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "positive",
+                "he loves them",
+                "indirect"
+            ]
+        ],
+        "review": "i really enjoy these shoes . they ' re pretty comfortable to wear all day and i really like the classic style . would recommend",
+        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] neutral [O] i bought these shoes for my son [I] direct [SSEP] [A] shoes [C] contextofuse#use case [S] positive [O] perfect for school [I] indirect [SSEP] [A] NULL [C] performance#comfort [S] positive [O] he loves them [I] indirect ["
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ]
+        ],
+        "review": "tried returning my shoes because they were too big but i wasn ' t able to because the website didn ' t let me",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP]"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "shoe",
+                "performance#durability",
+                "negative",
+                "not durable",
+                "indirect"
+            ],
+            [
+                "shoe",
+                "contextofuse#purchase\\_context",
+                "negative",
+                "already started to fall apart",
+                "null"
+            ]
+        ],
+        "review": "the size is a half size smaller then what i wear . next time i will need to order a 6 1 / 2 instead of my normal size 6\u2026",
+        "raw_predictions": "[A] shoe [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] shoe [C] performance#durability [S] negative [O] not durable [I] indirect [SSEP] [A] shoe [C] contextofuse#purchase\\_context [S] negative [O] already started to fall apart"
+    },
+    {
+        "annotation": [
+            [
+                "NULL",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "perfect for his skateboarding adventures",
+                "indirect"
+            ],
+            [
+                "skateboarding",
+                "performance#use case applicability",
+                "positive",
+                "great for skateboard",
+                "null"
+            ]
+        ],
+        "review": "it gets dirty easily but quality is good . they are comfortable and has a great design .",
+        "raw_predictions": "[A] NULL [C] contextofuse#purchase\\_context [S] positive [O] perfect for his skateboarding adventures [I] indirect [SSEP] [A] skateboarding [C] performance#use case applicability [S] positive [O] great for skateboard"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#sizing/fit",
+                "positive",
+                "i ordered these shoes in a",
+                "null"
+            ]
+        ],
+        "review": "comfortable and timeless . if you ' re looking for a super comfortable pairs of kicks . , the classic is the way to go .",
+        "raw_predictions": "[A] shoes [C] performance#sizing/fit [S] positive [O] i ordered these shoes in a"
+    },
+    {
+        "annotation": [],
+        "review": "this is my 5th pair of classics . i ' ll be buying another pair soon",
+        "raw_predictions": "i am very happy with this purchase. the shoe"
+    },
+    {
+        "annotation": [],
+        "review": "i ordered my size but for me they run small . i wore them just to see if i could break them in . . . i wouldn ' t advise that ! so give yourself some wiggle room and order the 1 / 2 .",
+        "raw_predictions": "["
+    },
+    {
+        "annotation": [],
+        "review": "way too narrow by the toes . i ' m reliably a size six and these didn ' t fit me . : (",
+        "raw_predictions": "i love the color of these shoes. they are so cute and comfortable."
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "performance#comfort",
+                "positive",
+                "very comfortable",
+                ""
+            ]
+        ],
+        "review": "i like the shoe itself and want to keep it . but it is too small and i can ' t find my order number to exchange it",
+        "raw_predictions": "[A] shoe [C] performance#comfort [S] positive [O] very comfortable [I"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#purchase\\_context",
+                "negative",
+                "i bought these shoes for my son",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#sizing/fit",
+                "negative",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "the shoes look amazing but the durability just isn ' t there . if you have long toe nails they will poke right through the cheap material along your toe .",
+        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] negative [O] i bought these shoes for my son [I] direct [SSEP] [A] NULL [C] performance#sizing/fit [S] negative"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "i have been wearing these shoes for a week now and i am in love",
+                "direct"
+            ],
+            [
+                "color",
+                "appearance#color",
+                "positive",
+                "the color is perfect",
+                "direct"
+            ]
+        ],
+        "review": "when i put this shoe on my foot it fit , it just didn ' t feel comfortable . it was too narrow , i could feel my foot falling off on the sides .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] i have been wearing these shoes for a week now and i am in love[I] direct [SSEP] [A] color [C] appearance#color [S] positive [O] the color is perfect [I] direct [SSEP] [A]"
+    },
+    {
+        "annotation": [],
+        "review": "i ' m truly a size 8 but that size here was a bit tight . i would probably size up next time .",
+        "raw_predictions": "these shoes are amazing. they are so comfortable and provide"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "i ordered these shoes in a 7 . 5 but they fit more like a 6 . 5",
+                "direct"
+            ],
+            [
+                "NULL",
+                "appearance#size",
+                "negative",
+                "they are a bit snug but not",
+                "null"
+            ]
+        ],
+        "review": "i have been wearing these for years ! i use to always get an 8 1 / 2 ( women ' s ) but i got a 9 this time and they were really tight on my feet . so i ' d recommend going up at least a half size",
+        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] positive [O] i ordered these shoes in a 7. 5 but they fit more like a 6. 5 [I] direct [SSEP] [A] NULL [C] appearance#size [S] negative [O] they are a bit snug but not"
+    },
+    {
+        "annotation": [
+            [
+                "represents the aspect of the input data .",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "the shoes are beautiful , i love them , the color is amazing , the quality is good , but i ordered the size according to the length in the sizes and are 1 cm larger than the description . i did not return them , because i worn them before realizing that they were that big and i put the box in the garbage .",
+        "raw_predictions": "* [A] represents the aspect of the input data."
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "are still comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "appearance#style",
+                "positive",
+                "stylish and look great",
+                "direct"
+            ]
+        ],
+        "review": "i love the look and style of this shoe but i think they can do a little better with the quality of it . i also had to buy a half size larger they run small .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] are still comfortable [I] direct [SSEP] [A] NULL [C] appearance#style [S] positive [O] stylish and look great [I] direct ["
+    },
+    {
+        "annotation": [],
+        "review": "i typically wear a standard to slightly narrow width . this shoe is extremely narrow , making it unwearable for me . i believe the quality is very good , just to narrow .",
+        "raw_predictions": "these are great shoes. they are comfortable and stylish."
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "",
+                "null"
+            ]
+        ],
+        "review": "shoe is shorter & narrower than stated size . order at least half size larger than usual .",
+        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] positive [O"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "appearance#form",
+                "positive",
+                "stylish",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#use case applicability",
+                "positive",
+                "work and everyday wear",
+                "direct"
+            ]
+        ],
+        "review": "shoes are comfortable and very versatile . the sizing runs small so i had to exchange for a half size up . but after wearing these shoes twice , the upper leather ripped ! i am disappointed in the quality and had high expectations .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] NULL [C] appearance#form [S] positive [O] stylish [I] direct [SSEP] [A] NULL [C] performance#use case applicability [S] positive [O] work and everyday wear [I] direct [END"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "very comfortable",
+                "direct"
+            ]
+        ],
+        "review": "shoe is shorter & narrower than stated size . order at least half size larger than usual .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] very comfortable [I] direct"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#com",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "if you have even the slightest bit of width to your foot , do not buy these . i would consider my foot slightly wide , often not even having to buy the wide version of shoes . however , the balls of my feet completely bulged out of the side of the sole on these shoes . these are the most narrow shoes i have ever tried on in my life . also , your \" print label \" button on your return site doesn ' t work .",
+        "raw_predictions": "[A] shoes [C] performance#com"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance#lightweight",
+                "positive",
+                "lightweight",
+                ""
+            ]
+        ],
+        "review": "shoes are comfortable and very versatile . the sizing runs small so i had to exchange for a half size up . but after wearing these shoes twice , the upper leather ripped ! i am disappointed in the quality and had high expectations .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] shoes [C] performance#lightweight [S] positive [O] lightweight [I"
+    },
+    {
+        "annotation": [],
+        "review": "too tight and uncomfortable . tried cushions , still not so good .",
+        "raw_predictions": "the shoe is very comfortable and has a good fit. however the material on the upper is"
+    },
+    {
+        "annotation": [],
+        "review": "i ' m truly a size 8 but that size here was a bit tight . i would probably size up next time .",
+        "raw_predictions": "i love the style and color of these sneakers. they are"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#use case",
+                "positive",
+                "i am a nurse and i am on my",
+                "null"
+            ]
+        ],
+        "review": "as someone with a kind of wide foot , i really wanted this shoe to fit because i love the look ! reebok is a go - to brand for me because their shoes often fit my wide feet well in a way other brands don ' t . however , this shoe is a lot narrower than reebok ' s other offerings , so i wouldn ' t recommend it if you have wide feet . but it is a very cute shoe so i recommend it otherwise !",
+        "raw_predictions": "[A] shoes [C] contextofuse#use case [S] positive [O] i am a nurse and i am on my"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#use case",
+                "positive",
+                "they are comfortable and supportive",
+                "indirect"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#support",
+                "positive",
+                "supportive",
+                "direct"
+            ]
+        ],
+        "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
+        "raw_predictions": "[A] shoes [C] contextofuse#use case [S] positive [O] they are comfortable and supportive [I] indirect [SSEP] [A] NULL [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] NULL [C] performance#support [S] positive [O] supportive [I] direct [SSEP] [A] NULL ["
+    },
+    {
+        "annotation": [],
+        "review": "there were a christmas gift to someone . she loves the color ( red ) . says they fit very nicely . she ' s on her feet for long stretches for work . said there is a bit of break - in period , probably because how different the reds are to the others . she wants more now . of course she does .",
+        "raw_predictions": "these shoes are terrible. they are way too wide"
+    },
+    {
+        "annotation": [
+            [
+                "represents the aspect of the review",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "great shoes . bought this for my uncle . he love them .",
+        "raw_predictions": "* [A] represents the aspect of the review"
+    },
+    {
+        "annotation": [
+            [
+                "reeboks",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "i ordered them thinking it was ok not to try them on first because they were reeboks",
+                "indirect"
+            ],
+            [
+                "NULL",
+                "performance#fit",
+                "negative",
+                "i was wrong",
+                "direct"
+            ],
+            [
+                "NULL",
+                "general",
+                "positive",
+                "i do love the brand",
+                "direct"
+            ]
+        ],
+        "review": "i ordered them thinking it was ok not to try them on first because they were reeboks , i was wrong . i am going to exchange them for another pair though because they are reeboks ! i do love the brand .",
+        "raw_predictions": "[A] reeboks [C] contextofuse#purchase\\_context [S] positive [O] i ordered them thinking it was ok not to try them on first because they were reeboks [I] indirect [SSEP] [A] NULL [C] performance#fit [S] negative [O] i was wrong [I] direct [SSEP] [A] NULL [C] general [S] positive [O] i do love the brand [I] direct [END]"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "really comfortable",
+                "direct"
+            ],
+            [
+                "style",
+                "appearance#style",
+                "positive",
+                "stylish",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#use case",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "shoe is shorter & narrower than stated size . order at least half size larger than usual .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] really comfortable [I] direct [SSEP] [A] style [C] appearance#style [S] positive [O] stylish [I] direct [SSEP] [A] NULL [C] performance#use case"
+    },
+    {
+        "annotation": [],
+        "review": "i honestly wanted super pleased with the overall quality of the shoe . the sound it makes on the floor is odd . very noisy . bought these + 1 extra for someone , and these could of been engineer a little better",
+        "raw_predictions": "The input data contains examples of quintuples, where each quintuple consists of an aspect, a category, a sentiment, an opinion, and an implicit indicator. The task is to extract these quintuples from the input data and output them in the format specified in the question."
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "shoes",
+                "contextofuse#work",
+                "positive",
+                "perfect for work",
+                "indirect"
+            ],
+            [
+                "NULL",
+                "cost/value",
+                "positive",
+                "love these shoes",
+                "direct"
+            ]
+        ],
+        "review": "i have always liked this style but when you said they where leather , i think you should say they are leather and manmade .",
+        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] shoes [C] contextofuse#work [S] positive [O] perfect for work [I] indirect [SSEP] [A] NULL [C] cost/value [S] positive [O] love these shoes [I] direct [END]"
+    },
+    {
+        "annotation": [],
+        "review": "you want go wrong with this shoe try it and u want be disappointed",
+        "raw_predictions": "The above examples are for illustration purposes only and may not be actual reviews."
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "going to be some of my most worn shoes of the spring and summer",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#sizing/fit",
+                "negative",
+                "a little small at firet because they were a bit tighter width wise",
+                "indirect"
+            ],
+            [
+                "NULL",
+                "appearance#form",
+                "positive",
+                "so cute and go with so much",
+                "direct"
+            ],
+            [
+                "NULL",
+                "performance#comfort",
+                "negative",
+                "if you have wide feet i probably would not recommend you buy these",
+                "indirect"
+            ]
+        ],
+        "review": "these are definitely going to be some of my most worn shoes of the spring and summer . they ' re so cute and go with so much . i don ' t usually have a problem with width with shoes , but i thought this pair was a little small at firet because they were a bit tighter width wise . so if you have wide feet i probably would not recommend you buy these .",
+        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] positive [O] going to be some of my most worn shoes of the spring and summer [I] direct [SSEP] [A] NULL [C] performance#sizing/fit [S] negative [O] a little small at firet because they were a bit tighter width wise [I] indirect [SSEP] [A] NULL [C] appearance#form [S] positive [O] so cute and go with so much [I] direct [SSEP] [A] NULL [C] performance#comfort [S] negative [O] if you have wide feet i probably would not recommend you buy these [I] indirect [END]"
+    },
+    {
+        "annotation": [],
+        "review": "i have probably had thirty or forty pairs of this model of reebok through the years . this pair isn ' t comfortable , so i have given up wearing them . i ' m wearing an old pair .",
+        "raw_predictions": "i have been wearing these shoes for a few days now and i must"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#comfort",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i think i need to go up 1 / 2 a size because it ' s pinching my toes just a bit , or i really need a wide . but with that in mind it really made my feet happy . love the leather upper for a clean and durable look . going to keep these and try a different model",
+        "raw_predictions": "[A] shoes [C] performance#comfort ["
+    },
+    {
+        "annotation": [],
+        "review": "i ' ve been wanting them again for a long time . i used to use them at high school and i saw them as a reminder of that time , but now that i got them i didn ' t remember how comfortable they were ! ! i just love them ! !",
+        "raw_predictions": "these shoes are really comfortable but the sizing is way off. i ordered a 10 and"
+    },
+    {
+        "annotation": [
+            [
+                "represents the aspect of the input data .",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "the shoe fits a bit small and is pretty stiff for having such a large wedge bottom . i love the colors but honestly it looks and feels a little cheap .",
+        "raw_predictions": "* [A] represents the aspect of the input data."
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#sizing/fit",
+                "negative",
+                "did not fit me well",
+                "direct"
+            ],
+            [
+                "NULL",
+                "contextofuse",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i love the look and style of this shoe but i think they can do a little better with the quality of it . i also had to buy a half size larger they run small .",
+        "raw_predictions": "[A] shoes [C] performance#sizing/fit [S] negative [O] did not fit me well [I] direct [SSEP] [A] NULL [C] contextofuse"
+    },
+    {
+        "annotation": [],
+        "review": "great looking shoes , but if you have wider feet do not buy . they burned my toes the entire time walking in them . i had to send back for a refund after wearing . they were unbearable .",
+        "raw_predictions": "Some of the input data contains typos, grammatical errors, or colloquial language, but the expected output should still be produced based on the given input."
+    },
+    {
+        "annotation": [
+            [
+                "6 . 5",
+                "null",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "the size is a half size smaller then what i wear . next time i will need to order a 6 1 / 2 instead of my normal size 6\u2026",
+        "raw_predictions": "[A] 6. 5"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "contextofuse#purchase\\_context",
+                "neutral",
+                "bought this shoe for my son",
+                "direct"
+            ],
+            [
+                "shoe",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "shoe",
+                "performance#support/stability",
+                "positive",
+                "good support",
+                "direct"
+            ]
+        ],
+        "review": "i purchased these shoes bacon they were exactly like my last pair of reebok classics i bought but they are slightly different the stitching is different that sound feel is different and they just didn ' t feel like the classic running shoes that i had before so i sent them back and order me a pair a reebok classic running instead of these reeboks",
+        "raw_predictions": "[A] shoe [C] contextofuse#purchase\\_context [S] neutral [O] bought this shoe for my son [I] direct [SSEP] [A] shoe [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] shoe [C] performance#support/stability [S] positive [O] good support [I] direct [END]"
+    },
+    {
+        "annotation": [
+            [
+                "cushioning",
+                "performance#comfort",
+                "negative",
+                "poor",
+                "direct"
+            ],
+            [
+                "fit",
+                "performance#sizing/fit",
+                "negative",
+                "not good",
+                "direct"
+            ],
+            [
+                "NULL",
+                "context",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "this is a classic sneaker a must have for the collection . there is a wide array of colors to pick from .",
+        "raw_predictions": "[A] cushioning [C] performance#comfort [S] negative [O] poor [I] direct [SSEP] [A] fit [C] performance#sizing/fit [S] negative [O] not good [I] direct [SSEP] [A] NULL [C] context"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "performance#fit",
+                "positive",
+                "fit perfectly",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance#durability",
+                "negative",
+                "material is not durable",
+                "direct"
+            ],
+            [
+                "shoes",
+                "performance#grippy",
+                "negative",
+                "sole is not very grippy",
+                ""
+            ]
+        ],
+        "review": "only 1 pair of wide width shoe in the entire store . i returned my mail order to closest finish line store . i will never order again .",
+        "raw_predictions": "[A] shoes [C] performance#fit [S] positive [O] fit perfectly [I] direct [SSEP] [A] shoes [C] performance#durability [S] negative [O] material is not durable [I] direct [SSEP] [A] shoes [C] performance#grippy [S] negative [O] sole is not very grippy [I"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "appearance#general",
+                "positive",
+                "love the style of this shoe",
+                "direct"
+            ],
+            [
+                "shoe",
+                "performance#sizing/fit",
+                "negative",
+                "size is a little big",
+                "indirect"
+            ],
+            [
+                "NULL",
+                "cost/value",
+                "neutral",
+                "a little big",
+                "indirect"
+            ]
+        ],
+        "review": "love this shoe . it ' s one of my all - time favorite classic shoes .",
+        "raw_predictions": "[A] shoe [C] appearance#general [S] positive [O] love the style of this shoe [I] direct [SSEP] [A] shoe [C] performance#sizing/fit [S] negative [O] size is a little big [I] indirect [SSEP] [A] NULL [C] cost/value [S] neutral [O] a little big [I] indirect [END]"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "performance",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "it ' s a great shoes but need different size . i recommend it",
+        "raw_predictions": "[A] shoe [C] performance"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "performance#comfort",
+                "positive",
+                "",
+                "null"
+            ]
+        ],
+        "review": "only 1 pair of wide width shoe in the entire store . i returned my mail order to closest finish line store . i will never order again .",
+        "raw_predictions": "[A] shoe [C] performance#comfort [S] positive [O]"
+    },
+    {
+        "annotation": [
+            [
+                "shoe",
+                "cost/value",
+                "negative",
+                "a bit expensive",
+                "direct"
+            ],
+            [
+                "NULL",
+                "contextofuse#purchase",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "i bought a pair of the red - all leather variety and they are my favs to date . still wear them all the time after over a year of almost daily use .",
+        "raw_predictions": "[A] shoe [C] cost/value [S] negative [O] a bit expensive [I] direct [SSEP] [A] NULL [C] contextofuse#purchase"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextofuse#purchase\\_context",
+                "positive",
+                "comfortable and easy to slip on and off",
+                "direct"
+            ],
+            [
+                "comfortable",
+                "performance#comfort",
+                "positive",
+                "comfortable",
+                "direct"
+            ],
+            [
+                "easy to slip on and off",
+                "performance#sizing/fit",
+                "positive",
+                "easy to slip on and off",
+                "direct"
+            ],
+            [
+                "NULL",
+                "contextofuse#usage frequency",
+                "neutral",
+                "bought these shoes for work",
+                "indirect"
+            ],
+            [
+                "NULL",
+                "contextofuse#review\\_temporality",
+                "neutral",
+                "bought these shoes for work",
+                "indirect"
+            ]
+        ],
+        "review": "comfy sneaker . would order a half size bigger . already purchased another pair !",
+        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] positive [O] comfortable and easy to slip on and off [I] direct [SSEP] [A] comfortable [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] easy to slip on and off [C] performance#sizing/fit [S] positive [O] easy to slip on and off [I] direct [SSEP] [A] NULL [C] contextofuse#usage frequency [S] neutral [O] bought these shoes for work [I] indirect [SSEP] [A] NULL [C] contextofuse#review\\_temporality [S] neutral [O] bought these shoes for work [I] indirect [END"
+    },
+    {
+        "annotation": [
+            [
+                "shoes",
+                "contextof",
+                "null",
+                "null",
+                "null"
+            ]
+        ],
+        "review": "these kicks are extremely comfortable and can be worn with a variety of styles . these are my new favorites .",
+        "raw_predictions": "[A] shoes [C] contextof"
+    }
+]
