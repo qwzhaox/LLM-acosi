@@ -119,6 +119,7 @@ def old_format_prompt(instruction, context, output_format):
 def get_old_formatted_annotations(annotations):
     annots = []
     for annotation in annotations:
+        annotation[CATEGORY_IDX] = annotation[CATEGORY_IDX].replace('#', ' ').replace('\\_', '_').lower()
         if len(annotation) == 4:
             # new_annot_str = f"(Aspect: {annotation[ASPECT_IDX]}, Category: {annotation[CATEGORY_IDX]}, Sentiment: {annotation[SENTIMENT_IDX]}, Opinion: {annotation[OPINION_IDX]})"
             new_annot_str = f"[A] {annotation[ASPECT_IDX]} [C] {annotation[CATEGORY_IDX]} [S] {annotation[SENTIMENT_IDX]} [O] {annotation[OPINION_IDX]}"

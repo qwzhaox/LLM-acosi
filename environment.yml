@@ -98,7 +98,6 @@ dependencies:
       - threadpoolctl==3.2.0
       - tiktoken==0.6.0
       - tokenizers==0.15.2
-      - torch==2.2.0+cu118
       - tqdm==4.66.2
       - transformers==4.37.2
       - triton==2.2.0
@@ -106,4 +105,6 @@ dependencies:
       - typing-inspect==0.9.0
       - urllib3==2.2.0
       - yarl==1.9.4
+      - --extra-index-url https://download.pytorch.org/whl/cu118
+      - torch==2.2.0+cu118
 prefix: /home/qwzhao/.conda/envs/llm_acosi
