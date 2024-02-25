@@ -221,7 +221,7 @@ class Pipeline:
                 review = f"{review}\nACOS quadruples: {annotations}"
                 annotations = eval(response_train_dataset[idx].split("####")[1])
                 if self.is_combo_prompt:
-                    response = get_old_formatted_annotations(annotations)
+                    response = get_old_formatted_annotations(annotations, opinion_span_only=True)
                 else:
                     response = get_xu_etal_formatted_annotations(annotations, opinion_span_only=True)
             else:

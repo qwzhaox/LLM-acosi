@@ -24,7 +24,7 @@
             ]
         ],
         "review": "the design is great poor color choices too bland . color choices from previous shoes was much better .",
-        "raw_predictions": "i love these shoes!! i have them in 3 colors. the only thing is that the laces are very long. i have to cut them short. other than that they are the best shoes i have ever had."
+        "raw_predictions": "[O] it stated the shoe had a rubber sole [SSEP] [O] it stated the shoe had a rubber sole [SSEP] [O] it stated the shoe had a rubber sole [SSEP] [O] it stated the shoe had a rubber sole [SSEP] [O] it stated the shoe had a rubber sole [SSEP] [O] it stated the shoe had a rubber sole [SSEP] [O] it stated the shoe had a rubber sole [SSEP] [O] it stated the shoe had a rubber sole [SSEP] [O] it stated the shoe had a rubber sole [SSEP] [O] it stated the shoe had a rubber sole [SSEP]"
     },
     {
         "annotation": [
@@ -44,7 +44,7 @@
             ]
         ],
         "review": "usually wear size 10 on pr1 . 11 on pr2 . should get 1 size bigger for comfort",
-        "raw_predictions": "[A] pr1 [C] performance#sizing/fit [S"
+        "raw_predictions": "i ordered a 10 and they are too big. i will be returning them and ordering the 9.5."
     },
     {
         "annotation": [
@@ -71,7 +71,7 @@
             ]
         ],
         "review": "these shoes are awesome ! ! very comfortable ! and they are true to size !",
-        "raw_predictions": "i bought these shoes in a mans last year and they fit great but i"
+        "raw_predictions": "i bought these for my husband and he loves them. i bought these for my husband and he loves them. i bought these for my husband and he loves them."
     },
     {
         "annotation": [
@@ -119,7 +119,7 @@
             ]
         ],
         "review": "i ordered a 9 1 / 2 4e , same size as my 623 and 608 sneakers , which fit perfectly . i couldn ' t get my foot into it ! why can ' t you make a golf shoe from the same last as your sneakers ? ! other than that , it ' s a looks well constructed , would love a pair that fits like my sneakers !",
-        "raw_predictions": "[A] 11 shoes [C] performance#sizing/fit [S] positive [O] fit great [I] direct [SSEP] [A] NULL [C] contextofuse#purchase\\_context [S] positive [O] i'm 15, 5'11 '', 160 lbs [I] direct [SSEP] [A] NULL [C] appearance#form [S] positive [O] NULL [SSEP] [A] NULL [C] cost/value [S] positive [O] they are"
+        "raw_predictions": "they were a little tight on my feet, but i've never had a problem with a pair of nike shoes fitting before. i've worn them for 3 days now and they are starting to stretch out a little bit."
     },
     {
         "annotation": [
@@ -146,7 +146,7 @@
             ]
         ],
         "review": "i usually wear a 9 in sneakers and due to reviews ordered an 8 . 5 but seriously could have worn a 7 . 5 in these . ultimately sent these back . cute though .",
-        "raw_predictions": "i love the fit and the color. they are a little hard to get on but i'm a size 11. i'm going to buy a second pair."
+        "raw_predictions": "i bought this shoe for my 11 year old son. he is a very active child. he wears a size 10 in most shoes. he wears a size 11 in some shoes. he wears a size 12 in some shoes. he wears a size 13 in some shoes. i bought this shoe for him in a size 11. he wears it comfortably. it fits his foot well."
     },
     {
         "annotation": [
@@ -187,7 +187,7 @@
             ]
         ],
         "review": "this shoe is just roomier all around . not sure if i ' ll keep yet . . . it slips off a little when i walk . i have a wider foot than many and this just feel so bit . i got a half size smaller than usual and length - wise it fits good . i love the style of it in person !",
-        "raw_predictions": "they were a little narrow. but i have a narrow foot."
+        "raw_predictions": "i bought these for my son. they are a little big but i will be able to stretch them out."
     },
     {
         "annotation": [
@@ -228,7 +228,7 @@
             ]
         ],
         "review": "i like the fit and cimfort . not 100 % satisfied with the style , ithe fabric sits loose across the top of the foot",
-        "raw_predictions": "[A] shoes [C] performance#sizing/fit [S] positive [O] i bought the shoes for my 12 year old son [I] direct [SSEP] [A] shoes [C] performance#sizing/fit [S] positive [O] he is a big kid and these are his first pair of nike [I] direct [SSEP] [A] NULL [C] contextofuse#use case [S] positive [O] he is a big kid and these are his first pair of nike [I] direct ["
+        "raw_predictions": "[O] i love the fit and comfort of these shoes [SSEP] ["
     },
     {
         "annotation": [
@@ -250,12 +250,12 @@
                 "NULL",
                 "performance#general",
                 "positive",
-                "null",
+                "NULL",
                 "indirect"
             ]
         ],
         "review": "i didn ' t like the shoes at all . the material felt very cheap , but the shoes were very light .",
-        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] most comfortable shoes i have ever worn [I] direct [SSEP] [A] NULL [C] contextofuse#purchase\\_context [S] positive [O] these are the most comfortable shoes i have ever worn [I] direct [SSEP] [A] NULL [C] performance#comfort"
+        "raw_predictions": "the shoes are very light weight and comfortable. they are also very stylish."
     },
     {
         "annotation": [
@@ -282,7 +282,7 @@
             ]
         ],
         "review": "amazing shoes , great price . i only wear adidas so , perfect as usual .",
-        "raw_predictions": "it's a great shoe! it's a great shoe! it's a great shoe!"
+        "raw_predictions": "[O] got these for my husband [SSEP] [O] most comfortable he has ever had [SSEP] [O] loves them [SSEP] [O] very picky with his shoes [SSEP] [O] the most comfortable"
     },
     {
         "annotation": [
@@ -330,7 +330,7 @@
             ]
         ],
         "review": "beautiful kicks and will never need laces again . however , they are not true to size , oddly wide and misshapped . comfortable but huge - like boats .",
-        "raw_predictions": "the shoe was very comfortable and lightweight. i bought"
+        "raw_predictions": "i like the look of the shoes. i ordered the same size i wear in other brands. i wear a 10 1 / 2 wide. i am a size 12. the shoes are 10 1 / 2 wide but they are way too small. i had to return them."
     },
     {
         "annotation": [
@@ -364,7 +364,7 @@
             ]
         ],
         "review": "both my mother and i bought these shoes in our respectable size , and they didn ' t fit us . the opening to the show is too narrow for a foot to go in . very disappointing !",
-        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O"
+        "raw_predictions": "i have a wide foot and i bought the 91 / 2. they fit great!"
     },
     {
         "annotation": [
@@ -426,7 +426,7 @@
             ]
         ],
         "review": "needed new shoes so i bought these online , reviews looked fine and i haven ' t had a problem with adidas before . tried them on and felt fine . however . after working a shift , i can confirm that these are the most uncomfortable shoes , i ' ve ever worn . i worked a 7 hour shift and by the 3rd hour , my feet were killing me . do not buy these shoes ! !",
-        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] positive [O"
+        "raw_predictions": "[O] i'm a 42 in nike, but a 4"
     },
     {
         "annotation": [
@@ -453,7 +453,7 @@
             ]
         ],
         "review": "i love them im a caregiver so i ' m on my feet all day and they are so comfortable",
-        "raw_predictions": "[A] NULL [C] general [S] positive [O] i love them [I] direct [SSEP] [A] NULL [C] contextofuse#use case [S] neutral [O] im a caregiver so i'm on my feet all day [I] direct [SSEP"
+        "raw_predictions": "i love them"
     },
     {
         "annotation": [
@@ -508,7 +508,7 @@
             ]
         ],
         "review": "i like adidas products . but , this shoe is difficult for me to put on . takes more time and effort than i would like to get in to . once its on , comfortable , a little more snug than i would like but overall , a sharp functional sneaker .",
-        "raw_predictions": "[A] shoe [C] performance#sizing/"
+        "raw_predictions": "i bought these for my son and he loves them."
     },
     {
         "annotation": [
@@ -542,7 +542,7 @@
             ]
         ],
         "review": "these are comfortable enough but they are difficult to get on . i was looking for something easy to slip on , seems the heel of the shoe is more trouble than shoestrings .",
-        "raw_predictions": "[A] NULL [C] performance#comfort [S] positive [O] most comfortable [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive [O] ever owned [I] direct [SSEP] [A] NULL [C] performance#comfort"
+        "raw_predictions": "it is not leather! i wore leather ones for years and synthetic are hot, and unconfortable!!!!!!!"
     },
     {
         "annotation": [
@@ -569,7 +569,7 @@
             ]
         ],
         "review": "shoes is comfortable & true to size . glad i purchased one .",
-        "raw_predictions": "[A] shoe [C] performance#sizing/fit [S] positive [O] perfect [I] direct [SSEP] [A] 9.5 [C] performance#sizing/fit [S] positive [O] the 9.5 was perfect [I] direct [SSEP] [A] 9 [C] performance#sizing/fit [S] neutral [O] the 9.5 was perfect [I] direct [SSEP] [A] vans [C] contextofuse#purchase\\_context [S] neutral [O] i wear a size 10 in vans [I] direct ["
+        "raw_predictions": "i got these for my son for his birthday. they are very comfortable and he loves them."
     },
     {
         "annotation": [
@@ -631,7 +631,7 @@
             ]
         ],
         "review": "good for around the house . if your looking to exercise in these , i would recommend something else . not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
-        "raw_predictions": "[A] NULL [C] cost/value [S] negative [O] i'm very disappointed with this"
+        "raw_predictions": "i have been wearing 847v2 and 4847v3 shoes for quite a few years. i contacted new balance before i ordered the 847v4. i was told they just changed the materials and they would fit the same. i was disappointed in the fit."
     },
     {
         "annotation": [
@@ -651,7 +651,7 @@
             ]
         ],
         "review": "i recommend these shoes . however , the position of the velcro on the left and right shoes is different .",
-        "raw_predictions": "[A] shoes [C] cost/value [S] positive [O] i bought these shoes for my son [I] indirect [SSEP] [A] NULL ["
+        "raw_predictions": "the tongue is very thick and uncomfortable."
     },
     {
         "annotation": [
@@ -671,7 +671,7 @@
             ]
         ],
         "review": "this is a great shoe to wear on a regular day basis . also , if you cheer or dance this is a comfortable shoe for those type of activities !",
-        "raw_predictions": "[A] shoe [C] performance#comfort [S] positive [O] comfortable and i'm a fan of the style [I] direct [SSEP] [A] shoe [C] performance#sizing/fit [S] negative [O] i have a wide foot, and the shoe is narrow [I] direct [SSEP] [A] shoe [C] performance#sizing/fit [S] negative [O] i '"
+        "raw_predictions": "i have been wearing these shoes for 2 years and they are still in good condition. they are very comfortable and i love the color!"
     },
     {
         "annotation": [
@@ -719,7 +719,7 @@
             ]
         ],
         "review": "these shoes look and feel cheap . nothing like the originals . sizing is off , returning these .",
-        "raw_predictions": "i bought these for my wife. she loves them. they're comfortable and look great."
+        "raw_predictions": "i love these shoes. they are very comfortable. i'm a size 10 and they fit perfectly."
     },
     {
         "annotation": [
@@ -760,7 +760,7 @@
             ]
         ],
         "review": "the shoe i purchased runs small . order a size or two bigger than normal size . they also need to adjust the return and exchange date . otherwise , the shoe is a classic .",
-        "raw_predictions": "[A] shoe [C] performance#use case applicability [S] positive [O] i love the shoe [I] direct [SSEP] [A] heel [C] appearance#shoe component [S] positive [O] a little high [I] direct [SSEP] [A] heel [C] appearance#shoe component [S] positive [O] a little high [I] direct [SSEP] [A] NULL [C] performance#use case applicability [S]"
+        "raw_predictions": "[O"
     },
     {
         "annotation": [
@@ -780,7 +780,7 @@
             ]
         ],
         "review": "gives me the support i was looking for . i have been wearing them for 30 years .",
-        "raw_predictions": "these are very comfortable. i love them."
+        "raw_predictions": "they are very comfortable"
     },
     {
         "annotation": [
@@ -800,7 +800,7 @@
             ]
         ],
         "review": "every thing about my order went accordingly received my order earlier than expected . i will definitely order online again",
-        "raw_predictions": "[A] shoes [C] performance#sizing/fit [S] positive [O] i"
+        "raw_predictions": "[O] i have only worn them a few times, but they are very comfortable and i love the color [SSEP] [O] they are a little bit big [SSEP] [O"
     },
     {
         "annotation": [
@@ -827,7 +827,7 @@
             ]
         ],
         "review": "shoes are comfortable but have glue all over . not happy about that at all .",
-        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C] appearance#material [S] positive [O] very stylish [I] direct [SSEP] [A] shoes [C] performance#use case [S] positive [O] look great with jeans or shorts [I] direct [SSEP] [A] shoes [C] performance#use case applicability [S] positive [O] look great with jeans or shorts [I] direct [SSEP] [A] shoes [C] performance#use case applicability [S] negative [O] not very durable [I] direct [SSEP] [A] NULL [C] appearance#color [S] positive [O] NULL"
+        "raw_predictions": "the shoes are comfortable, but they run small. i am a size 11 and i got a 12. i am a woman and i wear a 12. i am a 12. i ordered the 12 and they are too small."
     },
     {
         "annotation": [
@@ -861,7 +861,7 @@
             ]
         ],
         "review": "the lie about the sizes i ordered a 9 and them shoes were so tight i gave them to my daughter . i well never never never buy them . . .",
-        "raw_predictions": "i love these shoes. they are light weight and very comfortable. i have been wearing them for a couple of weeks and they are still comfortable."
+        "raw_predictions": "i bought these for my husband and he loves them. they are comfortable and stylish. he said they are true to size."
     },
     {
         "annotation": [
@@ -895,7 +895,7 @@
             ]
         ],
         "review": "i ' ve always admired these so i finally got a pair . well they didn ' t fit . these are very tight and snugged fitting . if you have a fat foot or anything other than slim , then this is not the shoe for you .",
-        "raw_predictions": "i bought these shoes to go with a pair of jeans. they are very tight and uncomfortable. i'll be returning them."
+        "raw_predictions": "i love the color of these shoes. they are comfortable and durable."
     },
     {
         "annotation": [
@@ -929,7 +929,7 @@
             ]
         ],
         "review": "i gave this rating due to receiving my order almost a month later . it was a christmas gift , so it was a late gift . initially they sent me two different sizes . i was not contacted in regards of the situation .",
-        "raw_predictions": "the shoes are very comfortable and stylish. they are true to size."
+        "raw_predictions": "[O] very comfortable"
     },
     {
         "annotation": [
@@ -956,7 +956,7 @@
             ]
         ],
         "review": "the slides are narrower than other adidas pairs that i own . comfortable and stylish .",
-        "raw_predictions": "i'm a size 11. these are a 12 and fit perfectly. they are very comfortable and i love the look."
+        "raw_predictions": "i got these in size 7 and they fit perfectly. i love the look and feel of these slides."
     },
     {
         "annotation": [
@@ -1004,7 +1004,7 @@
             ]
         ],
         "review": "while these slides are very attractive they are also rather stiff . the top of the slide does not have enough suppleness to conform to your foot .",
-        "raw_predictions": "these are great for work and everyday wear. they are comfortable and"
+        "raw_predictions": "these are very comfortable shoes. they fit well and are very light weight."
     },
     {
         "annotation": [
@@ -1045,7 +1045,7 @@
             ]
         ],
         "review": "i ended up giving these to my gf . they are a little short and very very narrow . i didn ' t want to return them because that ' s a pain . love adidas . not sure these are winners though .",
-        "raw_predictions": "i bought these for my husband and he loved them. they are very comfortable and he has worn them every day since he got them."
+        "raw_predictions": "[O] i like this shoe [SSEP] [O] the fit is a little small [SSEP] [O] i wear a 12.5 in most shoes, but this one is a 13 [END]"
     },
     {
         "annotation": [
@@ -1072,7 +1072,7 @@
             ]
         ],
         "review": "nice looking slides . but they ' re too narrow . go up 1 / 2 size .",
-        "raw_predictions": "they are very comfortable and look nice. the material is a little stiff and i don't like the color."
+        "raw_predictions": "i wear"
     },
     {
         "annotation": [
@@ -1113,7 +1113,7 @@
             ]
         ],
         "review": "i purchased the shoes based on a review that they were very comfortable and good for walking . the shoes are not easy to get on without using my fingers as a shoe horn and are somewhat comfortable for walking .",
-        "raw_predictions": "i bought them for my 14 year old daughter. she loves them and"
+        "raw_predictions": "i bought these shoes for my grandd"
     },
     {
         "annotation": [
@@ -1168,7 +1168,7 @@
             ]
         ],
         "review": "i loved these shoes at first . they are super cute shoes and comfortable too . i have owned them for less than a year and there are holes near the toe already . they have mostly been worn to work where i sit or stand in one place for prolonged periods . disappointed that they are falling apart with such little use .",
-        "raw_predictions": "these shoes are super cute and super comfortable! i have been wearing them non stop!"
+        "raw_predictions": "i bought these shoes for my son. he loves them. he is 11 years old and wears a size 8. the shoes are true to size. they are very comfortable."
     },
     {
         "annotation": [
@@ -1195,7 +1195,7 @@
             ]
         ],
         "review": "i love the shoe and enjoy how they on my feet . i also like the design .",
-        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] neutral [O] i bought these shoes about 2 years ago [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive [O] happy with the fit and comfort [I] direct [SSEP] [A] NULL [C] appearance#color [S] negative [O] a year or so [I] direct [SSEP] [A] NULL [C] performance#sizing/fit [S] negative [O] started to get a little loose [I] direct [SSEP] [A] NULL [C] performance#comfort [S] negative [O] tried to stretch them out but it"
+        "raw_predictions": "the shoes fit great. the only thing is that the tongue is not wide enough and it rubs against my big toe. i also ordered a 10 1 / 2 because i am between sizes. i should have ordered a size 11 because the shoes seem to run slightly smaller than the zig kinecta shoes i ordered in the same size. i usually get men so the"
     },
     {
         "annotation": [
@@ -1229,7 +1229,7 @@
             ]
         ],
         "review": "this shoe fits completely different than the last pair of adidas running sneakers i purchased . they are very long and a bit too narrow . i do love the color scheme and style though .",
-        "raw_predictions": "the shoe is very comfortable and fits perfectly. the color is really nice and the laces are very nice. the shoe is very stylish and is a very good price for the quality."
+        "raw_predictions": "i bought these for my son. they are very comfortable and he loves them. they are very true to size."
     },
     {
         "annotation": [
@@ -1291,7 +1291,7 @@
             ]
         ],
         "review": "i loved these shoes at first . they are super cute shoes and comfortable too . i have owned them for less than a year and there are holes near the toe already . they have mostly been worn to work where i sit or stand in one place for prolonged periods . disappointed that they are falling apart with such little use .",
-        "raw_predictions": "[A] NULL [C] appearance#general [S] positive [O] NULL [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive [O] super comfortable [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive [O] cute! [I] direct [SSEP] [A] NULL [C] contextofuse#review\\_temporality [S] positive [O] i love them [I] direct [SSEP] [A"
+        "raw_predictions": "i'm a size 10 and the 10.5 is a little snug. i have to wear thick socks to break them in. i have worn them several times and they are very comfortable. they are great for work."
     },
     {
         "annotation": [
@@ -1339,7 +1339,7 @@
             ]
         ],
         "review": "these shoes are so comfortable ! they look good with every athletic outfit and i love pairing them with leggings and a tank top or even a sweatshirt and a tennis skirt . if you ' re trying to find the perfect white athletic shoe , this is your sign ! here they are !",
-        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] NULL [C] appearance#general [S] positive [O] very comfortable [I] direct [SSEP] [A] NULL [C] contextofuse#use case [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C] appearance#general [S] positive [O] very comfortable [I] direct [SSE"
+        "raw_predictions": "[O] so comfortable ["
     },
     {
         "annotation": [
@@ -1387,7 +1387,7 @@
             ]
         ],
         "review": "i love the shoes because not only are they comfortable but they are very stylish , i get tons of compliments . i also have the black and gold pair because of how comfortable they are .",
-        "raw_predictions": "[A] shoes [C] general [S] positive [O] i love [I] direct [SSEP] [A] shoes [C] appearance#general [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C] performance#comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] week [C] contextofuse#review\\_temporality [S] neutral [O] a week [I] direct [SSEP] [A] week [C] contextofuse#review\\_temporality [S] neutral [O] they are very comfortable [I] direct [END]"
+        "raw_predictions": "[O] she loves them [S"
     },
     {
         "annotation": [
@@ -1414,7 +1414,7 @@
             ]
         ],
         "review": "the design of this shoe is terrible . . the fit is not great either . very much dislike this shoe .",
-        "raw_predictions": "i bought these shoes for my son and they are"
+        "raw_predictions": "[O] love these shoes [SSEP] [O] very comfortable and stylish [SSEP] [O] would recommend them to anyone ["
     },
     {
         "annotation": [
@@ -1469,7 +1469,7 @@
             ]
         ],
         "review": "i was looking for something lightweight and comfortable for work these babies does the job ! ! ! after 16 hours in them my feet doesn ' t hurt at all and has great arch support !",
-        "raw_predictions": "[A] NULL [C] appearance#material [S] positive [O] lightweight and comfortable [I] direct [SSEP] [A] NULL [C] performance#comfort [S] positive [O] lightweight and comfortable [I] direct [SSEP] [A] NULL [C] performance#use case applicability [S] positive [O] lightweight and comfortable [I] direct [SSEP] [A] NULL"
+        "raw_predictions": "the shoe is very comfortable. the sole is very soft. it's the best shoe i've ever worn. i've never had a shoe that is so comfortable."
     },
     {
         "annotation": [
@@ -1517,7 +1517,7 @@
             ]
         ],
         "review": "color was nice size little loose but ok . but too wide from the front and the worst was the it came with the security tag . my last purchase before this one was like a size smaller so i had to give them away . i will not buy online again to much issues . . . .",
-        "raw_predictions": "i love these shoes. i have been looking for a shoe like this for a long time. they are lightweight and comfortable. i will be buying more of these in the future."
+        "raw_predictions": "i love these shoes. they are super comfortable. i have been wearing them for a few months now."
     },
     {
         "annotation": [
@@ -1551,7 +1551,7 @@
             ]
         ],
         "review": "these are the widest shoes . i have a fairley wide foot but these shoes make my feet feel like they are swimming without water . i have a coworker who purchased these shoe as well and she wore them once and retired them bc of the width . i returned mine .",
-        "raw_predictions": "i love the shoe, but it is not the right size for me. i have a wide foot and this shoe was way too narrow for me. i'm returning them."
+        "raw_predictions": "[O] i love these shoes [SSEP] ["
     },
     {
         "annotation": [
@@ -1606,7 +1606,7 @@
             ]
         ],
         "review": "as an adidas lover , i was super excited to purchase these . i own countless running shoes from this company and have never had an issue like i did with these . the laces are held together by elastics and after 3 wears the elastic snapped on one shoe making them unwearable . beautiful sneaker , super disappointing quality .",
-        "raw_predictions": "i bought these shoes 10 days ago and they are already starting to fall apart. i have only worn them 3 times. the back of the shoe is coming apart. i am very disappointed."
+        "raw_predictions": "the sneakers are very nice, but i'm disappointed in the material. the shoe is made of a soft material that is not very durable. after only 3 wears, the shoe is starting to look worn out."
     },
     {
         "annotation": [
@@ -1633,7 +1633,7 @@
             ]
         ],
         "review": "i race with the nb fuel cell prism and love the shoe , i would like to purchase the rc elite except they do not come in wide",
-        "raw_predictions": "the shoes were great but the company is horrible. i ordered a size 9 and they sent me a size 7. i called and they said they would send me a return label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said they would send me another label. i never got it. i called again and they said"
+        "raw_predictions": "i bought this shoe because of the color, it is a beautiful red, i did not like the fit, it was too tight, i tried to wear it but i had to return it, i have worn nike shoes for years and i have never had a problem with them, i was disappointed"
     },
     {
         "annotation": [
@@ -1667,7 +1667,7 @@
             ]
         ],
         "review": "i ordered a 10w and it was definitely not wider than normal . it is a very cute boot but i have wide feet and it is not very comfortable for me .",
-        "raw_predictions": "i ordered these shoes for my son. they are very comfortable and well made. i am very happy with them."
+        "raw_predictions": "these are so cute. i love them. i bought a size 10 and they are perfect. they are so lightweight and comfortable. i have wide feet and they fit great!"
     },
     {
         "annotation": [
@@ -1701,7 +1701,7 @@
             ]
         ],
         "review": "i had to exchange my first order and ordered a size up . then the band of the bigger size sort of cuts into my foot . i am a size 5 women . . . i won ' t return them because i already exchanged for a bigger size but more importantly : it cut into my foot .",
-        "raw_predictions": "these are beautiful but unfortunately they are too tight. i am normally a 7.5 and ordered the 8s. they are too tight for my foot so i had to return them."
+        "raw_predictions": "i bought these shoes for my son. he is 12 and wears a size 8. he likes them a lot and says they are comfortable. the only issue i have is that the toe box is too narrow for my toes to fit comfortably."
     },
     {
         "annotation": [
@@ -1721,7 +1721,7 @@
             ]
         ],
         "review": "do not buy , these are very hard . find a softer sandal .",
-        "raw_predictions": "these are so comfy and i love the color. i'm a size 6 and they fit perfectly."
+        "raw_predictions": "i bought these for my son. he is 13. they are very cute and comfy. he is a size 11.5 in most shoes, but these are a bit big."
     },
     {
         "annotation": [
@@ -1748,7 +1748,7 @@
             ]
         ],
         "review": "i got the pair in my exact shoe size & these are too tight on me . i can ' t wear them all the way or my feet feel like they ' re being strangled . i don ' t understand why you ' d make these almost unwearable for the correct size",
-        "raw_predictions": "they are a little big for my foot but i'm a 10.5 so that's understandable. they're very comfortable and they look good with jeans."
+        "raw_predictions": "[O] i ordered a size 10 in women's may need at 1 or 1 and 1 / 2 smaller [SSEP] [O] feels comfortable"
     },
     {
         "annotation": [
@@ -1789,7 +1789,7 @@
             ]
         ],
         "review": "it was a little bit uncomfortable at first , maybe because the form was too hard . a week later , the form became softer so it was good .",
-        "raw_predictions": "i was a little disappointed with the shoe. the color is different than the pictures."
+        "raw_predictions": "[O] i ordered a"
     },
     {
         "annotation": [
@@ -1837,7 +1837,7 @@
             ]
         ],
         "review": "had to order a larger size than what i normally wear . shoe would be better if offered as an adjustable shoe . shoe is overpriced for quality . i bought cheaper slides in the past that were more comfortable .",
-        "raw_predictions": "the shoe is very comfortable. it is a great shoe for walking."
+        "raw_predictions": "these shoes are very comfortable and i love the color. the only downside is the heel is a little stiff."
     },
     {
         "annotation": [
@@ -1864,7 +1864,7 @@
             ]
         ],
         "review": "really small you should go up a size or two . good material for the top strap .",
-        "raw_predictions": "the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color is nice. the shoe is comfortable and the color"
+        "raw_predictions": "[O]"
     },
     {
         "annotation": [
@@ -1884,7 +1884,7 @@
             ]
         ],
         "review": "comfortable and just as described . not to big or small .",
-        "raw_predictions": "i love this shoe!!! it fits perfect and i love the color. i would buy this shoe again and again."
+        "raw_predictions": "[O] he likes them [END"
     },
     {
         "annotation": [
@@ -1925,7 +1925,7 @@
             ]
         ],
         "review": "i must have gotten a defective pair . sides of both slides appear to be lifting : / poorly glued together . want to return but worried about the hassle of trying to get a better pair reordered .",
-        "raw_predictions": "[A] pair [C] performance#sizing/fit [S] positive [O] i bought this pair of shoes for my 13 year old son [I] direct [SSEP] [A] little big [C] appearance#size [S] positive [O] they are a little big but they fit great [I] direct [SSEP] [A] little big [C] appearance#size [S] positive [O] they are very stylish and comfortable [I] direct [S"
+        "raw_predictions": "fit is a little snug, but i'm hoping it's just the material stretching."
     },
     {
         "annotation": [
@@ -1952,7 +1952,7 @@
             ]
         ],
         "review": "they are so comfortable and i love the red . anything with the trifold i ' m down !",
-        "raw_predictions": "i have been wearing the same pair of running shoes for the last 4 years. they are so comfortable and i love the red. anything with the trifold i'm down!"
+        "raw_predictions": "[O] so comfortable [END]"
     },
     {
         "annotation": [
@@ -2000,7 +2000,7 @@
             ]
         ],
         "review": "met all my needs in a shoe . very durable and comfy . i wear them all day for work . would recommend",
-        "raw_predictions": "[A] 990v5 [C] appearance#material [S] positive [O] perfect [I] direct [SSEP] [A] 990v5 [C] performance#comfort [S] positive [O] i have owned many pairs [I] direct [S"
+        "raw_predictions": "this is my 2nd pair of new balance shoes. i bought them for my husband. he is a big fan of the brand and was looking for a good running shoe. i have to say that he is very happy with them. they are very comfortable and i think they are going to last for a long time."
     },
     {
         "annotation": [
@@ -2034,7 +2034,7 @@
             ]
         ],
         "review": "i use these shoes just slip on for practical reasons . running to the store or just for general leisure . great quality ! however , run a little small . i wear mine without socks , and that solved the size issue .",
-        "raw_predictions": "[A] shoes [C] performance#comfort [S] positive [O] comfortable [I] direct [SSEP] [A] NULL [C] contextofuse#use case [S] neutral [O] stylish [I] direct [SSEP] [A] NULL [C]"
+        "raw_predictions": "i love"
     },
     {
         "annotation": [
@@ -2068,7 +2068,7 @@
             ]
         ],
         "review": "this is a really nice shoe . i bought this product for my husband and he really likes the shoe . glad i stay on this website daily\ud83d\ude0a",
-        "raw_predictions": "[A] shoe [C] appearance#general [S] positive [O] i love the look of"
+        "raw_predictions": "i love the look of these shoes, but they were not comfortable. i"
     },
     {
         "annotation": [
@@ -2109,7 +2109,7 @@
             ]
         ],
         "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
-        "raw_predictions": "[A] adidas nmd r1 [C] performance#use case applicability [S] positive [O] i was looking for a pair of shoes that i could wear to work everyday [I] direct [SSEP] [A] NULL [C] appearance#general [S] positive [O] i found them in the adidas nmd r1 [I] direct [SSEP] [A] NULL [C] contextofuse#purchase\\_context [S] neutral [O] i found them in the"
+        "raw_predictions": "i love these shoes. they are so comfortable and look great. i have the same problem with the previous review. the color is not the same as the one in the website. the color is more grey."
     },
     {
         "annotation": [
@@ -2164,7 +2164,7 @@
             ]
         ],
         "review": "my white laces on the nast collab pair have dirt spots on the laces and thread coming out from a lace , out the package like wow the laces are shot and shoe hasn ' t even been worn yet . thought i ' d give reebok a try again because of nast and they threw that out the window . not his fault it ' s reebok and their manufacturer . disappointed they ruined this shoe for me i was looking forward to his collab .",
-        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] neutral [O] i love this shoe [I] direct [SSEP] [A] shoes [C] cost/value [S] positive [O] i have been we"
+        "raw_predictions": "[O] these are great shoes for walking and running [SSEP] [O] they are comfortable and fit well [SSEP] [O] the sole is very flexible and has great traction [SSEP] [O] the only downside is that the sole is very"
     },
     {
         "annotation": [
@@ -2205,7 +2205,7 @@
             ]
         ],
         "review": "i live in ny i walk a lot but cmon the fabric over the toes needs to be reinforced with leather or something . my toes immediately have made a hole",
-        "raw_predictions": "i got these shoes for my son. he was so excited to get them. he loves them. they are exactly what he wanted and they fit perfect. he is so happy."
+        "raw_predictions": "i love the color and the style. i have been wearing them for a few days and they are so comfortable. they are so cute"
     },
     {
         "annotation": [
@@ -2246,7 +2246,7 @@
             ]
         ],
         "review": "i was disappointed in the color , from the pictures the top looks white but it ' s actually blue , which made a difference when i received them . i wasn ' t wanting that color scheme .",
-        "raw_predictions": "the design of this shoe was very difficult to get my foot into. once its on their is not enough room at the top of the foot."
+        "raw_predictions": "[O] has a great fit [SSEP] [O] lightweight, flexible, and has a great fit [SSEP] [O] i've worn these sho"
     },
     {
         "annotation": [
@@ -2294,7 +2294,7 @@
             ]
         ],
         "review": "i ' ve been a reebok classic woman for years . i don ' t wear any other brand of athletic shoes . they are comfortable and easy to walk in . i wear a 1 / 2 \" heel lift in my shoe for balance and these shoes have the perfect depth that keeps the heel of the shoe snug to my feet - no slipping off .",
-        "raw_predictions": "the shoe is very comfortable and the color is nice. the shoe is very comfortable."
+        "raw_predictions": "i bought these for my husband. he loves them. he is very hard to fit because he has a wide foot"
     },
     {
         "annotation": [
@@ -2321,7 +2321,7 @@
             ]
         ],
         "review": "too tight and uncomfortable . tried cushions , still not so good .",
-        "raw_predictions": "i have these shoes in black and brown and i love them."
+        "raw_predictions": "they are very comfortable, but the heel is a little narrow."
     },
     {
         "annotation": [
@@ -2355,7 +2355,7 @@
             ]
         ],
         "review": "these tennis shoes are very comfortable . i own every color they sale . i highly recommend them .",
-        "raw_predictions": "i am a runner and i have never had a shoe that i have loved as much as i love these."
+        "raw_predictions": "i have a wide foot and i usually wear a 10 or 11 in shoes. these were way too tight. they were 11s but i could barely get my foot into them."
     },
     {
         "annotation": [
@@ -2382,7 +2382,7 @@
             ]
         ],
         "review": "i need an orthopedic lift in one shoe . reebox still manufactures a fine shoe which can still be modified .",
-        "raw_predictions": "i have a pair of reebok shoes that i love. they are the most comfortable shoes i have ever owned."
+        "raw_predictions": "[O] i'm 5'11'170lbs. 990v4s are the only shoes i've found that fit my foot properly [SSEP] [O] i've had to return 4 pairs of 990v4s due to poor quality [SSEP] [O] i'm 5'11'170lbs. 990v4s are the only shoes i've found that fit my foot properly [SSEP] [O] i've had to return 4 pairs of 990v4s due to poor quality [SSEP] [O] i'm 5'11'170lbs. 990v4s are the only shoes i've found that fit my foot properly [SSEP] [O] i've had to return 4 pairs of 990v4s due to poor quality [SSEP] [O] i'm 5'11'170lbs. 990v4"
     },
     {
         "annotation": [
@@ -2409,7 +2409,7 @@
             ]
         ],
         "review": "these look awful in the larger sizes . also , they are undersized , order 1 / 2 size up or go easy on yourself and don ' t order .",
-        "raw_predictions": "[A] NULL [C] performance#general [S] positive [O] i bought these for my husband [I] direct [SSEP] [A] NULL ["
+        "raw_predictions": "the shoe is very comfortable, and has a good look to it. the only thing i don't like is that the back of the shoe is not made of the same material as the rest of the shoe. i wish the back of the shoe was leather or some other material that would not stretch out. i bought a pair of these shoes, and i am very disappointed."
     },
     {
         "annotation": [
@@ -2436,7 +2436,7 @@
             ]
         ],
         "review": "it ' s a great shoes but need different size . i recommend it",
-        "raw_predictions": "i like these sneakers but they are not very comfortable. they are a little tight. i think they are a little overpriced."
+        "raw_predictions": "it's a really nice shoe but"
     },
     {
         "annotation": [
@@ -2477,7 +2477,7 @@
             ]
         ],
         "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
-        "raw_predictions": "i love these sneakers! they are very comfortable and stylish."
+        "raw_predictions": "i was looking for a pair of sneakers that would be comfortable and i would be able to wear them all day. i have a wide foot and i wanted a pair that was wide enough to accommodate my feet. i was disappointed when i got them and they were not as comfortable as i thought they would be."
     },
     {
         "annotation": [
@@ -2497,7 +2497,7 @@
             ]
         ],
         "review": "i really like how comfortable these shoes are ! ! ! i would get them in all colors .",
-        "raw_predictions": "these are so comfortable and cute. but i ordered a half size larger than my normal 7 1 / 2, and they are still so short. i don't even"
+        "raw_predictions": "they fit perfectly and are very comfortable. they are also very lightweight and i love the color!"
     },
     {
         "annotation": [
@@ -2559,7 +2559,7 @@
             ]
         ],
         "review": "still look cool , but not what they used to be . quality has lowered significantly\u2014bummer . plus sizing has changed . i ' ve always been a good snug 7 . 5 in these and now the 7 . 5 is too small and the 8 is too big . these are just built differently now and i ' m so sad : (",
-        "raw_predictions": "they are a little bit tight on my feet. they were not made for wide feet."
+        "raw_predictions": "i'm very happy with this purchase. the color is great and the shoe is comfortable. i'm a size 8.5 and the size is perfect. i'm very happy with this purchase. the color is great and the shoe is comfortable. i'm a size 8.5 and the size is perfect. i'm very happy with this purchase. the color is great and the shoe is comfortable. i'm a size 8.5 and the size is perfect. i'm very happy with this purchase. the color is great and the shoe is comfortable. i '"
     },
     {
         "annotation": [
@@ -2586,7 +2586,7 @@
             ]
         ],
         "review": "these sneakers look great and feel so comfy . they fit perfect .",
-        "raw_predictions": "i bought these shoes for my son for school and they are the most comfortable shoes he has ever owned. he loves them and they are the perfect fit for his feet."
+        "raw_predictions": "i am a 7.5. i ordered a 7. they are too small. i am returning them. i am a 7.5. i ordered a 7. they are too small. i am returning them. i am a 7.5. i ordered a 7. they are too small. i am returning them."
     },
     {
         "annotation": [
@@ -2641,7 +2641,7 @@
             ]
         ],
         "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
-        "raw_predictions": "i'm a 10.5 and the 3.5 is a perfect fit. i have wide feet, and the 3.5 is the perfect width for me."
+        "raw_predictions": "the shoe is very comfortable and fits well. the color is not exactly what i expected. the color in the picture is more grey and the shoe is more tan."
     },
     {
         "annotation": [
@@ -2689,7 +2689,7 @@
             ]
         ],
         "review": "i ' ve worn these shoes so many times ! they ' re true to size , comfortable and fly . perfect fall colors . the top was a bit uncomfortable without socks , but jist wear socks . : )",
-        "raw_predictions": "i bought these shoes for my son, and they're perfect for him! they're comfortable, and i love the color. i would definitely recommend these shoes!"
+        "raw_predictions": "i've had these for 3 years and they're still in great condition. i wear them a lot, but they're still in great condition. i love these shoes!"
     },
     {
         "annotation": [
@@ -2716,7 +2716,7 @@
             ]
         ],
         "review": "am returning them and will not be buying these cheap shoes anymore . sure don ' t make them like you use to ! ! ! !",
-        "raw_predictions": "these are the most comfortable shoes i have ever worn. i'm a 13 year old girl and i love them."
+        "raw_predictions": "[O] perfect [SSEP] [O] true to size [SSEP"
     },
     {
         "annotation": [
@@ -2736,7 +2736,7 @@
             ]
         ],
         "review": "but i ' d rather have the classic in leather . i would buy many pairs .",
-        "raw_predictions": "i ordered them in a size 10, but they are too big."
+        "raw_predictions": "i love these sneakers! i ordered them for my son and he loves them. i would recommend to purchase."
     },
     {
         "annotation": [
@@ -2763,7 +2763,7 @@
             ]
         ],
         "review": "every time i put them on i feel like i can run a marathon . one of the most best fitting shoes i have true to size",
-        "raw_predictions": "I love these shoes!"
+        "raw_predictions": "the color is a little darker than i thought it would be."
     },
     {
         "annotation": [
@@ -2797,7 +2797,7 @@
             ]
         ],
         "review": "i really enjoy these shoes . they ' re pretty comfortable to wear all day and i really like the classic style . would recommend",
-        "raw_predictions": "i love these shoes. i have them in 3 different colors. i wear them for work and they are so comfortable."
+        "raw_predictions": "i love this shoe. i bought it in size 7.5 and it fit perfectly."
     },
     {
         "annotation": [
@@ -2817,7 +2817,7 @@
             ]
         ],
         "review": "tried returning my shoes because they were too big but i wasn ' t able to because the website didn ' t let me",
-        "raw_predictions": "[A] shoes [C] general [S] positive [O] i bought these shoes for my wife [I] direct [SSEP] [A] too big [C] performance#sizing/fit [S] negative [O"
+        "raw_predictions": "the shoe is beautiful. the color is perfect. the shoe is"
     },
     {
         "annotation": [
@@ -2844,7 +2844,7 @@
             ]
         ],
         "review": "the size is a half size smaller then what i wear . next time i will need to order a 6 1 / 2 instead of my normal size 6\u2026",
-        "raw_predictions": "i love the shoes but the size is too big. i wear a size 7.5 in the usa and the size 37 is too big."
+        "raw_predictions": "i have 2 pairs of 574s and both are defective. the rubber sole on the right shoe has a hole in it and"
     },
     {
         "annotation": [
@@ -2878,7 +2878,7 @@
             ]
         ],
         "review": "it gets dirty easily but quality is good . they are comfortable and has a great design .",
-        "raw_predictions": "i bought these shoes. they are"
+        "raw_predictions": "i love these shoes. they are comfortable and has a great design."
     },
     {
         "annotation": [
@@ -2912,7 +2912,7 @@
             ]
         ],
         "review": "comfortable and timeless . if you ' re looking for a super comfortable pairs of kicks . , the classic is the way to go .",
-        "raw_predictions": "great quality, and very durable footwear. i will only wear it inside the house because of the oversize, but they seem to be comfortable. i would recommend buying a size smaller than your usual one."
+        "raw_predictions": "these shoes are very comfortable and light weight. they're the perfect height for me and the fit is very true to size."
     },
     {
         "annotation": [
@@ -2932,7 +2932,7 @@
             ]
         ],
         "review": "this is my 5th pair of classics . i ' ll be buying another pair soon",
-        "raw_predictions": "i love these shoes. they are the most comfortable shoes i have ever owned. they are also the most comfortable shoes i have ever owned."
+        "raw_predictions": "i am a size 9.5 and have been buying nike sneakers for years. i bought these in a 9.5 and they are way too tight."
     },
     {
         "annotation": [
@@ -2973,7 +2973,7 @@
             ]
         ],
         "review": "i ordered my size but for me they run small . i wore them just to see if i could break them in . . . i wouldn ' t advise that ! so give yourself some wiggle room and order the 1 / 2 .",
-        "raw_predictions": "[A] shoe [C] performance#comfort [S] positive [O] they are pretty comfortable and light [I] direct [SSEP] [A] shoe [C] performance#use case applicability [S] neutral [O] they are a little more narrow than i would have liked [I]"
+        "raw_predictions": "i love these shoes. they are so comfortable and they are great quality."
     },
     {
         "annotation": [
@@ -3000,7 +3000,7 @@
             ]
         ],
         "review": "way too narrow by the toes . i ' m reliably a size six and these didn ' t fit me . : (",
-        "raw_predictions": "[A] shoe [C] general [S] positive [O] these are the most comfortable shoes i've ever owned [I] direct [END"
+        "raw_predictions": "i ordered a 10. 5. 4e shoe. someone put a 4d in a 4e box. i had to return the shoes and get a refund and then reorder shoes. you should have sent me the correct shoe once i returned the bad order."
     },
     {
         "annotation": [
@@ -3027,7 +3027,7 @@
             ]
         ],
         "review": "i like the shoe itself and want to keep it . but it is too small and i can ' t find my order number to exchange it",
-        "raw_predictions": "[A] NULL [C] performance#sizing/fit [S] negative [O] too narrow [I] direct [SSEP] [A]"
+        "raw_predictions": "i love the shoe. it is comfortable. the only thing is that"
     },
     {
         "annotation": [
@@ -3054,7 +3054,7 @@
             ]
         ],
         "review": "the shoes look amazing but the durability just isn ' t there . if you have long toe nails they will poke right through the cheap material along your toe .",
-        "raw_predictions": "the shoes are nice and"
+        "raw_predictions": "i bought these shoes in a 12 w ( 4e ). my foot measures to size 12, 4e. these were too narrow and pushed my toes together and forward. toe box was very cowboy boot - like. i sent them back."
     },
     {
         "annotation": [
@@ -3088,7 +3088,7 @@
             ]
         ],
         "review": "when i put this shoe on my foot it fit , it just didn ' t feel comfortable . it was too narrow , i could feel my foot falling off on the sides .",
-        "raw_predictions": "[A] shoe [C] performance#sizing/fit [S] positive [O] NULL [I] indirect [SSEP"
+        "raw_predictions": "i"
     },
     {
         "annotation": [
@@ -3108,7 +3108,7 @@
             ]
         ],
         "review": "i ' m truly a size 8 but that size here was a bit tight . i would probably size up next time .",
-        "raw_predictions": "i bought these for my 11 year old daughter. she is a size 4 and the size 4 was too small. i bought her a size 5 and they fit perfectly."
+        "raw_predictions": "i'm returning them. they're a size 8 but the tongue is too tight."
     },
     {
         "annotation": [
@@ -3135,7 +3135,7 @@
             ]
         ],
         "review": "i have been wearing these for years ! i use to always get an 8 1 / 2 ( women ' s ) but i got a 9 this time and they were really tight on my feet . so i ' d recommend going up at least a half size",
-        "raw_predictions": "[A] NULL [C] contextofuse#review\\_temporality [S] positive [O] NULL [I] direct [SSEP] [A] NULL [C] performance#longevity [S] positive [O] i've worn these for 3 years and they are still in great condition ["
+        "raw_predictions": "[O] i've been wearing these for years [SSEP] [O] they're my go to shoe [SSEP]"
     },
     {
         "annotation": [
@@ -3190,7 +3190,7 @@
             ]
         ],
         "review": "the shoes are beautiful , i love them , the color is amazing , the quality is good , but i ordered the size according to the length in the sizes and are 1 cm larger than the description . i did not return them , because i worn them before realizing that they were that big and i put the box in the garbage .",
-        "raw_predictions": "i was looking for a pair of sneakers for my daughter that she could wear with jeans, and these are perfect! they're super cute and comfortable. i love the colors, the price was great, and they arrived super fast!"
+        "raw_predictions": "the shoes are very comfortable and i love them."
     },
     {
         "annotation": [
@@ -3224,7 +3224,7 @@
             ]
         ],
         "review": "i love the look and style of this shoe but i think they can do a little better with the quality of it . i also had to buy a half size larger they run small .",
-        "raw_predictions": "[A"
+        "raw_predictions": "i bought these shoes for my husband and he loves them. the only problem is that he needs a 14. 5 and they don't make them in that size. i wish they did because he would wear them all the time."
     },
     {
         "annotation": [
@@ -3265,7 +3265,7 @@
             ]
         ],
         "review": "i typically wear a standard to slightly narrow width . this shoe is extremely narrow , making it unwearable for me . i believe the quality is very good , just to narrow .",
-        "raw_predictions": "i wear a 10 in most shoes. these are a 10. they fit perfectly."
+        "raw_predictions": "i was very disappointed in the shoe. it was very uncomfortable. it was very narrow and i have a wide foot. the shoe was very stiff and did not bend when i tried to bend it. i returned it."
     },
     {
         "annotation": [
@@ -3292,7 +3292,7 @@
             ]
         ],
         "review": "shoe is shorter & narrower than stated size . order at least half size larger than usual .",
-        "raw_predictions": "[A] i would have given it 5 stars [C] contextofuse#review\\_temporality [S] positive [O] but the shoes are a little tight"
+        "raw_predictions": "great fit. i have bunions and have problems finding a shoe with wide toe box and normal heel."
     },
     {
         "annotation": [
@@ -3333,7 +3333,7 @@
             ]
         ],
         "review": "shoes are comfortable and very versatile . the sizing runs small so i had to exchange for a half size up . but after wearing these shoes twice , the upper leather ripped ! i am disappointed in the quality and had high expectations .",
-        "raw_predictions": "i was excited to try these shoes. they are very comfortable and supportive. i am a little disappointed that they are not as durable as i would like."
+        "raw_predictions": "the shoes are very comfortable and well made. the sizing runs small so i had to exchange for a half size up."
     },
     {
         "annotation": [
@@ -3353,7 +3353,7 @@
             ]
         ],
         "review": "shoe is shorter & narrower than stated size . order at least half size larger than usual .",
-        "raw_predictions": "[A]"
+        "raw_predictions": "these shoes are so comfortable! i wear them everyday. i have 3 pairs of"
     },
     {
         "annotation": [
@@ -3394,7 +3394,7 @@
             ]
         ],
         "review": "if you have even the slightest bit of width to your foot , do not buy these . i would consider my foot slightly wide , often not even having to buy the wide version of shoes . however , the balls of my feet completely bulged out of the side of the sole on these shoes . these are the most narrow shoes i have ever tried on in my life . also , your \" print label \" button on your return site doesn ' t work .",
-        "raw_predictions": "i'm very disappointed in these shoes. i've had them for a month and they're falling apart. i've had other pairs of these shoes and they're all falling apart. i've worn"
+        "raw_predictions": "they are a bit stiff at first, but after a few hours of walking they mold to your feet and are very comfortable. the leather is a bit stiff, but it's not uncomfortable."
     },
     {
         "annotation": [
@@ -3449,7 +3449,7 @@
             ]
         ],
         "review": "shoes are comfortable and very versatile . the sizing runs small so i had to exchange for a half size up . but after wearing these shoes twice , the upper leather ripped ! i am disappointed in the quality and had high expectations .",
-        "raw_predictions": "[A] shoe [C] performance#comfort [S] neutral [O] i like the shoe [I] direct [SSEP] [A] shoe [C] performance#comfort [S] negative [O] not the most comfortable [I] direct [SSEP] [A] NULL [C] contextofuse#review\\_temporality [S] neutral [O] for a few hours [I] indirect [SSEP] [A] NULL [C] performance#"
+        "raw_predictions": "[O] i love the look of the shoes"
     },
     {
         "annotation": [
@@ -3476,7 +3476,7 @@
             ]
         ],
         "review": "too tight and uncomfortable . tried cushions , still not so good .",
-        "raw_predictions": "[A] shoe [C] performance#comfort [S] positive [O] the shoe is very comfortable [I] direct [SSEP] [A] shoe [C] performance#sizing/fit [S] neutral [O] they're not the most stylish"
+        "raw_predictions": "[O] fit great! the only thing is they run a little small [SSEP] [O] fit"
     },
     {
         "annotation": [
@@ -3496,7 +3496,7 @@
             ]
         ],
         "review": "i ' m truly a size 8 but that size here was a bit tight . i would probably size up next time .",
-        "raw_predictions": "i bought this shoe for my daughter and it was the perfect fit."
+        "raw_predictions": "i bought these for my daughter and they fit perfectly."
     },
     {
         "annotation": [
@@ -3551,7 +3551,7 @@
             ]
         ],
         "review": "as someone with a kind of wide foot , i really wanted this shoe to fit because i love the look ! reebok is a go - to brand for me because their shoes often fit my wide feet well in a way other brands don ' t . however , this shoe is a lot narrower than reebok ' s other offerings , so i wouldn ' t recommend it if you have wide feet . but it is a very cute shoe so i recommend it otherwise !",
-        "raw_predictions": "[A] NULL [C] performance#sizing/fit [S] positive [O] i love these shoes! [I] direct [SSEP] [A] NULL [C] performance#sizing/fit [S] positive [O] i"
+        "raw_predictions": "[O] i love these shoes ["
     },
     {
         "annotation": [
@@ -3606,7 +3606,7 @@
             ]
         ],
         "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
-        "raw_predictions": "[A] NULL [C] contextofuse#purchase\\_context [S] neutral [O] i ordered these in a size 8 [I] direct [SSEP] [A]"
+        "raw_predictions": "i love these shoes! they are so comfortable and i've worn them every day since i got them. they fit perfectly. the only thing i don't like about them is the stitching on the back of the shoe. it's not bad, but i think it could be a little better."
     },
     {
         "annotation": [
@@ -3654,7 +3654,7 @@
             ]
         ],
         "review": "there were a christmas gift to someone . she loves the color ( red ) . says they fit very nicely . she ' s on her feet for long stretches for work . said there is a bit of break - in period , probably because how different the reds are to the others . she wants more now . of course she does .",
-        "raw_predictions": "the sizing is off. i'm a"
+        "raw_predictions": "i bought these for my husband and he loves them. he has a wide foot and they fit perfectly. he has been wearing them for a couple of weeks now and"
     },
     {
         "annotation": [
@@ -3681,7 +3681,7 @@
             ]
         ],
         "review": "great shoes . bought this for my uncle . he love them .",
-        "raw_predictions": "[A] NULL [C] appearance#color [S] positive [O] i like the color [I]"
+        "raw_predictions": "i bought these for my son. they were a great fit."
     },
     {
         "annotation": [
@@ -3708,7 +3708,7 @@
             ]
         ],
         "review": "i ordered them thinking it was ok not to try them on first because they were reeboks , i was wrong . i am going to exchange them for another pair though because they are reeboks ! i do love the brand .",
-        "raw_predictions": "i got them and they were so tight. they were not even a 10.5 they were like a 9.5."
+        "raw_predictions": "these are the best shoes ever! they are very comfortable and have great arch support."
     },
     {
         "annotation": [
@@ -3737,12 +3737,12 @@
                 "NULL",
                 "contextofuse#purchase\\_context",
                 "negative",
-                "null",
+                "NULL",
                 "indirect"
             ]
         ],
         "review": "shoe is shorter & narrower than stated size . order at least half size larger than usual .",
-        "raw_predictions": "[A] shoe [C] appearance#form [S] negative [O] shorter & narrower than stated size [I] direct [SSEP] [A] shoe [C] performance#sizing/fit [S] negative [O] shorter & narrower than stated size [I] direct [SSEP] [A] NULL [C] performance#sizing/fit [S] negative [O] NULL [SSEP] [A] NULL [C] contextofuse#purchase\\_context [S] negative ["
+        "raw_predictions": "[O] these shoes are very comfortable [S"
     },
     {
         "annotation": [
@@ -3797,7 +3797,7 @@
             ]
         ],
         "review": "i honestly wanted super pleased with the overall quality of the shoe . the sound it makes on the floor is odd . very noisy . bought these + 1 extra for someone , and these could of been engineer a little better",
-        "raw_predictions": "[A] shoes [C] performance#sizing/fit [S] neutral [O] great product, but not for my feet [I] direct [SSEP] [A] shoes [C] appearance#material [S] negative [O] NULL [SSEP] [A] NULL [C] performance#use case [S"
+        "raw_predictions": "i am a size 9 and i ordered a size 9. the shoe is very comfortable. i am very happy with the purchase"
     },
     {
         "annotation": [
@@ -3817,7 +3817,7 @@
             ]
         ],
         "review": "i have always liked this style but when you said they where leather , i think you should say they are leather and manmade .",
-        "raw_predictions": "they fit true to size."
+        "raw_predictions": "[O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O] very soft [SSEP] [O"
     },
     {
         "annotation": [
@@ -3830,7 +3830,7 @@
             ]
         ],
         "review": "you want go wrong with this shoe try it and u want be disappointed",
-        "raw_predictions": "i love these shoes. they are so comfortable and fit perfectly. i bought them for my daughter and she loves them."
+        "raw_predictions": "the shoe is very comfortable but i don't like the tongue. i find it uncomfortable and annoying."
     },
     {
         "annotation": [
@@ -3871,7 +3871,7 @@
             ]
         ],
         "review": "these are definitely going to be some of my most worn shoes of the spring and summer . they ' re so cute and go with so much . i don ' t usually have a problem with width with shoes , but i thought this pair was a little small at firet because they were a bit tighter width wise . so if you have wide feet i probably would not recommend you buy these .",
-        "raw_predictions": "[A] shoes [C] contextofuse#usage frequency [S] positive [O] i am so glad i bought these shoes [I] direct [SSEP] [A] wide foot [C] contextofuse#foot type [S] positive [O] usually have to buy a wide shoe [I] direct [SSEP] [A] NULL [C] performance#sizing/fit [S] negative [O] little small at firet because they were a bit t"
+        "raw_predictions": "i bought these shoes for my 3 year old. they are a little big, but she can wear them. they are adorable."
     },
     {
         "annotation": [
@@ -3891,7 +3891,7 @@
             ]
         ],
         "review": "i have probably had thirty or forty pairs of this model of reebok through the years . this pair isn ' t comfortable , so i have given up wearing them . i ' m wearing an old pair .",
-        "raw_predictions": "i bought these for my son and he loves them. they fit perfect and they are so comfortable. they are a little heavy but they are perfect for everyday wear. i would recommend these to anyone."
+        "raw_predictions": "i love the way they fit. they are very comfortable."
     },
     {
         "annotation": [
@@ -3925,7 +3925,7 @@
             ]
         ],
         "review": "i think i need to go up 1 / 2 a size because it ' s pinching my toes just a bit , or i really need a wide . but with that in mind it really made my feet happy . love the leather upper for a clean and durable look . going to keep these and try a different model",
-        "raw_predictions": "the shoe is very comfortable and durable. the color is a nice mix of black and brown."
+        "raw_predictions": "i just love these shoes. i have been wearing them for years and have been very satisfied. i have never had any issues with them. they are very comfortable and have a good arch support. i will continue to buy them."
     },
     {
         "annotation": [
@@ -3959,7 +3959,7 @@
             ]
         ],
         "review": "i ' ve been wanting them again for a long time . i used to use them at high school and i saw them as a reminder of that time , but now that i got them i didn ' t remember how comfortable they were ! ! i just love them ! !",
-        "raw_predictions": "these shoes"
+        "raw_predictions": "they are super cute!! i've been looking for these for a while. they are super soft and comfortable."
     },
     {
         "annotation": [
@@ -4000,7 +4000,7 @@
             ]
         ],
         "review": "the shoe fits a bit small and is pretty stiff for having such a large wedge bottom . i love the colors but honestly it looks and feels a little cheap .",
-        "raw_predictions": "[A] nb [C] contextofuse#review\\_temporality [S] neutral [O] i've been buying nb for almost 30 years [I] direct [SSEP] [A] pair [C] general [S] negative [O] first pair that truly disappointed me [I"
+        "raw_predictions": "i love the color of these shoes. they are so cute. i have a problem with them though."
     },
     {
         "annotation": [
@@ -4027,7 +4027,7 @@
             ]
         ],
         "review": "i love the look and style of this shoe but i think they can do a little better with the quality of it . i also had to buy a half size larger they run small .",
-        "raw_predictions": "i bought these in a size 11. they are so cute but the material is very cheap and thin. i'm going to wear them as house shoes but i'm afraid they will not last long."
+        "raw_predictions": "[O] i love the style"
     },
     {
         "annotation": [
@@ -4068,7 +4068,7 @@
             ]
         ],
         "review": "great looking shoes , but if you have wider feet do not buy . they burned my toes the entire time walking in them . i had to send back for a refund after wearing . they were unbearable .",
-        "raw_predictions": "[A] shoes [C] performance"
+        "raw_predictions": "the shoe is very comfortable and true to size. the sh"
     },
     {
         "annotation": [
@@ -4095,7 +4095,7 @@
             ]
         ],
         "review": "the size is a half size smaller then what i wear . next time i will need to order a 6 1 / 2 instead of my normal size 6\u2026",
-        "raw_predictions": "i bought these for my husband and he loves them!! he says they're very comfortable, which is important because he has a flat foot."
+        "raw_predictions": "i ordered a size 11 and they are too small. they look like they would be a 10. the size 11 is a little tight but not too bad. they are pretty comfortable. they are a little stiff but i think they will break in."
     },
     {
         "annotation": [
@@ -4136,7 +4136,7 @@
             ]
         ],
         "review": "i purchased these shoes bacon they were exactly like my last pair of reebok classics i bought but they are slightly different the stitching is different that sound feel is different and they just didn ' t feel like the classic running shoes that i had before so i sent them back and order me a pair a reebok classic running instead of these reeboks",
-        "raw_predictions": "i bought these for my husband and they are very comfortable, lightweight, and stylish. he likes them a lot."
+        "raw_predictions": "i purchased these shoes for my son. they are a nice shoe but the laces are a little long. i have to tie them several times a day."
     },
     {
         "annotation": [
@@ -4163,7 +4163,7 @@
             ]
         ],
         "review": "this is a classic sneaker a must have for the collection . there is a wide array of colors to pick from .",
-        "raw_predictions": "[A] shoe [C] performance#sizing/fit [S] positive [O] very comfortable and a great fit [I] direct [SSEP] [A] NULL [C] contextofuse#purchase\\_context [S] positive [O] they are very comfortable and a great fit [I] direct [SSEP] [A] NULL [C] contextofuse#purchase\\_context [S] positive [O] they are very comfortable and a great fit [I] direct ["
+        "raw_predictions": "[O] super comfortable ["
     },
     {
         "annotation": [
@@ -4190,7 +4190,7 @@
             ]
         ],
         "review": "only 1 pair of wide width shoe in the entire store . i returned my mail order to closest finish line store . i will never order again .",
-        "raw_predictions": "[A] shoes [C] contextofuse#purchase\\_context [S] negative [O] i'm a size 13 and i'm usually a size 13 in shoes [I] direct [SSEP] [A] NULL [C] appearance#form ["
+        "raw_predictions": "i bought these for my husband and he loves them. he says they are the most comfortable shoes he has"
     },
     {
         "annotation": [
@@ -4210,7 +4210,7 @@
             ]
         ],
         "review": "love this shoe . it ' s one of my all - time favorite classic shoes .",
-        "raw_predictions": "[A] shoes [C] general [S] positive [O] the shoes are really comfortable [I] direct [SSEP] [A] shoes [C] contextofuse#review\\_temporality [S] positive [O] they are light"
+        "raw_predictions": "1. not true to size. i wear a 7 and had to get a 6. 5 in the 1010's. they run at least a half size too large. the sneakers are very nice but slightly narrow on the sides. they are true to size."
     },
     {
         "annotation": [
@@ -4244,7 +4244,7 @@
             ]
         ],
         "review": "it ' s a great shoes but need different size . i recommend it",
-        "raw_predictions": "i am a 11. 5 womens. i bought the 12. 5 mens and they fit perfectly. i'm a nurse and stand on my feet all day. these shoes are perfect."
+        "raw_predictions": "it's a good show for the money. it's a great show for the money. it's a good show for the money. it's a great show for the money. it's a good show for the money. it's a great show for the money. it's a good show for the money. it's a great show for the money. it's a good show for the money. it's a great show for the money. it's a good show for the money. it's a great show for the money. it's a good show for the money. it's a great show for the money. it's a good show for the money. it's a great show for the money. it's a good show for the"
     },
     {
         "annotation": [
@@ -4271,7 +4271,7 @@
             ]
         ],
         "review": "only 1 pair of wide width shoe in the entire store . i returned my mail order to closest finish line store . i will never order again .",
-        "raw_predictions": "i love this shoe but it's not worth the price."
+        "raw_predictions": "i have these shoes in 3 colors. i love them."
     },
     {
         "annotation": [
@@ -4305,7 +4305,7 @@
             ]
         ],
         "review": "i bought a pair of the red - all leather variety and they are my favs to date . still wear them all the time after over a year of almost daily use .",
-        "raw_predictions": "i love these shoes. they are very comfortable and the leather is very soft. they are true to size. i have a narrow foot and these fit perfectly."
+        "raw_predictions": "[O] love these shoes [SSEP] [O] so comfortable [SSEP] [O] i'm on my feet all"
     },
     {
         "annotation": [
@@ -4339,7 +4339,7 @@
             ]
         ],
         "review": "comfy sneaker . would order a half size bigger . already purchased another pair !",
-        "raw_predictions": "i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10. 5b and these fit perfectly. i'm a 10"
+        "raw_predictions": "[O] my husband"
     },
     {
         "annotation": [
@@ -4373,6 +4373,6 @@
             ]
         ],
         "review": "these kicks are extremely comfortable and can be worn with a variety of styles . these are my new favorites .",
-        "raw_predictions": "i love the color of this shoe. the shoe is very comfortable."
+        "raw_predictions": "i ordered these shoes in a size 10.5 and they are too small. i'm disappointed because they are very cute."
     }
 ]
