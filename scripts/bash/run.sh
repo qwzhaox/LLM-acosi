@@ -4,6 +4,7 @@
 task=""
 model=""
 size="N/A"
+dataset=""
 is_llama_model=false
 
 # Function to show usage
@@ -12,6 +13,7 @@ usage() {
     echo "  -t, --task TASK   Specify the task (acos-extract, acos-extend, acosi-extract)"
     echo "  -m, --model MODEL Specify the model (llama-2, gpt-*)"
     echo "  -s, --size SIZE   Specify the size (big, med, small)"
+    echo "  -d, --dataset     Specify the dataset (rest, laptop, shoes)"
     exit 1
 }
 
@@ -45,20 +47,31 @@ validate_model() {
     esac
 }
 
+# Validate dataset
+validate_dataset() {
+    case $1 in
+        "rest") ;;
+        "laptop") ;;
+        "shoes") ;;
+        *) echo "Error: Invalid dataset. Must be rest, laptop, or shoes."; exit 1 ;;
+    esac
+}
+
 # Parse arguments
 while [[ "$#" -gt 0 ]]; do
     case $1 in
         -t|--task) validate_and_update_task "$2"; shift ;;
         -m|--model) model="$2"; validate_model "$2"; shift ;;
         -s|--size) size="$2"; validate_size "$2"; shift ;;
+        -d|--dataset) dataset="$2"; validate_dataset "$2"; shift ;;
         *) echo "Unknown parameter: $1"; usage ;;
     esac
     shift
 done
 
 # Check if task and model are provided
-if [ -z "$task" ] || [ -z "$model" ]; then
-    echo "Error: Task and model must be provided."
+if [ -z "$task" ] || [ -z "$model" ] || [ -z "$dataset" ]; then
+    echo "Error: Task, model, and dataset must be provided."
     usage
 fi
 
@@ -72,19 +85,21 @@ fi
 echo "Task: $task"
 echo "Size: $size"
 echo "Model: $model"
+echo "Dataset: $dataset"
 
 if [[ "$is_llama_model" == true ]]; then
     dataset_to_use="test.txt"
-    # Run the task with the provided size and model
+    # Run the task with the provided size, model, and dataset
     if [ "$task" = "acos-extract" ]; then
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/rest/$dataset_to_use" "config/${size}_llama.json"
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/laptop/$dataset_to_use" "config/${size}_llama.json"
+        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/$dataset/$dataset_to_use" "config/${size}_llama.json"
     elif [ "$task" = "acos-extend" ]; then
-        # bash scripts/bash/run_task.sh "$task" "data/acos_dataset/rest/$dataset_to_use" "config/${size}_llama.json"
-        # bash scripts/bash/run_task.sh "$task" "data/acos_dataset/laptop/$dataset_to_use" "config/${size}_llama.json"
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/shoes/$dataset_to_use" "config/${size}_llama.json"
+        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/$dataset/$dataset_to_use" "config/${size}_llama.json"
     elif [ "$task" = "acosi-extract" ]; then
-        bash scripts/bash/run_task.sh "$task" "data/acosi_dataset/shoes/$dataset_to_use" "config/${size}_llama.json"
+        if [ "$dataset" != "shoes" ]; then
+            echo "Error: Invalid dataset for acosi-extract - $dataset"
+            exit 1
+        fi
+        bash scripts/bash/run_task.sh "$task" "data/acosi_dataset/$dataset/$dataset_to_use" "config/${size}_llama.json"
     else
         echo "Error: Invalid task - $task"
         exit 1
@@ -93,15 +108,15 @@ else
     # Run the task with the provided model
     dataset_to_use="test.txt"
     if [ "$task" = "acos-extract" ]; then
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/rest/$dataset_to_use" "$model"
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/laptop/$dataset_to_use" "$model"
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/shoes/$dataset_to_use" "$model"
+        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/$dataset/$dataset_to_use" "$model"
     elif [ "$task" = "acos-extend" ]; then
-        # bash scripts/bash/run_task.sh "$task" "data/acos_dataset/rest/$dataset_to_use" "$model"
-        # bash scripts/bash/run_task.sh "$task" "data/acos_dataset/laptop/$dataset_to_use" "$model"
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/shoes/$dataset_to_use" "$model"
+        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/$dataset/$dataset_to_use" "$model"
     elif [ "$task" = "acosi-extract" ]; then
-        bash scripts/bash/run_task.sh "$task" "data/acosi_dataset/shoes/$dataset_to_use" "$model"
+        if [ "$dataset" != "shoes" ]; then
+            echo "Error: Invalid dataset for acosi-extract - $dataset"
+            exit 1
+        fi
+        bash scripts/bash/run_task.sh "$task" "data/acosi_dataset/$dataset/$dataset_to_use" "$model"
     else
         echo "Error: Invalid task - $task"
         exit 1

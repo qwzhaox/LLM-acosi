@@ -72,7 +72,7 @@ if [ -f "$3" ]; then
 
         # Set the output file name
         OUTPUT_FILE="model_output/${model_type}-${selection_method}-${k_examples}/${model_name}/${ABSA_TASK}/${DATASET}/output"
-        
+
         # Set the remote flag for the Python script
         if [ "$remote" = "true" ]; then
             python3 "$PYTHON_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" --k_examples "$k_examples" --selection_method "$selection_method" --remote --is_combo_prompt
