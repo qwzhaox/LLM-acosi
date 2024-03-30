@@ -38,6 +38,7 @@ class Pipeline:
         self.max_new_tokens = args.max_new_tokens
         self.k_examples = args.k_examples
         self.limit = args.limit
+        print("TRAIN LIMIT: ", self.limit)
         self.selection_method = args.selection_method
         self.is_old_prompt = args.is_old_prompt
         self.is_combo_prompt = args.is_combo_prompt
@@ -82,6 +83,8 @@ class Pipeline:
         if self.is_old_prompt:
             examples = self.__get_examples_old(dataset_path.name, self.absa_task)
 
+        train_dataset, acos_extend_train_dataset = self.__get_train_dataset(dataset_path)
+        
         reviews = []
         for data in tqdm(dataset, desc="Processing Dataset", unit="item"):
             review = data.split("####")[0]
@@ -92,7 +95,7 @@ class Pipeline:
             review_str = self.__get_review_str(review, annotations)
 
             if not self.is_old_prompt:
-                examples = self.__get_examples(review, dataset_path)
+                examples = self.__get_examples(review, train_dataset, acos_extend_train_dataset)
 
             if "gpt" in self.model:
                 prompt = {
@@ -187,22 +190,31 @@ class Pipeline:
         else:
             raise NotImplementedError("Only tf-idf selection method is supported.")
 
-    def __get_examples(self, review, dataset_path):
-        examples = []
-
+    def __get_train_dataset(self, dataset_path):
+        train_dataset = []
         with open(Path(dataset_path / "train.txt"), "r") as f:
-            train_dataset = f.readlines()
-        
-        response_train_dataset_path = Path(str(dataset_path).replace('acos', 'acosi'))
-        response_train_dataset = []
+                train_dataset = f.readlines()
+
+        acos_extend_train_dataset_path = Path(str(dataset_path).replace('acos', 'acosi'))
+        acos_extend_train_dataset = []
         if self.absa_task == "acos-extend":
-            with open(Path(response_train_dataset_path / "train.txt"), "r") as f:
-                response_train_dataset = f.readlines()
+            with open(Path(acos_extend_train_dataset_path / "train.txt"), "r") as f:
+                acos_extend_train_dataset = f.readlines()
 
         if self.limit:
             limit_indices = sample(range(len(train_dataset)), k=self.limit)
             train_dataset = [train_dataset[i] for i in limit_indices]
-            response_train_dataset = [response_train_dataset[i] for i in limit_indices]
+            if acos_extend_train_dataset:
+                acos_extend_train_dataset = [acos_extend_train_dataset[i] for i in limit_indices]
+            assert len(train_dataset) == self.limit
+
+        return train_dataset, acos_extend_train_dataset
+
+    def __get_examples(self, review, train_dataset, acos_extend_train_dataset=[]):
+        if self.limit:
+            assert len(train_dataset) == self.limit
+
+        examples = []
 
         if self.selection_method == "random":
             indices = sample(range(len(train_dataset)), k=self.k_examples)
@@ -219,7 +231,7 @@ class Pipeline:
 
             if self.absa_task == "acos-extend":
                 review = f"{review}\nACOS quadruples: {annotations}"
-                annotations = eval(response_train_dataset[idx].split("####")[1])
+                annotations = eval(acos_extend_train_dataset[idx].split("####")[1])
                 if self.is_combo_prompt:
                     response = get_old_formatted_annotations(annotations, opinion_span_only=True)
                 else:
