@@ -1,10 +1,11 @@
 import torch
+from json import load
 from transformers import pipeline, AutoTokenizer
 from tqdm import tqdm
 from nltk import word_tokenize
 from transformers.generation import GenerationConfig
 from pathlib import Path
-from random import sample
+from random import sample, seed
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -26,23 +27,29 @@ from gpt_pipeline import query_gpt
 from prompts import PROMPTS, PROMPTS_OLD, PROMPTS_COMBO, CATE_DICT
 
 device = 0 if torch.cuda.is_available() else -1
+seed(0)
 
 class Pipeline:
     def __init__(self, args):
-        self.dataset_file = args.dataset_file
         self.model = args.model_name
-        self.task = args.task
-        self.absa_task = args.absa_task
         self.tokenizer_name = args.tokenizer_name
+        self.task = args.task
+
         self.max_length = args.max_length
         self.max_new_tokens = args.max_new_tokens
+        self.remote = args.remote
+
+        self.absa_task = args.absa_task
+        self.dataset_file = args.dataset_file
+        self.annotation_source = args.annotation_source
+
         self.k_examples = args.k_examples
-        self.limit = args.limit
-        print("TRAIN LIMIT: ", self.limit)
         self.selection_method = args.selection_method
+        self.limit = args.limit
+
         self.is_old_prompt = args.is_old_prompt
         self.is_combo_prompt = args.is_combo_prompt
-        self.remote = args.remote
+        
 
     def get_model_output(self):
         prompts, reviews = self.get_prompts()
@@ -86,12 +93,22 @@ class Pipeline:
         train_dataset, acos_extend_train_dataset = self.__get_train_dataset(dataset_path)
         
         reviews = []
-        for data in tqdm(dataset, desc="Processing Dataset", unit="item"):
+        outside_annotations = []
+        if ("mvp" in self.annotation_source) or (self.annotation_source == "gen-scl-nat"):
+            with open(f"model_output/supervised/{self.annotation_source}/pred.json", "r") as file:
+                outside_annotations = load(file)
+
+        for i, data in enumerate(tqdm(dataset, desc="Processing Dataset", unit="item")):
             review = data.split("####")[0]
             reviews.append(review)
 
-            annotations = eval(data.split("####")[1])
-
+            if self.annotation_source == "true":
+                annotations = eval(data.split("####")[1])
+            elif ("mvp" in self.annotation_source) or (self.annotation_source == "gen-scl-nat"):
+                annotations = outside_annotations[i]
+            else:
+                raise NotImplementedError("Invalid annotation source.")
+            
             review_str = self.__get_review_str(review, annotations)
 
             if not self.is_old_prompt:

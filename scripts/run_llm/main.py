@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from pipeline import Pipeline
+from pipeline import Pipeline, load
 from utils import (
     get_args,
     format_output,
@@ -11,12 +11,18 @@ from utils import (
 OPINION_IDX = 3
 
 
-def get_ACOS_annotations(len_formatted_output):
-    with open(args.dataset_file, "r") as f:
-        dataset = f.readlines()
-
-    assert len(dataset) == len_formatted_output
-    acos_annotations = [eval(x.split("####")[1]) for x in dataset]
+def get_ACOS_annotations(annotation_source, len_formatted_output):
+    if annotation_source == "true":
+        with open(args.dataset_file, "r") as f:
+            dataset = f.readlines()
+        assert len(dataset) == len_formatted_output
+        acos_annotations = [eval(x.split("####")[1]) for x in dataset]
+    elif ("mvp" in annotation_source) or (annotation_source == "gen-scl-nat"):
+        with open(f"model_output/supervised/{annotation_source}/pred.json", "r") as file:
+            acos_annotations = load(file)
+            assert len(acos_annotations) == len_formatted_output
+    else:
+        raise NotImplementedError("Invalid annotation source.")
 
     return acos_annotations
 
@@ -58,7 +64,7 @@ def main(args):
     if args.absa_task == "acos-extract":
         formatted_output = [[quint[:-1] for quint in quints] for quints in formatted_output]
     elif args.absa_task == "acos-extend":
-        acos_annotations = get_ACOS_annotations(len_formatted_output=len(formatted_output))
+        acos_annotations = get_ACOS_annotations(args.annotation_source, len_formatted_output=len(formatted_output))
         formatted_output = get_ACOSI_annotations(acos_annotations, formatted_output)
 
     formatted_output_and_metadata = get_formatted_output_and_metadata(

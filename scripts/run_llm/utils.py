@@ -37,12 +37,15 @@ ACOSI = "ACOSI"
 
 def get_args():
     parser = ArgumentParser()
+
+    # basic model params
     parser.add_argument("--model_name", type=str, required=True, help="LLM model name")
     parser.add_argument(
         "--tokenizer_name", type=str, default=None, help="Tokenizer name"
     )
     parser.add_argument("--task", type=str, default=None, help="Task name")
-    parser.add_argument("--absa_task", type=str, default=None, help="ABSA task name")
+
+    # additional model params
     parser.add_argument(
         "--remote", action="store_true", help="Whether to trust remote code"
     )
@@ -50,11 +53,19 @@ def get_args():
     parser.add_argument(
         "--max_new_tokens", type=int, default=512, help="Max new tokens"
     )
+
+    # absa task params
+    parser.add_argument("--absa_task", type=str, default=None, help="ABSA task name")
     parser.add_argument("--dataset_file", type=str, required=True, help="Dataset file")
     parser.add_argument("--output_file", type=str, required=True, help="Output file")
+    parser.add_argument("--annotation_source", type=str, default="true", help="Annotation source if ABSA task is ACOS-Extend")
+
+    # prompt variations
     parser.add_argument("-k", "--k_examples", type=int, default=10, help="Number of examples")
     parser.add_argument("-s", "--selection_method", type=str, default="tf-idf", help="Selection method")
     parser.add_argument("-l", "--limit", type=int, default=None, help="Limit number of examples to choose from.")
+
+    # non-default prompt
     parser.add_argument("-old", "--is_old_prompt", action="store_true", help="Use old prompt format")
     parser.add_argument("-combo", "--is_combo_prompt", action="store_true", help="Use combo prompt format.") 
     args = parser.parse_args()
@@ -425,6 +436,16 @@ def dump_output(output_file, formatted_output):
         if "_METADATA" not in output_file
         else output_file + ".json"
     )
+
+    if Path(output_file).exists():
+        back_int = 0
+        while Path(f"{output_file}.{back_int}.bak").exists():
+            back_int += 1
+        Path(output_file).rename(f"{output_file}.{back_int}.bak")
+        assert not Path(output_file).exists()
+
+    print(output_file)
+
     if "/" in output_file:
         Path(output_file[: output_file.rfind("/")]).mkdir(parents=True, exist_ok=True)
 

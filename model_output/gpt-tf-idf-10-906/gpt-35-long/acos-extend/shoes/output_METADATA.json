@@ -631,7 +631,7 @@
             ]
         ],
         "review": "good for around the house . if your looking to exercise in these , i would recommend something else . not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
-        "raw_predictions": "[('good for around the house'), ('good for around the house'), ('i would recommend something else'), ('the sole is thin and flat'), ('not much of an arch either'), ('not much of an arch either'), ('you have to have strong fingers to wrangle on the heel')]"
+        "raw_predictions": "[('good for around the house'), ('good for around the house'), ('i would recommend something else'), ('the sole is thin and flat'), ('not much of an arch either'), ('not slip on and go'), ('you have to have strong fingers to wrangle on the heel')]"
     },
     {
         "annotation": [
@@ -1748,7 +1748,7 @@
             ]
         ],
         "review": "i got the pair in my exact shoe size & these are too tight on me . i can ' t wear them all the way or my feet feel like they ' re being strangled . i don ' t understand why you ' d make these almost unwearable for the correct size",
-        "raw_predictions": "[('i got the pair in my exact shoe size & these are too tight on me'), ('my feet feel like they ' re being strangled'), (\"i don ' t understand why you ' d make these almost unwearable for the correct size\")]"
+        "raw_predictions": "[('i got the pair in my exact shoe size & these are too tight on me'), (\"my feet feel like they ' re being strangled\"), (\"i don ' t understand why you ' d make these almost unwearable for the correct size\")]"
     },
     {
         "annotation": [
@@ -2907,12 +2907,12 @@
                 "classic",
                 "performance#general",
                 "positive",
-                "NULL",
+                "the classic is the way to go",
                 "indirect"
             ]
         ],
         "review": "comfortable and timeless . if you ' re looking for a super comfortable pairs of kicks . , the classic is the way to go .",
-        "raw_predictions": "[('comfortable and timeless'), ('super comfortable pairs of kicks'), ('the classic is the way to go')]"
+        "raw_predictions": "[('comfortable and timeless'), ('comfortable'), ('super comfortable pairs of kicks'), ('the classic is the way to go')]"
     },
     {
         "annotation": [
@@ -3116,7 +3116,7 @@
                 "NULL",
                 "contextofuse#review\\_temporality",
                 "positive",
-                "i have been wearing these for years",
+                "NULL",
                 "indirect"
             ],
             [
@@ -3130,12 +3130,12 @@
                 "NULL",
                 "performance#sizing/fit",
                 "negative",
-                "going up at least a half size",
+                "NULL",
                 "indirect"
             ]
         ],
         "review": "i have been wearing these for years ! i use to always get an 8 1 / 2 ( women ' s ) but i got a 9 this time and they were really tight on my feet . so i ' d recommend going up at least a half size",
-        "raw_predictions": "[('i have been wearing these for years'), ('they were really tight on my feet'), ('going up at least a half size')]"
+        "raw_predictions": "[('i have been wearing these for years'), ('i use to always get an 8 1 / 2 ( women ' s )'), ('i got a 9 this time and they were really tight on my feet'), ('so i ' d recommend going up at least a half size')]"
     },
     {
         "annotation": [
@@ -3504,7 +3504,7 @@
                 "this shoe",
                 "performance#sizing/fit",
                 "negative",
-                "NULL",
+                "this shoe",
                 "indirect"
             ],
             [
@@ -3518,14 +3518,14 @@
                 "reebok",
                 "contextofuse#purchase\\_context",
                 "positive",
-                "NULL",
+                "reebok",
                 "indirect"
             ],
             [
                 "reebok",
                 "performance#sizing/fit",
                 "neutral",
-                "NULL",
+                "reebok",
                 "indirect"
             ],
             [
@@ -3551,7 +3551,7 @@
             ]
         ],
         "review": "as someone with a kind of wide foot , i really wanted this shoe to fit because i love the look ! reebok is a go - to brand for me because their shoes often fit my wide feet well in a way other brands don ' t . however , this shoe is a lot narrower than reebok ' s other offerings , so i wouldn ' t recommend it if you have wide feet . but it is a very cute shoe so i recommend it otherwise !",
-        "raw_predictions": "[('NULL'), ('i love the look'), ('NULL'), ('NULL'), ('i wouldn ' t recommend it if you have wide feet'), ('a lot narrower than reebok ' s other offerings'), ('very cute shoe so i recommend it otherwise')]"
+        "raw_predictions": "[('NULL', 'performance sizing/fit', 'negative', 'this shoe'), ('i love the look'), ('NULL', 'contextofuse purchase_context', 'positive', 'reebok'), ('NULL', 'performance sizing/fit', 'neutral', 'reebok'), (\"i wouldn ' t recommend it if you have wide feet\"), (\"a lot narrower than reebok ' s other offerings\"), ('very cute shoe so i recommend it otherwise')]"
     },
     {
         "annotation": [

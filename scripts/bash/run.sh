@@ -108,13 +108,9 @@ else
     # Run the task with the provided model
     dataset_to_use="test.txt"
     if [ "$task" = "acos-extract" ]; then
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/shoes/$dataset_to_use" "$model"
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/rest/$dataset_to_use" "$model"
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/laptop/$dataset_to_use" "$model"
+        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/$dataset/$dataset_to_use" "$model"
     elif [ "$task" = "acos-extend" ]; then
-        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/shoes/$dataset_to_use" "$model"
-        # bash scripts/bash/run_task.sh "$task" "data/acos_dataset/rest/$dataset_to_use" "$model"
-        # bash scripts/bash/run_task.sh "$task" "data/acos_dataset/laptop/$dataset_to_use" "$model"
+        bash scripts/bash/run_task.sh "$task" "data/acos_dataset/$dataset/$dataset_to_use" "$model"
     elif [ "$task" = "acosi-extract" ]; then
         if [ "$dataset" != "shoes" ]; then
             echo "Error: Invalid dataset for acosi-extract - $dataset"

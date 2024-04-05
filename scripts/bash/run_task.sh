@@ -70,30 +70,117 @@ if [ -f "$3" ]; then
         model_type=$(echo "$model" | cut -d'/' -f1)
         model_name=$(echo "$model" | cut -d'/' -f2-)
 
-        OUTPUT_FILE="model_output/${model_type}-${selection_method}-${k_examples}/${model_name}/${ABSA_TASK}/${DATASET}/output"
-        
+        # Construct the command using an array
+        cmd=(
+            python3 "$PYTHON_SCRIPT"
+            --model_name "$model"
+            --tokenizer_name "$tokenizer"
+            --task "$task"
+            --max_new_tokens "$max_new_tokens"
+            --max_length "$max_length"
+            --absa_task "$ABSA_TASK"
+            --dataset_file "$DATASET_FILE"
+            --k_examples "$k_examples"
+            --selection_method "$selection_method"
+            --is_combo_prompt
+        )
+
         if [ "$remote" = "true" ]; then
-            python3 "$PYTHON_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" --k_examples "$k_examples" --selection_method "$selection_method" --remote --is_combo_prompt
-        else
-            python3 "$PYTHON_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" --k_examples "$k_examples" --selection_method "$selection_method" --is_combo_prompt
+            cmd+=(--remote)
         fi
 
+        cmd0=("${cmd[@]}")
+
+        # comment this if running a variation
+        # OUTPUT_FILE="model_output/${model_type}-${selection_method}-${k_examples}/${model_name}/${ABSA_TASK}/${DATASET}/output"
+
+        # uncomment this to run the limited train set variation
+        # if [ $DATASET = "shoes" ]; then
+        #     continue
+        # fi
         OUTPUT_FILE="model_output/${model_type}-${selection_method}-${k_examples}-906/${model_name}/${ABSA_TASK}/${DATASET}/output"
-        
-        if [ "$remote" = "true" ]; then
-            python3 "$PYTHON_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" --k_examples "$k_examples" --selection_method "$selection_method" --limit 906 --remote --is_combo_prompt
-        else
-            python3 "$PYTHON_SCRIPT" --model_name "$model" --tokenizer_name "$tokenizer" --task "$task" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" --k_examples "$k_examples" --selection_method "$selection_method" --limit 906 --is_combo_prompt
-        fi
+        cmd0+=(--limit 906)
+
+        # uncomment this to run the [acos-extend alt annotation source] variation
+        # if [ $DATASET != "shoes" ] || [ $ABSA_TASK != "acos-extend" ]; then
+        #     continue
+        # fi
+
+        # uncomment this to run the [acos-extend alt annotation source: mvp] variation
+        # OUTPUT_FILE="model_output/${model_type}-${selection_method}-${k_examples}-mvp-seed-5/${model_name}/${ABSA_TASK}/${DATASET}/output"
+        # cmd0+=(--annotation_source mvp-seed-5)
+
+        # uncomment this to run the [acos-extend alt annotation source: gen-scl-nat] variation
+        # OUTPUT_FILE="model_output/${model_type}-${selection_method}-${k_examples}-gen-scl-nat/${model_name}/${ABSA_TASK}/${DATASET}/output"
+        # cmd0+=(--annotation_source gen-scl-nat)
+
+        # Run the command
+        cmd0+=(--output_file $OUTPUT_FILE)
+        "${cmd0[@]}"
+
+        # uncomment this to run the [acos-extend alt annotation source: mvp] variation for all the seeds
+        # for seed in 10 15 20 25; do
+        #     cmd0=("${cmd[@]}")
+        #     OUTPUT_FILE="model_output/${model_type}-${selection_method}-${k_examples}-mvp-seed-$seed/${model_name}/${ABSA_TASK}/${DATASET}/output"
+        #     cmd0+=(--annotation_source mvp-seed-$seed)
+
+        #     cmd0+=(--output_file $OUTPUT_FILE)
+        #     "${cmd0[@]}"
+        # done
     done
 else
     MODEL="$3"
     for k_examples in 5 10; do
         for selection_method in random tf-idf; do
-            OUTPUT_FILE="model_output/gpt-${selection_method}-${k_examples}/${MODEL}/${ABSA_TASK}/${DATASET}/output"
-            python3 "$PYTHON_SCRIPT" --model_name "$MODEL" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" --k_examples "$k_examples" --selection_method "$selection_method"
+            # Construct the command using an array
+            cmd=(
+                python3 "$PYTHON_SCRIPT"
+                --model_name "$MODEL"
+                --max_new_tokens "$max_new_tokens"
+                --max_length "$max_length"
+                --absa_task "$ABSA_TASK"
+                --dataset_file "$DATASET_FILE"
+                --k_examples "$k_examples"
+                --selection_method "$selection_method"
+            )
+
+            cmd0=("${cmd[@]}")
+
+            # comment this if running a variation
+            # OUTPUT_FILE="model_output/gpt-${selection_method}-${k_examples}/${MODEL}/${ABSA_TASK}/${DATASET}/output"
+
+            # uncomment this to run the limited train set variation
+            # if [ $DATASET = "shoes" ]; then
+            #     continue
+            # fi
             OUTPUT_FILE="model_output/gpt-${selection_method}-${k_examples}-906/${MODEL}/${ABSA_TASK}/${DATASET}/output"
-            python3 "$PYTHON_SCRIPT" --model_name "$MODEL" --absa_task "$ABSA_TASK" --dataset_file "$DATASET_FILE" --output_file "$OUTPUT_FILE" --max_new_tokens "$max_new_tokens" --max_length "$max_length" --k_examples "$k_examples" --selection_method "$selection_method" --limit 906
+            cmd0+=(--limit 906)
+
+            # uncomment this to run the [acos-extend alt annotation source] variation
+            # if [ $DATASET != "shoes" ] || [ $ABSA_TASK != "acos-extend" ]; then
+            #     continue
+            # fi
+
+            # uncomment this to run the [acos-extend alt annotation source: mvp] variation
+            # OUTPUT_FILE="model_output/gpt-${selection_method}-${k_examples}-mvp-seed-5/${MODEL}/${ABSA_TASK}/${DATASET}/output"
+            # cmd0+=(--annotation_source mvp-seed-5)
+
+            # uncomment this to run the [acos-extend alt annotation source: gen-scl-nat] variation
+            # OUTPUT_FILE="model_output/gpt-${selection_method}-${k_examples}-gen-scl-nat/${MODEL}/${ABSA_TASK}/${DATASET}/output"
+            # cmd0+=(--annotation_source gen-scl-nat)
+
+            cmd0+=(--output_file $OUTPUT_FILE)
+            "${cmd0[@]}"
+
+            # uncomment this to run the [acos-extend alt annotation source: mvp] variation for all the seeds
+            # for seed in 10 15 20 25; do
+            #     cmd0=("${cmd[@]}")
+            #     OUTPUT_FILE="model_output/gpt-${selection_method}-${k_examples}-mvp-seed-$seed/${MODEL}/${ABSA_TASK}/${DATASET}/output"
+            #     cmd0+=(--annotation_source mvp-seed-$seed)
+
+            #     cmd0+=(--output_file $OUTPUT_FILE)
+            #     "${cmd0[@]}"
+            # done
         done
     done
 fi

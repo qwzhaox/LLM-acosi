@@ -100,14 +100,14 @@
                 "golf shoe",
                 "appearance#form",
                 "negative",
-                "NULL",
+                "why can ' t you make a golf shoe from the same last as your sneakers",
                 "indirect"
             ],
             [
                 "sneakers",
                 "performance#sizing/fit",
                 "negative",
-                "NULL",
+                "would love a pair that fits like my sneakers",
                 "indirect"
             ],
             [
@@ -187,7 +187,7 @@
             ]
         ],
         "review": "this shoe is just roomier all around . not sure if i ' ll keep yet . . . it slips off a little when i walk . i have a wider foot than many and this just feel so bit . i got a half size smaller than usual and length - wise it fits good . i love the style of it in person !",
-        "raw_predictions": "[('this shoe is just roomier all around'), ('it slips off a little when i walk'), ('have a wider foot than many and this just feel so bit'), ('i got a half size smaller than usual and length - wise it fits good'), ('i love the style of it in person')]"
+        "raw_predictions": "[('this shoe is just roomier all around'), ('it slips off a little when i walk'), ('have a wider foot than many and this just feel so bit'), ('i got a half size smaller than usual and length - wise it fits good .'), ('i love the style of it in person')]"
     },
     {
         "annotation": [
@@ -250,12 +250,12 @@
                 "NULL",
                 "performance#general",
                 "positive",
-                "but the shoes were very light",
+                "the shoes were very light",
                 "indirect"
             ]
         ],
         "review": "i didn ' t like the shoes at all . the material felt very cheap , but the shoes were very light .",
-        "raw_predictions": "[(\"i didn ' t like the shoes at all\"), ('the material felt very cheap'), ('but the shoes were very light')]"
+        "raw_predictions": "[(\"i didn ' t like the shoes at all\"), ('the material felt very cheap'), ('the shoes were very light')]"
     },
     {
         "annotation": [
@@ -330,7 +330,7 @@
             ]
         ],
         "review": "beautiful kicks and will never need laces again . however , they are not true to size , oddly wide and misshapped . comfortable but huge - like boats .",
-        "raw_predictions": "[('beautiful'), ('will never need laces again'), ('not true to size'), ('oddly wide and misshapped'), ('comfortable'), ('but huge - like boats')]"
+        "raw_predictions": "[('beautiful'), ('will never need laces again'), ('not true to size'), ('oddly wide and misshapped'), ('comfortable'), ('but huge')]"
     },
     {
         "annotation": [
@@ -386,7 +386,7 @@
                 "NULL",
                 "general",
                 "negative",
-                "NULL",
+                "after working a shift , i can confirm that these are the most uncomfortable shoes , i ' ve ever worn",
                 "indirect"
             ],
             [
@@ -407,14 +407,14 @@
                 "NULL",
                 "performance#comfort",
                 "negative",
-                "NULL",
+                "my feet were killing me",
                 "indirect"
             ],
             [
                 "NULL",
                 "performance#use case applicability",
                 "negative",
-                "NULL",
+                "my feet were killing me",
                 "indirect"
             ],
             [
@@ -426,7 +426,7 @@
             ]
         ],
         "review": "needed new shoes so i bought these online , reviews looked fine and i haven ' t had a problem with adidas before . tried them on and felt fine . however . after working a shift , i can confirm that these are the most uncomfortable shoes , i ' ve ever worn . i worked a 7 hour shift and by the 3rd hour , my feet were killing me . do not buy these shoes ! !",
-        "raw_predictions": "[('needed new shoes so i bought these online , reviews looked fine and i haven ' t had a problem with adidas before'), ('tried them on and felt fine'), ('these are the most uncomfortable shoes , i ' ve ever worn'), ('after working a shift'), ('i can confirm that these are the most uncomfortable shoes , i ' ve ever worn'), ('my feet were killing me'), ('my feet were killing me'), ('do not buy these')]"
+        "raw_predictions": "[(\"needed new shoes so i bought these online , reviews looked fine and i haven ' t had a problem with adidas before\"), ('tried them on and felt fine'), ('after working a shift , i can confirm that these are the most uncomfortable shoes , i \\' ve ever worn'), ('after working a shift'), (\"i can confirm that these are the most uncomfortable shoes , i ' ve ever worn\"), ('my feet were killing me'), ('my feet were killing me'), ('do not buy these')]"
     },
     {
         "annotation": [
@@ -626,12 +626,12 @@
                 "NULL",
                 "performance#sizing/fit",
                 "negative",
-                "you have to have strong fingers to wrangle on the heel",
+                "you have to have strong fingers to wrangle on the heel !",
                 "indirect"
             ]
         ],
         "review": "good for around the house . if your looking to exercise in these , i would recommend something else . not too supportive and the sole is thin and flat . not much of an arch either . they are not slip on and go , you have to have strong fingers to wrangle on the heel !",
-        "raw_predictions": "[('good for around the house'), ('good for around the house'), ('i would recommend something else'), ('the sole is thin and flat'), ('not too supportive'), ('not much of an arch either'), ('not much of an arch either'), ('you have to have strong fingers to wrangle on the heel')]"
+        "raw_predictions": "[('good for around the house'), ('good for around the house'), ('i would recommend something else'), ('the sole is thin and flat'), ('not too supportive'), ('not much of an arch either'), ('not much of an arch either'), ('you have to have strong fingers to wrangle on the heel !')]"
     },
     {
         "annotation": [
@@ -651,7 +651,7 @@
             ]
         ],
         "review": "i recommend these shoes . however , the position of the velcro on the left and right shoes is different .",
-        "raw_predictions": "[('i recommend'), ('the position of the velcro on the left and right shoes is different')]"
+        "raw_predictions": "[('i recommend'), ('position of the velcro on the left and right shoes is different')]"
     },
     {
         "annotation": [
@@ -686,7 +686,7 @@
                 "shoes",
                 "appearance#misc",
                 "negative",
-                "nothing like the originals",
+                "these shoes look and feel cheap",
                 "indirect"
             ],
             [
@@ -700,7 +700,7 @@
                 "NULL",
                 "contextofuse#review\\_temporality",
                 "negative",
-                "returning these",
+                "nothing like the originals",
                 "indirect"
             ],
             [
@@ -719,7 +719,7 @@
             ]
         ],
         "review": "these shoes look and feel cheap . nothing like the originals . sizing is off , returning these .",
-        "raw_predictions": "[('these shoes look and feel cheap'), ('nothing like the originals'), ('nothing like the originals'), ('returning these'), ('sizing is off'), ('returning these')]"
+        "raw_predictions": "[('these shoes look and feel cheap'), ('these shoes look and feel cheap'), ('nothing like the originals'), ('nothing like the originals'), ('sizing is off'), ('returning these')]"
     },
     {
         "annotation": [
@@ -835,14 +835,14 @@
                 "shoes",
                 "contextofuse#purchase\\_context",
                 "negative",
-                "the lie about the sizes i ordered a 9 and them shoes were so tight i gave them to my daughter",
+                "the lie about the sizes i ordered a 9 and them shoes were",
                 "indirect"
             ],
             [
                 "shoes",
                 "performance#sizing/fit",
                 "negative",
-                "the lie about the sizes i ordered a 9 and them shoes were so tight i gave them to my daughter",
+                "i gave them to my daughter",
                 "indirect"
             ],
             [
@@ -861,7 +861,7 @@
             ]
         ],
         "review": "the lie about the sizes i ordered a 9 and them shoes were so tight i gave them to my daughter . i well never never never buy them . . .",
-        "raw_predictions": "[('the lie about the sizes i ordered a 9 and them shoes were so tight i gave them to my daughter'), ('the lie about the sizes i ordered a 9 and them shoes were so tight i gave them to my daughter'), ('so tight'), ('i well never never never buy them')]"
+        "raw_predictions": "[('the lie about the sizes i ordered a 9 and them shoes were'), ('i gave them to my daughter'), ('so tight'), ('i well never never never buy them')]"
     },
     {
         "annotation": [
@@ -1012,7 +1012,7 @@
                 "NULL",
                 "cost/value",
                 "neutral",
-                "NULL",
+                "i ended up giving these to my gf",
                 "indirect"
             ],
             [
@@ -1080,7 +1080,7 @@
                 "shoes",
                 "contextofuse#purchase\\_context",
                 "neutral",
-                "i purchased the shoes based on a review",
+                "purchased the shoes based on a review that they were very comfortable and good for walking",
                 "indirect"
             ],
             [
@@ -1113,7 +1113,7 @@
             ]
         ],
         "review": "i purchased the shoes based on a review that they were very comfortable and good for walking . the shoes are not easy to get on without using my fingers as a shoe horn and are somewhat comfortable for walking .",
-        "raw_predictions": "[('i purchased the shoes based on a review'), ('not easy to get on without using my fingers as a shoe horn'), ('not easy to get on without using my fingers as a shoe horn'), ('somewhat comfortable for walking'), ('somewhat comfortable for walking')]"
+        "raw_predictions": "[('purchased the shoes based on a review that they were very comfortable and good for walking'), ('not easy to get on without using my fingers as a shoe horn'), ('not easy to get on without using my fingers as a shoe horn'), ('somewhat comfortable for walking'), ('somewhat comfortable for walking')]"
     },
     {
         "annotation": [
@@ -1272,7 +1272,7 @@
                 "NULL",
                 "contextofuse#use case",
                 "neutral",
-                "they have mostly been worn to work where i sit or stand in one place for prolonged periods",
+                "mostly been worn to work where i sit or stand in one place for prolonged periods",
                 "indirect"
             ],
             [
@@ -1291,7 +1291,7 @@
             ]
         ],
         "review": "i loved these shoes at first . they are super cute shoes and comfortable too . i have owned them for less than a year and there are holes near the toe already . they have mostly been worn to work where i sit or stand in one place for prolonged periods . disappointed that they are falling apart with such little use .",
-        "raw_predictions": "[('i loved these shoes at first'), ('super cute'), ('comfortable too'), ('there are holes near the toe already'), ('owned them for less than a year'), ('they have mostly been worn to work where i sit or stand in one place for prolonged periods'), ('work'), ('disappointed that they are falling apart with such little use')]"
+        "raw_predictions": "[('i loved these shoes at first'), ('super cute'), ('comfortable too'), ('there are holes near the toe already'), ('owned them for less than a year'), ('mostly been worn to work where i sit or stand in one place for prolonged periods'), ('work'), ('disappointed that they are falling apart with such little use')]"
     },
     {
         "annotation": [
@@ -1334,12 +1334,12 @@
                 "NULL",
                 "general",
                 "positive",
-                "here they are",
+                "this is your sign ! here they are !",
                 "indirect"
             ]
         ],
         "review": "these shoes are so comfortable ! they look good with every athletic outfit and i love pairing them with leggings and a tank top or even a sweatshirt and a tennis skirt . if you ' re trying to find the perfect white athletic shoe , this is your sign ! here they are !",
-        "raw_predictions": "[('so comfortable'), ('they look good with every athletic outfit'), ('i love pairing them with leggings and a tank top or even a sweatshirt and a tennis skirt'), ('the perfect white athletic shoe'), ('the perfect white athletic shoe'), ('here they are')]"
+        "raw_predictions": "[('so comfortable'), ('they look good with every athletic outfit'), ('i love pairing them with leggings and a tank top or even a sweatshirt and a tennis skirt'), ('the perfect white athletic shoe'), ('the perfect white athletic shoe'), ('this is your sign ! here they are !')]"
     },
     {
         "annotation": [
@@ -1641,7 +1641,7 @@
                 "10w",
                 "performance#sizing/fit",
                 "negative",
-                "i ordered a 10w and it was definitely not wider than normal",
+                "it was definitely not wider than normal",
                 "indirect"
             ],
             [
@@ -1667,7 +1667,7 @@
             ]
         ],
         "review": "i ordered a 10w and it was definitely not wider than normal . it is a very cute boot but i have wide feet and it is not very comfortable for me .",
-        "raw_predictions": "[('i ordered a 10w and it was definitely not wider than normal'), ('is a very cute'), ('i have wide feet and it is not very comfortable for me'), ('i have wide feet and it is not very comfortable for me')]"
+        "raw_predictions": "[('it was definitely not wider than normal'), ('is a very cute'), ('i have wide feet and it is not very comfortable for me'), ('i have wide feet and it is not very comfortable for me')]"
     },
     {
         "annotation": [
@@ -1960,7 +1960,7 @@
                 "shoe",
                 "general",
                 "positive",
-                "met all my needs in a shoe",
+                "NULL",
                 "indirect"
             ],
             [
@@ -1981,26 +1981,26 @@
                 "NULL",
                 "contextofuse#review\\_temporality",
                 "positive",
-                "i wear them all day for work",
+                "NULL",
                 "indirect"
             ],
             [
                 "NULL",
                 "performance#use case applicability",
                 "positive",
-                "i wear them all day for work",
+                "NULL",
                 "indirect"
             ],
             [
                 "NULL",
                 "cost/value",
                 "positive",
-                "would recommend",
+                "NULL",
                 "indirect"
             ]
         ],
         "review": "met all my needs in a shoe . very durable and comfy . i wear them all day for work . would recommend",
-        "raw_predictions": "[('met all my needs in a shoe'), ('very durable'), ('and comfy'), ('i wear them all day for work'), ('i wear them all day for work'), ('would recommend')]"
+        "raw_predictions": "[('met all my needs in a shoe'), ('very durable'), ('and comfy'), ('i wear them all day for work'), ('would recommend')]"
     },
     {
         "annotation": [
@@ -2008,14 +2008,14 @@
                 "shoes",
                 "performance#use case applicability",
                 "positive",
-                "i use these shoes just slip on for practical reasons",
+                "i use these shoes just slip on for practical reasons . running to the store or just for general leisure",
                 "indirect"
             ],
             [
                 "NULL",
                 "contextofuse#use case",
                 "neutral",
-                "running to the store or just for general leisure",
+                "i use these shoes just slip on for practical reasons . running to the store or just for general leisure",
                 "indirect"
             ],
             [
@@ -2034,7 +2034,7 @@
             ]
         ],
         "review": "i use these shoes just slip on for practical reasons . running to the store or just for general leisure . great quality ! however , run a little small . i wear mine without socks , and that solved the size issue .",
-        "raw_predictions": "[('i use these shoes just slip on for practical reasons'), ('running to the store or just for general leisure'), ('run a little small'), ('i wear mine without socks , and that solved the size issue')]"
+        "raw_predictions": "[('i use these shoes just slip on for practical reasons . running to the store or just for general leisure'), ('i use these shoes just slip on for practical reasons . running to the store or just for general leisure'), ('run a little small'), ('i wear mine without socks , and that solved the size issue')]"
     },
     {
         "annotation": [
@@ -2097,19 +2097,19 @@
                 "NULL",
                 "appearance#color",
                 "negative",
-                "NULL",
+                "don ' t buy if you ' re expecting anything other than bland gray",
                 "indirect"
             ],
             [
                 "NULL",
                 "cost/value",
                 "negative",
-                "NULL",
+                "will be returning immediately",
                 "indirect"
             ]
         ],
         "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
-        "raw_predictions": "[('color on the site has neutral beige / brown tones'), ('color on the site has neutral beige / brown tones'), ('unfortunately , in person the color is all gray'), ('don ' t buy if you ' re expecting anything other than bland gray'), ('will be returning immediately')]"
+        "raw_predictions": "[('color on the site has neutral beige / brown tones'), ('color on the site has neutral beige / brown tones'), ('unfortunately , in person the color is all gray'), ('don \\' t buy if you \\' re expecting anything other than bland gray'), ('will be returning immediately')]"
     },
     {
         "annotation": [
@@ -2164,7 +2164,7 @@
             ]
         ],
         "review": "my white laces on the nast collab pair have dirt spots on the laces and thread coming out from a lace , out the package like wow the laces are shot and shoe hasn ' t even been worn yet . thought i ' d give reebok a try again because of nast and they threw that out the window . not his fault it ' s reebok and their manufacturer . disappointed they ruined this shoe for me i was looking forward to his collab .",
-        "raw_predictions": "[('white laces on the nast collab pair have dirt spots'), ('thread coming out from a lace'), (\"wow the laces are shot and shoe hasn ' t even been worn yet\"), (\"wow the laces are shot and shoe hasn ' t even been worn yet\"), ('thought i ' d give reebok a try again because of nast and they threw that out the window'), ('disappointed they ruined this shoe for me i was looking forward to his collab'), ('disappointed they ruined this shoe for me i was looking forward to his collab')]"
+        "raw_predictions": "[('white laces on the nast collab pair have dirt spots'), ('thread coming out from a lace'), ('wow the laces are shot and shoe hasn ' t even been worn yet'), ('wow the laces are shot and shoe hasn ' t even been worn yet'), ('thought i ' d give reebok a try again because of nast and they threw that out the window'), ('thought i ' d give reebok a try again because of nast and they threw that out the window'), ('disappointed they ruined this shoe for me i was looking forward to his collab')]"
     },
     {
         "annotation": [
@@ -2172,14 +2172,14 @@
                 "fabric over the toes",
                 "appearance#shoe component",
                 "negative",
-                "i live in ny i walk a lot but cmon the fabric over the toes needs to be reinforced with leather or something",
+                "needs to be reinforced with leather or something",
                 "indirect"
             ],
             [
                 "fabric over the toes",
                 "appearance#material",
                 "negative",
-                "i live in ny i walk a lot but cmon the fabric over the toes needs to be reinforced with leather or something",
+                "needs to be reinforced with leather or something",
                 "indirect"
             ],
             [
@@ -2205,7 +2205,7 @@
             ]
         ],
         "review": "i live in ny i walk a lot but cmon the fabric over the toes needs to be reinforced with leather or something . my toes immediately have made a hole",
-        "raw_predictions": "[('i live in ny i walk a lot but cmon the fabric over the toes needs to be reinforced with leather or something'), ('i live in ny i walk a lot but cmon the fabric over the toes needs to be reinforced with leather or something'), ('i live in ny i walk a lot'), ('my toes immediately have made a hole'), ('my toes immediately have made a hole')]"
+        "raw_predictions": "[('needs to be reinforced with leather or something'), ('needs to be reinforced with leather or something'), ('i live in ny i walk a lot'), ('my toes immediately have made a hole'), ('my toes immediately have made a hole')]"
     },
     {
         "annotation": [
@@ -2246,7 +2246,7 @@
             ]
         ],
         "review": "i was disappointed in the color , from the pictures the top looks white but it ' s actually blue , which made a difference when i received them . i wasn ' t wanting that color scheme .",
-        "raw_predictions": "[('disappointed in the color'), ('i wasn ' t wanting that color scheme'), ('i wasn ' t wanting that color scheme'), (\"from the pictures the top looks white but it ' s actually blue , which made a difference when i received them\"), (\"from the pictures the top looks white but it ' s actually blue , which made a difference when i received them\")]"
+        "raw_predictions": "[('disappointed in the color'), ('i wasn \\' t wanting that'), ('i wasn \\' t wanting that'), (\"from the pictures the top looks white but it ' s actually blue , which made a difference when i received them\"), (\"from the pictures the top looks white but it ' s actually blue , which made a difference when i received them\")]"
     },
     {
         "annotation": [
@@ -2254,14 +2254,14 @@
                 "reebok classic",
                 "contextofuse#review\\_temporality",
                 "positive",
-                "NULL",
+                "i ' ve been a reebok classic woman for years",
                 "indirect"
             ],
             [
                 "athletic shoes",
                 "contextofuse#use case",
                 "positive",
-                "NULL",
+                "i don ' t wear any other brand of athletic shoes",
                 "indirect"
             ],
             [
@@ -2282,7 +2282,7 @@
                 "shoes",
                 "performance#sizing/fit",
                 "positive",
-                "NULL",
+                "i wear a 1 / 2 \" heel lift in my shoe for balance and these shoes have the perfect depth that keeps the heel of the shoe snug to my feet",
                 "indirect"
             ],
             [
@@ -2294,7 +2294,7 @@
             ]
         ],
         "review": "i ' ve been a reebok classic woman for years . i don ' t wear any other brand of athletic shoes . they are comfortable and easy to walk in . i wear a 1 / 2 \" heel lift in my shoe for balance and these shoes have the perfect depth that keeps the heel of the shoe snug to my feet - no slipping off .",
-        "raw_predictions": "[('i ' ve been a reebok classic woman for years'), ('i don ' t wear any other brand of athletic shoes'), ('easy to walk in'), ('they are comfortable'), ('these shoes have the perfect depth that keeps the heel of the shoe snug to my feet'), ('no slipping off')]"
+        "raw_predictions": "[('i \\' ve been a reebok classic woman for years'), ('i don \\' t wear any other brand of athletic shoes'), ('easy to walk in'), ('they are comfortable'), ('i wear a 1 / 2 \" heel lift in my shoe for balance and these shoes have the perfect depth that keeps the heel of the shoe snug to my feet'), ('no slipping off')]"
     },
     {
         "annotation": [
@@ -2363,7 +2363,7 @@
                 "shoe",
                 "contextofuse#use case",
                 "neutral",
-                "i need an orthopedic lift in one shoe",
+                "need an orthopedic lift in one shoe",
                 "indirect"
             ],
             [
@@ -2382,7 +2382,7 @@
             ]
         ],
         "review": "i need an orthopedic lift in one shoe . reebox still manufactures a fine shoe which can still be modified .",
-        "raw_predictions": "[('i need an orthopedic lift in one shoe'), ('reebox still manufactures a fine shoe which can still be modified'), ('reebox still manufactures a fine shoe which can still be modified')]"
+        "raw_predictions": "[('need an orthopedic lift in one shoe'), ('reebox still manufactures a fine shoe which can still be modified'), ('reebox still manufactures a fine shoe which can still be modified')]"
     },
     {
         "annotation": [
@@ -2409,7 +2409,7 @@
             ]
         ],
         "review": "these look awful in the larger sizes . also , they are undersized , order 1 / 2 size up or go easy on yourself and don ' t order .",
-        "raw_predictions": "[('these look awful in the larger sizes'), ('they are undersized , order 1 / 2 size up or go easy on yourself and don ' t order'), ('go easy on yourself and don ' t order')]"
+        "raw_predictions": "[('these look awful in the larger sizes'), ('they are undersized , order 1 / 2 size up'), ('go easy on yourself and don ' t order')]"
     },
     {
         "annotation": [
@@ -2547,7 +2547,7 @@
                 "NULL",
                 "appearance#general",
                 "negative",
-                "NULL",
+                "these are just built differently now",
                 "indirect"
             ],
             [
@@ -2559,7 +2559,7 @@
             ]
         ],
         "review": "still look cool , but not what they used to be . quality has lowered significantly\u2014bummer . plus sizing has changed . i ' ve always been a good snug 7 . 5 in these and now the 7 . 5 is too small and the 8 is too big . these are just built differently now and i ' m so sad : (",
-        "raw_predictions": "[('still look cool , but not what they used to be'), ('quality has lowered significantly\u2014bummer'), ('plus sizing has changed'), (\"i ' ve always been a good snug 7 . 5\"), ('7 . 5 is too small'), ('8 is too big'), ('these are just built differently now'), (\"i ' m so sad\")]"
+        "raw_predictions": "[('still look cool , but not what they used to be'), ('quality has lowered significantly\u2014bummer'), ('plus sizing has changed'), (\"i ' ve always been a good snug 7 . 5\"), ('is too small'), ('is too big'), ('these are just built differently now'), (\"i ' m so sad\")]"
     },
     {
         "annotation": [
@@ -2594,7 +2594,7 @@
                 "color",
                 "contextofuse#purchase\\_context",
                 "neutral",
-                "NULL",
+                "the color on the site has neutral beige / brown tones",
                 "indirect"
             ],
             [
@@ -2629,7 +2629,7 @@
                 "bland gray",
                 "appearance#color",
                 "negative",
-                "NULL",
+                "anything other than bland gray",
                 "indirect"
             ],
             [
@@ -2641,7 +2641,7 @@
             ]
         ],
         "review": "the color on the site has neutral beige / brown tones , unfortunately , in person the color is all gray . don ' t buy if you ' re expecting anything other than bland gray . will be returning immediately .",
-        "raw_predictions": "[('the color on the site has neutral beige / brown tones'), ('neutral beige / brown tones'), ('unfortunately , in person the color is all gray'), ('unfortunately , in person the color is all gray'), (\"don ' t buy if you ' re expecting anything other than bland gray\"), ('bland gray'), ('will be returning immediately')]"
+        "raw_predictions": "[('the color on the site has neutral beige / brown tones'), ('neutral beige / brown tones'), ('unfortunately , in person the color is all gray'), ('unfortunately , in person the color is all gray'), (\"don ' t buy if you ' re expecting anything other than bland gray\"), ('anything other than bland gray'), ('will be returning immediately')]"
     },
     {
         "annotation": [
@@ -2689,7 +2689,7 @@
             ]
         ],
         "review": "i ' ve worn these shoes so many times ! they ' re true to size , comfortable and fly . perfect fall colors . the top was a bit uncomfortable without socks , but jist wear socks . : )",
-        "raw_predictions": "[('worn these shoes so many times'), ('true'), ('comfortable'), ('fly'), ('perfect'), ('bit uncomfortable')]"
+        "raw_predictions": "[('worn these shoes so many times'), ('true to size'), ('comfortable'), ('fly'), ('perfect fall colors'), ('bit uncomfortable without socks')]"
     },
     {
         "annotation": [
@@ -2724,7 +2724,7 @@
                 "leather",
                 "appearance#material",
                 "negative",
-                "but i ' d rather have the classic in leather",
+                "NULL",
                 "indirect"
             ],
             [
@@ -2736,7 +2736,7 @@
             ]
         ],
         "review": "but i ' d rather have the classic in leather . i would buy many pairs .",
-        "raw_predictions": "[('but i \\' d rather have the classic in leather'), ('i would buy many pairs')]"
+        "raw_predictions": "[('but i ' d rather have the classic in leather'), ('i would buy many')]"
     },
     {
         "annotation": [
@@ -2825,7 +2825,7 @@
                 "the size",
                 "performance#sizing/fit",
                 "negative",
-                "is a half size smaller then what i wear",
+                "the size is a half size smaller then what i wear",
                 "indirect"
             ],
             [
@@ -2844,7 +2844,7 @@
             ]
         ],
         "review": "the size is a half size smaller then what i wear . next time i will need to order a 6 1 / 2 instead of my normal size 6\u2026",
-        "raw_predictions": "[('is a half size smaller then what i wear'), ('next time i will need to order a 6 1 / 2 instead of my normal size 6'), ('next time i will need to order a 6 1 / 2 instead of my normal size 6')]"
+        "raw_predictions": "[('the size is a half size smaller then what i wear'), ('next time i will need to order a 6 1 / 2 instead of my normal size 6'), ('next time i will need to order a 6 1 / 2 instead of my normal size 6')]"
     },
     {
         "annotation": [
@@ -2973,7 +2973,7 @@
             ]
         ],
         "review": "i ordered my size but for me they run small . i wore them just to see if i could break them in . . . i wouldn ' t advise that ! so give yourself some wiggle room and order the 1 / 2 .",
-        "raw_predictions": "[('i ordered my size but for me they run small'), (\"i wore them just to see if i could break them in . . . i wouldn ' t advise that !\"), (\"i wore them just to see if i could break them in . . . i wouldn ' t advise that !\"), ('so give yourself some wiggle room and order the 1 / 2'), ('so give yourself some wiggle room and order the 1 / 2')]"
+        "raw_predictions": "[('i ordered my size but for me they run small'), ('i wore them just to see if i could break them in . . . i wouldn ' t advise that !'), ('i wore them just to see if i could break them in . . . i wouldn ' t advise that !'), ('so give yourself some wiggle room and order the 1 / 2'), ('so give yourself some wiggle room and order the 1 / 2')]"
     },
     {
         "annotation": [
@@ -3008,26 +3008,26 @@
                 "shoe",
                 "general",
                 "positive",
-                "NULL",
+                "i like the shoe itself and want to keep it",
                 "indirect"
             ],
             [
                 "NULL",
                 "performance#sizing/fit",
                 "negative",
-                "NULL",
+                "it is too small",
                 "indirect"
             ],
             [
                 "NULL",
                 "contextofuse#purchase\\_context",
                 "negative",
-                "NULL",
+                "i can ' t find my order number to exchange it",
                 "indirect"
             ]
         ],
         "review": "i like the shoe itself and want to keep it . but it is too small and i can ' t find my order number to exchange it",
-        "raw_predictions": "[('i like the shoe itself and want to keep it'), ('it is too small'), ('i can ' t find my order number to exchange it')]"
+        "raw_predictions": "[('i like the shoe itself and want to keep it'), ('it is too small'), ('i can \\' t find my order number to exchange it')]"
     },
     {
         "annotation": [
@@ -3062,7 +3062,7 @@
                 "shoe",
                 "performance#comfort",
                 "negative",
-                "it just didn ' t feel comfortable",
+                "NULL",
                 "indirect"
             ],
             [
@@ -3076,7 +3076,7 @@
                 "NULL",
                 "performance#sizing/fit",
                 "negative",
-                "it was too narrow",
+                "NULL",
                 "indirect"
             ],
             [
@@ -3088,7 +3088,7 @@
             ]
         ],
         "review": "when i put this shoe on my foot it fit , it just didn ' t feel comfortable . it was too narrow , i could feel my foot falling off on the sides .",
-        "raw_predictions": "[('it just didn \\' t feel comfortable'), ('on my foot it fit'), ('it was too narrow'), ('i could feel my foot falling off on the sides')]"
+        "raw_predictions": "[('it just didn ' t feel comfortable'), ('on my foot it fit'), ('it was too narrow'), ('i could feel my foot falling off on the sides')]"
     },
     {
         "annotation": [
@@ -3416,7 +3416,7 @@
                 "NULL",
                 "performance#sizing/fit",
                 "negative",
-                "sizing runs small so i had to exchange for a half size up",
+                "the sizing runs small so i had to exchange for a half size up",
                 "indirect"
             ],
             [
@@ -3430,7 +3430,7 @@
                 "shoes",
                 "performance#durability",
                 "negative",
-                "upper leather ripped",
+                "the upper leather ripped",
                 "indirect"
             ],
             [
@@ -3444,12 +3444,12 @@
                 "NULL",
                 "appearance#misc",
                 "negative",
-                "upper leather ripped",
+                "i am disappointed in the quality and had high expectations",
                 "indirect"
             ]
         ],
         "review": "shoes are comfortable and very versatile . the sizing runs small so i had to exchange for a half size up . but after wearing these shoes twice , the upper leather ripped ! i am disappointed in the quality and had high expectations .",
-        "raw_predictions": "[('comfortable'), ('very versatile'), ('sizing runs small so i had to exchange for a half size up'), ('after wearing these shoes twice'), ('upper leather ripped'), ('i am disappointed in the quality and had high expectations'), ('upper leather ripped')]"
+        "raw_predictions": "[('comfortable'), ('very versatile'), ('the sizing runs small so i had to exchange for a half size up'), ('after wearing these shoes twice'), ('the upper leather ripped'), ('i am disappointed in the quality and had high expectations'), ('i am disappointed in the quality and had high expectations')]"
     },
     {
         "annotation": [
@@ -3551,7 +3551,7 @@
             ]
         ],
         "review": "as someone with a kind of wide foot , i really wanted this shoe to fit because i love the look ! reebok is a go - to brand for me because their shoes often fit my wide feet well in a way other brands don ' t . however , this shoe is a lot narrower than reebok ' s other offerings , so i wouldn ' t recommend it if you have wide feet . but it is a very cute shoe so i recommend it otherwise !",
-        "raw_predictions": "[('as someone with a kind of wide foot , i really wanted this shoe to fit'), ('i love the look'), ('reebok is a go - to brand for me because their shoes often fit my wide feet well in a way other brands don ' t'), ('reebok is a go - to brand for me because their shoes often fit my wide feet well in a way other brands don ' t'), ('i wouldn ' t recommend it if you have wide feet'), ('a lot narrower than reebok ' s other offerings'), ('very cute shoe so i recommend it otherwise')]"
+        "raw_predictions": "[('i really wanted this shoe to fit'), ('i love the look'), ('reebok is a go - to brand for me because their shoes often fit my wide feet well in a way other brands don ' t'), ('reebok is a go - to brand for me because their shoes often fit my wide feet well in a way other brands don ' t'), ('i wouldn ' t recommend it if you have wide feet'), ('a lot narrower than reebok ' s other offerings'), ('very cute shoe so i recommend it otherwise')]"
     },
     {
         "annotation": [
@@ -3654,7 +3654,7 @@
             ]
         ],
         "review": "there were a christmas gift to someone . she loves the color ( red ) . says they fit very nicely . she ' s on her feet for long stretches for work . said there is a bit of break - in period , probably because how different the reds are to the others . she wants more now . of course she does .",
-        "raw_predictions": "[('were a christmas gift to someone'), ('loves the color ( red )'), ('they fit very nicely'), ('on her feet for long stretches'), ('said there is a bit of break - in period'), ('she wants more now')]"
+        "raw_predictions": "[('were a christmas gift to someone'), ('loves the color ( red )'), ('they fit very nicely'), ('she ' s on her feet for long stretches for work'), ('said there is a bit of break - in period'), ('she wants more now')]"
     },
     {
         "annotation": [
@@ -3771,33 +3771,33 @@
                 "NULL",
                 "performance#general",
                 "negative",
-                "these could of been engineer a little better",
+                "bought these + 1 extra for someone , and these could of been engineer a little better",
                 "indirect"
             ],
             [
                 "NULL",
                 "contextofuse#purchase\\_context",
                 "neutral",
-                "bought these + 1 extra for someone",
+                "bought these + 1 extra for someone , and these could of been engineer a little better",
                 "indirect"
             ],
             [
                 "NULL",
                 "performance#durability",
                 "negative",
-                "these could of been engineer a little better",
+                "bought these + 1 extra for someone , and these could of been engineer a little better",
                 "indirect"
             ],
             [
                 "NULL",
                 "appearance#misc",
                 "negative",
-                "these could of been engineer a little better",
+                "bought these + 1 extra for someone , and these could of been engineer a little better",
                 "indirect"
             ]
         ],
         "review": "i honestly wanted super pleased with the overall quality of the shoe . the sound it makes on the floor is odd . very noisy . bought these + 1 extra for someone , and these could of been engineer a little better",
-        "raw_predictions": "[('i honestly wanted super pleased with the overall quality'), ('sound it makes on the floor is odd'), ('very noisy'), ('these could of been engineer a little better'), ('bought these + 1 extra for someone'), ('these could of been engineer a little better'), ('these could of been engineer a little better')]"
+        "raw_predictions": "[('i honestly wanted super pleased with the overall quality'), ('sound it makes on the floor is odd'), ('very noisy'), ('bought these + 1 extra for someone , and these could of been engineer a little better'), ('bought these + 1 extra for someone , and these could of been engineer a little better'), ('bought these + 1 extra for someone , and these could of been engineer a little better'), ('bought these + 1 extra for someone , and these could of been engineer a little better')]"
     },
     {
         "annotation": [
@@ -3812,12 +3812,12 @@
                 "NULL",
                 "appearance#material",
                 "negative",
-                "when you said they where leather , i think you should say they are leather and manmade",
+                "you should say they are leather and manmade",
                 "indirect"
             ]
         ],
         "review": "i have always liked this style but when you said they where leather , i think you should say they are leather and manmade .",
-        "raw_predictions": "[('i have always liked this style'), ('when you said they where leather , i think you should say they are leather and manmade')]"
+        "raw_predictions": "[('i have always liked this style'), ('you should say they are leather and manmade')]"
     },
     {
         "annotation": [
@@ -3920,12 +3920,12 @@
                 "NULL",
                 "cost/value",
                 "positive",
-                "going to keep these and try a different model",
+                "NULL",
                 "indirect"
             ]
         ],
         "review": "i think i need to go up 1 / 2 a size because it ' s pinching my toes just a bit , or i really need a wide . but with that in mind it really made my feet happy . love the leather upper for a clean and durable look . going to keep these and try a different model",
-        "raw_predictions": "[('pinching my toes just a bit'), ('clean and durable look'), ('love the leather upper'), ('going to keep these and try a different model')]"
+        "raw_predictions": "[('i think i need to go up 1 / 2 a size because it ' s pinching my toes just a bit , or i really need a wide'), ('clean and durable look'), ('love the leather upper'), ('going to keep these and try a different model')]"
     },
     {
         "annotation": [
@@ -3959,7 +3959,7 @@
             ]
         ],
         "review": "i ' ve been wanting them again for a long time . i used to use them at high school and i saw them as a reminder of that time , but now that i got them i didn ' t remember how comfortable they were ! ! i just love them ! !",
-        "raw_predictions": "[(\"i ' ve been wanting them again for a long time\"), ('i used to use them at high school and i saw them as a reminder of that time'), ('i didn ' t remember how comfortable they were'), ('i just love them')]"
+        "raw_predictions": "[(\"i ' ve been wanting them again for a long time\"), ('i used to use them at high school and i saw them as a reminder of that time'), ('now that i got them i didn ' t remember how comfortable they were'), ('i just love them')]"
     },
     {
         "annotation": [
@@ -4110,7 +4110,7 @@
                 "shoes",
                 "appearance#material",
                 "negative",
-                "NULL",
+                "the stitching is different that sound feel is different",
                 "indirect"
             ],
             [
@@ -4131,12 +4131,12 @@
                 "reeboks",
                 "contextofuse#purchase\\_context",
                 "negative",
-                "NULL",
+                "sent them back and order me a pair a reebok classic running instead of these reeboks",
                 "indirect"
             ]
         ],
         "review": "i purchased these shoes bacon they were exactly like my last pair of reebok classics i bought but they are slightly different the stitching is different that sound feel is different and they just didn ' t feel like the classic running shoes that i had before so i sent them back and order me a pair a reebok classic running instead of these reeboks",
-        "raw_predictions": "[('exactly like my last pair of reebok classics'), ('the stitching is different that sound feel is different'), ('didn ' t feel like the classic running shoes'), ('didn ' t feel like the classic running shoes'), ('so i sent them back and order me a pair a reebok classic running instead of these reeboks')]"
+        "raw_predictions": "[('exactly like my last pair of reebok classics'), ('the stitching is different that sound feel is different'), (\"didn ' t feel like the classic running shoes\"), (\"didn ' t feel like the classic running shoes\"), ('sent them back and order me a pair a reebok classic running instead of these reeboks')]"
     },
     {
         "annotation": [
@@ -4225,14 +4225,14 @@
                 "shoes",
                 "performance#sizing/fit",
                 "negative",
-                "NULL",
+                "need different size",
                 "indirect"
             ],
             [
                 "shoes",
                 "contextofuse#purchase\\_context",
                 "neutral",
-                "NULL",
+                "need different size",
                 "indirect"
             ],
             [
@@ -4244,7 +4244,7 @@
             ]
         ],
         "review": "it ' s a great shoes but need different size . i recommend it",
-        "raw_predictions": "[('great'), ('need different size'), ('it ' s a great shoes but need different size'), ('i recommend')]"
+        "raw_predictions": "[('great'), ('need different size'), ('need different size'), ('i recommend')]"
     },
     {
         "annotation": [
@@ -4361,7 +4361,7 @@
                 "kicks",
                 "appearance#general",
                 "positive",
-                "can be worn with a variety of styles",
+                "these kicks are extremely comfortable and can be worn with a variety of styles",
                 "indirect"
             ],
             [
@@ -4373,6 +4373,6 @@
             ]
         ],
         "review": "these kicks are extremely comfortable and can be worn with a variety of styles . these are my new favorites .",
-        "raw_predictions": "[('extremely comfortable'), ('can be worn with a variety of styles'), ('can be worn with a variety of styles'), ('these are my new favorites')]"
+        "raw_predictions": "[('extremely comfortable'), ('can be worn with a variety of styles'), ('these kicks are extremely comfortable and can be worn with a variety of styles'), ('these are my new favorites')]"
     }
 ]
