@@ -32,6 +32,8 @@ class Args:
         self.max_new_tokens = 100
         self.remote = False
 
+        self.annotation_source = "true"
+
 if args.is_old_prompt:
     get_formatted_annotations = get_old_formatted_annotations
 else:
@@ -43,9 +45,10 @@ total_tokens = 0
 max_tokens = 0
 
 for prompt in prompts:
-    print(prompt)
     total_tokens += len(word_tokenize(prompt))
     max_tokens = max(max_tokens, len(word_tokenize(prompt)))
+
+print(prompts[0])
 
 print(f"Total input tokens: {total_tokens}")
 print(f"Avg tokens per prompt: {total_tokens/len(prompts)}")

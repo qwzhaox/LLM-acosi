@@ -197,9 +197,10 @@ class Pipeline:
         return review_str
 
     def __select_similar_reviews(self, review, train_dataset):
+        train_reviews = [example.split("####")[0] for example in train_dataset]
         if self.selection_method == "tf-idf":
             vectorizer = TfidfVectorizer()
-            X = vectorizer.fit_transform(train_dataset)
+            X = vectorizer.fit_transform(train_reviews)
             review_vector = vectorizer.transform([review])
             cosine_similarities = cosine_similarity(review_vector, X).flatten()
             indices = cosine_similarities.argsort()[-self.k_examples:][::-1]
